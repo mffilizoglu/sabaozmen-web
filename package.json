@@ -5,8 +5,11 @@
   "description": "Saba Özmen Avukatlık Ortaklığı — üç dilli kurumsal site",
   "scripts": {
     "dev": "node site/server.js",
-    "build": "node site/build.js --origin ${SITE_ORIGIN:-}",
-    "check": "node ref/crawl.js"
+    "build": "node site/build.js",
+    "check": "node ref/crawl.js",
+    "preview": "wrangler pages dev dist --port 8788",
+    "test:admin": "node ref/admin_test.js",
+    "test:functions": "node ref/functions_test.js"
   },
   "engines": {
     "node": ">=18"

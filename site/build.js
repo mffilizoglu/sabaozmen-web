@@ -28,7 +28,13 @@ const argOf = (name, dflt) => {
   return i !== -1 && argv[i + 1] ? argv[i + 1] : dflt;
 };
 
-const ORIGIN = String(argOf("origin", "")).replace(/\/+$/, "");
+/* Origin, in order of preference:
+     --origin flag  →  SITE_ORIGIN  →  CF_PAGES_URL (set by Cloudflare at build
+   time; it is the per-deployment URL, so a production build should set
+   SITE_ORIGIN to the real domain once one exists). */
+const ORIGIN = String(
+  argOf("origin", process.env.SITE_ORIGIN || process.env.CF_PAGES_URL || "")
+).replace(/\/+$/, "");
 const OUT = path.resolve(__dirname, "..", argOf("out", "dist"));
 const PUBLIC = path.join(__dirname, "public");
 
