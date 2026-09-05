@@ -1,0 +1,49 @@
+name: Build and deploy to Cloudflare Pages
+
+# Runs on every push to main — including the commits the admin panel makes when
+# someone saves an attorney or an event, which is what publishes those edits.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build static site
+        env:
+          SITE_ORIGIN: ${{ vars.SITE_ORIGIN || 'https://sabaozmen.pages.dev' }}
+        run: node site/build.js
+
+      # The build asserts Cloudflare's own limits (25 MiB per file, 20,000
+      # files) and exits non-zero, so an oversized asset fails here rather than
+      # halfway through an upload.
+      - name: Verify build output
+        run: |
+          test -f dist/index.html
+          test -f dist/tr/index.html
+          test -f dist/en/index.html
+          test -f dist/de/index.html
+          test -f dist/sitemap.xml
+          test -f dist/404.html
+          echo "pages: $(find dist -name index.html | wc -l)"
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=sabaozmen --branch=main
