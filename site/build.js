@@ -231,6 +231,14 @@ if (BASE) {
   let touched = 0;
   const rewrite = (html) => html
     .replace(/(\s(?:href|src|content)=")\/(?!\/)/g, `$1${BASE}/`)
+    // srcset holds a comma-separated list, so every entry needs prefixing —
+    // missing this left the responsive hero sources pointing outside the base
+    // path and the image silently failed to load.
+    .replace(/\ssrcset="([^"]+)"/g, (m, list) =>
+      ' srcset="' + list.split(",").map((part) => {
+        const t = part.trim();
+        return t.startsWith("/") && !t.startsWith("//") ? BASE + t : t;
+      }).join(", ") + '"')
     .replace(/(url\(")\/(?!\/)/g, `$1${BASE}/`);
   (function walkHtml(dir) {
     for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -249,6 +257,29 @@ if (BASE) {
   const fcss = path.join(OUT, "fonts", "fonts.css");
   fs.writeFileSync(fcss, fs.readFileSync(fcss, "utf8").replace(/url\(\//g, `url(${BASE}/`), "utf8");
   console.log("  base path %s applied to %d files", BASE, touched);
+  // Assert nothing escaped the rewrite. Built with RegExp() because a regex
+  // *literal* does not interpolate ${...} — the first version of this check
+  // silently matched nothing and reported every URL as stray.
+  const sample = fs.readFileSync(path.join(OUT, "tr", "index.html"), "utf8");
+  const esc = BASE.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const strayAttr = new RegExp('(?:src|href)="/(?!' + esc.slice(1) + '/)[a-z]', "g");
+  const stray = sample.match(strayAttr) || [];
+  // srcset is a comma-separated list, so each candidate is checked on its own —
+  // one regex over the whole attribute misses everything after the first entry.
+  for (const m of sample.matchAll(/\ssrcset="([^"]+)"/g)) {
+    for (const part of m[1].split(",")) {
+      const u = part.trim().split(/\s+/)[0];
+      if (u.startsWith("/") && !u.startsWith("//") && !u.startsWith(BASE + "/")) stray.push(u);
+    }
+  }
+  if (stray.length) {
+    console.error("  x %d absolute URL(s) escaped the base path rewrite: %s",
+      stray.length, [...new Set(stray)].slice(0, 5).join(" "));
+    process.exitCode = 1;
+  } else {
+    console.log("  base path verified: no absolute URLs escaped");
+  }
+
   // GitHub Pages must not run Jekyll over the output
   fs.writeFileSync(path.join(OUT, ".nojekyll"), "", "utf8");
 }
