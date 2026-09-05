@@ -46,6 +46,12 @@ function send(res, status, body, type, extra) {
     "Content-Type": type || "text/html; charset=utf-8",
     "X-Content-Type-Options": "nosniff",
     "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Permissions-Policy": "geolocation=(), microphone=(), camera=(), interest-cohort=()",
+    // 'unsafe-inline' is required for the JSON-LD blocks, which CSP treats as
+    // scripts. Everything that actually executes is same-origin, and no
+    // untrusted HTML is ever interpolated — all output goes through esc().
+    "Content-Security-Policy": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://maps.gstatic.com https://*.googleapis.com https://*.ggpht.com; font-src 'self'; connect-src 'self'; frame-src https://www.google.com https://maps.google.com; upgrade-insecure-requests",
   }, extra || {});
   res.writeHead(status, headers);
   res.end(body);
@@ -183,8 +189,19 @@ function handleContact(req, res) {
 
 /* ----------------------------------------------------------------- admin */
 function adminHtml(res, html, status, extraHeaders) {
+  // Stricter than the public pages: the panel loads no third-party anything and
+  // must never be framed. Mirrors functions/admin/[[path]].js so local and
+  // deployed behave identically.
   send(res, status || 200, html, "text/html; charset=utf-8",
-       Object.assign({ "Cache-Control": "no-store", "X-Robots-Tag": "noindex, nofollow" }, extraHeaders || {}));
+       Object.assign({
+         "Cache-Control": "no-store",
+         "X-Robots-Tag": "noindex, nofollow",
+         "X-Frame-Options": "DENY",
+         "Content-Security-Policy":
+           "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; " +
+           "form-action 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; " +
+           "img-src 'self' data: blob:; font-src 'self'; connect-src 'self'",
+       }, extraHeaders || {}));
 }
 
 function redirect(res, to, extraHeaders) {

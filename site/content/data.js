@@ -37,6 +37,8 @@ const firm = {
     office: "seldaaltun@sabaozmen.av.tr",
   },
   linkedin: "https://www.linkedin.com/company/sabaozmenavukatlikortakligi/",
+  // Query string used for the map embed and for turn-by-turn directions.
+  mapsQuery: "Erenköy Mah. Ethemefendi Cad. Anzaf Rezidans No:101 D:1 Kadıköy İstanbul",
   maps: "https://maps.google.com/?q=Erenk%C3%B6y%20Mah.%20Ethemefendi%20Cad.%20Anzaf%20Rezidans%20No%3A101%20D%3A1%20Kad%C4%B1k%C3%B6y%20%C4%B0stanbul",
 };
 
@@ -53,7 +55,7 @@ const routes = {
   areas:     { tr: "calisma-alanlarimiz", en: "practice-areas",      de: "taetigkeitsfelder" },
   team:      { tr: "ekibimiz",            en: "our-team",            de: "unser-team" },
   articles:  { tr: "makaleler",           en: "articles",            de: "publikationen" },
-  events:    { tr: "etkinlikler",         en: "events",              de: "veranstaltungen" },
+  events:    { tr: "egitim-ve-kongreler",  en: "training-and-congresses", de: "fortbildung-und-kongresse" },
   contact:   { tr: "iletisim",            en: "contact",             de: "kontakt" },
   privacy:   { tr: "kvkk-aydinlatma-metni", en: "privacy-notice",    de: "datenschutzhinweis" },
   cookies:   { tr: "cerez-politikasi",    en: "cookie-policy",       de: "cookie-richtlinie" },

@@ -112,13 +112,16 @@ const check = (name, pass, detail) => {
     check("uploaded poster is served", false, "no poster recorded");
   }
 
-  // 8. it appears on the public pages, in all three languages
-  for (const [lang, path] of [["tr", "/tr/etkinlikler"], ["en", "/en/events"], ["de", "/de/veranstaltungen"]]) {
+  // 8. it appears on the public pages, in all three languages.
+  // Routes come from data.js so a rename cannot silently invalidate this test.
+  const ROUTES = require("../site/content/data.js").routes;
+  for (const lang of ["tr", "en", "de"]) {
+    const path = `/${lang}/${ROUTES.events[lang]}`;
     const pub = await req("GET", path);
     const want = { tr: "Otomatik Test Konferansı", en: "Automated Test Conference", de: "Automatisierte Testkonferenz" }[lang];
     check(`event listed on ${path}`, pub.status === 200 && pub.body.includes(want));
   }
-  const detail = await req("GET", "/tr/etkinlikler/" + slug);
+  const detail = await req("GET", `/tr/${ROUTES.events.tr}/` + slug);
   check("event detail page renders", detail.status === 200 && detail.body.includes("Test Salonu"), "status " + detail.status);
   check("event detail has Event JSON-LD", detail.body.includes('"@type":"Event"'));
   check("multi-paragraph body split correctly", (detail.body.match(/İkinci paragraf\./g) || []).length === 1);

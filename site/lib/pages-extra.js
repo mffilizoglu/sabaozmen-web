@@ -41,7 +41,7 @@ function loc(v, lang) {
 function eventCard(e, lang) {
   const d = H.fmtDate(e.date, lang);
   const title = loc(e.title, lang);
-  return `<a class="ev-card rv" href="${evUrl(e, lang)}">
+  return `<a class="ev-card rv" href="${evUrl(e, lang)}" data-evtype="${attr(e.type)}">
     <div class="ev-card__poster">
       ${e.poster
         ? `<img src="${attr(e.poster)}" alt="${attr(title)}" loading="lazy">`
@@ -83,7 +83,7 @@ function eventList(lang) {
   return {
     body,
     title: `${T("nav.events", lang)} — ${firm.name[lang]}`,
-    description: H.trunc(T("ev.lede", lang), 175),
+    description: H.trunc(T("ev.lede", lang), 155),
     active: "events",
     altPaths: alts("events"),
   };
@@ -152,7 +152,7 @@ function eventDetail(lang, e, origin) {
   return {
     body,
     title: `${H.trunc(title, 70)} — ${firm.name[lang]}`,
-    description: H.trunc(desc, 175),
+    description: H.trunc(desc, 155),
     active: "events",
     ogType: "article",
     altPaths: alts("events", e.slug),
@@ -237,7 +237,7 @@ function teamDetail(lang, m, origin) {
   return {
     body,
     title: `${m.name} — ${firm.name[lang]}`,
-    description: H.trunc(desc, 175),
+    description: H.trunc(desc, 155),
     active: "team",
     altPaths: alts("team", m.slug),
     jsonLd: [{

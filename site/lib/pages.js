@@ -86,7 +86,7 @@ function phero(lang, o) {
 
   return `
 <section class="phero">
-  <div class="phero__bg" aria-hidden="true">${motif()}</div>
+  <div class="phero__bg" aria-hidden="true">${heroImage("")}</div>
   <div class="wrap phero__in">
     ${crumbs ? `<nav class="crumb" aria-label="breadcrumb">${crumbs}</nav>` : ""}
     <h1 class="rv" data-stagger="off">${esc(o.title)}</h1>
@@ -96,28 +96,17 @@ function phero(lang, o) {
 </section>`;
 }
 
-/** Brand motif behind the heroes instead of stock photography: the firm's own
- *  disc-and-bands mark, tiled at very low contrast. */
-function motif() {
-  return `<svg width="100%" height="100%" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1200 600" aria-hidden="true" style="position:absolute;inset:0">
-    <defs>
-      <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#5c0e26"/><stop offset="55%" stop-color="#20181a"/><stop offset="100%" stop-color="#14100f"/>
-      </linearGradient>
-      <pattern id="pt" width="190" height="190" patternUnits="userSpaceOnUse">
-        <g fill="none" stroke="#fff" stroke-opacity=".055" stroke-width="1.6">
-          <circle cx="95" cy="95" r="46"/>
-          <path d="M52 79h86M50 96h90"/>
-        </g>
-      </pattern>
-      <radialGradient id="gl" cx="18%" cy="8%" r="70%">
-        <stop offset="0" stop-color="#a01944" stop-opacity=".42"/><stop offset="1" stop-color="#a01944" stop-opacity="0"/>
-      </radialGradient>
-    </defs>
-    <rect width="1200" height="600" fill="url(#g1)"/>
-    <rect width="1200" height="600" fill="url(#pt)"/>
-    <rect width="1200" height="600" fill="url(#gl)"/>
-  </svg>`;
+/** Hero backdrop: the firm's own photograph, with the burgundy-to-ink wash
+ *  kept from the previous treatment. Served as WebP with a JPEG fallback and
+ *  three widths, so a phone downloads 16 KB rather than 120 KB. */
+function heroImage(alt) {
+  return `<picture>
+    <source type="image/webp" srcset="/img/hero-800.webp 800w, /img/hero-1280.webp 1280w, /img/hero-1920.webp 1920w" sizes="100vw">
+    <img src="/img/hero-1280.jpg"
+         srcset="/img/hero-800.jpg 800w, /img/hero-1280.jpg 1280w, /img/hero-1920.jpg 1920w"
+         sizes="100vw" alt="${attr(alt || "")}" width="1920" height="1080"
+         fetchpriority="high" decoding="async">
+  </picture>`;
 }
 
 function areaCard(a, lang, i) {
@@ -161,7 +150,7 @@ function home(lang, origin) {
 
   const body = `
 <section class="hero">
-  <div class="hero__bg">${motif()}</div>
+  <div class="hero__bg">${heroImage("")}</div>
   <div class="wrap hero__in">
     <p class="eyebrow hero__eyebrow rv-h">${esc(H.eyebrow[lang])}</p>
     <h1 class="rv-h">${esc(H.h1[lang])}</h1>
@@ -189,15 +178,24 @@ function home(lang, origin) {
         </div>
       </div>
       <div class="split__aside">
-        <div class="aside-card rv">
-          <h3>${esc(T("art.details", lang))}</h3>
-          <table class="meta-table">
-            <tr><th>${lang === "tr" ? "Kuruluş" : lang === "de" ? "Gegründet" : "Founded"}</th><td>${firm.founded}</td></tr>
-            <tr><th>${lang === "tr" ? "Baro" : lang === "de" ? "Kammer" : "Bar"}</th><td>${esc(firm.bar[lang])}</td></tr>
-            <tr><th>${esc(T("label.address", lang))}</th><td>${esc(firm.address.street)}<br>${esc(firm.address.district)}</td></tr>
-            <tr><th>${esc(T("label.phone", lang))}</th><td><a href="tel:${firm.phones[0].replace(/[^\d+]/g, "")}">${esc(firm.phones[0])}</a></td></tr>
-          </table>
-        </div>
+        <dl class="facts rv">
+          <div class="facts__row">
+            <dt>${lang === "tr" ? "Kuruluş" : lang === "de" ? "Gegründet" : "Established"}</dt>
+            <dd>${firm.founded}</dd>
+          </div>
+          <div class="facts__row">
+            <dt>${lang === "tr" ? "Bağlı olduğu baro" : lang === "de" ? "Kammer" : "Bar association"}</dt>
+            <dd>${esc(firm.bar[lang])}</dd>
+          </div>
+          <div class="facts__row">
+            <dt>${esc(T("label.address", lang))}</dt>
+            <dd>${esc(firm.address.street)}<br>${esc(firm.address.district)}</dd>
+          </div>
+          <div class="facts__row">
+            <dt>${esc(T("label.phone", lang))}</dt>
+            <dd><a href="tel:${firm.phones[0].replace(/[^\d+]/g, "")}">${esc(firm.phones[0])}</a></dd>
+          </div>
+        </dl>
       </div>
     </div>
   </div>
@@ -239,7 +237,7 @@ function home(lang, origin) {
   return {
     body,
     title: `${firm.name[lang]} — ${H.h1[lang]}`,
-    description: trunc(H.lede[lang], 175),
+    description: trunc(H.lede[lang], 155),
     active: "home",
     altPaths: alts("home"),
     jsonLd: [legalServiceLd(lang, origin)],
@@ -279,7 +277,7 @@ function about(lang) {
 </section>`;
 
   return { body, title: `${p.title[lang]} — ${firm.name[lang]}`,
-    description: trunc(p.body[lang][2], 175), active: "about", altPaths: alts("about") };
+    description: trunc(p.body[lang][2], 155), active: "about", altPaths: alts("about") };
 }
 
 function vision(lang) {
@@ -299,7 +297,7 @@ function vision(lang) {
   </div>
 </section>`;
   return { body, title: `${p.title[lang]} — ${firm.name[lang]}`,
-    description: trunc(p.blocks[0].p[lang], 175), active: "vision", altPaths: alts("vision") };
+    description: trunc(p.blocks[0].p[lang], 155), active: "vision", altPaths: alts("vision") };
 }
 
 function quality(lang) {
@@ -319,7 +317,7 @@ function quality(lang) {
   </div>
 </section>`;
   return { body, title: `${p.title[lang]} — ${firm.name[lang]}`,
-    description: trunc(p.lead[lang], 175), active: "quality", altPaths: alts("quality") };
+    description: trunc(p.lead[lang], 155), active: "quality", altPaths: alts("quality") };
 }
 
 function career(lang) {
@@ -341,7 +339,7 @@ function career(lang) {
   </div>
 </section>`;
   return { body, title: `${p.title[lang]} — ${firm.name[lang]}`,
-    description: trunc(p.lead[lang], 175), active: "career", altPaths: alts("career") };
+    description: trunc(p.lead[lang], 155), active: "career", altPaths: alts("career") };
 }
 
 /* =========================================================================
@@ -358,7 +356,7 @@ function areaList(lang) {
   </div>
 </section>`;
   return { body, title: `${T("nav.areas", lang)} — ${firm.name[lang]}`,
-    description: trunc(T("areas.lede", lang), 175), active: "areas", altPaths: alts("areas") };
+    description: trunc(T("areas.lede", lang), 155), active: "areas", altPaths: alts("areas") };
 }
 
 function areaDetail(lang, area) {
@@ -419,7 +417,7 @@ function areaDetail(lang, area) {
   return {
     body,
     title: `${area.name[lang]} — ${firm.name[lang]}`,
-    description: trunc(area.desc[lang], 175),
+    description: trunc(area.desc[lang], 155),
     active: "areas",
     altPaths: alts("areas", { tr: area.slug, en: area.slug, de: area.slug }),
   };
@@ -466,7 +464,7 @@ function teamPage(lang) {
 </section>`;
 
   return { body, title: `${T("nav.team", lang)} — ${firm.name[lang]}`,
-    description: trunc(T("team.lede", lang) + " " + members.map((m) => m.name).join(", "), 175),
+    description: trunc(T("team.lede", lang) + " " + members.map((m) => m.name).join(", "), 155),
     active: "team", altPaths: alts("team") };
 }
 
@@ -499,7 +497,7 @@ function articleList(lang) {
 </section>`;
 
   return { body, title: `${T("art.title", lang)} — ${firm.name[lang]}`,
-    description: trunc(T("art.lede", lang), 175), active: "articles", altPaths: alts("articles") };
+    description: trunc(T("art.lede", lang), 155), active: "articles", altPaths: alts("articles") };
 }
 
 /* =========================================================================
@@ -585,8 +583,8 @@ function articleDetail(lang, a, origin) {
 </section>`;
 
   const desc = a.summary.tr
-    ? trunc(a.summary.tr, 175)
-    : trunc(`${artTitle(a, lang)} — ${authors.join(", ")}${a.journal ? ", " + a.journal : ""}.`, 175);
+    ? trunc(a.summary.tr, 155)
+    : trunc(`${artTitle(a, lang)} — ${authors.join(", ")}${a.journal ? ", " + a.journal : ""}.`, 155);
 
   return {
     body, progress: true,
@@ -661,15 +659,31 @@ function contact(lang) {
             <a href="mailto:${firm.emails.office}">${esc(firm.emails.office)}</a> <span class="small muted">(${esc(T("ct.office", lang))})</span></div></div></div>
           <div class="contact-line"><span style="width:17px"></span><div><div class="contact-line__l">${esc(T("ct.hours", lang))}</div>
             <div class="contact-line__v">${esc(T("ct.hoursVal", lang))}</div></div></div>
-          <div class="btn-row mt-3"><a class="btn btn--ghost" href="${firm.maps}" target="_blank" rel="noopener">${esc(T("ct.map", lang))} ${icon.arrow}</a></div>
+          <div class="btn-row mt-3">
+            <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=${encodeURIComponent(firm.mapsQuery)}"
+               target="_blank" rel="noopener noreferrer">${icon.pin} ${esc(T("ct.directions", lang))}</a>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Click-to-load: no request reaches Google until the visitor asks for it,
+         which keeps the page free of third-party cookies by default. -->
+    <div class="map mt-4 rv" data-map
+         data-src="https://www.google.com/maps?q=${encodeURIComponent(firm.mapsQuery)}&amp;hl=${lang}&amp;z=17&amp;output=embed"
+         data-title="${attr(firm.name[lang])} — ${attr(T("label.address", lang))}">
+      <div class="map__ph">
+        <div class="map__pin">${icon.pin}</div>
+        <p class="map__addr">${esc(firm.address.street)}<br>${esc(firm.address.district)}</p>
+        <button class="btn btn--ghost" type="button" data-mapload>${esc(T("ct.mapLoad", lang))}</button>
+        <p class="map__note">${esc(T("ct.mapNotice", lang))}</p>
       </div>
     </div>
   </div>
 </section>`;
 
   return { body, title: `${T("nav.contact", lang)} — ${firm.name[lang]}`,
-    description: trunc(`${T("ct.lede", lang)} ${a.street}, ${a.district}. ${firm.phones[0]}`, 175),
+    description: trunc(`${T("ct.lede", lang)} ${a.street}, ${a.district}. ${firm.phones[0]}`, 155),
     active: "contact", altPaths: alts("contact") };
 }
 
@@ -698,7 +712,7 @@ function legal(lang, which) {
   </div>
 </section>`;
   return { body, title: `${doc.title} — ${firm.name[lang]}`,
-    description: trunc(doc.blocks[0].p ? doc.blocks[0].p[0].replace(/<[^>]+>/g, "") : doc.title, 175),
+    description: trunc(doc.blocks[0].p ? doc.blocks[0].p[0].replace(/<[^>]+>/g, "") : doc.title, 155),
     active: null, altPaths: alts(key) };
 }
 
@@ -706,16 +720,39 @@ function legal(lang, which) {
    404
    ========================================================================= */
 function notFound(lang) {
+  // Give the visitor somewhere to go rather than a dead end.
+  const links = [
+    ["areas", T("nav.areas", lang)],
+    ["articles", T("nav.articles", lang)],
+    ["team", T("nav.team", lang)],
+    ["events", T("nav.events", lang)],
+    ["contact", T("nav.contact", lang)],
+  ];
   const body = `
-<section class="phero"><div class="phero__bg" aria-hidden="true">${motif()}</div>
+<section class="phero phero--404"><div class="phero__bg" aria-hidden="true">${heroImage("")}</div>
   <div class="wrap phero__in">
+    <p class="eyebrow hero__eyebrow">404</p>
     <h1>${esc(T("e404.title", lang))}</h1>
     <p>${esc(T("e404.body", lang))}</p>
-    <div class="btn-row mt-3"><a class="btn btn--onDark" href="${url(lang, "home")}">${esc(T("e404.home", lang))} ${icon.arrow}</a></div>
+    <div class="btn-row mt-3">
+      <a class="btn btn--primary" href="${url(lang, "contact")}">${esc(T("cta.contact", lang))} ${icon.arrow}</a>
+      <a class="btn btn--onDark" href="${url(lang, "home")}">${esc(T("e404.home", lang))}</a>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">${esc(T("e404.helpful", lang))}</p>
+    <div class="grid grid--3">
+      ${links.map(([k, label]) => `<a class="card" href="${url(lang, k)}">
+        <h3 class="card__t">${esc(label)}</h3>
+        <span class="card__more">${esc(T("cta.more", lang))} ${icon.arrow}</span>
+      </a>`).join("")}
+    </div>
   </div>
 </section>`;
   return { body, title: `${T("e404.title", lang)} — ${firm.name[lang]}`,
-    description: T("e404.body", lang), active: null, altPaths: alts("home") };
+    description: trunc(T("e404.body", lang), 155), active: null, altPaths: alts("home") };
 }
 
 /* =========================================================================
@@ -764,7 +801,7 @@ function scholarlyLd(a, lang, origin, authors) {
 }
 
 const extra = require("./pages-extra");
-extra.bind({ phero, motif, fmtDate, trunc, artItem, alts });
+extra.bind({ phero, heroImage, fmtDate, trunc, artItem, alts });
 
 module.exports = {
   home, about, vision, quality, career,

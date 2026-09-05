@@ -113,11 +113,11 @@ const t = {
   "team.academic": { tr: "Akademik görev",     en: "Academic post",   de: "Akademische Funktion" },
 
   /* --- events --- */
-  "nav.events":    { tr: "Etkinlikler",        en: "Events",          de: "Veranstaltungen" },
+  "nav.events":    { tr: "Eğitim ve Kongreler", en: "Training & Congresses", de: "Fortbildung & Kongresse" },
   "ev.lede": {
-    tr: "Ortaklarımızın katıldığı televizyon programları, konferanslar, kongreler ve etkinlikler.",
-    en: "Television appearances, conferences, congresses and events our partners take part in.",
-    de: "Fernsehauftritte, Konferenzen, Kongresse und Veranstaltungen, an denen unsere Partner teilnehmen.",
+    tr: "Ortaklarımızın katıldığı kongreler, konferanslar, eğitim programları ve televizyon yayınları.",
+    en: "Congresses, conferences, training programmes and broadcast appearances our partners take part in.",
+    de: "Kongresse, Konferenzen, Fortbildungen und Sendungen, an denen unsere Partner teilnehmen.",
   },
   "ev.type.tv":        { tr: "TV Programı",     en: "TV Appearance",   de: "TV-Auftritt" },
   "ev.type.konferans": { tr: "Konferans",       en: "Conference",      de: "Konferenz" },
@@ -133,11 +133,11 @@ const t = {
   "ev.link":       { tr: "Etkinlik bağlantısı",en: "Event link",      de: "Veranstaltungslink" },
   "ev.related":    { tr: "İlgili makaleler",   en: "Related articles",de: "Verwandte Publikationen" },
   "ev.none": {
-    tr: "Henüz yayımlanmış bir etkinlik bulunmuyor.",
-    en: "No events have been published yet.",
-    de: "Es wurden noch keine Veranstaltungen veröffentlicht.",
+    tr: "Bu bölüm yakında yayımlanacak kayıtlarla güncellenecektir.",
+    en: "This section will be updated with entries shortly.",
+    de: "Dieser Bereich wird in Kürze mit Einträgen ergänzt.",
   },
-  "ev.count":      { tr: "etkinlik listeleniyor", en: "events listed", de: "Veranstaltungen gelistet" },
+  "ev.count":      { tr: "kayıt listeleniyor", en: "entries listed", de: "Einträge gelistet" },
 
   /* --- team profiles --- */
   "team.profile":  { tr: "Profil",             en: "Profile",         de: "Profil" },
@@ -174,6 +174,13 @@ const t = {
   "ct.hours":      { tr: "Çalışma saatleri",   en: "Office hours",    de: "Bürozeiten" },
   "ct.hoursVal":   { tr: "Pazartesi – Cuma, 09.00 – 18.00", en: "Monday – Friday, 09:00 – 18:00", de: "Montag – Freitag, 09:00 – 18:00" },
   "ct.map":        { tr: "Haritada göster",    en: "View on map",     de: "Auf der Karte ansehen" },
+  "ct.directions": { tr: "Yol tarifi al",       en: "Get directions",  de: "Route berechnen" },
+  "ct.mapLoad":    { tr: "Haritayı yükle",      en: "Load the map",    de: "Karte laden" },
+  "ct.mapNotice": {
+    tr: "Harita Google tarafından sağlanır. Yüklediğinizde Google'a bağlantı kurulur ve çerez yerleştirilebilir; bu nedenle yalnızca siz isterseniz yüklenir.",
+    en: "The map is provided by Google. Loading it contacts Google and may set cookies, so it loads only if you ask for it.",
+    de: "Die Karte stammt von Google. Beim Laden wird eine Verbindung zu Google hergestellt und es können Cookies gesetzt werden — sie lädt daher nur auf Ihren Wunsch.",
+  },
 
   /* --- cookies / legal --- */
   "ck.title":      { tr: "Çerez tercihiniz",   en: "Your cookie choice", de: "Ihre Cookie-Einstellung" },
@@ -206,13 +213,18 @@ const t = {
   "ftr.linkedin":  { tr: "LinkedIn sayfamız",  en: "Our LinkedIn page", de: "Unsere LinkedIn-Seite" },
 
   /* --- errors --- */
-  "e404.title":    { tr: "Sayfa bulunamadı",   en: "Page not found",  de: "Seite nicht gefunden" },
+  "e404.title": {
+    tr: "Bu sayfayı bulamadık.",
+    en: "We could not find this page.",
+    de: "Diese Seite konnten wir nicht finden.",
+  },
   "e404.body": {
-    tr: "Aradığınız sayfa taşınmış veya kaldırılmış olabilir.",
-    en: "The page you are looking for may have been moved or removed.",
-    de: "Die gesuchte Seite wurde möglicherweise verschoben oder entfernt.",
+    tr: "Aradığınız sayfayı bulamadık — ama hakkınızı aramanıza yardımcı olabiliriz. Aşağıdaki bölümlerden devam edebilir veya doğrudan bize ulaşabilirsiniz.",
+    en: "We could not find the page you were looking for — but finding what you are entitled to is rather more our field. Continue from the sections below, or write to us directly.",
+    de: "Die gesuchte Seite haben wir nicht gefunden — Ihr Recht zu finden liegt uns allerdings näher. Nutzen Sie die folgenden Bereiche oder schreiben Sie uns direkt.",
   },
   "e404.home":     { tr: "Anasayfaya dön",     en: "Return to home",  de: "Zur Startseite" },
+  "e404.helpful":  { tr: "Sık aranan sayfalar", en: "Frequently visited", de: "Häufig besucht" },
 };
 
 function T(key, lang) {

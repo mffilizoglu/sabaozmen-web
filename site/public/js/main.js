@@ -275,6 +275,78 @@
   }
 
   /* ---------------------------------------------------------
+     Dropdown on touch: there is no hover, so the first tap opens
+     --------------------------------------------------------- */
+  if (window.matchMedia("(hover: none)").matches) {
+    document.querySelectorAll(".nav__item").forEach(function (item) {
+      var menu = item.querySelector(".nav__menu");
+      var trigger = item.querySelector(".nav__link");
+      if (!menu || !trigger) return;
+      trigger.addEventListener("click", function (e) {
+        if (!item.classList.contains("is-open")) {
+          e.preventDefault();
+          document.querySelectorAll(".nav__item.is-open").forEach(function (o) { o.classList.remove("is-open"); });
+          item.classList.add("is-open");
+        }
+      });
+    });
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest(".nav__item")) {
+        document.querySelectorAll(".nav__item.is-open").forEach(function (o) { o.classList.remove("is-open"); });
+      }
+    });
+  }
+
+  /* ---------------------------------------------------------
+     Events: filter by type
+     --------------------------------------------------------- */
+  var evGrid = document.querySelector("[data-evgrid]");
+  if (evGrid) {
+    var cards = Array.prototype.slice.call(evGrid.querySelectorAll(".ev-card"));
+    var evChips = Array.prototype.slice.call(document.querySelectorAll("[data-evtype]"));
+    var evCount = document.querySelector("[data-evcount]");
+    var evEmpty = document.querySelector("[data-evempty]");
+    var activeType = "";
+    evChips.forEach(function (c) {
+      c.addEventListener("click", function () {
+        var v = c.dataset.evtype;
+        activeType = (activeType === v) ? "" : v;
+        evChips.forEach(function (o) {
+          o.setAttribute("aria-pressed", o.dataset.evtype === activeType ? "true" : "false");
+        });
+        var shown = 0;
+        cards.forEach(function (card) {
+          var vis = !activeType || card.dataset.evtype === activeType;
+          card.classList.toggle("is-out", !vis);
+          if (vis) shown++;
+        });
+        if (evCount) evCount.textContent = shown;
+        if (evEmpty) evEmpty.hidden = shown !== 0;
+      });
+    });
+  }
+
+  /* ---------------------------------------------------------
+     Map: load Google's iframe only when asked
+     --------------------------------------------------------- */
+  var mapBox = document.querySelector("[data-map]");
+  if (mapBox) {
+    var loadBtn = mapBox.querySelector("[data-mapload]");
+    if (loadBtn) {
+      loadBtn.addEventListener("click", function () {
+        var f = document.createElement("iframe");
+        f.src = mapBox.dataset.src;
+        f.title = mapBox.dataset.title || "";
+        f.loading = "lazy";
+        f.referrerPolicy = "no-referrer-when-downgrade";
+        f.setAttribute("allowfullscreen", "");
+        mapBox.innerHTML = "";
+        mapBox.appendChild(f);
+      });
+    }
+  }
+
+  /* ---------------------------------------------------------
      Count-up for statistics
      --------------------------------------------------------- */
   var nums = document.querySelectorAll("[data-countto]");

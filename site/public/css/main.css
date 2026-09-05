@@ -187,10 +187,10 @@ a { color: inherit; text-decoration: none; }
 
 /* transparent state over a dark hero */
 .hdr--over { color: #fff; }
-.hdr--over .nav__link { color: rgba(255,255,255,.86); }
+.hdr--over .nav__link { color: rgba(255,255,255,.92); }
 .hdr--over .nav__link:hover { color: #fff; }
 .hdr--over .logo__name { color: #fff; }
-.hdr--over .logo__sub  { color: rgba(255,255,255,.78); }
+.hdr--over .logo__sub  { color: rgba(255,255,255,.88); }
 .hdr--over .logo__rule { color: rgba(255,255,255,.45); }
 .hdr--over .logo__mark-p { fill: #fff; }
 .hdr--over .lang__btn { color: rgba(255,255,255,.86); border-color: rgba(255,255,255,.3); }
@@ -198,12 +198,19 @@ a { color: inherit; text-decoration: none; }
 
 /* scrolled / solid state */
 .hdr--solid {
-  background: rgba(255,255,255,.78);
+  background: rgba(255,255,255,.92);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   border-bottom-color: var(--line);
   height: 66px;
 }
+/* Cormorant is a high-contrast face: at 1.16rem its hairlines almost vanish
+   against the light bar. Weight and colour both go up in the solid state. */
+.hdr--solid .logo__name { font-weight: 600; color: var(--ink); }
+.hdr--solid .logo__sub  { font-weight: 600; color: var(--ink-3); }
+.hdr--solid .logo__rule { color: var(--ink-4); }
+.hdr--solid .nav__link  { color: var(--ink); font-weight: 500; }
+.hdr--solid .lang__btn  { color: var(--ink-2); border-color: rgba(20,16,15,.22); }
 .hdr--hide { transform: translateY(-100%); }
 .hdr { transition-property: background, box-shadow, border-color, height, transform; }
 
@@ -224,7 +231,7 @@ a { color: inherit; text-decoration: none; }
    CSS adds letter-spacing after the final glyph too, so each line pulls that
    trailing gap back in — otherwise the right edges sit ~1.5px apart. */
 .logo__name {
-  font-family: var(--display); font-weight: 500;
+  font-family: var(--display); font-weight: 600;
   font-size: 1.16rem; letter-spacing: .152em; margin-inline-end: -.152em;
   color: var(--ink); white-space: nowrap;
   transition: color .4s var(--ease-soft);
@@ -235,11 +242,24 @@ a { color: inherit; text-decoration: none; }
   transition: color .4s var(--ease-soft);
 }
 .logo__sub {
-  font-family: var(--display); font-weight: 500;
+  font-family: var(--display); font-weight: 600;
   font-size: .672rem; letter-spacing: .12em; margin-inline-end: -.12em;
   color: var(--ink-2); white-space: nowrap;
   transition: color .4s var(--ease-soft);
 }
+
+/* --- small screens -------------------------------------------------------
+   The descriptor and the header CTA are dropped below 560px: together they
+   overflowed the bar by ~58px on a 375px phone. The CTA still appears in the
+   drawer, so nothing is lost. --------------------------------------------- */
+@media (max-width: 560px) {
+  .logo__sub, .logo__rule { display: none; }
+  .logo__name { font-size: 1.02rem; letter-spacing: .12em; margin-inline-end: -.12em; }
+  .logo__mark { width: 32px; height: 32px; }
+  .hdr__cta { display: none; }
+  .hdr__in { gap: .6rem; }
+}
+@media (max-width: 360px) { .logo__name { font-size: .92rem; } }
 
 /* ---------- nav ---------- */
 .nav { display: flex; align-items: center; gap: .25rem; margin-left: auto; }
@@ -260,7 +280,8 @@ a { color: inherit; text-decoration: none; }
 
 /* dropdown */
 .nav__menu {
-  position: absolute; top: calc(100% + 10px); left: 50%;
+  position: absolute; top: 100%; left: 50%;
+  margin-top: 10px;
   transform: translateX(-50%) translateY(-6px) scale(.98);
   min-width: 250px; padding: .5rem;
   background: rgba(255,255,255,.9);
@@ -272,7 +293,8 @@ a { color: inherit; text-decoration: none; }
   transition: opacity .3s var(--ease-out), transform .38s var(--ease-out), visibility .3s;
 }
 .nav__item:hover .nav__menu,
-.nav__item:focus-within .nav__menu {
+.nav__item:focus-within .nav__menu,
+.nav__item.is-open .nav__menu {
   opacity: 1; visibility: visible; pointer-events: auto;
   transform: translateX(-50%) translateY(0) scale(1);
 }
@@ -282,6 +304,15 @@ a { color: inherit; text-decoration: none; }
   transition: background var(--dur-s) var(--ease-soft), color var(--dur-s) var(--ease-soft);
 }
 .nav__menu a:hover { background: var(--bordo-tint); color: var(--bordo); }
+/* Bridge the 10px gap, otherwise the pointer leaves :hover on the way down and
+   the menu closes before it can be clicked. */
+.nav__menu::before {
+  content: ""; position: absolute; left: 0; right: 0; top: -12px; height: 12px;
+}
+/* Keep it open while the pointer is anywhere over the item or the menu. */
+.nav__item:hover .nav__menu, .nav__item:focus-within .nav__menu,
+.nav__menu:hover { opacity: 1; visibility: visible; pointer-events: auto;
+  transform: translateX(-50%) translateY(0) scale(1); }
 
 /* language + actions */
 .hdr__act { display: flex; align-items: center; gap: .6rem; margin-left: auto; }
@@ -289,7 +320,8 @@ a { color: inherit; text-decoration: none; }
 
 .lang { position: relative; }
 .lang__btn {
-  display: flex; align-items: center; gap: .4rem;
+  display: flex; align-items: center; justify-content: center; gap: .4rem;
+  min-height: 36px;
   font-size: .8125rem; font-weight: 500; color: var(--ink-2);
   border: 1px solid var(--line); background: transparent;
   padding: .42rem .7rem; border-radius: 999px; cursor: pointer;
@@ -361,10 +393,14 @@ body.menu-open { overflow: hidden; }
 .hero__bg::after {
   content: ""; position: absolute; inset: 0;
   background:
-    linear-gradient(180deg, rgba(20,16,15,.72) 0%, rgba(20,16,15,.38) 34%, rgba(20,16,15,.86) 100%),
-    linear-gradient(100deg, rgba(92,23,41,.5) 0%, rgba(20,16,15,.1) 60%);
+    linear-gradient(180deg, rgba(20,16,15,.78) 0%, rgba(20,16,15,.55) 38%, rgba(20,16,15,.92) 100%),
+    linear-gradient(100deg, rgba(92,14,38,.62) 0%, rgba(92,14,38,.20) 55%, rgba(20,16,15,.35) 100%);
 }
-.hero__in { position: relative; z-index: 1; padding-block: clamp(3.5rem, 8vw, 7rem) clamp(3rem, 6vw, 5.5rem); width: 100%; }
+.hero__in {
+  position: relative; z-index: 1; width: 100%;
+  /* the header is fixed, so the top pad must always clear it */
+  padding-block: calc(var(--nav-h) + clamp(1.5rem, 5vw, 4rem)) clamp(3rem, 6vw, 5.5rem);
+}
 .hero__eyebrow { color: rgba(255,255,255,.72); }
 .hero__eyebrow::before { background: rgba(255,255,255,.5); }
 .hero h1 { color: #fff; max-width: 17ch; }
@@ -388,7 +424,13 @@ body.menu-open { overflow: hidden; }
 }
 .hero__lede { border-top: 1px solid rgba(255,255,255,.16); padding-top: 1.5rem; }
 @media (max-width: 700px) {
-  .hero__quote p { font-size: .95rem; line-height: 1.55; }
+  .hero__quote { padding-left: 1rem; margin-top: 1.2rem; }
+  .hero__quote p { font-size: .9rem; line-height: 1.5; }
+  .hero__quote cite { margin-top: .6rem; font-size: .66rem; }
+  .hero__lede { padding-top: 1.1rem; margin-top: 1.1rem; font-size: .98rem; }
+  .hero .btn-row { margin-top: 1.5rem; }
+  .hero__in { padding-block: calc(var(--nav-h) + 1rem) 2.25rem; }
+  .hero { min-height: min(94vh, 820px); }
 }
 
 .hero .btn-row { margin-top: 2.25rem; }
@@ -396,8 +438,8 @@ body.menu-open { overflow: hidden; }
 /* page hero (interior) */
 .phero { position: relative; background: var(--ink); overflow: hidden; padding-top: var(--nav-h); }
 .phero__bg { position: absolute; inset: 0; z-index: 0; }
-.phero__bg img { width: 100%; height: 100%; object-fit: cover; opacity: .5; }
-.phero__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,16,15,.82), rgba(20,16,15,.62)), linear-gradient(105deg, rgba(92,23,41,.55), transparent 65%); }
+.phero__bg img { width: 100%; height: 100%; object-fit: cover; opacity: .38; }
+.phero__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,16,15,.86), rgba(20,16,15,.72)), linear-gradient(105deg, rgba(92,14,38,.6), transparent 68%); }
 .phero__in { position: relative; z-index: 1; padding-block: clamp(3rem, 7vw, 5.5rem); }
 .phero h1 { color: #fff; margin-bottom: .35rem; }
 .phero p { color: rgba(255,255,255,.78); max-width: 62ch; margin-top: 1rem; }
@@ -574,8 +616,29 @@ body.menu-open { overflow: hidden; }
 .person__meta a { color: var(--ink-3); }
 .person__meta a:hover { color: var(--bordo); }
 
+/* Firm facts beside the homepage introduction. Deliberately not a boxed card —
+   a bordered panel there read as a luggage tag against the rest of the page. */
+.facts { margin: 0; padding: 0 0 0 1.5rem; border-left: 1px solid var(--line); }
+.facts__row { padding: 0 0 1.4rem; }
+.facts__row:last-child { padding-bottom: 0; }
+.facts dt {
+  font-family: var(--sans); font-size: .68rem; font-weight: 600;
+  letter-spacing: .15em; text-transform: uppercase; color: var(--ink-4);
+  margin-bottom: .4rem;
+}
+.facts dd {
+  margin: 0; font-family: var(--serif); font-size: 1.05rem;
+  line-height: 1.45; color: var(--ink);
+}
+.facts dd a { color: var(--ink); border-bottom: 1px solid var(--bordo-line); transition: border-color var(--dur-s) var(--ease-soft); }
+.facts dd a:hover { border-bottom-color: var(--bordo); color: var(--bordo); }
+@media (max-width: 940px) {
+  .facts { border-left: 0; border-top: 1px solid var(--line); padding: 1.75rem 0 0; margin-top: .5rem; }
+  .facts__row { padding-bottom: 1.1rem; }
+}
+
 /* ============================================================
-   Events (Etkinlikler)
+   Events (Eğitim ve Kongreler)
    ============================================================ */
 .ev-card {
   display: flex; flex-direction: column; overflow: hidden;
@@ -655,7 +718,19 @@ body.menu-open { overflow: hidden; }
 .contact-line__v a:hover { color: var(--bordo); }
 
 .map { border-radius: 18px; overflow: hidden; border: 1px solid var(--line); background: var(--paper-3); }
-.map iframe { width: 100%; height: 420px; border: 0; display: block; }
+.map iframe { width: 100%; height: 440px; border: 0; display: block; }
+.map__ph {
+  min-height: 300px; display: grid; place-items: center; gap: .9rem;
+  padding: clamp(2rem, 5vw, 3.5rem) 1.5rem; text-align: center;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(160,25,68,.07), transparent 60%),
+    repeating-linear-gradient(45deg, var(--paper-3) 0 12px, var(--paper-2) 12px 24px);
+}
+.map__pin { color: var(--bordo); }
+.map__pin svg { width: 30px; height: 30px; }
+.map__addr { font-family: var(--serif); font-size: 1.05rem; color: var(--ink); margin: 0; line-height: 1.5; }
+.map__note { font-size: .78rem; color: var(--ink-4); max-width: 46ch; margin: .3rem 0 0; line-height: 1.55; }
+@media (max-width: 640px) { .map iframe { height: 320px; } }
 
 /* ============================================================
    Footer
@@ -668,6 +743,13 @@ body.menu-open { overflow: hidden; }
 @media (max-width: 560px) { .ftr__grid { grid-template-columns: 1fr; } }
 .ftr h4 { color: #fff; font-family: var(--sans); font-size: .72rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 1.1rem; }
 .ftr ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .55rem; }
+/* Inline links are ~17px tall, well under a comfortable touch target. */
+@media (max-width: 900px) {
+  .ftr ul { gap: .15rem; }
+  .ftr ul a, .ftr ul li > a { display: inline-flex; align-items: center; min-height: 44px; }
+  .ftr__legal a { min-height: 44px; display: inline-flex; align-items: center; }
+  .contact-line__v a { display: inline-flex; align-items: center; min-height: 40px; }
+}
 .ftr__brand .logo__name { color: #fff; }
 .ftr__brand .logo__sub { color: rgba(255,255,255,.5); }
 .ftr__brand .logo__mark-p { fill: #fff; }

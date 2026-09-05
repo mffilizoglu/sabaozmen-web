@@ -35,6 +35,11 @@ const html = (body, status, extra) =>
       "X-Robots-Tag": "noindex, nofollow",
       "X-Content-Type-Options": "nosniff",
       "Referrer-Policy": "strict-origin-when-cross-origin",
+      "X-Frame-Options": "DENY",
+      "Content-Security-Policy":
+        "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; " +
+        "form-action 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; " +
+        "img-src 'self' data: blob:; font-src 'self'; connect-src 'self'",
     }, extra || {}),
   });
 

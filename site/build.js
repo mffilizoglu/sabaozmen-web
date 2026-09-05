@@ -35,6 +35,10 @@ const argOf = (name, dflt) => {
 const ORIGIN = String(
   argOf("origin", process.env.SITE_ORIGIN || process.env.CF_PAGES_URL || "")
 ).replace(/\/+$/, "");
+/* Optional path prefix, for hosts that serve a project under a sub-path
+   (GitHub Pages project sites). Emitted HTML has absolute URLs, so they are
+   rewritten once at the end rather than threaded through every template. */
+const BASE = String(argOf("base", process.env.SITE_BASE || "")).replace(/\/+$/, "");
 const OUT = path.resolve(__dirname, "..", argOf("out", "dist"));
 const PUBLIC = path.join(__dirname, "public");
 
@@ -160,6 +164,7 @@ fs.writeFileSync(path.join(OUT, "_redirects"),
 
 fs.writeFileSync(path.join(OUT, "_headers"),
 `/*
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://maps.gstatic.com https://*.googleapis.com https://*.ggpht.com; font-src 'self'; connect-src 'self'; frame-src https://www.google.com https://maps.google.com; upgrade-insecure-requests
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: SAMEORIGIN
@@ -220,6 +225,33 @@ Sitemap: ${ORIGIN}/sitemap.xml
 `, "utf8");
 
 console.log("  sitemap: %d urls", urls.length);
+
+/* ------------------------------------------------------- base-path rewrite */
+if (BASE) {
+  let touched = 0;
+  const rewrite = (html) => html
+    .replace(/(\s(?:href|src|content)=")\/(?!\/)/g, `$1${BASE}/`)
+    .replace(/(url\(")\/(?!\/)/g, `$1${BASE}/`);
+  (function walkHtml(dir) {
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      const p = path.join(dir, e.name);
+      if (e.isDirectory()) walkHtml(p);
+      else if (/\.(html|xml|txt)$/.test(e.name)) {
+        const before = fs.readFileSync(p, "utf8");
+        const after = rewrite(before);
+        if (after !== before) { fs.writeFileSync(p, after, "utf8"); touched++; }
+      }
+    }
+  })(OUT);
+  // CSS references fonts with absolute paths too
+  const css = path.join(OUT, "css", "main.css");
+  fs.writeFileSync(css, fs.readFileSync(css, "utf8").replace(/url\("\//g, `url("${BASE}/`), "utf8");
+  const fcss = path.join(OUT, "fonts", "fonts.css");
+  fs.writeFileSync(fcss, fs.readFileSync(fcss, "utf8").replace(/url\(\//g, `url(${BASE}/`), "utf8");
+  console.log("  base path %s applied to %d files", BASE, touched);
+  // GitHub Pages must not run Jekyll over the output
+  fs.writeFileSync(path.join(OUT, ".nojekyll"), "", "utf8");
+}
 
 /* ------------------------------------------------------------ self-checks */
 const problems = [];

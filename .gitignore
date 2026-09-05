@@ -51,3 +51,9 @@ files_extracted/
 
 # wrangler local state
 .wrangler/
+
+# device-login scratch
+ref/.gh_device.json
+ref/.gh_token
+
+dist-gh/
