@@ -8,5 +8,10 @@
     "build": "node site/build.js --origin ${SITE_ORIGIN:-}",
     "check": "node ref/crawl.js"
   },
-  "engines": { "node": ">=18" }
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "wrangler": "^4.129.0"
+  }
 }

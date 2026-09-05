@@ -65,7 +65,22 @@ console.log("building →", OUT);
 if (ORIGIN) console.log("origin  →", ORIGIN);
 else console.log("origin  →  (relative; pass --origin for absolute canonical/og URLs)");
 
-fs.rmSync(OUT, { recursive: true, force: true });
+// On Windows a process with dist/ as its cwd (a preview server, an open shell)
+// locks the directory and rmSync fails with EPERM. Retry, then say plainly what
+// is wrong rather than dumping a stack trace.
+for (let attempt = 1; ; attempt++) {
+  try {
+    fs.rmSync(OUT, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 });
+    break;
+  } catch (e) {
+    if (attempt >= 3) {
+      console.error("\n  Cannot clear %s\n  %s", OUT, e.message);
+      console.error("  Something is holding that directory open — a preview server,");
+      console.error("  a terminal sitting inside dist/, or a file browser. Close it and retry.");
+      process.exit(1);
+    }
+  }
+}
 fs.mkdirSync(OUT, { recursive: true });
 
 // 1. static assets — but never the admin's uploads directory listing or secrets

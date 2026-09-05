@@ -21,15 +21,11 @@
     "en": "",
     "de": ""
    },
-   "barNo": "12345",
-   "startYear": "1990",
-   "faculty": "Test Hukuk Fakültesi",
-   "languages": "Almanca, İngilizce",
-   "articleSlugs": [
-    "kat-mulkiyetinde-genel-gider-ve-avansa-katilma-borcunda-kiracilarin",
-    "tmk-m-889-hukmunce-mevcut-ipotegin-birden-cok-tasinmaza-dagitilmasina",
-    "kanunen-gecerlilik-sekline-bagli-sozlesmelerde-surenin-uzatilmasina"
-   ],
+   "barNo": "",
+   "startYear": "",
+   "faculty": "",
+   "languages": "",
+   "articleSlugs": [],
    "order": 1,
    "published": true,
    "pending": [

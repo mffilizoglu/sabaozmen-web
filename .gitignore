@@ -48,3 +48,6 @@ desktop.ini
 Saba Özmen Analiz*.pdf
 files.zip
 files_extracted/
+
+# wrangler local state
+.wrangler/
