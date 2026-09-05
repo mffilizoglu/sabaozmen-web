@@ -1,0 +1,50 @@
+# NOTE: git has no trailing comments in .gitignore — a "# ..." after a pattern
+# becomes part of the pattern and the rule silently stops matching. Keep every
+# comment on its own line.
+
+# --- secrets and per-install state -----------------------------------------
+# scrypt password hash + session secret, generated per install
+site/content/admin.json
+.env
+.dev.vars
+
+# --- runtime data, not source ----------------------------------------------
+# contact-form submissions written by the dev server
+site/messages/
+# portraits and posters added through the admin panel
+site/public/uploads/*
+!site/public/uploads/.gitkeep
+
+# --- build output -----------------------------------------------------------
+dist/
+node_modules/
+
+# --- working files from the analysis / scrape phase -------------------------
+# The scripts in ref/ are kept because they document how articles.json was
+# produced; their inputs and scratch output are not.
+ref/pdfs/
+ref/fonttest/
+ref/*.html
+ref/*.txt
+ref/*.png
+ref/pdf_text.json
+ref/article_meta.json
+ref/titles_endr.json
+ref/makaleler.json
+ref/_*
+ref/__pycache__/
+
+# --- OS / editor ------------------------------------------------------------
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# --- MadFang internal material, never in the deployable repo ----------------
+# The v4 teardown is marked "Mert'in incelemesi içindir. Bu haliyle müvekkile
+# gönderilmez." Keep it out of a repo the client may later be given access to.
+Saba Özmen Analiz*.pdf
+files.zip
+files_extracted/

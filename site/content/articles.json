@@ -1,0 +1,2090 @@
+{
+ "tags": [
+  {
+   "slug": "kat-mulkiyeti",
+   "tr": "Kat Mülkiyeti"
+  },
+  {
+   "slug": "arsa-payi",
+   "tr": "Arsa Payı Karşılığı İnşaat"
+  },
+  {
+   "slug": "kentsel-donusum",
+   "tr": "Kentsel Dönüşüm"
+  },
+  {
+   "slug": "tapu-tescil",
+   "tr": "Tapu ve Tescil"
+  },
+  {
+   "slug": "ipotek-rehin",
+   "tr": "İpotek ve Rehin"
+  },
+  {
+   "slug": "intifa",
+   "tr": "İntifa ve Sınırlı Ayni Haklar"
+  },
+  {
+   "slug": "kooperatif",
+   "tr": "Kooperatifler"
+  },
+  {
+   "slug": "kamulastirma",
+   "tr": "Kamulaştırma ve İmar"
+  },
+  {
+   "slug": "payli-mulkiyet",
+   "tr": "Paylı Mülkiyet ve Ortaklığın Giderilmesi"
+  },
+  {
+   "slug": "sozlesmeler",
+   "tr": "Sözleşmeler Hukuku"
+  },
+  {
+   "slug": "tarim-arazi",
+   "tr": "Tarım Arazileri"
+  },
+  {
+   "slug": "miras-aile",
+   "tr": "Miras ve Aile Hukuku"
+  },
+  {
+   "slug": "icra-iflas",
+   "tr": "İcra ve İflas"
+  },
+  {
+   "slug": "tuketici",
+   "tr": "Tüketici Hukuku"
+  },
+  {
+   "slug": "yargi-elestirisi",
+   "tr": "Yargı Kararı Eleştirisi"
+  },
+  {
+   "slug": "devre-mulk",
+   "tr": "Devre Mülk ve Devre Tatil"
+  },
+  {
+   "slug": "noterlik",
+   "tr": "Noterlik İşlemleri"
+  },
+  {
+   "slug": "meslek",
+   "tr": "Meslek ve Hukuk Eğitimi"
+  },
+  {
+   "slug": "vekalet",
+   "tr": "Temsil ve Vekâlet"
+  },
+  {
+   "slug": "orman",
+   "tr": "Orman ve 2-B Arazileri"
+  }
+ ],
+ "articles": [
+  {
+   "id": 46,
+   "slug": "kat-mulkiyetinde-genel-gider-ve-avansa-katilma-borcunda-kiracilarin",
+   "title": {
+    "tr": "Kat Mülkiyetinde Genel Gider ve Avansa Katılma Borcunda Kiracıların Sorumluluğu",
+    "en": "Tenants' Responsibility for Contributing to General Expenses and Advance Payments in Condominium Property",
+    "de": "Die Verantwortung der Mieter für die Beteiligung an allgemeinen Kosten und Vorauszahlungen in Eigentumswohnungen"
+   },
+   "coAuthor": "Stj. Av. İrem Nur Demirdelen",
+   "date": "2026-04",
+   "year": 2026,
+   "dateSource": "pdf-issue",
+   "journal": "İzmir Barosu Dergisi",
+   "volume": null,
+   "issue": "1",
+   "orcids": [
+    "0000-0002-8622-9660",
+    "0009-0002-4205-4632"
+   ],
+   "topics": [
+    "kat-mulkiyeti",
+    "sozlesmeler"
+   ],
+   "keywords": {
+    "tr": [
+     "Kat Mülkiyetinde Genel Gider ve Avansa Katılma Borcu",
+     "Yan Gider",
+     "Kullanma Gideri",
+     "Kira Sözleşmesi",
+     "634 Sayılı Kat Mülkiyeti Kanunu",
+     "6098 Sayılı Türk Borçlar Kanunu",
+     "4721 Sayılı Türk Medeni Kanunu"
+    ],
+    "en": [
+     "Contribution to Common Expenses and Advances in Condominium Ownership",
+     "Ancillary (Incidental) Expenses",
+     "Usage Expenses",
+     "Lease Agreement",
+     "Condominium Law No. 634",
+     "Turkish Code of Obligations No. 6098",
+     "sabaozmen@hotmail.com ** ORCID ID: https://orcid.org/: 0009-0002-420"
+    ]
+   },
+   "summary": {
+    "tr": "TENANTS’ LIABILITY FOR THE OBLIGATION TO CONTRIBUTE TO COMMON EXPENSES AND ADVANCES IN CONDOMINIUM OWNERSHIP Çalışmamızda vermiş olduğumuz hukuki bilgiler, kat mülkiyetinden doğan genel gider ve avansa katılma borcunda kiracıların sorumluluğu konusunu uygulamada sıklıkla karşılaşmış olduğumuz sorulara cevap niteliği taşımaktadır. Vermiş olduğumuz örnekler ile konu daha da anlaşılabilir hale getirilerek kiracıların bu yöndeki sorumluluğu, akıllarda soru işareti bırakmayacak şekilde izah edilmiştir",
+    "en": "The legal analysis presented in this study addresses frequently encountered practical questions concerning tenants’ liability for contributions to common expenses and advances arising from condominium ownership. Through the examples provided, the subject has been rendered more comprehensible, and tenants’ liability in this regard has been clarified in a manner that leaves no room for ambiguity"
+   },
+   "summarySource": "pdf",
+   "pages": 37,
+   "pdf": "/makaleler/pdf/46.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/Kat_mulkiyetinde_genel_gider_ve_avansna_katlma_borcunda_kiraclarn_sorumlulugu.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": false,
+    "scanned": false
+   }
+  },
+  {
+   "id": 44,
+   "slug": "tmk-m-889-hukmunce-mevcut-ipotegin-birden-cok-tasinmaza-dagitilmasina",
+   "title": {
+    "tr": "TMK m. 889 Hükmünce Mevcut İpoteğin Birden Çok Taşınmaza Dağıtılmasına Bağlı Hüküm ve Sonuçlar",
+    "en": "Provisions and Consequences of Distributing an Existing Mortgage to Multiple Immovable Properties According to Article 889 of the Turkish Civil Code (TMK)",
+    "de": "Bestimmungen und Folgen der Aufteilung einer bestehenden Hypothek auf mehrere Immobilien gemäß Artikel 889 des türkischen Zivilgesetzbuches (TMK)"
+   },
+   "coAuthor": null,
+   "date": "2025-12",
+   "year": 2025,
+   "dateSource": "pdf-issue",
+   "journal": null,
+   "volume": null,
+   "issue": "32",
+   "orcids": [
+    "0000-0002-8622-9660",
+    "0009-0008-5202-8749"
+   ],
+   "topics": [
+    "kat-mulkiyeti",
+    "ipotek-rehin",
+    "intifa"
+   ],
+   "keywords": {
+    "tr": [
+     "İpotek",
+     "Kat İrtifakı",
+     "Kat Mülkiyeti",
+     "Bölünme"
+    ],
+    "en": [
+     "Mortgage",
+     "Condominium Ownership",
+     "Condominium Servitude",
+     "Partition",
+     "Immovable Property"
+    ]
+   },
+   "summary": {
+    "tr": "Günümüzde mevcut ipotekli taşınmazlar üzerinde sonradan kat irtifakı ya da kat mülkiyeti kurulması hâlinde, ipoteklerin nasıl bir dönüşüme uğrayacağı uygulamada ciddi sorunlara neden olmaktadır. Türk Medeni Kanunu m. 889 hükmü, mevcut bir ipoteğin varlığı sonrası arazi mülkiyetine bağlı bazı tasarruf işlemleri ile ilgili olarak düzenleme getirse de (bölünme, pay devri) uygulama sorunları daha çok metin içinde yer almayan kat mülkiyeti/ kat irtifakı tesisine bağlı olarak doğmaktadır. Büyük ölçekli konut projelerinde, arazide tek bir ipotek tesisini takiben kat mülkiyeti oluşumunda mevcut ipotek miktarı, kanuna aykırı hatalı uygulama ile, tüm bağımsız bölümler üzerine bölünmeden yansıtılmaktadır. Böylece, tüketiciler bir bağımsız bölüm edinmeleri halinde bölünmemiş ipotek yüküyle karşılamaktadır. Makalemiz, TMK m. 889 düzenlemesinin emredici olmayan hükmü sonucu, ipoteğin dönüşüm sorunlarını incelemektedir. Tapu Sicili Tüzüğü’nün düzenlediği hükümlerin hatalı hale gelmiş uygulamalarına dayalı hukuka aykırılıkları irdelemeye yöneliktir. Çalışmamızda, ipotek alacaklısının menfaati ile özellikle kat maliklerinin (veya kat irtifakı sahiplerinin) yararları arasındaki çatışma detaylı biçimde ele alınarak çözüm getirmeye yönelik olacaktır",
+    "en": "In practice, the transformation of existing mortgages on immovable properties following the subsequent establishment of condominium ownership or construction servitude has led to significant legal uncertainties. Although Article 889 of the Turkish Civil Code provides a regulatory framework concerning certain dispositions-such as partition or transfer of shares-on land subject to an existing mortgage, it remains silent on the legal consequences of transitioning to condominium or construction servitude. This gap has created widespread issues, particularly in large-scale residential projects where a single mortgage established on the land is erroneously and unlawfully extended to each individual unit without apportionment during the transition to condominium ownership. As a result, consumers acquiring a single unit are confronted with an undivided mortgage burden. This article examines the legal implications arising from such mortgage transformations, focusing on the non-mandatory nature of Article 889. It further explores the inconsistencies stemming from erroneous practices based on the provisions of the Land Registry Regulation. The study aims to propose solutions by analyzing the conflict between the rights of mortgage creditors and the interests of condominium owners (or holders of construction servitude)"
+   },
+   "summarySource": "pdf",
+   "pages": 44,
+   "pdf": "/makaleler/pdf/44.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/44_TMK_m_889_Hukmunce_Mevcut_Ipotegin_Birden_Cok_Tasnmaza_Dagtlmasna_Bagl_Sonuclar.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": true,
+    "scanned": false
+   }
+  },
+  {
+   "id": 41,
+   "slug": "kanunen-gecerlilik-sekline-bagli-sozlesmelerde-surenin-uzatilmasina",
+   "title": {
+    "tr": "Kanunen Geçerlilik Şekline Bağlı Sözleşmelerde Sürenin Uzatılmasına Yönelik Anlaşmanın Şekli",
+    "en": "Form of Agreement for Extension of Term in Contracts Dependent on Legal Validity",
+    "de": "Formular für eine Vereinbarung zur Verlängerung der Laufzeit von Verträgen, die von der Rechtsgültigkeit abhängen"
+   },
+   "coAuthor": "Doç. Dr. Müge Ürem",
+   "date": "2025-10",
+   "year": 2025,
+   "dateSource": "site",
+   "journal": "Armağan",
+   "volume": null,
+   "issue": null,
+   "orcids": [
+    "0000-0002-8622-9660",
+    "0000-0002-4143-5575"
+   ],
+   "topics": [
+    "sozlesmeler"
+   ],
+   "keywords": {
+    "tr": [
+     "Sözleşmede Değişiklik",
+     "Erteleme (Tecil) Sözleşmesi",
+     "Şekil",
+     "İfa Zamanı",
+     "Maltepe Üniversitesi Hukuk Fakültesi",
+     "Medeni Hukuk Ana Bilim Dalı Başkanı",
+     "etemsabaozmen@maltepe.edu.tr",
+     "ORCID: https://orcid.org/0000-0002-8622-9660 ** Doç. Dr"
+    ],
+    "en": [
+     "Amendment to the Contract",
+     "Postponement Agreement",
+     "Form",
+     "Time of Performance",
+     "ikinci derecedeki noktalar üzerinde durulmamış olsa bile",
+     "sözleşmenin geçerliliğini etkilemese de işin özelliği"
+    ]
+   },
+   "summary": {
+    "tr": "Türk Borçlar Kanunu’nun “İkinci derecedeki noktalar” başlıklı m. 2 hükmünce taraflar sözleşmenin esaslı noktalarında uyuşmuşlarsa, ikinci derecedeki noktalar üzerinde durulmamış olsa bile, sözleşme kurulmuş sayılır. İkinci dereceden noktalar sözleşme özgürlüğünce taraflarca belirlenmemiş olsa bile bu durum, sözleşmenin geçerliliğini etkilemese de işin özelliği gereğince kanunen şekle bağlanmış sözleşmelerde ifa zamanının saptanması önem taşımakta ve böylece sübjektif esaslı nokta olarak sözleşmede borcun ifa edileceği sürenin veya anın belirlendiği görülmektedir. Araştırmamızın konusu, TBK m. 12 hükmünce geçerlilik şekline bağlı sözleşmelerde sözleşme kurulduktan sonra ifa zamanının ayrıca saptanması veya (TBK m. 95 hükmünce) mevcut sözleşme hükmünde değişiklik yapılması halinde süre uzatım anlaşmalarının, TBK m. 3004 Kanunen Geçerlilik Şekline Bağlı Sözleşmelerde Sürenin Uzatılmasına Yö",
+    "en": "Pursuant to Article 2 of the Turkish Code of Obligations No. 6098, even if the second degree points are not agreed upon by the parties, the contract is validly concluded in this case. The determination of the time of performance of the obligation by the parties in the contract is not accepted by the legislator as an essential point. In the event that the time of performance is subsequently determined under the contract or the agreed period is extended after the conclusion of the contract, the issue of form is important. In the event that this issue, which was not agreed upon at the time of the signing of the contract and left in a legal gap, is subsequently determined by the ‘postponement agreement’, there is a hesitation as to which form should be subject to the subsequent determination of the time of performance in contracts for which the validity form is stipulated in the law in accordance with Article 13 of the TCO. There is no unity in the doctrine and jurisprudence on this issue; the purpose of our study is to eliminate the hesitations experienced especially in the application of construction agreements in return for land shares signed in official form"
+   },
+   "summarySource": "pdf-intro",
+   "pages": 24,
+   "pdf": "/makaleler/pdf/41.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/_metin_99_E_Saba_Ozmen_Muge_Urem.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": false,
+    "scanned": false
+   }
+  },
+  {
+   "id": 42,
+   "slug": "tarim-arazilerinin-birlikte-mulkiyete-dayali-olarak-tasarruf-yetkisi",
+   "title": {
+    "tr": "Tarım Arazilerinin Birlikte Mülkiyete Dayalı Olarak Tasarruf Yetkisi Kısıtlama Eleştirileri Ve Cebri Arttırma Yolu İle Paylı Halin Giderilerek Paraya Çevrilmesi Uygulaması",
+    "en": "Criticisms of the Restriction on the Disposition of Agricultural Lands Based on Joint Ownership and the Implementation of Converting It into Cash by Eliminating the Shared Status through Forced Increase",
+    "de": "Kritik an der Beschränkung der Veräußerung von landwirtschaftlichen Flächen aufgrund gemeinschaftlichen Eigentums und der Umsetzung der Umwandlung in Bargeld durch Aufhebung des gemeinschaftlichen Status mittels erzwungener Wertsteigerung"
+   },
+   "coAuthor": "Av. Berşah Tartıcı",
+   "date": "2025-08",
+   "year": 2025,
+   "dateSource": "site",
+   "journal": "İzmir Barosu Dergisi",
+   "volume": null,
+   "issue": "2",
+   "orcids": [
+    "0000-0002-8622-9660",
+    "0009-0006-8786-8524"
+   ],
+   "topics": [
+    "payli-mulkiyet",
+    "tarim-arazi",
+    "icra-iflas",
+    "yargi-elestirisi"
+   ],
+   "keywords": {
+    "tr": [
+     "Tarım arazileri",
+     "Birlikte mülkiyet",
+     "Paylı mülkiyet",
+     "Elbirliği mülkiyeti",
+     "İcra ve İflas Kanunu m.121",
+     "5403 sayılı Kanun"
+    ],
+    "en": [
+     "Agricultural lands",
+     "Co-ownership regimes",
+     "Tenancy in common",
+     "Joint ownership",
+     "Enforcement and Bankruptcy Law Art. 121",
+     "bersaht@unitedks.com"
+    ]
+   },
+   "summary": {
+    "tr": "CRITICISMS OF DISPOSAL RESTRICTIONS AND COMPULSORY PARTITION BY AUCTION IN JOINTLY OWNED AGRICULTURAL LAND Bu çalışma, 5403 sayılı Toprak Koruma ve Arazi Kullanımı Kanunu ile getirilen tarım arazilerinin bölünmesini önleyici hükümler çerçevesinde, birlikte mülkiyet (paylı mülkiyet ve elbirliği mülkiyeti) türlerinde ortaya çıkan hukuki sorunları ele almaktadır. Çalışmada, pay kavramının yalnızca paylı mülkiyet için geçerli olduğu, Yargıtay kararları ışığında, hatalı uygulamaların sonuçları eleştirilmektedir",
+    "en": "This article examines the legal challenges arising from the application of co-ownership regimes—specifically, tenancy in common and joint ownership—within the framework of the provisions introduced by Law No. 5403 to prevent the division of agricultural lands. It argues that the notion of “share” applies exclusively to tenancy in common, and critically assesses the consequences of misapplication of the law, as well as incorrect interpretations and practices in this context, in light of the Supreme Court’s jurisprudence"
+   },
+   "summarySource": "pdf",
+   "pages": 35,
+   "pdf": "/makaleler/pdf/42.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/tarim_arazileri202591195851323.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": false,
+    "scanned": false
+   }
+  },
+  {
+   "id": 40,
+   "slug": "yuklenicinin-arsa-payi-karsiligi-insaat-sozlesmesinden-dogan-alacak",
+   "title": {
+    "tr": "Yüklenicinin Arsa Payı Karşılığı İnşaat Sözleşmesinden Doğan Alacak Hakkına İlişkin Kazandırıcı İşlemleri",
+    "en": "Contractor's Acquisition Transactions Regarding the Right to Receivables Arising from the Construction Contract in Return for Land Share",
+    "de": "Erwerbsvorgänge des Auftragnehmers bezüglich des Anspruchs auf Forderungen aus dem Bauvertrag gegen Gewährung eines Grundstücksanteils"
+   },
+   "coAuthor": null,
+   "date": "2024-06-07",
+   "year": 2024,
+   "dateSource": "site",
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "arsa-payi",
+    "sozlesmeler"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": null,
+    "en": null
+   },
+   "summarySource": null,
+   "pages": 5,
+   "pdf": "/makaleler/pdf/40.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_Yklenicinin_Arsa_Pay_Karl_naat_Szlemesinden_Doan_Alacak_Hakkna_likin_Kazandrc_lemleri.pdf",
+   "needs": {
+    "summary": true,
+    "date": false,
+    "journal": true,
+    "scanned": true
+   }
+  },
+  {
+   "id": 38,
+   "slug": "kat-mulkiyeti-olusumunda-motorlu-tasit-edinimi-engellerine-dayali",
+   "title": {
+    "tr": "Kat Mülkiyeti Oluşumunda Motorlu Taşıt Edinimi Engellerine Dayalı Eleştiriler",
+    "en": "Criticisms Based on the Obstacles of Motor Vehicle Acquisition in the Formation of Consolidated Ownership",
+    "de": "Kritik aufgrund der Hindernisse beim Erwerb von Kraftfahrzeugen bei der Bildung eines konsolidierten Eigentums"
+   },
+   "coAuthor": "Arş. Gör. Zeynep Yılmaz",
+   "date": "2024-03-20",
+   "year": 2024,
+   "dateSource": "site",
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [
+    "0000-0002-8622-9660",
+    "0000-0002-5510-0266"
+   ],
+   "topics": [
+    "kat-mulkiyeti",
+    "yargi-elestirisi"
+   ],
+   "keywords": {
+    "tr": [
+     "motorlu taşıt",
+     "eklenti",
+     "kat mülkiyeti",
+     "toplu yapı",
+     "eşyaya bağlı mülkiyet"
+    ],
+    "en": [
+     "Motor vehicle",
+     "accessory",
+     "condominium ownership",
+     "collective building",
+     "ownership propter rem. ***"
+    ]
+   },
+   "summary": {
+    "tr": "Karayolları Trafik Kanunu hükümlerince kat mülkiyeti oluşumlarında, kanunî temellerine dayalı olarak motorlu taşıt edinimine hiçbir engel bulunmamakta iken, uygulamada, hiçbir bilimsel araştırma yapılmadan, tüzel kişilik bulunmadığı savına dayanmak suretiyle kat mülkiyeti oluşumlarında motorlu taşıt ediniminin mümkün olmadığını görüyoruz. Ancak, bu yönde varılan olumsuz sonuçlar, hiçbir bilimsel temele dayanmadığı gibi somut ihtiyaçlar karşısında kat maliklerini ciddi sıkıntılara gark etmektedir. Uygulamada toplu yapılarda yüksek eğim veya mesafe nedeniyle, örneğin ortak yer olarak kıyıda yer alan şezlonglar, duşlar, iskele ile üst parsel çizgisinde yer alan bağımsız bölümler, market ve yönetim binası arasındaki güzergâhta, kat maliklerinin üçüncü kuşak olarak sıkıntı yaşadığı görülmektedir. Bu yönde doğan ihtiyaçlar karşısında, yaz ve kış tarifesine göre belirlenen saatlerde toplu yapı ",
+    "en": "In this study, we examined the acquisition of motor vehicles by condominium ownership formations that do not possess a legal entity within the framework of the provisions of Property Law. This legal transaction is being rejected in practice for the reason that H Eserin Dergimize geliş tarihi: 18.02.2021. İlk hakem raporu tarihi: 08.03.2021. İkinci hakem raporu tarihi: 29.03.2021. Onaylanma tarihi: 29.03.2021 * Maltepe Üniversitesi Hukuk Fakültesi Medenî Hukuk Anabilim Dalı Başkanı. ** Yazarın ORCID belirleyicisi: 0000-0002-8622-9660. *** Maltepe Üniversitesi Hukuk Fakültesi Medenî Hukuk Anabilim Dalı Araştırma Görevlisi. **** Yazarın ORCID belirleyicisi: 0000-0002-5510-0266. Esere Atıf Şekli: Etem Sabâ Özmen, Zeynep Yılmaz, \"Kat Mülkiyeti Oluşumunda Motorlu Taşıt Edinimi Engellerine Dayalı Eleştiriler\", YÜHFD, C.XVIII, 2021/2, s.613-634. Kat Mülkiyeti Oluşumunda Motorlu Taşıt Edinimi Engellerine Dayalı Eleştiriler YÜHFD C. XVIII S.2 (2021) 614 no real person or legal entity is stated for the ownership slot in the registry of motor vehicles. However, the general provisions of our Civil Code as well as our Obligation Code govern all private legal relations and allow the acquisition of motor vehicles through an acquisitive transaction connected to an immovable property. The fact that Article 9 of the Condominium Ownership Code refers to general provisions strengthens our assertion. This problem we encounter will be solved by allocating the motor vehicle to an immovable property as an accessory and rendering it dependant on the fate of the immovable p"
+   },
+   "summarySource": "pdf-intro",
+   "pages": 22,
+   "pdf": "/makaleler/pdf/38.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_KAT_MLKYET_OLUUMUNDA_MOTORLU_TAIT_EDNM_ENGELLERNE_DAYALI_ELETRLER.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": true,
+    "scanned": false
+   }
+  },
+  {
+   "id": 39,
+   "slug": "imar-planindaki-degisikligin-veya-iptalin-eser-ve-arsa-payi-karsiligi",
+   "title": {
+    "tr": "İmar Planındaki Değişikliğin veya İptalin Eser ve Arsa Payı Karşılığı İnşaat Sözleşmesine Etkisi",
+    "en": "Effect of Change or Cancellation in Development Plan on Construction Contract in Exchange for Work and Land Share",
+    "de": "Auswirkung der Änderung oder Stornierung des Entwicklungsplans auf den Bauvertrag im Austausch für Arbeit und Landteil"
+   },
+   "coAuthor": "Doç. Dr. Müge Ürem",
+   "date": "2024-03-20",
+   "year": 2024,
+   "dateSource": "site",
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "arsa-payi",
+    "kamulastirma",
+    "sozlesmeler"
+   ],
+   "keywords": {
+    "tr": [
+     "Eser Sözleşmesi",
+     "Arsa Payı Karşılığı İnşaat Sözleşmesi",
+     "İmar Planı",
+     "İptal",
+     "Değişiklik"
+    ],
+    "en": [
+     "Contract For Work and Services",
+     "Construction Contract In Return For Land Share",
+     "Zoning Plan",
+     "Cancellation",
+     "the person who is owner of a object has the right to use",
+     "benefit and dispose (usus"
+    ]
+   },
+   "summary": {
+    "tr": "Şehirleşme ve kentsel dönüşüm sebebiyle yapı gereksinimi artmış olduğundan eser sözleşmesinden veya arsa payı karşılığı eser sözleşmesinden kaynaklı uyuşmazlıklar sıklıkla karşımıza çıkmaktadır. Kamu düzenine ilişkin emredici imar mevzuatında imar engeli bulunmasına rağmen tarafların aksi yönde sözleşme hükmüne yer vererek, imar engelini yok sayan nitelikte eser meydana getirme borcu altına girdiği sıklıkla görülmektedir. Taraflar sözleşmenin kurulduğu esnada mevcut bir imar engeline aykırılık oluşturacak eser imalatını üstlenmekte, bununla birlikte yine sözleşmenin kurulduğu esnada veya ileride söz konusu olabilecek bir imar engelini ortadan kaldırmaya yönelik yasal girişimlerde bulunmayı ya da sözleşmenin kurulmasından önce açılmış bir davanın sonucuna bağlı olarak eser meydana getirmeyi taahhüt eden hükümler kararlaştırmaktadır. Yargıtay pek çok kararında eser imalatıyla ilgili olarak imara aykırılık halinde eser veya arsa payı karşılığı inşaat sözleşmesi bakımından “imkânsızlık”tan bahsetmekte ve bu halde “geçici veya devamlı/sürekli imkânsızlık” kavramlarını kullanarak sözleşmenin geçersizliğine hükmetmektedir. Halbuki bu noktada yapılması gereken, çeşitli olasılıklar açısından değerlendirme yapmaktır. Emredici hüküm niteliğindeki imar mevzuatına aykırı şekilde eser imalatının kararlaştırıldığı sözleşmeler elbette kanunun emredici hükümlerine aykırılık sebebiyle TBK m. 27/I hükmünce kendiliğinden kesin hükümsüz olacaktır; ancak sözleşmede mevcut imar engelinin kaldırılması yönünde yasal yollara başvurulmasının kararlaştırılması, mevcut bir davanın sonuc",
+    "en": "Since the need for building has increased due to urbanisation and urban transformation, disputes arising from the contract of work and services or the construction contract of work in return for land share are frequently encountered. Although there is a zoning obstacle under the mandatory zoning legislation related to public order, the parties have a contractual provision to the contrary; it is frequently observed that the parties undertake to produce works that ignore the zoning obstacle. The parties undertake to produce a piece of work that will constitute a contradiction of an existing zoning obstacle at the time of the conclusion of the contract; however, at the time of the conclusion of the 178 E. S. Özmen, M. Ürem contract or in the future, to take legal initiatives to remove a zoning obstacle that may be in question, or the contract is concluded on the basis of the outcome of a lawsuit filed before the conclusion of the contract. In many decisions of the Court of Cassation, the Court of Cassation mentions “impossibility” in the case of violation of zoning in relation to the production of a work under the contract of work and services or the construction contract of work in return for land share. In this case, it judges the invalidity of the contract by using the term of “temporary or permanent/continuous impossibility”. However, what should be done at this point is to evaluate various possibilities. If the parties have agreed under the contract to produce a piece of work contrary to the zoning legislation, which is a mandatory provision, of course, it"
+   },
+   "summarySource": "pdf",
+   "pages": 29,
+   "pdf": "/makaleler/pdf/39.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_MAR_PLANINDAK_DEKLN_VEYA_PTALN_ESER_VE_APKSE_ETKS_1.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": true,
+    "scanned": false
+   }
+  },
+  {
+   "id": 37,
+   "slug": "kentsel-donusum-uygulamalarinda-eski-arsa-payindan-payli-mulkiyete-ve",
+   "title": {
+    "tr": "Kentsel Dönüşüm Uygulamalarında Eski Arsa Payından Paylı Mülkiyete ve Yeni Arsa Payına Uzanan Süreçte Yanılgılar",
+    "en": "Misconceptions in the Process from Old Land Share to Shared Ownership and New Land Share in Urban Transformation Applications",
+    "de": "Missverständnisse im Prozess vom alten Landanteil zum gemeinsamen Eigentum und neuen Landanteil bei städtischen Transformationsanträgen"
+   },
+   "coAuthor": "Doç. Dr. Ahmet Ayar",
+   "date": "2023-09-11",
+   "year": 2023,
+   "dateSource": "site",
+   "journal": "Türkiye Barolar Birliği Dergisi",
+   "volume": "87",
+   "issue": null,
+   "orcids": [
+    "0000-0002-8622-9660",
+    "0000-0001-5623-3418"
+   ],
+   "topics": [
+    "kat-mulkiyeti",
+    "arsa-payi",
+    "kentsel-donusum",
+    "payli-mulkiyet"
+   ],
+   "keywords": {
+    "tr": [
+     "Arsa Payı",
+     "Kentsel Dönüşüm",
+     "Kat Mülkiyeti",
+     "Arsa Payının Düzeltilmesi Davası"
+    ],
+    "en": [
+     "Land Share",
+     "Urban Transformation",
+     "Condominium Ownership"
+    ]
+   },
+   "summary": {
+    "tr": "Bu çalışmada; kentsel dönüşüm uygulamalarının gerçekleştirilmesinde, kentsel dönüşüm kapsamında kalan bir yapının dönüşüme girmeden önceki durumunda hak sahiplerinin mevcut bulunan haklarının dönüşüm uygulamaları ile birlikte değişkenlik göstermesi durumu, daha önceki durumunda hatalı kaydedilen arsa paylarının yapılacak dönüşüm uygulamalarına etkisi ve sonuçları üzerinde değerlendirmede bulunulmuştur. Ayrıca arsa payı kavramı, kat mülkiyetine geçiş ile payın arsa payına dönüşmesi, 6306 sayılı Kanun kapsamında yeniden değerlendirme süreci açıklanmaya çalışılmıştır",
+    "en": "In this study; the fact that the current rights of the right owners regarding the state of the building within the scope of urban transformation before the transformation vary with transformation applications during the realization of urban transformations, the effect of the land shares that were incorrectly registered on the transformation and the subsequent results have been evaluated. In addition, the concept of land share, the transition to condominium ownership, the transformation of the share into land share, the reevaluation process within the scope of Law No. 6306 have been tried to be explained"
+   },
+   "summarySource": "pdf",
+   "pages": 26,
+   "pdf": "/makaleler/pdf/37.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_KENTSEL_DNM_UYGULAMALARINDA_ESK_ARSA_PAYINDAN_PAYLI_MLKYETE_VE_YEN_ARSA_PAYINA_UZANAN_SRETE_YANILGILAR.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": false,
+    "scanned": false
+   }
+  },
+  {
+   "id": 36,
+   "slug": "noterlere-tasinmaz-satis-yetkisi-verilmesi-hakkinda-kanun",
+   "title": {
+    "tr": "Noterlere Taşınmaz Satış Yetkisi Verilmesi Hakkında Kanun Değişikliğinin Garabet Sonuçları",
+    "en": "Strange Results of the Amendment of the Law on Granting Real Estate Sales Authority to Notaries",
+    "de": "Merkwürdige Ergebnisse der Novelle des Gesetzes über die Erteilung der Befugnis zum Verkauf von Immobilien an Notare"
+   },
+   "coAuthor": null,
+   "date": "2022-12-12",
+   "year": 2022,
+   "dateSource": "site",
+   "journal": "Ankara Barosu Dergisi",
+   "volume": null,
+   "issue": null,
+   "orcids": [
+    "0000-0002-8622-9660"
+   ],
+   "topics": [
+    "tapu-tescil",
+    "noterlik"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": "Makaleye önyargı ile yaklaşılmaması amacıyla şu saptama ile başlamak istiyoruz. Çalışmanın yazarı, taşınmazda ayni hak değişikliği yaratan tüm borçlandırıcı işlem (taahhüt muamelesi) niteliğindeki sözleşmelerin noterde yapılması taraftarıdır; fakat arzu edilen bu konudaki kanun değişikliği ile Noterlere verilen yetkinin sadece taşınmaz satış sözleşmeleri ile sınırlı olmamasıdır. 28 Haziran 2022 tarihli 31880 sayılı Resmi Gazete’de 7413 sayılı Torba Kanun ile araya sıkıştırılan Noterlik Kanunu’nda yapılan değişiklik hukuk hayatımıza yenilik olarak sunulmuş oldu. Aşağıda ayrıntıları ile ağır eleştirilere konu edeceğimiz Noterlik Kanunu m. 60 ve m. 61/A hükümleri ile noterlerin taşınmaz satışı yapabilecekleri kabul edilmiş oldu. Ancak bu tür yeniliklerin ihtiyaca yönelik ve sorun çözümleyici olması beklenirken, yenilik tam aksine karmaşa yaratmaya aday bir düzenleme niteliği ile şimdiden ya",
+    "en": "As a result of the amendments made in the Omnibus Bill Law No. 7413, which is published in the Official Gazette dated 28 June 2022 and numbered 31880, Article 60 of Law no 1512 has been amended and article 61/A has been accepted. With the provisions of article 60 and 61/A, it has been accepted that the real estate sales contracts can be concluded before notary public. The aim of our article is primarily to criticize the unlawful practices that have already been developed by the land registry offices and notary publics, and to present the problems that will arise in terms of implementation of the Law, which will enter into force on 1 January 2023, and to propose solutions for these problems"
+   },
+   "summarySource": "pdf-intro",
+   "pages": 40,
+   "pdf": "/makaleler/pdf/36.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_Noterlere_Tanmaz_Sat_Yetkisi_Verilmesi_Hakknda_Kanun_Deiikliinin_Garabet_Sonular.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": false,
+    "scanned": false
+   }
+  },
+  {
+   "id": 35,
+   "slug": "kamu-arazilerinde-turizm-amacli-kurulmus-ust-hakkinin-sona-ermesinde",
+   "title": {
+    "tr": "Kamu Arazilerinde Turizm Amaçlı Kurulmuş Üst Hakkının Sona Ermesinde Yaşanan Problemler",
+    "en": "Problems Experienced in Termination of Rights of Superficies Established for Tourism Purposes on Public Lands",
+    "de": "Probleme bei der Beendigung der Rechte an zu touristischen Zwecken errichteten Grundstücken auf öffentlichem Grund und Boden"
+   },
+   "coAuthor": "Av. Tuba Korkmaz",
+   "date": "2022-10-17",
+   "year": 2022,
+   "dateSource": "site",
+   "journal": "Maltepe Üniversitesi Hukuk Fakültesi Dergisi",
+   "volume": null,
+   "issue": null,
+   "orcids": [
+    "0000-0002-8622-9660",
+    "0000-0002-2633-1743"
+   ],
+   "topics": [
+    "intifa"
+   ],
+   "keywords": {
+    "tr": [
+     "Kamu Taşınmazları",
+     "Üst Hakkı",
+     "Turizmi Teşvik Kanunu",
+     "Türk Medeni Kanunu"
+    ],
+    "en": [
+     "Public Lands",
+     "Construction Right",
+     "Tourism Promotion Law",
+     "Turkish Civil Law",
+     "turizm işletmecilerinin bu kurumdan be"
+    ]
+   },
+   "summary": {
+    "tr": "Uygulamada kamu arazilerinin “tahsis” tabiri ile özel hukuk işlemlerine konu edildiği hallerde, idarenin kendi lehine koyduğu hükümlerle turizm işletmecilerinin bu kurumdan beklentilerinin gerçekleşmediğini görmekteyiz. Öncelikle bilimsel araştırmamızda özel hukuk işlemlerine konu olamayacak arazilerin ayrılması yoluyla; özel hukuk işlemlerine konu olabilecek arazilerin niteliklerinden bahsedilecektir. Bu kapsamda turizm amaçlı değerlendirmede öne çıkan üst hakkının niteliğinin doğru anlaşılmasına ilişkin açıklamalarda bulunulacaktır. Turizm amaçlı tesis edilen üst haklarının sona ermesine dayalı hukuki sorunlar irdelenerek bu hususta ortaya çıkan özel durumlara değinilecektir. Yine uyuşmazlık hallerinde yargı yolu seçimi hususunda yapılan yanlış ile beraberinde getirdiği sıkıntılar bu bilimsel çalışmamızın konusunu oluşturacaktır. İdarenin özel hukuk kişileriyle yaptığı sözleşmelerde adli yargı denetimine tabi olmakla; bu kapsamda Türk Medeni Kanunu “üst hakkı” hükümlerinin idare için de tatbik edilmesi gerekliliğini hissettirmeye çalışacağız. Turizmi Teşvik Kanunu m.8/I bendi ile getirilen hükmün “mülkiyet hakkı ihlali” hususunda Anayasa ve Avrupa İnsan Hakları Sözleşmesi’ne aykırılığını dile getireceğiz. Çalışmamıza söz konusu hukuk dışı uygulamaları ortadan kaldıracak nitelikte Kanun ve Yönetmelik Değişikliği önerileri ile son vereceğiz",
+    "en": "In cases where public lands are made subject to private law transactions under the term “allocation”, we are witnessing that the expectations of tourism operators are not realized due to the fact that the Government put provisions on its own behalf. In our research, we will mention the qualities of the lands that can be subject to transactions of private law by distinguishing the lands that cannot be transactions of private law. In this scope we will make explanations to enable the correct understanding of the “construction right” that is prominent in utilizing the land for touristic purposes. We will examine the legal problems arising from the ending of the construction right established for touristic purposes and we will cover the special situations emerging in this regard. Furthermore, the errors made during the selection of judicial remedy as well as concomitant complications will constitute the subject of our work. Since the government is subject to supervision of judicial justice for the agreements it executes with private law persons, we will underline the necessity of the application of the provisions of Turkish Civil Law concerning “construction right” also on the government. We will also express the fact that the provision brought with the Article 8/I of Tourism Promotion Law is in breach of the Turkish Constitution as well as European Convention of Human Rights in terms of “ownership rights”. We will end our work with proposals of changes of laws and regulations that will remove the aforementioned illegal applications"
+   },
+   "summarySource": "pdf",
+   "pages": 34,
+   "pdf": "/makaleler/pdf/35.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_Kamu_Arazilerinde_Turizm_Ama__l___Kurulmu_____st_Hakk__n__n_Sona_Ermesinde_Ya__anan_Problemler958638_1847167.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": false,
+    "scanned": false
+   }
+  },
+  {
+   "id": 34,
+   "slug": "insaat-projeleri-cercevesinde-tasinmazda-mevcut-ipoteklerin-kat",
+   "title": {
+    "tr": "İnşaat Projeleri Çerçevesinde Taşınmazda Mevcut İpoteklerin Kat İrtifakına-Kat Mülkiyetine Geçiş Sonrası Hüküm ve Sonuçlarının Tüketici Hukuku Açısından Değerlendirilmesi",
+    "en": "Evaluation of the Provisions and Consequences of Existing Mortgages on Real Estate Within the Framework of Construction Projects After the Transition to Floor Service Ownership - Floor Ownership from the Perspective of Consumer Law",
+    "de": "Bewertung der Bestimmungen und Auswirkungen Bestehender Hypotheken auf Immobilien im Rahmen von Bauprojekten Nach dem Übergang zum Floor-Service-Eigentum – Floor-Eigentum Aus der Perspektive des Verbraucherrechts"
+   },
+   "coAuthor": "Doç. Dr. Melek BİLGİN YÜCE",
+   "date": "2022-05-10",
+   "year": 2022,
+   "dateSource": "pdf-accepted",
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [
+    "0000-0002-8622-9660",
+    "0000-0002-7029-9939"
+   ],
+   "topics": [
+    "kat-mulkiyeti",
+    "ipotek-rehin",
+    "intifa",
+    "tuketici"
+   ],
+   "keywords": {
+    "tr": [
+     "İpotek",
+     "Bağımsız Bölüm",
+     "Kat Mülkiyeti",
+     "Kat İrtifakı"
+    ],
+    "en": [
+     "Mortgage",
+     "Independent Section",
+     "Condominium Ownership",
+     "Condominium Servitude"
+    ]
+   },
+   "summary": {
+    "tr": "Günümüzde konut ve işyerine yönelik sat-yap muadili yapılan ön ödemeli konut satışları yaygın bir şekilde görülmektedir. Bu şekilde yapılan projelerde yüklenicilerin ilk aşamada oldukça yüksek miktarlarda kredi kullandığı, bu krediler çerçevesinde projenin gerçekleştirildiği taşınmaz üzerinde banka lehine ipotek tesis edildiği görülmektedir. Taşınmaz üzerinde projenin ilerleyen aşamalarında kat irtifakı ya da kat mülkiyeti kurulması halinde, uygulamada mevcut ipotek kurulduğu miktar üzerinden, kat mülkiyeti kütüğünde açılan bağımsız bölüm sayfalarına taşınmaktadır. Tüketicilerin çoğu projelerden bağımsız bölüm satın aldıklarında, bağımsız bölümlerinin değerlerinden çok fazla, neredeyse projenin tamamının değerine yakın bir miktarla yüklü olarak mülkiyeti kazanmakta; bu durumun ya farkına varmamakta ya da farkına varsalar bile sorun olmayacağını düşünmektedirler. İpoteğin paraya çevrilmesi yoluyla satış yapılması ihtimalinde tüketiciler durumdan haberdar olup, satın aldıkları bağımsız bölümün satışına katlanmak zorunda kalmaktadırlar. Bu uygulama Türk Medeni Kanun madde 889’a aykırıdır. Uygulamada tapu uygulaması nedeniyle ortaya çıkan bu kanuna aykırı durumun düzeltilmesi zorunludur. Bunun için yapılması gereken ise, TMK m.889 hükmünün uygulanması ve mevcut ipotek miktarının bağımsız bölümlerinin değerleriyle orantılı olarak tapu kayıtlarına taşınmasıdır. Tapu müdürlükleri tarafından görevleri (*) Makale Gönderim Tarihi: 01.04.2022 - Makale Kabul Tarihi: 10.05.2022. (**) Maltepe Üniversitesi, Hukuk Fakültesi, Medeni Hukuk Anabilim Dalı (ORCID no",
+    "en": "Today there are a lot of projects, in which prepaid housing sales, which are equivalent to sell-built for residences and workplaces, are widely seen. The contractors use very high amounts of loans in the first stage of the project, and within the framework of these loans, a mortgage is established in favor of the bank on the real estate where the project is made. In case of establishment of condominium servitude or condominium ownership on the immovable in the later stages of the project, in practice, the existing mortgage is moved to the independent section pages opened in the condominium registry over the whole amount of the first established mortgage. When most of the consumers buy independent sections from the projects, they gain ownership by being loaded with an amount that is much more than the value of the independent section, almost the value of the entire project; they either do not realize this situation or they think that even if they do, it will not be a problem. In the event of a sale by converting the mortgage into cash, consumers are aware of the situation and have to endure the sale of the independent section they purchased. This practice is contrary to article 889 of the Turkish Civil Code. In practice, it is obligatory to correct this unlawful situation that arose due to the practice of title deed. What needs to be done for this is the implementation of the provision of Article 889 of the Turkish Civil Code and the transfer of the existing mortgage amount to the land registry in proportion to the values of the independent parts. While it"
+   },
+   "summarySource": "pdf",
+   "pages": 28,
+   "pdf": "/makaleler/pdf/34.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_GSUHFD1.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": true,
+    "scanned": false
+   }
+  },
+  {
+   "id": 28,
+   "slug": "2014-12321-basvuru-numarali-faik-tari-ve-sultan-tari-basvurusuna",
+   "title": {
+    "tr": "2014/12321 Başvuru Numaralı Faik Tari ve Sultan Tari Başvurusuna İlişkin Anayasa Mahkemesi’nin Fahiş Hatalı Kararının Eleştirisi",
+    "en": "Criticism of the Exorbitantly Errored Decision of the Constitutional Court Regarding the Application of Faik Tari and Sultan Tari with Application No. 2014/12321",
+    "de": "Kritik an der Völlig Fehlerhaften Entscheidung des Verfassungsgerichts zum Antrag von Faik Tari und Sultan Tari mit Antrag Nr. 2014/12321"
+   },
+   "coAuthor": null,
+   "date": "2017",
+   "year": 2017,
+   "dateSource": "pdf-inferred",
+   "journal": "Türkiye Barolar Birliği Dergisi",
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "arsa-payi",
+    "tapu-tescil",
+    "sozlesmeler",
+    "yargi-elestirisi"
+   ],
+   "keywords": {
+    "tr": [
+     "Arsa Payı Karşılığı İnşaat Sözleşmesi",
+     "Avans Tapu",
+     "Dönmede/Fesihte Ayni Netice",
+     "Ani/Sürekli Edim",
+     "karar tarihi 20.07.2017 olan ve 27.09.2017 tarihli",
+     "Bakırköy ilçesi",
+     "Şenlik Mahalle"
+    ],
+    "en": []
+   },
+   "summary": {
+    "tr": "2014/12321 BAŞVURU NUMARALI FAİK TARİ VE SULTAN TARİ BAŞVURUSUNA İLİŞKİN ANAYASA MAHKEMESİ’NİN FAHİŞ HATALI KARARININ ELEŞTİRİSİ (ARSA PAYI KARŞILIĞI İNŞAAT SÖZLEŞMESİNDE DÖNME HAKKINDA AYNİ ETKİLİ DÖNME GÖRÜŞÜNE VE ÖZELLİKLE YARGITAY 15. HD. NİN YERLEŞİK KARARLARINDAKİ “AVANS TAPU” NİTELEMESİNE İLİŞKİN ELEŞTİRİLER) Saba ÖZMEN* Anahtar kelimeler: Arsa Payı Karşılığı İnşaat Sözleşmesi, Avans Tapu, Dönmede/Fesihte Ayni Netice, Ani/Sürekli Edim, Sebebin Gerçekleşmemiş Olması I. ELEŞTİRYE KONU ANAYASA MAHKEMESİ KARARI Başvuru numarası 2014/12321, karar tarihi 20.07.2017 olan ve 27.09.2017 tarihli, 30193 sayılı Resmî Gazete’de yayımlanan Faik Tari ve Sultan Tari başvurusunun konusu, yargılamanın uzun sürmesi nedeniyle makul sürede yargılanma hakkının ihlal edildiği iddialarına ilişkindir. İstanbul ili, Bakırköy ilçesi, Şenlik Mahallesi’nde bulunan 292 ada, 148 parselde kayıtlı taşınmaz, G.N.Y",
+    "en": null
+   },
+   "summarySource": "pdf-intro",
+   "pages": 26,
+   "pdf": "/makaleler/pdf/28.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_201412321_fahi_hata.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": false,
+    "scanned": false
+   }
+  },
+  {
+   "id": 10,
+   "slug": "gecerli-sebebe-dayanmaksizin-kullanilan-bozucu-yenilik-doguran-hakkin",
+   "title": {
+    "tr": "Geçerli Sebebe Dayanmaksızın Kullanılan Bozucu Yenilik Doğuran Hakkın Hukuki Sonuçları ve Yargıtay Hukuk Genel Kurulu Kararı Eleştirisi",
+    "en": "Legal Consequences of the Right Creating a Disruptive Innovation Used Without a Valid Reason and Criticism of the Decision of the General Assembly of the Court of Cassation",
+    "de": "Rechtliche Konsequenzen des Rechts, eine disruptive Innovation ohne triftigen Grund zu schaffen, und Kritik an der Entscheidung der Generalversammlung des Kassationsgerichtshofs"
+   },
+   "coAuthor": "Araş. Gör. Müge Ürem",
+   "date": "2016",
+   "year": 2016,
+   "dateSource": "pdf-inferred",
+   "journal": "İstanbul Barosu Dergisi",
+   "volume": "90",
+   "issue": "3",
+   "orcids": [],
+   "topics": [
+    "yargi-elestirisi"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": "Etkisini başka bir hukuki ilişki veya işlem üzerinde göstererek onun kurulmasını, değiştirilmesini veya sona erdirilmesini sağlayan haklara yenilik doğuran (inşai) haklar (Gestaltungsrechte) denir4. Yarattığı etkiye göre türlendirme sonucunda kurucu, değiştirici ve bozucu yenilik doğuran hak ayrımı karşımıza çıkmaktadır5. 1 Roma hukukunun en eski ilkelerinden olan “Hiç kimse, haksızlık yaparak durumunu iyileştiremez.-Nemo ex suo delicto meliorem suam condicionem facere potest.” ilkesinin Yargıtay Hukuk Genel Kurulu’nun E. 2011/11-693, K. 2012/88, T. 22.2.2012 kararıyla ayaklar altına alındığının eleştirisi amacıyla işbu makale yazılmıştır. Bu makalede eleştirisel görüşler Prof. Dr. E. Sabâ Özmen’in kişisel görüşüdür. Araş. Gör. Müge Ürem, araştırma yönünde makalenin yazılmasına katkı sağlamıştır. 2 Maltepe Üniversitesi Hukuk Fakültesi Medenî Hukuk Anabilim Dalı Başkanı, Galatasaray Ünive",
+    "en": null
+   },
+   "summarySource": "pdf-intro",
+   "pages": 26,
+   "pdf": "/makaleler/pdf/10.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0023_Geerli_Sebebe_Dayanmakszn_Kullanlan_Bozucu_Yenilik_Douran_Hakkn_Hukuki_Sonular_ve_Yargtay_Hukuk_Genel_Kurulu_Karar_Eletirisi.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": false,
+    "scanned": false
+   }
+  },
+  {
+   "id": 24,
+   "slug": "genc-hukukculara-birkac-ogut",
+   "title": {
+    "tr": "Genç Hukukçulara Birkaç Öğüt",
+    "en": "Some Advice for Young Lawyers",
+    "de": "Einige Ratschläge für junge Anwälte"
+   },
+   "coAuthor": null,
+   "date": "2013-02",
+   "year": 2013,
+   "dateSource": "pdf-issue",
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "meslek"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": "Bu makalenin yazılış amacı, hukuk mesleğinin icrasında bilimsellikten uzaklaşılma yolunda yaşanan olumsuzluklara dikkat çekmektir. Hukuk eğitimindeki kalitenin düşme eğilimi ve hızla artan hukuk fakültesi sayısını göz önüne aldığımızda bilimsellikten uzak olumsuzluklar bu makaleyi yazmaya sevk etmiştir. Suçun salt hukuk fakültesi sayısının artmasına bağlanamayacağı yönündeki görüşümle birkaç konuya dikkat çekerek durumun ciddiyetini vurgulamaya çalışacağım. Belirtmek gerekirse bu araştırmada yazar Türkçe ve dil bilgisi üzerine söylemlerde bulunacak değildir. Tamamen uzmanlık alanı dışında olan bu konularda yazar daha önce yaptığı çalışmalarda ve bu çalışmada yapacağı hatalardan dolayı şimdiden özür diler. Öncelikle bir hukukçu, benimsediği ve eğitim alarak etkilendiği öğretim üyesinin tabirlerine sempati duysa da yasal tabirleri kullanmakla yükümlü olmalıdır. Dil aynı sözcükler üzerinde ",
+    "en": null
+   },
+   "summarySource": "pdf-intro",
+   "pages": 12,
+   "pdf": "/makaleler/pdf/24.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0038_Gen_Hukukulara__Birka_t_.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": true,
+    "scanned": false
+   }
+  },
+  {
+   "id": 5,
+   "slug": "6306-sayili-yasa-uygulamalarinda-arsa-payinin-duzeltilmesi-davasina",
+   "title": {
+    "tr": "6306 Sayılı Yasa Uygulamalarında Arsa Payının Düzeltilmesi Davasına İlişkin Hüküm ve Sonuçlar",
+    "en": "The Judgment and Results Regarding the Case of Correction of Land Share in the Applications of Law No. 6306",
+    "de": "Das Urteil und die Ergebnisse im Fall der Berichtigung des Landanteils in der Anwendung des Gesetzes Nr. 6306"
+   },
+   "coAuthor": "Av. Berna Çakmak",
+   "date": "2013",
+   "year": 2013,
+   "dateSource": "pdf-inferred",
+   "journal": "İstanbul Barosu Dergisi",
+   "volume": "87",
+   "issue": "5",
+   "orcids": [],
+   "topics": [
+    "arsa-payi",
+    "kentsel-donusum"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": "Kat Mülkiyeti Kanunumuza, 2814 Sayılı Yasa ile KMK’da yapılan değişiklik ile girmiş “arsa payının düzeltilmesi davası” son günlerde Mahkemeleri meşgul edecek gibi gözükmektedir. Çünkü afet riski altındaki alanların dönüştürülmesi yolunda kat irtifakı/kat mülkiyetine konu yapıların yıkım sonrasında paylı mülkiyete dönüşmesi sonucu elde edilecek hakların pay oranına bağlılığı ilkesine dayalı olması bu davalara ivme kazandıracaktır. Makalemizin amacı, bu yönde açılacak davalara bağlı hüküm ve sonuçları irdelemeye yöneliktir. Giriş sunumunda öncelikle belirtmek gerekirse yıllardır açılmamış bu davalara riskli yapı kararı ile birlikte başvurulmasında ya da yıkılacak olan bir taşınmazın bağımsız bölümünü sonradan edinen cüz-i haleflerin edinimi sonrası bu davayı açmalarında pek de hayır görmediğimizi ifade etmek isteriz. İşte makalenin özünde, bu davalara ilişkin kanuni düzenlemenin, 6306 sayı",
+    "en": null
+   },
+   "summarySource": "pdf-intro",
+   "pages": 27,
+   "pdf": "/makaleler/pdf/05.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0018_6306_Sayl_Yasa_Uygulamalarnda_Arsa_Paynn_Dzeltilmesi_Davasna_likin_Hkm_ve_Sonular.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": false,
+    "scanned": false
+   }
+  },
+  {
+   "id": 3,
+   "slug": "6306-sayili-yasaya-iliskin-guncel-uygulama-hatalari-uzerine-dusunceler",
+   "title": {
+    "tr": "6306 Sayılı Yasaya İlişkin Güncel Uygulama Hataları Üzerine Düşünceler",
+    "en": "Thoughts on Current Application Errors Regarding Law No. 6306",
+    "de": "Gedanken zu aktuellen Anwendungsfehlern in Bezug auf Gesetz Nr. 6306"
+   },
+   "coAuthor": "Stj. Av. Nazlı OSMANAĞAOĞLU",
+   "date": "2012",
+   "year": 2012,
+   "dateSource": "pdf-inferred",
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "kentsel-donusum"
+   ],
+   "keywords": {
+    "tr": [
+     "Dönüşüm",
+     "afet",
+     "riskli yapı ve alan",
+     "memurun sorumluluğu",
+     "idarenin tazmin yükümlülüğü",
+     "yapı malikinin sorumluluğu ve idarenin sorumluluğunun yarışması"
+    ],
+    "en": [
+     "Transformation",
+     "catastrophe",
+     "compromised building and zone",
+     "liability of officers",
+     "the obligation of the government to indemnify"
+    ]
+   },
+   "summary": {
+    "tr": "“Afet Riski Altındaki Alanların Dönüştürülmesi Hakkında Kanun” başlığı ile 28309 sayılı resmi gazetede 31.05.2012 tarihinde yayımlanarak yürürlüğe giren ve kısaca halk arasında “Kentsel Dönüşüm Yasası” olarak ifade edilen yasanın emredici hükümleri karşısında idari mercilerin hukuka aykırı olarak yasayı uygulamamaları eleştiri konusudur. Bu makalenin yazılma amacı 6306 sayılı yasanın ilgili hüküm ve ilkelerini kısaca açıklayarak, idari mercilerin bağlı yetkilerine rağmen yasaya karşı takındığı tutuma dayalı olarak hangi hukuki sonuçlara tabi olacakları ve oluşacak bir depremde doğacak zararlardan idarenin tazmin yükümlülüğü sonucu görevi yerine getirmeyen memurlara rücu yetkisi konusunda ciddi uyarılar yapmak ve olması lazım gelen (de lege feranda) açısından yasanın iyi uygulamasına yönelik öneriler getirmektir",
+    "en": "The illegal application of the law which was enacted on the official gazette of May 31st 2012 number 28309 with the name “Law on the Conversion of the Areas under the Risk of Catastrophe” which is colloquially called “Urban Transformation Law” by the governmental bodies through the breach of mandatory provisions are being subject to criticism. The purpose of this article is to briefly explain the relevant provisions and principles of the Law 6306, to set forth the legal consequences to which the governmental bodies will be subject as a result of their behavior against the law and to seriously warn their officers regarding the authority of the governmental body to have a recourse against such officers concerning damages arising from an earthquake and finally bring suggestions for a better application of the law regarding de lege feranda. 1 Maltepe Üniversitesi Hukuk Fakültesi Özel Hukuk Ana Bilim Dalı, Galatasaray Üniversitesi Hukuk Fakültesi Misafir Öğretim Üyesi 2"
+   },
+   "summarySource": "pdf",
+   "pages": 17,
+   "pdf": "/makaleler/pdf/03.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0016_6306_Sayl_Yasaya_likin_Gncel_Uygulama_Hatalar_zerine_Dnceler_Legal_Temmuz_2014.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": true,
+    "scanned": false
+   }
+  },
+  {
+   "id": 13,
+   "slug": "tarim-arazilerinde-yapi-insa-etme-ve-ozellikle-ikamet-amacli-yapilara",
+   "title": {
+    "tr": "Tarım Arazilerinde Yapı İnşa Etme ve Özellikle İkamet Amaçlı Yapılara İlişkin Sorunlar",
+    "en": "Problems Regarding Building Construction on Agricultural Lands and Especially Buildings for Residential Purposes",
+    "de": "Probleme beim Hochbau auf landwirtschaftlichen Flächen und insbesondere bei Gebäuden für Wohnzwecke"
+   },
+   "coAuthor": "Stj. Av. Gönül ÇELİKER",
+   "date": "2005-07",
+   "year": 2005,
+   "dateSource": "pdf-issue",
+   "journal": "İstanbul Barosu Dergisi",
+   "volume": "83",
+   "issue": "6",
+   "orcids": [],
+   "topics": [
+    "tarim-arazi"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": "19 Temmuz 2005 tarih ve 25880 sayılı Resmi Gazete’de yayımlanan “5403 sayılı Toprak Koruma ve Arazi Kullanımı Kanunu” (bundan böyle TKAKK olarak anılacaktır) toprağın korunması ve tarım arazilerinin kullanım şekillerinin belirlenmesi amacıyla çıkarılmıştır. Kanunun amacı, “toprağın doğal veya yapay yollarla kaybını ve niteliklerini yitirmesini engelleyerek korunmasını, geliştirilmesini ve çevre öncelikli sürdürülebilir kalkınma ilkesine uygun olarak, planlı arazi kullanımını sağlayacak usul ve esasların sağlanması” olarak tespit edilmiştir (m.1). Doğal olarak, bu kanun ile mülkiyet hakkının kullanımına ilişkin kamu hukuku karakterli kısıtlamalar da getirilmiştir. Konumuzu ilgilendiren yönü ile de kanun tarım arazilerinde yapılacak yapıları sınırlandırmıştır. Kanunun “Tanımlar” başlıklı 3. maddesinin (k) bendi altında getirilen tarımsal amaçlı yapılara ilişkin tanım, bu kanun çerçevesinde",
+    "en": null
+   },
+   "summarySource": "pdf-intro",
+   "pages": 24,
+   "pdf": "/makaleler/pdf/13.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0026_Tarm_Arazilerinde_Yap_na_Etme_ve_zellikle_kamet_Amal_Yaplara_likin_Sorunlar.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": false,
+    "scanned": false
+   }
+  },
+  {
+   "id": 16,
+   "slug": "mk-md-700-hukmunce-pay-uzerindeki-intifa-haklarinin-payli-halin",
+   "title": {
+    "tr": "MK md. 700 Hükmünce Pay Üzerindeki İntifa Haklarının Paylı Halin Giderilmesi Davalarına İlişkin Hukuki Sonuçlar",
+    "en": "Legal Conclusions Regarding the Cases Regarding the Elimination of the Shared Status of Usufruct Rights on Shares According to Article 700 of the CC",
+    "de": "Rechtliche Schlussfolgerungen zu den Fällen betreffend die Aufhebung des gemeinsamen Status von Nießbrauchsrechten an Aktien gemäß Artikel 700 des Bürgerlichen Gesetzbuchs"
+   },
+   "coAuthor": "Dr. Melek Bilgin Yüce",
+   "date": "2002",
+   "year": 2002,
+   "dateSource": "pdf-inferred",
+   "journal": "İstanbul Barosu Dergisi",
+   "volume": "81",
+   "issue": "3",
+   "orcids": [],
+   "topics": [
+    "intifa",
+    "payli-mulkiyet"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": "Son derece basit bir hukukî kurguya sahip iken hatalı içtihatlara konu olan ve üstelik bu hatalı içtihatlar sonucunda 2002 yılı değişiklikliği ile Medeni Kanunda düzenlenmiş olan konu, tabiri caiz ise başlığımızda belirttiğimiz üzere “kuyudan çıkarılamayan taş” hâlini almıştır. Paylı mülkiyet konusu taşınmazlarda kural olarak paydaşlara payları üzerinde tasarruf imkânı verilmiştir (MK m. 688/son). Bu çerçevede, pay üzerinde intifa hakkı tesis edilmesi de mümkün ve geçerli bir hukukî işlemdir. İşte paydaşlardan birinin payı üzerinde intifa hakkı kurması ve bu aynî hakkın doğumundan sonra paylı hâlin giderilmesi (izale-i şuyu) dâvasının açılması (MK m.698) varsayımında intifa hakkının kaderi üzerinde hukukî duraksamalar yaşanmış; hâlâ da yaşanmaya devam etmektedir. Aslında işin -niteliği gereği- basit bir sonucu bulunmakta iken, hatalı bir içtihat, sorunun kaderini değiştirmiştir. Paylı hâ",
+    "en": null
+   },
+   "summarySource": "pdf-intro",
+   "pages": 22,
+   "pdf": "/makaleler/pdf/16.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0030_MK_md_700_Hkmnce_Pay_zerindeki_ntifa_Haklarnn_Payl_Halin_Giderilmesi_Davalarna_likin_Hukuki_Sonular.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": false,
+    "scanned": false
+   }
+  },
+  {
+   "id": 12,
+   "slug": "tapu-iptal-davasi-olarak-yanlis-adlandirma-ile-acilan-davalar-tescili",
+   "title": {
+    "tr": "Tapu İptal Davası Olarak Yanlış Adlandırma İle Açılan Davalar (Tescili İsteme Davası_Yolsuz Tescilin Düzeltilmesi Davası)",
+    "en": "Cases Filed with Misnaming as Title Deed Cancellation Case (Case for Requesting Registration_Case for Correction of Illegal Registration)",
+    "de": "Fälle, die mit falscher Benennung als Fall der Aufhebung der Eigentumsurkunde eingereicht wurden (Fall zur Beantragung einer Registrierung_Fall zur Korrektur einer illegalen Registrierung)"
+   },
+   "coAuthor": "Arş. Gör. Gülşah Sinem AYDIN",
+   "date": "2001-11",
+   "year": 2001,
+   "dateSource": "pdf-issue",
+   "journal": "İstanbul Barosu Dergisi",
+   "volume": "88",
+   "issue": "6",
+   "orcids": [],
+   "topics": [
+    "tapu-tescil"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": "Uygulamada “tapu iptal davası” adı altında açılan davalar artık bu deyimle hiç yadırganmaksızın dillere yerleşmiş bulunmaktadır. Hatta bu davayı dilekçelerinde “davalıya ait tapu kaydının iptali ile davacı adına hükmen tesciline” şeklinde dile getirenlere de sıklıkla rastlanmaktadır. Ne hikmetse Türk Medenî Kanunu’nda3 tapunun iptaline ilişkin bu tabirle kaleme alınmış hiçbir hüküm bulunmaz iken bu adlandırmayı anlamak mümkün değildir. Hukuk disiplini içinde kanundan ayrı terminoloji oluşturmak gerek öğreti dilinde gerekse mahkeme kararlarında sakınca yaratacak boyutlara ulaşmaktadır. Oysa olması gereken hukuk (de lege feranda) açısından, öğreti dilinde kurumsal bir ayırıma gidilerek birbirine benzemeyen hukukî kurumlar aynı terimle adlandırılmamalıdır. Gelgelelim böyle bir sonuca hizmet etmeksizin pragmatik düşüncelerle, kanunî temeli olmayan terimlerin kullanılması, hele hele araştırma",
+    "en": null
+   },
+   "summarySource": "pdf-intro",
+   "pages": 37,
+   "pdf": "/makaleler/pdf/12.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0025_Tapu_ptal_Davas_Olarak_Yanl_Adlandrma_le_Alan_Davalar_Tescili_steme_Davas_Yolsuz_Tescilin_Dzeltilmesi_Davas.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": false,
+    "scanned": false
+   }
+  },
+  {
+   "id": 45,
+   "slug": "nisanin-bozulmasinda-cayma-akcasi-ve-cezai-sart-mk-m-83-madde",
+   "title": {
+    "tr": "Nişanın Bozulmasında Cayma Akçası ve Cezai Şart (MK m. 83 Madde Değişikliği)",
+    "en": "Penalty and Break-up Fee in Case of Disengagement (Amendment to Article 83 of the Turkish Civil Code)",
+    "de": "Vertragsstrafe und Entschädigung bei Vertragsauflösung (Änderung von Artikel 83 des türkischen Zivilgesetzbuches)"
+   },
+   "coAuthor": null,
+   "date": "1995",
+   "year": 1995,
+   "dateSource": "pdf-inferred",
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "sozlesmeler",
+    "miras-aile"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": "1— GENEL OLARAK KONUNUN SONUMU VE ARAŞTIRMANIN AMACI MKmuzun bazı maddelerinde değişiklik]er yapan 3678 sayılı kanun ile nişanı bozma konusuı da önemli bir değişiklik yapıldığını görüyöruz. 'Aşağıda eski ve yeni düzenlemenin karşılaştınlması ile de görülebilec4i gibi; daha önce yalııtca genel bir ifade ile evlenmeden kaçınma hali için kararlaşt:ınlan tzminatın geçerli olmadığından sözedilmiş iken, bu defa cayma tazminatı ve cezai şartın dava edilemeyeceği hükmü getirilmiştir. Ancak, köklü bir değişiklik olduğundan kuşku duyularnayacak yönü ile, bu tür edimlerin ifası halinde geri istenemeyecekleri MK 83/111. hükmüne girmiştir. Araştırmanın amacı, yeni hükmü eleştirisel bir yaklaşımla irdeleyerek diğer boyutu olan başlık parası açısından son derece tehlikeli yönü ile de araştırma konusu yapmaktır. Çünkü, cayma tazminatı aktin doğıımu ile birlikte ödenen bir edim olarak, başlık parasma son",
+    "en": null
+   },
+   "summarySource": "pdf-intro",
+   "pages": 58,
+   "pdf": "/makaleler/pdf/45.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/45___Niann_Bozulmasnda_Cayma_Akas_ve_Cezai_art_MK_m_83_Madde_Deiiklii.pdf",
+   "needs": {
+    "summary": false,
+    "date": false,
+    "journal": true,
+    "scanned": false
+   }
+  },
+  {
+   "id": 1,
+   "slug": "semenin-aralikli-olarak-odendigi-satim-akdinde-temerrut-nedeni-ile",
+   "title": {
+    "tr": "Semenin Aralıklı Olarak Ödendiği Satım Akdinde Temerrüt Nedeni ile Fesih Sonucu Kısmi Tediyenin Satıcıda Kalacağına ilişkin Şartların Hukuki Sonuçları",
+    "en": "Legal Consequences of Conditions Regarding Partial Payment to Remain with the Seller as a Result of Termination Due to Default in a Sales Contract Where Price is Paid Intermittently",
+    "de": "Rechtliche Folgen von Bedingungen bezüglich des Verbleibs einer Teilzahlung beim Verkäufer infolge einer Kündigung wegen Nichterfüllung eines Kaufvertrags, bei dem der Preis zeitweilig gezahlt wird"
+   },
+   "coAuthor": null,
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "sozlesmeler"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": null,
+    "en": null
+   },
+   "summarySource": null,
+   "pages": 8,
+   "pdf": "/makaleler/pdf/01.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0010_Semenin_Aralkl_Olarak_dendii_Satm_Akdinde_Temerrt_Nedeni_ile_Fesih_Sonucu_Ksmi_Tediyenin_Satcda_Kalacana_ilikin_artlarn_Hukuki_Sonular.pdf",
+   "needs": {
+    "summary": true,
+    "date": true,
+    "journal": true,
+    "scanned": true
+   }
+  },
+  {
+   "id": 2,
+   "slug": "devre-mulk-hakki-ve-devre-mulk-hakkina-iliskin-akit-yapma-vaadleri-ile",
+   "title": {
+    "tr": "Devre Mülk Hakkı ve Devre Mülk Hakkına ilişkin Akit Yapma Vaadleri ile Bu Konuda Noterlerin İşlevi",
+    "en": "Timeshare Rights and Promises to Make Contracts Regarding Timeshare Rights and the Function of Notaries in This Matter",
+    "de": "Timeshare-Rechte und Versprechen zum Abschluss von Verträgen über Timeshare-Rechte und die Funktion von Notaren in dieser Angelegenheit"
+   },
+   "coAuthor": null,
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "devre-mulk",
+    "noterlik"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": null,
+    "en": null
+   },
+   "summarySource": null,
+   "pages": 11,
+   "pdf": "/makaleler/pdf/02.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0011_Devre_Mlk_Hakk_ve_Bu_Konuda_Noterlerin_levi.pdf",
+   "needs": {
+    "summary": true,
+    "date": true,
+    "journal": true,
+    "scanned": true
+   }
+  },
+  {
+   "id": 4,
+   "slug": "arsa-payi-karsiligi-insaat-sozlesmeleri-konusunda-uygulama-hatalari",
+   "title": {
+    "tr": "Arsa Payı Karşılığı İnşaat Sözleşmeleri Konusunda Uygulama Hataları",
+    "en": "Application Errors in Construction Contracts in Return for Land Share",
+    "de": "Anwendungsfehler bei Bauverträgen als Gegenleistung für Landanteile"
+   },
+   "coAuthor": "Dr. Tuba Akçura Karaman",
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "arsa-payi",
+    "sozlesmeler"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": null,
+    "en": null
+   },
+   "summarySource": null,
+   "pages": 28,
+   "pdf": "/makaleler/pdf/04.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0017_Arsa_Pay_Karl_naat_Szlemeleri_Konusunda_Uygulama_Hatalar.pdf",
+   "needs": {
+    "summary": true,
+    "date": true,
+    "journal": true,
+    "scanned": true
+   }
+  },
+  {
+   "id": 6,
+   "slug": "avukatlik-ucretine-iliskin-kamulastirma-kanunu-nda-yer-alan",
+   "title": {
+    "tr": "Avukatlık Ücretine İlişkin Kamulaştırma Kanunu'nda Yer Alan Düzenlemelere Yönelik Eleştiriler",
+    "en": "Criticisms of the Regulations in the Expropriation Law Regarding Attorney Fees",
+    "de": "Kritik an den Regelungen des Enteignungsgesetzes zu Anwaltsgebühren"
+   },
+   "coAuthor": "Av. Sezgi Cihan Bahadır",
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "kamulastirma",
+    "yargi-elestirisi",
+    "meslek"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": "Öncesinde 6830 sayılı İstimlak Kanunu’nun 32. maddesinde mevcut olan, sonrasında ise 2942 sayılı Kamulaştırma Kanunu’nun 31. maddesine konu olmuş kamulaştırma bedelinin veya bir kısmının avukatlık ücreti olarak kararlaştırılması yasağı ve bu yasağa uymayanlar hakkında getirilen hapis ve para cezası müeyyidesi Kamulaştırma Kanunu’nun (KamuK.) 31. maddesinde 4650 sayılı Kanun ile yapılan değişiklik sonrasında da mevcudiyetini aynen korumuştur. Kamulaştırma Kanunu m.31/e bendinin “Kamulaştırma bedelinin tamamının veya bir kısmının avukat veya dava vekili veya onlar adına hareket edenlere ait olacağının kararlaştırılması.” hükmü ile taşınmaza bağlı ayni hakkı kamulaştırılan kişinin sahip olacağı kamulaştırma bedelinin belirli bir yüzdesinin vekalet ücreti olarak kararlaştırıldığı sözleşmelerin yapılamaması ve bu konuda özel hukuk sahasında sözleşmenin geçersizliği yolunda hüküm ve sonuç bağl",
+    "en": null
+   },
+   "summarySource": "pdf-intro",
+   "pages": 11,
+   "pdf": "/makaleler/pdf/06.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0019_Avukatlk_cretine_likin_Kamulatrma_Kanununda_Yer_Alan_Dzenlemelere_Ynelik_Eletiriler.pdf",
+   "needs": {
+    "summary": false,
+    "date": true,
+    "journal": true,
+    "scanned": false
+   }
+  },
+  {
+   "id": 7,
+   "slug": "birlikte-mulkiyette-payli-mulkiyet-elbirligi-mulkiyeti-yapilan",
+   "title": {
+    "tr": "Birlikte Mülkiyette (Paylı Mülkiyet_Elbirliği Mülkiyeti) Yapılan Kazandırıcı İşlemler ve 6306 Sayılı Kanun'a Dayalı Uygulama",
+    "en": "Acquisitive Transactions in Joint Ownership (Shared Ownership_Cooperative Ownership) and Application Based on Law No. 6306",
+    "de": "Erwerbstransaktionen im Miteigentum (gemeinsames Eigentum/Genossenschaftseigentum) und Antrag auf Grundlage des Gesetzes Nr. 6306"
+   },
+   "coAuthor": "Araş. Gör. Gülşah Sinem AYDIN",
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "kentsel-donusum",
+    "payli-mulkiyet"
+   ],
+   "keywords": {
+    "tr": [
+     "Birlikte Mülkiyet",
+     "6306 Sayılı Kanun",
+     "Karar",
+     "Borçlandırıcı işlem",
+     "Tasarruf İşlemi"
+    ],
+    "en": [
+     "Collective Ownership",
+     "Code of 6306",
+     "Resolution",
+     "Promissory Transaction",
+     "Öğretim Elemanı. 2"
+    ]
+   },
+   "summary": {
+    "tr": "BİLGİ OLARAK BİRLİKTE MÜLKİYET İLİŞKİSİ VE MAKALEYE ÖZGÜ SONUÇLARI Aynî hak konusu eşya üzerinde mülkiyet hakkının birden fazla kişiye ait olması Türk Medenî Kanunu’nun düzenleme konusu içinde yer almaktadır. Türk Medenî Kanunu, “birlikte mülkiyet” başlığı altında, (TMK m. 688-700) “paylı mülkiyet” ve (TMK m. 701-703) hükümleri arasında “elbirliği mülkiyeti” adı altında farklı iki kuruma vücut vermiştir. 3 Yoksa eskiden olduğu gibi “Birden ziyade kimselerin bir şey üzerinde mülkiyeti” başlığı altında (Türk Kanun-u Medenîsi1 m. 623 vd.), “müşterek” ile “iştirak halinde” mülkiyet terimleri, artık kullanılmamaktadır. Hukukçular, kanunî terimleri kullanma konusunda sorumluluk altındadır. Bu hususta, eski terimlerle dilekçe ve yargı kararlarının kaleme alınmasının bir dil alışkanlığı olduğu da ileri sürülemez. Ancak köklü içtihat tecrübesinden yararlanmak için, genç hukukçuların kanunî terimlerin eski karşılıklarını bilmeleri gerektiğini de akıldan çıkarmamaları gerekir. Araştırmanın olması lazım gelen hacmi, bu iki kurumun farklılıkları hakkında bilgi vermeye engeldir. Bu nedenle araştırmada yalnızca, hak sahibi (paylı mülkiyette “paydaş”; elbirliği mülkiyetinde “ortak”) olan kişiler arasındaki yararlanma, yönetim ve tasarruf yetkisine dayalı çıkar çatışması ve bu çatışmanın sonuçları irdelenecektir. Yine çalışmada nicelik olarak, elbirliği mülkiyetinde daima oybirliğine, paylı mülkiyette ise farklı karar niceliğine bağlanmış karar türlerine özlüce değinmekle yetinilecektir. Birlikte mülkiyette, tek kişi mülkiyetindeki malikin mülkiyet hakkı dolayısıy",
+    "en": "In this study, the differences between resolutions, promissory transaction and dispositive transactions in collective ownership (joint/united) will be analyzed. These differences cannot be comprehended by law – practitioners. Further more, these differences in question lead to various problems in the application of the code numbered 6306. This study aims to create solutions for these problems and remind the distinction between transactions"
+   },
+   "summarySource": "pdf",
+   "pages": 34,
+   "pdf": "/makaleler/pdf/07.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0020_Birlikte_Mlkiyette_Payl_Mlkiyet_Elbirlii_Mlkiyeti_Yaplan_Kazandrc_lemler_ve_6306_Sayl_Kanuna_Dayal_Uygulama.pdf",
+   "needs": {
+    "summary": false,
+    "date": true,
+    "journal": true,
+    "scanned": false
+   }
+  },
+  {
+   "id": 8,
+   "slug": "bagislayana-donme-kosullu-bagislama-serhinin-payli-mulkiyetin-sona",
+   "title": {
+    "tr": "Bağışlayana Dönme Koşullu Bağışlama Şerhinin Paylı Mülkiyetin Sona Ermesi (İzale_i Şuyu) Davasına İlişkin Sonuçları ve Paya Bağlı İntifa Hakkına Dayalı Olumsuzluklardan Ders Alınmayışı üzerine Düşünceler",
+    "en": "Thoughts on the Consequences of the Conditional Donation of Return to the Donor in the Termination of Shared Ownership (Dissolution of Shares) Case and the Failure to Learn from the Negativities Based on the Usufruct of Shares",
+    "de": "Gedanken zu den Folgen der bedingten Schenkung der Rückgabe an den Spender im Fall der Beendigung des gemeinsamen Eigentums (Auflösung von Anteilen) und des Versäumnisses, aus den Negativitäten aufgrund des Nießbrauchs von Anteilen zu lernen"
+   },
+   "coAuthor": "Araş. Gör. Dr. Müge Ürem",
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "tapu-tescil",
+    "intifa",
+    "payli-mulkiyet",
+    "sozlesmeler"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": "Hatalı Yargıtay kararlarının kanun hükmü haline gelmesi Yargıtay’ın olduğu kadar komisyonda yer alan hukukçuların da büyük hatası sonucu oluşmaktadır. Bilimsel bir süzgeçten geçmeden yapılan kanun değişiklikleri Türk Medeni Kanunu ile ilgili olunca tam bir hukuki garabete dönüşmektedir. Bu duruma sebep olan hükümlerin mehaz İsviçre Medeni Kanunu’nda bulunmayışı dikkatle irdelenmelidir. Kanun değişiklikleri ile kararın o yönde çıkmasını engellemek için hüküm konması da kabul edilebilir bir yöntem değildir. Doğru olan, kararların bilim süzgeci ile hatalı yönde oluşmasının önüne geçilmesidir. 3 Özmen’in ortak yazar olarak kaleme aldığı bir makalede pay üzerinde1, intifa hakkı kurulması halinde paydaşlardan birinin açtığı paylı mülkiyetin sona ermesi davasında taşınmazın intifa hakkı ile yüklü ihaleye çıkartılmasına ilişkin kararların hukuki temelden yoksunluğuna işaret edilmiştir. Aynı maka",
+    "en": "Dissolution case is one of the statutory restrictions on ownership; so the share with the right of usufruct is removed; the surrogate exists as a sale price instead of the ownership on the share which is removed and it is not argued that the right of usufruct on share exists. However the Supreme Court decision is contrariwise. Shareholders who are in bad faith find the legal basis under TCO Art. 292 as TCC Art. 700. Under TCO Art. 292/II the priority notices is regulated and some decisions are made related that the compulsory liquidation must be executed with the priority notices which were glossed before the dissolution case. In our article, the explanations on why it should be given up such unfair practice are worded and the unfair sufferings are tried to be mentioned with the concrete samples"
+   },
+   "summarySource": "pdf-intro",
+   "pages": 28,
+   "pdf": "/makaleler/pdf/08.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0021_Balayana_Dnme_Koullu_Balama_erhinin_Payl_Mlkiyetin_Sona_Ermesi_zale_i_uyu_Davasna_likin_Sonular.pdf",
+   "needs": {
+    "summary": false,
+    "date": true,
+    "journal": true,
+    "scanned": false
+   }
+  },
+  {
+   "id": 9,
+   "slug": "turkiye-gayrimenkul-hukukunda-yasalarin-dinamik-yapiya-uygun-hale",
+   "title": {
+    "tr": "Türkiye Gayrimenkul Hukukunda Yasaların Dinamik Yapıya Uygun Hale Getirilmesi Üzerine Düşünceler",
+    "en": "Thoughts on Adapting the Laws to the Dynamic Structure in Turkish Real Estate Law",
+    "de": "Gedanken zur Anpassung der Gesetze an die dynamische Struktur im türkischen Immobilienrecht"
+   },
+   "coAuthor": null,
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "sozlesmeler"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": null,
+    "en": null
+   },
+   "summarySource": null,
+   "pages": 4,
+   "pdf": "/makaleler/pdf/09.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0022_Trkiye_Gayrimenkul_Hukukunda_Yasalarn_Dinamik_Yapya_Uygun_Hale_Getririlmesi_zerine_Dnceler.pdf",
+   "needs": {
+    "summary": true,
+    "date": true,
+    "journal": true,
+    "scanned": true
+   }
+  },
+  {
+   "id": 11,
+   "slug": "icra-islemlerine-konu-olarak-intifa-hakkinin-paraya-cevrilmesi",
+   "title": {
+    "tr": "İcra İşlemlerine Konu Olarak İntifa Hakkının Paraya Çevrilmesi Uygulamaları ve Cebren Devri Yanılgısı Üzerine Düşünceler",
+    "en": "Thoughts on the Applications of Conversion of Usufruct into Cash as a Subject of Enforcement Proceedings and the Misconception of Forced Transfer",
+    "de": "Gedanken zu den Anwendungen der Umwandlung von Nießbrauch in Bargeld als Gegenstand von Vollstreckungsverfahren und zum Missverständnis der Zwangsübertragung"
+   },
+   "coAuthor": "Av. Selen Yıldırım",
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": "İstanbul Barosu Dergisi",
+   "volume": "91",
+   "issue": "1",
+   "orcids": [],
+   "topics": [
+    "intifa",
+    "icra-iflas"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": "Sınırlı ayni hak türü intifa hakkının bir malvarlığı değeri oluşturmasına dayalı esas ile cebri icra işlemlerine konu olacağı açıktır. Bu niteliği ile borçlu hak sahibi aleyhine kesinleşen icra takiplerinde (ve doğal olarak iflas işlemlerinde) intifa hakkının paraya çevrilmesi konusunda doğan tereddütler üzerine işbu makaleyi yazma amacı doğmuştur. İntifa hakkınınkanuni niteliği ile bağdaşmayan paraya çevrilmesi amacıyla cebren ihale ile devrine yönelik kararlar, tam bir garabet örneği oluşturmuştur. Böyle bir içtihadın bir daha oluşmaması temennisi ile sorunu irdelemek istiyoruz. II. ARAŞTIRMAYA KONU İNTİFA HAKKI ÖZELLİKLERİ A. EŞYA HUKUKU AÇISINDAN SONUÇLARI 1. İntifa Hakkı Ayni Bir Haktır İntifa hakkı,Türk Medeni Kanunu’nda “sınırlı ayni haklar” üst başlığı altında “irtifak hakları” türü olarak düzenlenmiştir. Kanunumuzun794. maddesindedüzenlenmiş olan hüküm şu şekildedir:“İntifa hakk",
+    "en": null
+   },
+   "summarySource": "pdf-intro",
+   "pages": 16,
+   "pdf": "/makaleler/pdf/11.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0024_cra_lemlerine_Konu_Olarak_ntifa_Hakknn_Paraya_evrilmesi_Uygulamalar_ve_Cebren_Devri_Yanlgs_zerine_Dnceler.pdf",
+   "needs": {
+    "summary": false,
+    "date": true,
+    "journal": false,
+    "scanned": false
+   }
+  },
+  {
+   "id": 14,
+   "slug": "tapu-daireleri-uygulamalari-uzerine-dusunceler",
+   "title": {
+    "tr": "Tapu Daireleri Uygulamaları Üzerine Düşünceler",
+    "en": "Thoughts on Land Registry Office Practices",
+    "de": "Gedanken zur Praxis des Grundbuchamtes"
+   },
+   "coAuthor": null,
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": "İstanbul Barosu Dergisi",
+   "volume": "86",
+   "issue": "4",
+   "orcids": [],
+   "topics": [
+    "tapu-tescil"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": "TAPU DAİRELERİ UYGULAMALARI ÜZERİNE DÜŞÜNCELER (5912 Sayılı Kanun ile KMK’ya eklenen geçici madde 2 hükmüne dayalı intibak üzerine düşünceler) (Cehlin ol mertebesi ancak tahsil ile mümkündür)1 Prof. Dr. Etem Saba ÖZMEN2 Yönetimin yasallığı (idarenin kanuniliği) esasını zorunlu kılan hukuk devletinde Tapu daireleri kendilerini bağlayan yasalardan bağımsız hareket etmeleri ile vatandaşa çile çektirebilmektedir. Maalesef, “4483 sayılı Memurlar ve Kamu Görevlilerinin Yargılanması Hakkında Kanun” uyarınca uygulamadaki zorluk ve koşulsuz kollanmaları sonucu kovuşturmaya muhatap olmamaları ve yasal talepleri bu nedenle fütursuzca reddetmeleri karşısında idare mahkemelerinden karar alınmasının üç yılı bulacağı düşüncesi ile vatandaşın yargı yoluna da gitmeden işini halletmeye kalkışması ile yaratılan kaos sürüp gitmektedir. Tapu daireleri bilgisizlik örnekleri devamla artmaktadır. İpotekli taşın",
+    "en": null
+   },
+   "summarySource": "pdf-intro",
+   "pages": 13,
+   "pdf": "/makaleler/pdf/14.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0027_Tapu_Daireleri_Uygulamalar_zerine_Dnceler.pdf",
+   "needs": {
+    "summary": false,
+    "date": true,
+    "journal": false,
+    "scanned": false
+   }
+  },
+  {
+   "id": 15,
+   "slug": "tasinmaz-satis-vaadlerinde-tarih-onceligine-ustunluk-taniyan-yargitay",
+   "title": {
+    "tr": "Taşınmaz Satış Vaadlerinde Tarih Önceliğine Üstünlük Tanıyan Yargıtay Kararlarına İlişkin Düşünceler",
+    "en": "Thoughts on the Supreme Court Decisions Granting Priority to Date in Real Estate Sales Promises",
+    "de": "Gedanken zu den Entscheidungen des Obersten Gerichtshofs, die bisher bei Immobilienverkaufsversprechen Vorrang gewähren"
+   },
+   "coAuthor": "ARAŞ. GÖR. MELEK BİLGİN YÜCE",
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "tapu-tescil",
+    "sozlesmeler",
+    "yargi-elestirisi"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": "Kara Avrupası hukuk sisteminde yer alan bütün özel hukuk sistemlerinde, borçlandırma (taahhüt) ve tasarruf işlemleri ayrımı Roma Hukukundan bu yana gelen ve nısbî hak-aynî hak ayrımına şekil veren temel bir kriter olarak konumuzu oluşturmaktadır. Hatta biraz daha ileri giderek, Borçlar Hukukunun bu temel ilkeden oluştuğunu söylemek abartı olmayacaktır. Borçlanma-harcama (iltizam-tasarruf) ayrımı, bizim özel hukuk yapımızın temelidir. Ancak, 80’li ve 90’lı yıllara yansıyan ve Hukuk Genel Kurulu (HGK) kararına dahi mesnet oluşturan bir yaklaşımla Yargıtay tarafından bu ayrımın tamamen ortadan kaldırılarak ve doğal olarak daha vahim bir biçimde, nısbî hak-aynî hak ayrımının ortadan kaldırıldığına tanık olmaktayız. Yargıtay kararlarına konu uyuşmazlık, taşınmaz satış vaadleri ile ilgili ortaya çıkmıştır. Bilindiği üzere, tapudaki uygulama ile bugün hukuka aykırı olarak resmi senetlerle taşın",
+    "en": null
+   },
+   "summarySource": "pdf-intro",
+   "pages": 47,
+   "pdf": "/makaleler/pdf/15.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0029_Tanmaz_Sat_Vaadlerinde_Tarih_nceliine_stnlk_Tanyan_Yargtay_Kararlarna_likin_Dnceler.pdf",
+   "needs": {
+    "summary": false,
+    "date": true,
+    "journal": true,
+    "scanned": false
+   }
+  },
+  {
+   "id": 17,
+   "slug": "son-degisiklik-cercevesinde-kadastro-tespitinden-onceki-ayni-hak",
+   "title": {
+    "tr": "Son Değişiklik Çerçevesinde Kadastro Tespitinden Önceki Ayni Hak İddialarında Hazinenin Kusursuz Sorumluluğuna İlişkin Düşünceler",
+    "en": "Thoughts on the Strict Liability of the Treasury in Real Rights Claims Before the Cadastral Determination Within the Framework of the Last Amendment",
+    "de": "Gedanken zur strikten Haftung des Finanzministeriums bei Realrechtsansprüchen vor der Katasterfeststellung im Rahmen der letzten Verfassungsänderung"
+   },
+   "coAuthor": "Av. Nurgül Kutlu",
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "tapu-tescil"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": "Bilindiği gibi kadastro tespiti kavramı “Mülkiyet Haklarının Tespitine İlişkin Esaslar” başlığı altında, 3402 sayılı Kadastro Kanunu (KK) 13. ve 14. maddelerinde taşınmaz niteliğine bağlı olarak iki ana başlık altında düzenlenmiş olup, ayni hakların Medeni Kanun (MK) hükümlerince tutulan Tapu Siciline kaydedilmesi zorunluluğunu (MK m. 997 vd.) hüküm altına almaktadır. Böylece Medeni Kanun hükümlerince tutulan sicile bağlı olarak (MK m. 997 vd.) tapuya kayıtlı hale gelen taşınmazlar hak sahipleri lehine ayni hak karinesi yaratmaktadır. Takdir edileceği gibi bu kayıt ile birlikte, yapılan ayni hak tescilleri yolsuz olabilmektedir. Hatalı kadastro tespiti sonrası oluşan yolsuz tescillerin hak sahibi olmayan kişiler lehine yarattığı karineye dayalı olarak ayni haklara hakim ilkeler açısından “hak düşürücü süre ve zamanaşımı ile ayni hak kaybı olmama” ilkesi kadastro öncesi hukuki sebepler aç",
+    "en": null
+   },
+   "summarySource": "pdf-intro",
+   "pages": 20,
+   "pdf": "/makaleler/pdf/17.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0031_Son_Deiiklik_erevesinde_Kadastro_Tespitinden_nceki_Ayni_Hak_ddialarnda_Hazinenin_Kusursuz_Sorumluluuna_likin_Dnceler.pdf",
+   "needs": {
+    "summary": false,
+    "date": true,
+    "journal": true,
+    "scanned": false
+   }
+  },
+  {
+   "id": 18,
+   "slug": "6306-sayili-yasa-uyarinca-donusume-bagli-guncel-sorunlar",
+   "title": {
+    "tr": "6306 Sayılı Yasa Uyarınca Dönüşüme Bağlı Güncel Sorunlar",
+    "en": "Current Problems Related to Transformation According to Law No. 6306",
+    "de": "Aktuelle Probleme im Zusammenhang mit der Umwandlung gemäß Gesetz Nr. 6306"
+   },
+   "coAuthor": "Av. Berna Çakmak",
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "kentsel-donusum"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": null,
+    "en": null
+   },
+   "summarySource": null,
+   "pages": 6,
+   "pdf": "/makaleler/pdf/18.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0032__6306_Sayl_Yasa_Uyarnca_Dnme_Bal_Gncel_Sorunlar.pdf",
+   "needs": {
+    "summary": true,
+    "date": true,
+    "journal": true,
+    "scanned": true
+   }
+  },
+  {
+   "id": 19,
+   "slug": "motorlu-tasit-ve-tasinmaz-satisinda-sozlesmeye-konulan-bedelin-nakden",
+   "title": {
+    "tr": "Motorlu Taşıt ve Taşınmaz Satışında Sözleşmeye Konulan Bedelin Nakden ve Peşin Alındığına Dair Kayıtların Yarattığı Sancılar Üzerine Düşünceler",
+    "en": "Thoughts on the Pains Caused by Records of the Price Set in the Contract for the Sale of Motor Vehicles and Real Estates Being Received in Cash and in Advance",
+    "de": "Gedanken zu den Schmerzen, die dadurch entstehen, dass Aufzeichnungen über den im Vertrag über den Verkauf von Kraftfahrzeugen und Immobilien festgelegten Preis in bar und im Voraus erhalten werden"
+   },
+   "coAuthor": "Arş. Gör. Gülşah Sinem AYDIN",
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "tapu-tescil",
+    "sozlesmeler"
+   ],
+   "keywords": {
+    "tr": [
+     "Karayolları Trafik Kanunu",
+     "Türk Borçlar Kanunu",
+     "Satış Sözleşmesi",
+     "Taşınmaz",
+     "Motorlu Taşıt",
+     "Para Borcu",
+     "Resmî Şekil",
+     "Borçlanma İşlemi"
+    ],
+    "en": [
+     "Highway Traffic Law",
+     "Turkish Code of Obligations",
+     "Sale Contract",
+     "Immovable Properties",
+     "Motor Vehicles",
+     "Pecuniary Debt",
+     "Official Form",
+     "Act of Disposal"
+    ]
+   },
+   "summary": {
+    "tr": "Trafik sicilinde kayıtlı motorlu taşıtlar ile taşınmaz satışları resmî şekle tâbidir. Bu resmî şekle noterler ve Tapu Kanunu m. 26 hükmünce görevli tapu sicil müdürlükleri vücut verir. Ancak uygulamada hukukî işlemi yapan taraflar irade beyan etmedikleri halde, matbu olarak sözleşmeye “bedeli nakden ve peşin aldım” şeklinde ibareler eklenmektedir. Söz konusu memurların kendi görev alanlarına girmeyen bir konuda gösterdikleri bu çaba birçok sıkıntıyı da beraberinde getirir. Paranın ödenip ödenmediğinin resmî şeklin içeriğinde esaslı nokta olarak yer alması gerekli değildir. Buna rağmen resmî senetlerde “bedeli nakden ve peşin aldım” şeklindeki kayıtlara yer verilmesi sonucunda, söz konusu resmî senetler paranın satıcıya ödendiğine dair kesin bir delil oluşturmaktadır. Bu makalede söz konusu kayıtların ne gibi sorunlar doğurduğuna dikkat çekilmek istenmiştir",
+    "en": "The sale of motor vehicles registered to the traffic registry and the sale of immovable properties can only be valid if contracts relating to the sale property are dependent on offıcial form. Notaries or officers of authorised real estate registration offices authenticate such official form in accordance with article 26 of Deed Law. On the other hand in practice, despite the fact that parties of contracts do not declare any intention, contracts include clauses such as “I received the consideration in cash”. This type of lack competence attempt which are draw up by both notaries and officers can cause many problematic situations. Clauses indicating the consideration has been received by the seller is not compulsory, and do not constitute an essential component of official * Maltepe Üniversitesi Hukuk Fakültesi, Medenî Hukuk Anabilim Dalı, Öğretim Üyesi. ** Maltepe Üniversitesi Hukuk Fakültesi, Medenî Hukuk Anabilim Dalı, Araştırma Görevlisi. 2 form. It is, however, considered to be conclusive evidence when clauses such as “I received the consideration in cash.” are taken place in authenticated deeds. This article highlights such clauses and related issues"
+   },
+   "summarySource": "pdf",
+   "pages": 12,
+   "pdf": "/makaleler/pdf/19.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0033_Motorlu_Tat_ve_Tanmaz_Satnda_Szlemeye_Konulan_Bedelin_Nakden_ve_Pein_Alndna_Dair_Kaytlarn_Yaratt_Sanclar_zerine_Dnceler.pdf",
+   "needs": {
+    "summary": false,
+    "date": true,
+    "journal": true,
+    "scanned": false
+   }
+  },
+  {
+   "id": 20,
+   "slug": "yapi-kooperatifleri-tarafindan-yoneltilen-kat-mulkiyeti-olusumlarina",
+   "title": {
+    "tr": "Yapı Kooperatifleri Tarafından Yöneltilen Kat Mülkiyeti Oluşumlarına Yönelik Eleştiriler",
+    "en": "Criticisms Towards Condominium Formations Directed by Construction Cooperatives",
+    "de": "Kritik an Eigentumswohnungsgründungen durch Baugenossenschaften"
+   },
+   "coAuthor": "Av. Sezgi Cihan Ernas",
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "kat-mulkiyeti",
+    "kooperatif",
+    "yargi-elestirisi"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": null,
+    "en": null
+   },
+   "summarySource": null,
+   "pages": 10,
+   "pdf": "/makaleler/pdf/20.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0034_Yap_Kooperatifleri_Tarafndan_Yneltilen_Kat_Mlkiyeti_Oluumlarna_Ynelik_Eletiriler.pdf",
+   "needs": {
+    "summary": true,
+    "date": true,
+    "journal": true,
+    "scanned": true
+   }
+  },
+  {
+   "id": 21,
+   "slug": "temsil-yetkisi-galati-meshur-olarak-vekaletname-konusunda-yanilgilar",
+   "title": {
+    "tr": "Temsil Yetkisi (Galatı Meşhur Olarak Vekaletname) Konusunda Yanılgılar Üzerine Düşünceler",
+    "en": "Thoughts on Misconceptions on the Authority to Represent (Post-Officially known as Power of Attorney)",
+    "de": "Gedanken zu Missverständnissen über die Vertretungsbefugnis (postoffiziell als Vollmacht bekannt)"
+   },
+   "coAuthor": "Av. A. Göktuğ Kaya",
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "vekalet"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": null,
+    "en": null
+   },
+   "summarySource": null,
+   "pages": 10,
+   "pdf": "/makaleler/pdf/21.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0035_Temsil_Yetkisi_Galat_Mehur_Olarak_Vekaletname_Konusunda_Yanlglar_zerine_Dnceler.pdf",
+   "needs": {
+    "summary": true,
+    "date": true,
+    "journal": true,
+    "scanned": true
+   }
+  },
+  {
+   "id": 22,
+   "slug": "arsa-payi-karsiligi-insaat-sozlesmelerinde-yargitay-kararlari-ile",
+   "title": {
+    "tr": "Arsa Payı Karşılığı İnşaat Sözleşmelerinde Yargıtay Kararları ile Yaratılan Avans Tapu Kavramına Yönelik Eleştiriler",
+    "en": "Criticisms Towards the Concept of Advance Title Deed Created by the Supreme Court Decisions in Construction Contracts in Return for Land Share",
+    "de": "Kritik am Konzept der Vorabtitelurkunde, die durch Entscheidungen des Obersten Gerichtshofs in Bauverträgen als Gegenleistung für Landanteile geschaffen wurde"
+   },
+   "coAuthor": "Arş. Gör. Müge Ürem",
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "arsa-payi",
+    "tapu-tescil",
+    "sozlesmeler",
+    "yargi-elestirisi"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": null,
+    "en": null
+   },
+   "summarySource": null,
+   "pages": 19,
+   "pdf": "/makaleler/pdf/22.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0036_Arsa_Pay_Karl_naat_Szlemelerinde_Yargtay_Kararlar_ile_Yaratlan_Avans_Tapu_Kavramna_Ynelik_Eletiriler.pdf",
+   "needs": {
+    "summary": true,
+    "date": true,
+    "journal": true,
+    "scanned": true
+   }
+  },
+  {
+   "id": 23,
+   "slug": "evli-kisiyle-birlikte-olan-kadina-erkege-yoneltilen-manevi-tazminat",
+   "title": {
+    "tr": "Evli Kişiyle Birlikte Olan Kadına_Erkeğe Yöneltilen Manevi Tazminat Talebi ve Özellikle Konuya İlişkin Yargıtay Kararları Üzerine Düşünceler",
+    "en": "Thoughts on the Claim for Non-Pecuniary Damages Directed to a Woman or Man Having an Affair with a Married Person and the Court of Cassation Decisions on the Subject in Particular",
+    "de": "Gedanken zum Anspruch auf immateriellen Schadenersatz, der sich an eine Frau oder einen Mann richtet, die eine Affäre mit einer verheirateten Person haben, und insbesondere zu den Entscheidungen des Kassationsgerichts zu diesem Thema"
+   },
+   "coAuthor": "Yrd. Doç.  Gülşah Vardar Hamamcıoğlu",
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "miras-aile",
+    "yargi-elestirisi"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": "îíêî ñ Õ»§©±®¼-æ ó ó ï î ó íò ìò ³ò ìç÷ ó ó ï ìò ØÜò îððçñêíèî Ûô îðïðñíðèí Õô ïèòíòîðïð Ìå ìò ØÜô îððçñéìïè Ûô îðïðñëðïê Õô îçòìòîðïð Ìå ìò ØÜò îðïðñìêíê Ûô îðïïñíêêç Õô ëòìòîðïïÌå ìò ØÜò îðïîñèèðç Ûô îðïíñèðíç Õô êòëòîðïí Ìå ìò ØÜò îðïíñïíðêî Ûô îðïíñéêïï Õô ïîòëòîðïì Ìå ìò ØÜò îðïíñïìðì Ûô î Þ±®9´¿® Ø«µ«µ« Ù»²»´ Ø$µ$³´»® ô Þ±®9´¿® Ø«µ«µ« Ù»²»´ Þ*´$³ ô ô ß²µ¿®¿ ¼²ò ïéé¿v¼¿ §»® ¿´¿² µ¿®¿®´¿®ò í ì",
+    "en": null
+   },
+   "summarySource": "pdf-intro",
+   "pages": 16,
+   "pdf": "/makaleler/pdf/23.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0037_Evli_Kiiyle_Birlikte_Olan_Kadna_Erkee_Yneltilen_Manevi_Tazminat_Talebi_ve_zellikle_Konuya_likin_Yargtay_Kararlar_zerine_Dnceler.pdf",
+   "needs": {
+    "summary": false,
+    "date": true,
+    "journal": true,
+    "scanned": false
+   }
+  },
+  {
+   "id": 25,
+   "slug": "kooperatifler-kanunu-degisikligi-ve-yeni-ornek-anasozlesmeler",
+   "title": {
+    "tr": "Kooperatifler Kanunu Değişikliği ve Yeni Örnek Anasözleşmeler Karşısında TBK ve TTK açısından Konut Yapı Kooperatiflerinde Ortaklık Payı Dışındaki Ödemelerin Niteliği ile Bu Borçlarda Temerrüdün Hüküm ve Sonuçları",
+    "en": "The Nature of Payments Other Than Partnership Shares in Housing Construction Cooperatives and the Provisions and Consequences of Default in These Debts in Terms of the TCC and TTK in the Face of the Amendment of the Cooperatives Law and the New Model Articles of Association",
+    "de": "Die Natur anderer Zahlungen als Gesellschaftsanteile an Wohnungsbaugenossenschaften und die Bestimmungen und Folgen des Verzugs dieser Schulden im Sinne des TCC und TTK angesichts der Änderung des Genossenschaftsgesetzes und der neuen Mustersatzung"
+   },
+   "coAuthor": null,
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "kooperatif",
+    "sozlesmeler"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": null,
+    "en": null
+   },
+   "summarySource": null,
+   "pages": 4,
+   "pdf": "/makaleler/pdf/25.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_0039_Kooperatifler_Kanunu_Asndan_rnek_Anaszlemeler_karsnda_Konut_Yap_Kooperatiflerinde_Ortaklk_Pay_Dndaki_demeler.pdf",
+   "needs": {
+    "summary": true,
+    "date": true,
+    "journal": true,
+    "scanned": true
+   }
+  },
+  {
+   "id": 26,
+   "slug": "turk-hukukunda-hacizlerin-serhle-kazandigi-hukuki-nitelik-ve-buna",
+   "title": {
+    "tr": "Türk Hukukunda Hacizlerin Şerhle Kazandığı Hukuki Nitelik ve Buna Bağlı Hukuki Sonuçların İrdelenmesi",
+    "en": "Analysis of the Legal Nature of Seizures Acquired by Annotation in Turkish Law and the Legal Consequences Related to This",
+    "de": "Analyse der rechtlichen Natur der durch Annotation erworbenen Beschlagnahmen im türkischen Recht und der damit verbundenen rechtlichen Konsequenzen"
+   },
+   "coAuthor": null,
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "tapu-tescil",
+    "ipotek-rehin"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": null,
+    "en": null
+   },
+   "summarySource": null,
+   "pages": 32,
+   "pdf": "/makaleler/pdf/26.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_005_Trk_Hukukunda_Hacizlerin_erhle_Kazand_Hukuki_Nitelik_ve_Buna_Bal_Hukuki_Sonularn_rdelenmesi_min.pdf",
+   "needs": {
+    "summary": true,
+    "date": true,
+    "journal": true,
+    "scanned": true
+   }
+  },
+  {
+   "id": 27,
+   "slug": "paydasliktan-cikarma-davasi-ile-ilgili-bir-hukuk-genel-kurulu-karari",
+   "title": {
+    "tr": "Paydaşlıktan Çıkarma Davası ile İlgili Bir Hukuk Genel Kurulu Kararı Hakkındaki Düşünceler (MK m. 626/a)",
+    "en": "Thoughts on a General Assembly of Law Decision Regarding the Case of Exclusion from Partnership (Civil Code Art. 626/a)",
+    "de": "Gedanken zum Beschluss der Generalversammlung zum Fall des Ausschlusses aus der Partnerschaft (Art. 626/a BGB)"
+   },
+   "coAuthor": null,
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "payli-mulkiyet",
+    "yargi-elestirisi"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": null,
+    "en": null
+   },
+   "summarySource": null,
+   "pages": 42,
+   "pdf": "/makaleler/pdf/27.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_001_Paydalktan_karma_Davas_ile_lgili_Bir_Hukuk_Genel_Kurulu_Karar_Hakkndaki_Dnceler_2.pdf",
+   "needs": {
+    "summary": true,
+    "date": true,
+    "journal": true,
+    "scanned": true
+   }
+  },
+  {
+   "id": 29,
+   "slug": "6306-sayili-kanun-ve-uygulama-yonetmeligindeki-degisiklikler-ile-bir",
+   "title": {
+    "tr": "6306 Sayılı Kanun ve Uygulama Yönetmeliğindeki Değişiklikler ile Bir Türlü Çözülemeyen Hususlara İlişkin Düşünceler",
+    "en": "Thoughts on the Amendments in Law No. 6306 and its Implementation Regulation and the Unresolved Issues",
+    "de": "Gedanken zu den Änderungen im Gesetz Nr. 6306 und seine Durchführungsverordnung und die ungelösten Fragen"
+   },
+   "coAuthor": "Av. Burcu Nur Turgut",
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "kentsel-donusum"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": "6306 SAYILI KANUN VE UYGULAMA YÖNETMELİĞİ DEĞİŞİKLİKLERİ İLE BİR TÜRLÜ ÇÖZÜLEMEYEN HUSUSLARA İLİŞKİN DÜŞÜNCELER Prof. Dr. Etem Sabâ ÖZMEN* Av. Burcu Nur TURGUT* IARAŞTIRMANIN SUNUMU Bu makalede, 6306 sayılı Afet Riski Altındaki Alanların Dönüştürülmesi Hakkında Kanun1 ve bu Kanun’un Uygulama Yönetmeliği’nde2 yapılan değişikler, bu değişikliklere rağmen uygulamadaki problemlerin halen çözülemiyor olması ve bu problemlerin altında yatan sebeplere, araştırmanın hacmi müsaade ettiği ölçüde değinilecektir. 6306 s. Kanun, özünde doğru bir kanun olmasına rağmen, birçok teknik hata ile yürürlüğe girmiş ve bu hatalar, Uygulama Yönetmeliği ile telafi edilebilecekken, ne yazık ki yapılan çok sayıda değişiklik ile pekiştirilmiştir. Uzmanlarca, yakın zamanda gerçekleşmesine kesin gözüyle bakılan depreme rağmen, 6306 s. Kanun’un ve Uygulama Yönetmeliği’nin kentsel dönüşüm sürecini tıkayan hükümleri, K",
+    "en": null
+   },
+   "summarySource": "pdf-intro",
+   "pages": 6,
+   "pdf": "/makaleler/pdf/29.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_6306_s_Kanun_ve_Uygulama_Ynetmeliindeki_deiiklikler_ile_bir_trl_zlemeyen_hususlara_ilikin_dnceler.pdf",
+   "needs": {
+    "summary": false,
+    "date": true,
+    "journal": true,
+    "scanned": false
+   }
+  },
+  {
+   "id": 30,
+   "slug": "ipotekle-yuklu-tasinmazin-devralinmasinda-tapu-dairelerinin-tutumu-ve",
+   "title": {
+    "tr": "İpotekle Yüklü Taşınmazın Devralınmasında Tapu Dairelerinin Tutumu ve Yargıtay’ın Fahiş Hatalı Kararının Eleştirisi",
+    "en": "The Attitude of Land Registry Offices in the Transfer of Mortgaged Real Estate and Criticism of the Exorbitantly Erroneous Decision of the Supreme Court",
+    "de": "Die Haltung von Grundbuchämtern bei der Übertragung von Hypothekenimmobilien und Kritik an der exorbitant fehlerhaften Entscheidung des Obersten Gerichtshofs"
+   },
+   "coAuthor": "Stj. Av. Yılmaz Yürekli",
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "tapu-tescil",
+    "ipotek-rehin",
+    "yargi-elestirisi"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": null,
+    "en": null
+   },
+   "summarySource": null,
+   "pages": 14,
+   "pdf": "/makaleler/pdf/30.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_potekle_ykl_tanmazn_devralnmasnda_tapu_dairelerinin_tutumu_ve_yargtayn_fahi_hatal_kararnn_eletirisi.pdf",
+   "needs": {
+    "summary": true,
+    "date": true,
+    "journal": true,
+    "scanned": true
+   }
+  },
+  {
+   "id": 31,
+   "slug": "turk-hukuku-acisindan-para-borclarinda-temerrut-faizi-yaninda-ceza",
+   "title": {
+    "tr": "Türk Hukuku Açısından Para Borçlarında Temerrüt Faizi Yanında Ceza Koşulu Talep Edilebileceğine İlişkin Yargıtay Kararlarının Eleştirisi",
+    "en": "Criticism of the Court of Cassation Decisions on the Possibility of Requesting Penalty Conditions in Addition to Default Interest in Monetary Debts in Terms of Turkish Law",
+    "de": "Kritik an den Entscheidungen des Kassationsgerichts hinsichtlich der Möglichkeit, zusätzlich zu den Verzugszinsen für Geldschulden auch Strafbedingungen im Sinne des türkischen Rechts zu fordern"
+   },
+   "coAuthor": "Stj. Av. Türkan Aktaş",
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "sozlesmeler",
+    "yargi-elestirisi"
+   ],
+   "keywords": {
+    "tr": [
+     "Temerrüt Faizi",
+     "Ceza Koşulu",
+     "Para Borcu",
+     "3095 Sayılı Kanun",
+     "Kısmi Hükümsüzlük"
+    ],
+    "en": [
+     "Default Interest",
+     "Penal Clause",
+     "Monetary Obligations",
+     "Law No 3095",
+     "temerrüt faizinin sözleşme ile tarafla"
+    ]
+   },
+   "summary": {
+    "tr": "Uygulamada taraflar sözleşmeye konulan açık hükümler ile para borçlarında temerrüt faizi yanında ayrıca ceza koşulu (cezai şart) kararlaştırmaktadırlar. Sözleşmede kararlaştırılan temerrüt faizi ya da kararlaştırılmamış olsa da kanunen ödenmesi gereken temerrüt faizi yanında ceza koşulunun da talep edilip edilemeyeceğine ilişkin çelişkili Yargıtay kararları söz konusudur. Çalışmamızda, para borcunun ifasında temerrüde düşülmesi halinde ödenecek olan temerrüt faizi ve ceza koşulu kurumlarının birlikte söz konusu olmasına dayalı sonuçları değerlendireceğiz. Konuya ilişkin güncel Yargıtay kararları ile düşülen yanılgıyı somut örneklerle ortaya koyarak; bu tür içtihatlardan dönülmesini önereceğiz. Para borcunun ifasında temerrüde düşülmesi halinde sözleşme ile kararlaştırılan temerrüt faizi oranının TBK m.120/II uyarınca kanunen belirlenmiş miktarının %100 fazlasını yani diğer bir deyişle iki katını aşamayacağı yolunda emredici hükmün gözetilmesi gerektiğini savunacağız. Böylece sözleşmede para borcunun ifasında temerrüde dayalı ayrıca ceza koşulu kararlaştırılması durumunda anılan miktarın TBK m. 27/II uyarınca kısmi kesin hükümsüzlüğe konu edilmesi gerekeceği savunulacaktır",
+    "en": "In practice, penal clauses are agreed by the parties along with explicit provisions and default interest in monetary obligations. There are contradictory Supreme Court rulings regarding the question whether penalties can be demanded in addition to the agreed default interest or statutory default interest (even if it is not agreed in the contract). In our article, we will assess the results based on the mutual presence of default interest and penalties that must be paid in case of default during the performance of monetary obligations. We will suggest 1 Maltepe Üniversitesi Hukuk Fakültesi Medeni Hukuk Anabilim Dalı Başkanı. 2 İstanbul Barosu Avukat Stajyeri. 2 that the Supreme Court amends its opinion by substantiating the current error arising from this opinion through concrete examples. We will defend that the mandatory provision – providing that the contractual default interest rate in case of default in monetary obligations cannot exceed 100% of the statutory amount set forth by Article 120/II of the Turkish Obligations Code – should be taken into consideration. Therefore, in case an additional contractual penalty is agreed in a contract for defaults in monetary obligations, the exceeding amount shall be subject to partial invalidity in terms of Article 27/II of the Turkish Obligation Code"
+   },
+   "summarySource": "pdf",
+   "pages": 16,
+   "pdf": "/makaleler/pdf/31.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_TRK_HUKUKU_AISINDAN_PARA_BORLARINDA_TEMERRT_FAZ_YANINDA_CEZA_KOULU_TALEP_EDLEBLECENE_LKN_YARGITAY_KARARLARININ_ELETRS.pdf",
+   "needs": {
+    "summary": false,
+    "date": true,
+    "journal": true,
+    "scanned": false
+   }
+  },
+  {
+   "id": 32,
+   "slug": "634-sayili-kmk-nin-bazi-maddelerin-degistirilmesine-bazi-maddelerin",
+   "title": {
+    "tr": "634 Sayılı KMK'nın Bazı Maddelerin Değiştirilmesine, Bazı Maddelerin Yürürlükten Kaldırılmasına ve Kanuna Toplu Yapı ile ilgili Maddeler Eklenmesine Dair Kanun Tasarısının Değerlendirilmesi",
+    "en": "Evaluation of the Draft Law on Amending Some Articles of the KMK No. 634, Repealing Some Articles and Adding Articles on Mass Building to the Law",
+    "de": "Bewertung des Gesetzentwurfs zur Änderung einiger Artikel der KMK Nr. 634, Aufhebung einiger Artikel und Hinzufügung von Artikeln zum Massenaufbau zum Gesetz"
+   },
+   "coAuthor": "Öğr. Görevlisi Hafize Erden",
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "kat-mulkiyeti"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": null,
+    "en": null
+   },
+   "summarySource": null,
+   "pages": 31,
+   "pdf": "/makaleler/pdf/32.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_saba_zmenhafize_erdenkr_makale634sayl_KMK_1.pdf",
+   "needs": {
+    "summary": true,
+    "date": true,
+    "journal": true,
+    "scanned": true
+   }
+  },
+  {
+   "id": 33,
+   "slug": "kat-mulkiyetinde-bahcenin-niteligi-ve-ortak-yer-eklenti-ayrimi",
+   "title": {
+    "tr": "Kat Mülkiyetinde Bahçenin Niteliği ve Ortak Yer_Eklenti Ayrımı İçerisindeki Yeri",
+    "en": "The Nature of the Garden in Condominiums and Its Place in the Common Area-Extension Distinction",
+    "de": "Die Natur des Gartens in Eigentumswohnungen und sein Platz in der Unterscheidung zwischen Gemeinschaftsbereich und Erweiterung"
+   },
+   "coAuthor": null,
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "kat-mulkiyeti"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": null,
+    "en": null
+   },
+   "summarySource": null,
+   "pages": 16,
+   "pdf": "/makaleler/pdf/33.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/pdf_Kat_Mlkiyetinde_Bahenin_Nitelii_ve_Ortak_Yer_Eklenti_Ayrm_erisindeki_Yeri.pdf",
+   "needs": {
+    "summary": true,
+    "date": true,
+    "journal": true,
+    "scanned": true
+   }
+  },
+  {
+   "id": 43,
+   "slug": "turk-borclar-kanunu-na-gore-tasinmaz-satisina-iliskin-hukumlerin",
+   "title": {
+    "tr": "Türk Borçlar Kanunu'na Göre Taşınmaz Satışına İlişkin Hükümlerin İrdelenmesi",
+    "en": "An Examination of the Provisions Regarding the Sale of Immovable Property According to the Turkish Code of Obligations",
+    "de": "Eine Untersuchung der Bestimmungen über den Verkauf von unbeweglichem Vermögen gemäß dem türkischen Obligationenrecht"
+   },
+   "coAuthor": null,
+   "date": null,
+   "year": null,
+   "dateSource": null,
+   "journal": null,
+   "volume": null,
+   "issue": null,
+   "orcids": [],
+   "topics": [
+    "tapu-tescil"
+   ],
+   "keywords": {
+    "tr": [],
+    "en": []
+   },
+   "summary": {
+    "tr": null,
+    "en": null
+   },
+   "summarySource": null,
+   "pages": 10,
+   "pdf": "/makaleler/pdf/43.pdf",
+   "pdfOriginal": "https://www.sabaozmen.av.tr/app/view/assets/site_images/MARMARA_NIVERSITESI_HUKUK_FAKLTESI_compressed.pdf",
+   "needs": {
+    "summary": true,
+    "date": true,
+    "journal": true,
+    "scanned": true
+   }
+  }
+ ],
+ "stats": {
+  "total": 46,
+  "withSummary": 30,
+  "withEnglishAbstract": 15,
+  "withDate": 20,
+  "withJournal": 14,
+  "scanned": 16
+ }
+}

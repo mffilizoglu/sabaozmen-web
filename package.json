@@ -1,0 +1,12 @@
+{
+  "name": "sabaozmen-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Saba Özmen Avukatlık Ortaklığı — üç dilli kurumsal site",
+  "scripts": {
+    "dev": "node site/server.js",
+    "build": "node site/build.js --origin ${SITE_ORIGIN:-}",
+    "check": "node ref/crawl.js"
+  },
+  "engines": { "node": ">=18" }
+}
