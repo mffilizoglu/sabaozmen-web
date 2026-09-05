@@ -4,6 +4,7 @@
    no animation getting between the user and the data. */
 
 :root {
+  color-scheme: light;
   --bordo: #a01944;
   --bordo-deep: #7d1334;
   --ink: #14100f;

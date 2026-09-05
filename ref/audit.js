@@ -129,6 +129,9 @@ const t = (group, name, pass, detail) => rows.push({ group, name, pass, detail }
   t(A, "hero image has width/height (no layout shift)", /<img[^>]+width="1920"[^>]+height="1080"/.test(home.body));
   t(A, "buttons have accessible text", !/<button[^>]*>\s*<\/button>/.test(home.body));
   t(A, "lang switcher marks current", /aria-current="true"/.test(home.body));
+  const css = await get("/css/main.css");
+  t(A, "color-scheme declared (blocks Chrome auto-dark inversion)",
+    /color-scheme:\s*light/.test(css.body));
 
   /* ------------------------------------------------------------ report */
   const byGroup = {};
