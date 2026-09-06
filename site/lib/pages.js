@@ -85,7 +85,7 @@ function phero(lang, o) {
   ).join("");
 
   return `
-<section class="phero">
+<section class="phero${o.compact ? " phero--compact" : ""}">
   <div class="phero__bg" aria-hidden="true">${heroImage("")}</div>
   <div class="wrap phero__in">
     ${crumbs ? `<nav class="crumb" aria-label="breadcrumb">${crumbs}</nav>` : ""}
@@ -495,19 +495,33 @@ function articleList(lang) {
 
   const body = phero(lang, {
     title: T("art.title", lang), lede: T("art.lede", lang),
+    compact: true,
     crumbs: [{ label: T("nav.home", lang), href: url(lang, "home") }, { label: T("art.title", lang) }],
   }) + `
-<section class="section">
+<section class="section section--tight">
   <div class="wrap">
-    <div class="searchbar rv">
-      ${icon.search}
-      <label class="skip" for="artq">${esc(T("art.searchLbl", lang))}</label>
-      <input id="artq" type="search" data-search placeholder="${attr(T("art.search", lang))}" autocomplete="off">
+    <div class="archive-top rv">
+      <div class="searchbar">
+        ${icon.search}
+        <label class="skip" for="artq">${esc(T("art.searchLbl", lang))}</label>
+        <input id="artq" type="search" data-search placeholder="${attr(T("art.search", lang))}" autocomplete="off">
+      </div>
+      <p class="archive-count"><strong data-count>${ARTICLES.length}</strong> ${esc(T("art.count", lang))}</p>
     </div>
-    <div class="filters rv">
-      ${ordered.map((t) => `<button class="chip" type="button" data-topic="${attr(t.slug)}" aria-pressed="false">${esc(tagLabel(t.slug, lang))}<span class="chip__n">${counts[t.slug]}</span></button>`).join("")}
-    </div>
-    <p class="small muted rv"><strong data-count>${ARTICLES.length}</strong> ${esc(T("art.count", lang))}</p>
+
+    <!-- Nineteen topic chips filled a phone screen before a single article was
+         visible. Collapsed into a disclosure on small screens (JS closes it;
+         without JS it stays open), left as a plain chip row on desktop. -->
+    <details class="filterbox rv" data-filterbox open>
+      <summary class="filterbox__toggle">
+        <span>${esc(T("art.filterBy", lang))}</span>
+        ${icon.chev}
+      </summary>
+      <div class="filters">
+        ${ordered.map((t) => `<button class="chip" type="button" data-topic="${attr(t.slug)}" aria-pressed="false">${esc(tagLabel(t.slug, lang))}<span class="chip__n">${counts[t.slug]}</span></button>`).join("")}
+      </div>
+    </details>
+
     <ul class="art-list rv" data-archive>${ARTICLES.map((a) => artItem(a, lang)).join("")}</ul>
     <div class="empty" data-empty hidden>${esc(T("art.none", lang))}</div>
   </div>
@@ -684,18 +698,17 @@ function contact(lang) {
       </div>
     </div>
 
-    <!-- Click-to-load: no request reaches Google until the visitor asks for it,
-         which keeps the page free of third-party cookies by default. -->
-    <div class="map mt-4 rv" data-map
-         data-src="https://www.google.com/maps?q=${encodeURIComponent(firm.mapsQuery)}&amp;hl=${lang}&amp;z=17&amp;output=embed"
-         data-title="${attr(firm.name[lang])} — ${attr(T("label.address", lang))}">
-      <div class="map__ph">
-        <div class="map__pin">${icon.pin}</div>
-        <p class="map__addr">${esc(firm.address.street)}<br>${esc(firm.address.district)}</p>
-        <button class="btn btn--ghost" type="button" data-mapload>${esc(T("ct.mapLoad", lang))}</button>
-        <p class="map__note">${esc(T("ct.mapNotice", lang))}</p>
-      </div>
+    <!-- Rendered straight into the markup with loading="lazy": the browser
+         itself holds the request back until the map is near the viewport, so
+         there is no click to make and no dependence on JavaScript. -->
+    <div class="map mt-4 rv">
+      <iframe
+        src="https://www.google.com/maps?q=${encodeURIComponent(firm.mapsQuery)}&amp;hl=${lang}&amp;z=17&amp;output=embed"
+        title="${attr(firm.name[lang])} — ${attr(T("label.address", lang))}"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen></iframe>
     </div>
+    <p class="map__note rv">${esc(T("ct.mapNotice", lang))}</p>
   </div>
 </section>`;
 

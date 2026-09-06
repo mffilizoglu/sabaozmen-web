@@ -58,6 +58,7 @@ const t = {
   "art.search":    { tr: "Başlık, yazar veya konu içinde ara…", en: "Search titles, authors or subjects…", de: "Titel, Autoren oder Themen durchsuchen…" },
   "art.searchLbl": { tr: "Makalelerde ara",    en: "Search articles", de: "Publikationen durchsuchen" },
   "art.all":       { tr: "Tümü",               en: "All",             de: "Alle" },
+  "art.filterBy":  { tr: "Konuya göre süz",    en: "Filter by subject", de: "Nach Thema filtern" },
   "art.count":     { tr: "makale listeleniyor",en: "articles listed", de: "Publikationen gelistet" },
   "art.none":      { tr: "Aramanıza uyan makale bulunamadı.", en: "No articles match your search.", de: "Keine Publikationen entsprechen Ihrer Suche." },
   "art.readPdf":   { tr: "PDF olarak oku",     en: "Read as PDF",     de: "Als PDF lesen" },
@@ -177,9 +178,9 @@ const t = {
   "ct.directions": { tr: "Yol tarifi al",       en: "Get directions",  de: "Route berechnen" },
   "ct.mapLoad":    { tr: "Haritayı yükle",      en: "Load the map",    de: "Karte laden" },
   "ct.mapNotice": {
-    tr: "Harita Google tarafından sağlanır. Yüklediğinizde Google'a bağlantı kurulur ve çerez yerleştirilebilir; bu nedenle yalnızca siz isterseniz yüklenir.",
-    en: "The map is provided by Google. Loading it contacts Google and may set cookies, so it loads only if you ask for it.",
-    de: "Die Karte stammt von Google. Beim Laden wird eine Verbindung zu Google hergestellt und es können Cookies gesetzt werden — sie lädt daher nur auf Ihren Wunsch.",
+    tr: "Harita Google tarafından sağlanmaktadır; görüntülendiğinde Google'a bağlantı kurulur ve çerez yerleştirilebilir.",
+    en: "The map is provided by Google; displaying it contacts Google and may set cookies.",
+    de: "Die Karte stammt von Google; bei der Anzeige wird eine Verbindung zu Google hergestellt und es können Cookies gesetzt werden.",
   },
 
   /* --- cookies / legal --- */

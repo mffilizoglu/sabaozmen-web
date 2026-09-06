@@ -275,6 +275,23 @@
   }
 
   /* ---------------------------------------------------------
+     Archive filters: collapsed on small screens so the article
+     list is reachable without scrolling past nineteen chips.
+     Rendered open, so it still works with JS disabled.
+     --------------------------------------------------------- */
+  var filterBox = document.querySelector("[data-filterbox]");
+  if (filterBox) {
+    var narrow = window.matchMedia("(max-width: 760px)");
+    var applyFilterBox = function (m) {
+      if (m.matches) filterBox.removeAttribute("open");
+      else filterBox.setAttribute("open", "");
+    };
+    applyFilterBox(narrow);
+    (narrow.addEventListener ? narrow.addEventListener("change", applyFilterBox)
+                             : narrow.addListener(applyFilterBox));
+  }
+
+  /* ---------------------------------------------------------
      Dropdown on touch: there is no hover, so the first tap opens
      --------------------------------------------------------- */
   if (window.matchMedia("(hover: none)").matches) {
@@ -324,26 +341,6 @@
         if (evEmpty) evEmpty.hidden = shown !== 0;
       });
     });
-  }
-
-  /* ---------------------------------------------------------
-     Map: load Google's iframe only when asked
-     --------------------------------------------------------- */
-  var mapBox = document.querySelector("[data-map]");
-  if (mapBox) {
-    var loadBtn = mapBox.querySelector("[data-mapload]");
-    if (loadBtn) {
-      loadBtn.addEventListener("click", function () {
-        var f = document.createElement("iframe");
-        f.src = mapBox.dataset.src;
-        f.title = mapBox.dataset.title || "";
-        f.loading = "lazy";
-        f.referrerPolicy = "no-referrer-when-downgrade";
-        f.setAttribute("allowfullscreen", "");
-        mapBox.innerHTML = "";
-        mapBox.appendChild(f);
-      });
-    }
   }
 
   /* ---------------------------------------------------------

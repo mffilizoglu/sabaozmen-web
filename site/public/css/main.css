@@ -258,12 +258,22 @@ a { color: inherit; text-decoration: none; }
    The descriptor and the header CTA are dropped below 560px: together they
    overflowed the bar by ~58px on a 375px phone. The CTA still appears in the
    drawer, so nothing is lost. --------------------------------------------- */
+/* The full lockup — rule and descriptor included — stays on phones. Hiding the
+   descriptor left a bare name that did not read as the firm's mark. There is
+   room for it because the header CTA drops out at this width. */
 @media (max-width: 560px) {
-  .logo__sub, .logo__rule { display: none; }
-  .logo__name { font-size: 1.02rem; letter-spacing: .12em; margin-inline-end: -.12em; }
+  .logo__name { font-size: .92rem; letter-spacing: .13em; margin-inline-end: -.13em; }
+  .logo__sub  { font-size: .5rem;  letter-spacing: .105em; margin-inline-end: -.105em; }
+  .logo__rule { margin: .16rem 0 .13rem; }
   .logo__mark { width: 32px; height: 32px; }
+  .logo { gap: .5rem; }
   .hdr__cta { display: none; }
   .hdr__in { gap: .6rem; }
+}
+@media (max-width: 380px) {
+  .logo__name { font-size: .82rem; }
+  .logo__sub  { font-size: .45rem; }
+  .logo__mark { width: 29px; height: 29px; }
 }
 @media (max-width: 360px) { .logo__name { font-size: .92rem; } }
 
@@ -388,6 +398,13 @@ body.menu-open { overflow: hidden; }
 .drawer a { display: block; padding: .85rem 0; border-bottom: 1px solid var(--line-2); color: var(--ink); font-size: 1.0625rem; }
 .drawer .sub a { padding-left: 1rem; font-size: .95rem; color: var(--ink-3); }
 .drawer__group-t { font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-4); margin: 1.75rem 0 .35rem; font-weight: 600; }
+/* The CTA at the foot of the drawer was inheriting the compact button padding
+   and sat cramped against its own edges. Give it room and full width. */
+.drawer .btn-row { margin-top: 2rem; }
+.drawer .btn-row .btn {
+  width: 100%; justify-content: center;
+  padding: 1.05rem 1.5rem; font-size: 1rem; letter-spacing: .01em;
+}
 
 /* ============================================================
    Hero
@@ -474,9 +491,13 @@ body.menu-open { overflow: hidden; }
 .grid--3 { grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
 .grid--4 { grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); }
 /* Five attorneys: one row on desktop rather than an orphaned fifth card. */
-.grid--team { grid-template-columns: repeat(2, 1fr); }
-@media (min-width: 700px)  { .grid--team { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 1080px) { .grid--team { grid-template-columns: repeat(5, 1fr); } }
+/* minmax(0, 1fr), not 1fr: a bare 1fr floors at the content's min width, so the
+   long e-mail address (mustafafilizoglu@sabaozmen.av.tr) pushed its column
+   wider than the other — which stretched that portrait too and made the row
+   look ragged. */
+.grid--team { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 700px)  { .grid--team { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 1080px) { .grid--team { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
 
 .card {
   position: relative; display: flex; flex-direction: column;
@@ -504,6 +525,39 @@ body.menu-open { overflow: hidden; }
 /* ============================================================
    Article list + article page
    ============================================================ */
+/* ---- article archive: get the list above the fold ---- */
+.section--tight { padding-block: clamp(2rem, 4vw, 3.5rem); }
+.phero--compact .phero__in { padding-block: clamp(2rem, 4vw, 3.25rem); }
+.phero--compact p { font-size: .95rem; max-width: 58ch; }
+
+.archive-top { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem; }
+.archive-top .searchbar { flex: 1 1 320px; margin-bottom: 0; }
+.archive-count { margin: 0; font-size: .85rem; color: var(--ink-4); white-space: nowrap; }
+.archive-count strong { color: var(--bordo); font-size: 1.05rem; font-family: var(--serif); }
+
+.filterbox { margin-bottom: 1.5rem; }
+.filterbox__toggle {
+  display: none;                        /* desktop: chips show as a plain row */
+  align-items: center; justify-content: space-between; gap: .6rem;
+  padding: .8rem 1.1rem; border: 1px solid var(--line); border-radius: 12px;
+  font-size: .9rem; font-weight: 500; color: var(--ink); cursor: pointer;
+  background: var(--paper); list-style: none;
+}
+.filterbox__toggle::-webkit-details-marker { display: none; }
+.filterbox__toggle svg { transition: transform var(--dur-s) var(--ease-out); }
+.filterbox[open] .filterbox__toggle svg { transform: rotate(180deg); }
+
+@media (max-width: 760px) {
+  .filterbox__toggle { display: flex; }
+  .filterbox[open] .filterbox__toggle { border-radius: 12px 12px 0 0; border-bottom-color: transparent; }
+  .filterbox[open] .filters {
+    border: 1px solid var(--line); border-top: 0; border-radius: 0 0 12px 12px;
+    padding: .9rem 1.1rem; margin-bottom: 0;
+  }
+  .archive-top { gap: .6rem; }
+  .archive-count { width: 100%; }
+}
+
 .filters { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem; }
 .chip {
   font-family: var(--sans); font-size: .8125rem; font-weight: 450;
@@ -607,7 +661,19 @@ body.menu-open { overflow: hidden; }
 /* ============================================================
    Team
    ============================================================ */
-.person { display: flex; flex-direction: column; }
+/* Names run to one or two lines depending on the person, which left the cards
+   ragged — photos starting level but everything below them out of step. Each
+   block is a full-height flex column with the name and role reserving a fixed
+   number of lines, so every attorney occupies the same shape. */
+.person { display: flex; flex-direction: column; height: 100%; }
+.person__link { display: flex; flex-direction: column; }
+.person__n {
+  min-height: 2.6em;                 /* two lines at this size */
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.person__r { min-height: 1.5em; }
+.person__meta { margin-top: auto; }
 .person__ph {
   aspect-ratio: 3 / 4; border-radius: 16px; overflow: hidden; background: var(--paper-3);
   position: relative; margin-bottom: 1.1rem;
@@ -618,7 +684,11 @@ body.menu-open { overflow: hidden; }
 .person__initials { font-family: var(--serif); font-size: 2.4rem; color: var(--ink-4); letter-spacing: .04em; }
 .person__n { font-family: var(--serif); font-size: 1.15rem; color: var(--ink); margin: 0 0 .2rem; }
 .person__r { font-size: .82rem; letter-spacing: .05em; text-transform: uppercase; color: var(--bordo); font-weight: 500; margin: 0 0 .7rem; }
-.person__meta { font-size: .85rem; color: var(--ink-3); display: grid; gap: .25rem; }
+.person__meta {
+  font-size: .85rem; color: var(--ink-3); display: grid; gap: .25rem;
+  /* addresses are longer than a narrow column — wrap rather than overflow */
+  min-width: 0; overflow-wrap: anywhere;
+}
 .person__meta a { color: var(--ink-3); }
 .person__meta a:hover { color: var(--bordo); }
 
@@ -764,17 +834,10 @@ body.menu-open { overflow: hidden; }
 
 .map { border-radius: 18px; overflow: hidden; border: 1px solid var(--line); background: var(--paper-3); }
 .map iframe { width: 100%; height: 440px; border: 0; display: block; }
-.map__ph {
-  min-height: 300px; display: grid; place-items: center; gap: .9rem;
-  padding: clamp(2rem, 5vw, 3.5rem) 1.5rem; text-align: center;
-  background:
-    radial-gradient(circle at 50% 40%, rgba(160,25,68,.07), transparent 60%),
-    repeating-linear-gradient(45deg, var(--paper-3) 0 12px, var(--paper-2) 12px 24px);
-}
-.map__pin { color: var(--bordo); }
-.map__pin svg { width: 30px; height: 30px; }
-.map__addr { font-family: var(--serif); font-size: 1.05rem; color: var(--ink); margin: 0; line-height: 1.5; }
-.map__note { font-size: .78rem; color: var(--ink-4); max-width: 46ch; margin: .3rem 0 0; line-height: 1.55; }
+
+
+
+.map__note { font-size: .78rem; color: var(--ink-4); max-width: 62ch; margin: .7rem 0 0; line-height: 1.55; }
 @media (max-width: 640px) { .map iframe { height: 320px; } }
 
 /* ============================================================

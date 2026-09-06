@@ -82,7 +82,13 @@ const t = (group, name, pass, detail) => rows.push({ group, name, pass, detail }
   const thirdParty = (home.body.match(/https?:\/\/(?!(?:www\.)?(?:sabaozmen|localhost|127\.0\.0\.1))[^"' )]+/g) || [])
     .filter((u) => !/schema\.org|linkedin\.com|maps\.google|www\.google\.com\/maps|doblin|strategyzer|orcid/.test(u));
   t(G, "no third-party scripts/styles on page load", thirdParty.length === 0, thirdParty.slice(0, 3).join(" "));
-  t(G, "map does not load Google before click", !/<iframe/.test(contact.body));
+  // The map is embedded directly now, deferred natively rather than by a click.
+  t(G, "map iframe is lazy-loaded", /<iframe[^>]+loading="lazy"/.test(contact.body));
+  t(G, "map iframe origin is allowed by CSP",
+    !/<iframe[^>]+src="(?!https:\/\/(?:www|maps)\.google\.com)/.test(contact.body));
+  t(G, "map iframe declares a title", /<iframe[^>]+title="/.test(contact.body));
+  t(G, "visitor is told the map is Google's",
+    /Google/.test(contact.body) && /map__note/.test(contact.body));
   t(G, "external links use rel=noopener",
     !/target="_blank"(?![^>]*rel="[^"]*noopener)/.test(home.body + contact.body));
 
