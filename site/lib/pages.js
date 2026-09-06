@@ -261,16 +261,25 @@ function about(lang) {
         <blockquote class="quote mt-4 rv"><p>${esc(D.home.quote[lang])}</p><cite>${esc(D.home.quoteBy)}</cite></blockquote>
       </div>
       <div class="split__aside">
-        <div class="aside-card rv">
-          <h3>${esc(T("art.details", lang))}</h3>
-          <table class="meta-table">
-            <tr><th>${lang === "tr" ? "Kuruluş" : lang === "de" ? "Gegründet" : "Founded"}</th><td>${firm.founded}</td></tr>
-            <tr><th>${lang === "tr" ? "Baro" : lang === "de" ? "Kammer" : "Bar"}</th><td>${esc(firm.bar[lang])}</td></tr>
-            <tr><th>${lang === "tr" ? "Unvan" : lang === "de" ? "Bezeichnung" : "Title"}</th><td>${esc(firm.name[lang])}</td></tr>
-            <tr><th>${esc(T("label.address", lang))}</th><td>${esc(firm.address.street)}<br>${esc(firm.address.district)}</td></tr>
-          </table>
-          <div class="btn-row mt-3"><a class="btn btn--primary" href="${url(lang, "contact")}">${esc(T("cta.contact", lang))}</a></div>
-        </div>
+        <dl class="facts rv">
+          <div class="facts__row">
+            <dt>${lang === "tr" ? "Kuruluş" : lang === "de" ? "Gegründet" : "Established"}</dt>
+            <dd>${firm.founded}</dd>
+          </div>
+          <div class="facts__row">
+            <dt>${lang === "tr" ? "Bağlı olduğu baro" : lang === "de" ? "Kammer" : "Bar association"}</dt>
+            <dd>${esc(firm.bar[lang])}</dd>
+          </div>
+          <div class="facts__row">
+            <dt>${lang === "tr" ? "Tescilli unvan" : lang === "de" ? "Eingetragene Bezeichnung" : "Registered title"}</dt>
+            <dd>${esc(firm.name[lang])}</dd>
+          </div>
+          <div class="facts__row">
+            <dt>${esc(T("label.address", lang))}</dt>
+            <dd>${esc(firm.address.street)}<br>${esc(firm.address.district)}</dd>
+          </div>
+        </dl>
+        <div class="btn-row mt-3 rv"><a class="btn btn--primary" href="${url(lang, "contact")}">${esc(T("cta.contact", lang))} ${icon.arrow}</a></div>
       </div>
     </div>
   </div>
@@ -286,16 +295,21 @@ function vision(lang) {
     title: p.title[lang], lede: p.lead[lang],
     crumbs: [{ label: T("nav.home", lang), href: url(lang, "home") }, { label: T("nav.corporate", lang), href: url(lang, "about") }, { label: p.title[lang] }],
   }) + `
-<section class="section">
+${p.blocks.map((b, i) => `
+<section class="section${i % 2 ? " section--tint" : ""}">
   <div class="wrap">
-    <div class="grid grid--2">
-      ${p.blocks.map((b) => `<div class="card rv" style="padding:clamp(1.75rem,3vw,2.5rem)">
-        <h3 class="card__t" style="font-size:1.4rem;margin-bottom:.9rem">${esc(b.h[lang])}</h3>
-        <p class="card__d" style="font-size:1rem">${esc(b.p[lang])}</p>
-      </div>`).join("")}
+    <div class="statement">
+      <div class="statement__head">
+        <p class="eyebrow rv">${String(i + 1).padStart(2, "0")}</p>
+        <h2 class="rv">${esc(b.h[lang])}</h2>
+      </div>
+      <div class="statement__body">
+        <p class="statement__lead rv">${esc(b.p[lang])}</p>
+        ${(b.body && b.body[lang] ? b.body[lang] : []).map((x) => `<p class="rv">${esc(x)}</p>`).join("")}
+      </div>
     </div>
   </div>
-</section>`;
+</section>`).join("")}`;
   return { body, title: `${p.title[lang]} — ${firm.name[lang]}`,
     description: trunc(p.blocks[0].p[lang], 155), active: "vision", altPaths: alts("vision") };
 }
@@ -307,13 +321,16 @@ function quality(lang) {
     crumbs: [{ label: T("nav.home", lang), href: url(lang, "home") }, { label: T("nav.corporate", lang), href: url(lang, "about") }, { label: p.title[lang] }],
   }) + `
 <section class="section">
-  <div class="wrap">
-    <div class="grid grid--3">
-      ${p.list[lang].map((x, i) => `<div class="card rv">
-        <div class="card__num">${String(i + 1).padStart(2, "0")}</div>
-        <h3 class="card__t" style="font-size:1.05rem">${esc(x)}</h3>
-      </div>`).join("")}
-    </div>
+  <div class="wrap wrap-narrow">
+    <ol class="principles">
+      ${p.list[lang].map((x, i) => `<li class="principle rv">
+        <span class="principle__n">${String(i + 1).padStart(2, "0")}</span>
+        <div>
+          <h2 class="principle__t">${esc(x.t)}</h2>
+          <p class="principle__d">${esc(x.d)}</p>
+        </div>
+      </li>`).join("")}
+    </ol>
   </div>
 </section>`;
   return { body, title: `${p.title[lang]} — ${firm.name[lang]}`,

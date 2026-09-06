@@ -375,6 +375,9 @@ const pages = {
       en: "The two commitments that guide the partnership.",
       de: "Die beiden Verpflichtungen, die unsere Partnerschaft leiten.",
     },
+    /* `p` is the firm's own statement, kept word for word. `body` expands it —
+       descriptive of how the firm works, with no success, guarantee or
+       specialisation claim (TBB Reklam Yasağı Yönetmeliği). */
     blocks: [
       {
         h: { tr: "Vizyonumuz", en: "Our Vision", de: "Unsere Vision" },
@@ -383,6 +386,20 @@ const pages = {
           en: "To be the most dependable partner for our clients, drawing on years of experience and accumulated knowledge, and conscious of our distinction and our responsibilities.",
           de: "Auf der Grundlage langjähriger Erfahrung und gewachsenen Wissens sowie im Bewusstsein unserer Besonderheit und Verantwortung der verlässlichste Partner unserer Mandanten zu sein.",
         },
+        body: {
+          tr: [
+            "Bu vizyon, ortaklığın 2004'ten bu yana taşınmaz hukuku alanında sürdürdüğü çalışmanın doğal sonucudur. Güvenilirlik bizim için bir iddia değil; dosyanın hukuki dayanağının açıkça ortaya konması, riskin baştan söylenmesi ve müvekkilin kendi kararını bilerek verebilmesi anlamına gelir.",
+            "Ortaklarımızın hukuk dergilerinde yayımlanan çalışmaları bu yaklaşımın yazılı kaydıdır: uygulamada karşılaştığımız sorunları önce inceler, sonra savunuruz.",
+          ],
+          en: [
+            "This follows naturally from the work the partnership has done in property law since 2004. Dependability, for us, is not a claim: it means setting out the legal basis of a matter plainly, naming the risk at the outset, and leaving the client able to decide knowingly.",
+            "The studies our partners publish in legal journals are the written record of that approach — we examine the problems we meet in practice before we argue them.",
+          ],
+          de: [
+            "Diese Vision folgt aus der Arbeit, die die Partnerschaft seit 2004 im Immobilienrecht leistet. Verlässlichkeit ist für uns keine Behauptung: Sie bedeutet, die rechtliche Grundlage einer Sache klar darzulegen, das Risiko von Anfang an zu benennen und der Mandantschaft eine informierte Entscheidung zu ermöglichen.",
+            "Die in Fachzeitschriften veröffentlichten Arbeiten unserer Partner sind das schriftliche Zeugnis dieses Vorgehens: Wir untersuchen die Probleme der Praxis, bevor wir sie vertreten.",
+          ],
+        },
       },
       {
         h: { tr: "Misyonumuz", en: "Our Mission", de: "Unsere Mission" },
@@ -390,6 +407,20 @@ const pages = {
           tr: "Dinamik ve proje odaklı esnek yapımızla, faaliyet gösterdiğimiz alanlarda iş ortaklarımızla tamamladığımız her projeden memnuniyet düzeyi yüksek paydaşlar oluşturmak.",
           en: "Through our dynamic, project-focused and flexible structure, to create highly satisfied stakeholders from every project we complete with our business partners.",
           de: "Mit unserer dynamischen, projektorientierten und flexiblen Struktur aus jedem gemeinsam mit unseren Geschäftspartnern abgeschlossenen Projekt hochzufriedene Beteiligte hervorzubringen.",
+        },
+        body: {
+          tr: [
+            "Her dosyayı, tarafların ticari ve ailevi gerçekliğini gözeterek ele alırız. Taşınmaz uyuşmazlıklarında çözüm çoğu zaman yalnızca mahkeme kararında değildir; sözleşmenin baştan doğru kurulmasında, arsa payının doğru hesaplanmasında ve tarafların birbirini anlamasındadır.",
+            "Türkçe, İngilizce ve Almanca çalışıyor olmamız, yurt dışında yaşayan taşınmaz sahipleri ve yabancı yatırımcılarla çeviri kaybı olmadan doğrudan iletişim kurmamızı sağlar.",
+          ],
+          en: [
+            "We take each matter with the commercial and family reality of the parties in view. In property disputes the resolution often does not lie in the judgment alone, but in drafting the contract correctly at the outset, calculating the land share correctly, and the parties understanding one another.",
+            "Working in Turkish, English and German lets us deal directly with property owners living abroad and with foreign investors, without anything lost in translation.",
+          ],
+          de: [
+            "Wir bearbeiten jede Sache mit Blick auf die geschäftliche und familiäre Wirklichkeit der Beteiligten. Bei Immobilienstreitigkeiten liegt die Lösung häufig nicht allein im Urteil, sondern in der von Anfang an richtigen Vertragsgestaltung, der zutreffenden Berechnung des Grundstücksanteils und im gegenseitigen Verständnis der Parteien.",
+            "Dass wir auf Türkisch, Englisch und Deutsch arbeiten, erlaubt den unmittelbaren Austausch mit im Ausland lebenden Eigentümern und ausländischen Investoren — ohne Verluste durch Übersetzung.",
+          ],
         },
       },
     ],
@@ -402,33 +433,59 @@ const pages = {
       en: "Saba Özmen Attorney Partnership undertakes to comply with its Quality Management System and to improve it continuously, on the following principles.",
       de: "Die Saba Özmen Rechtsanwaltspartnerschaft verpflichtet sich, ihr Qualitätsmanagementsystem einzuhalten und nach folgenden Grundsätzen fortlaufend zu verbessern.",
     },
+    /* The firm's seven principles, each with a sentence saying what it means in
+       practice — as bare labels they read as a checklist rather than a policy.
+       NOTE: items 6 and 7 were near-duplicates on the live site ("Her düzeyde
+       eğitim" / "Eğitim faaliyetleri"). Both are kept, but distinguished:
+       6 is internal training, 7 is the partners' academic and conference work. */
     list: {
       tr: [
-        "Müvekkil memnuniyeti anketi ve iyileştirme önerisi sunulması",
-        "Rekabetçi kalite",
-        "Çözüm ve kararlara personel ve çalışanların katılımı",
-        "Sürekli teknolojik araştırma ve geliştirme",
-        "Enerjiyi verimli kullanmak ve çevre dostu olmak",
-        "Her düzeyde eğitim",
-        "Eğitim faaliyetlerinin sürdürülmesi",
+        { t: "Müvekkil memnuniyeti ve geri bildirim",
+          d: "Dosya kapandıktan sonra sürecin nasıl yürüdüğünü sorar, gelen eleştiriyi çalışma biçimimize yansıtırız." },
+        { t: "Rekabetçi kalite",
+          d: "Ölçümüz, benzer dosyalarda ulaşılabilecek en iyi hukuki sonuç ve o sonuca giden yolun müvekkil için anlaşılır olmasıdır." },
+        { t: "Kararlara ekip katılımı",
+          d: "Dosya stratejisi tek bir kişinin değil, üzerinde çalışan ekibin ortak değerlendirmesiyle belirlenir." },
+        { t: "Sürekli araştırma ve geliştirme",
+          d: "Mevzuat değişikliklerini ve Yargıtay içtihadındaki dönüşleri düzenli olarak izler, dosya yönetimini buna göre günceller." },
+        { t: "Enerjinin verimli kullanımı ve çevre",
+          d: "Dosya ve yazışmaları mümkün olduğunca elektronik ortamda yürütür, kâğıt tüketimini sınırlarız." },
+        { t: "Her düzeyde eğitim",
+          d: "Stajyer avukattan ortağa kadar herkes düzenli iç eğitime katılır; bilgi ekip içinde kalmaz, paylaşılır." },
+        { t: "Eğitim faaliyetlerinin sürdürülmesi",
+          d: "Ortaklarımız üniversitelerde ders verir, kongre ve konferanslara katılır. Bu çalışmalar Eğitim ve Kongreler bölümünde yer alır." },
       ],
       en: [
-        "Client satisfaction surveys and the submission of improvement proposals",
-        "Competitive quality",
-        "Participation of staff and employees in solutions and decisions",
-        "Continuous technological research and development",
-        "Efficient use of energy and environmental responsibility",
-        "Training at every level",
-        "Continuation of training activities",
+        { t: "Client feedback",
+          d: "Once a matter closes we ask how the process went, and let the criticism shape how we work." },
+        { t: "Competitive quality",
+          d: "Our measure is the best legal outcome reachable in comparable matters — and the route to it being intelligible to the client." },
+        { t: "Team participation in decisions",
+          d: "Case strategy is set by the joint assessment of the team working on it, not by one person." },
+        { t: "Continuous research and development",
+          d: "We follow legislative change and reversals in Court of Cassation case law as a matter of routine, and update how matters are run accordingly." },
+        { t: "Efficient use of energy, and the environment",
+          d: "Files and correspondence are handled electronically wherever possible, keeping paper use down." },
+        { t: "Training at every level",
+          d: "Everyone from trainee to partner takes part in regular internal training; knowledge is shared rather than held." },
+        { t: "Continuing academic activity",
+          d: "Our partners teach at universities and take part in congresses and conferences. That work is listed under Training & Congresses." },
       ],
       de: [
-        "Mandantenzufriedenheitsbefragungen und Einreichung von Verbesserungsvorschlägen",
-        "Wettbewerbsfähige Qualität",
-        "Beteiligung der Mitarbeitenden an Lösungen und Entscheidungen",
-        "Kontinuierliche technologische Forschung und Entwicklung",
-        "Effizienter Energieeinsatz und Umweltverantwortung",
-        "Aus- und Weiterbildung auf allen Ebenen",
-        "Fortführung der Weiterbildungsmaßnahmen",
+        { t: "Mandantenrückmeldung",
+          d: "Nach Abschluss einer Sache fragen wir nach dem Verlauf und lassen die Kritik in unsere Arbeitsweise einfließen." },
+        { t: "Wettbewerbsfähige Qualität",
+          d: "Unser Maßstab ist das in vergleichbaren Fällen erreichbare beste rechtliche Ergebnis — und ein für die Mandantschaft nachvollziehbarer Weg dorthin." },
+        { t: "Beteiligung des Teams an Entscheidungen",
+          d: "Die Fallstrategie ergibt sich aus der gemeinsamen Einschätzung des bearbeitenden Teams, nicht aus der einer einzelnen Person." },
+        { t: "Fortlaufende Forschung und Entwicklung",
+          d: "Gesetzesänderungen und Wendungen in der Rechtsprechung des Kassationshofs verfolgen wir regelmäßig und passen die Fallbearbeitung daran an." },
+        { t: "Energieeffizienz und Umwelt",
+          d: "Akten und Korrespondenz führen wir soweit möglich elektronisch und begrenzen so den Papierverbrauch." },
+        { t: "Aus- und Weiterbildung auf allen Ebenen",
+          d: "Von der Referendarin bis zum Partner nehmen alle an regelmäßigen internen Fortbildungen teil; Wissen wird geteilt, nicht gehortet." },
+        { t: "Fortführung der akademischen Tätigkeit",
+          d: "Unsere Partner lehren an Universitäten und wirken an Kongressen und Konferenzen mit. Diese Arbeit ist unter Fortbildung & Kongresse aufgeführt." },
       ],
     },
   },

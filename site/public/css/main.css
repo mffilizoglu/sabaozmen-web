@@ -622,6 +622,45 @@ body.menu-open { overflow: hidden; }
 .person__meta a { color: var(--ink-3); }
 .person__meta a:hover { color: var(--bordo); }
 
+/* ============================================================
+   Vision & Mission — statement layout
+   A one-line commitment inside a bordered card read as a slogan on a plaque.
+   Set as an editorial statement instead: number and heading to the left, the
+   firm's own wording large, the elaboration beneath it at reading size.
+   ============================================================ */
+.statement { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: clamp(1.5rem, 5vw, 4.5rem); align-items: start; }
+@media (max-width: 860px) { .statement { grid-template-columns: 1fr; gap: 1.25rem; } }
+.statement__head h2 { margin: 0; }
+.statement__head .eyebrow { font-family: var(--serif); font-size: 1rem; letter-spacing: .08em; }
+.statement__lead {
+  font-family: var(--serif); font-size: clamp(1.2rem, 2.1vw, 1.6rem);
+  line-height: 1.45; color: var(--ink); margin-bottom: 1.4rem;
+}
+.statement__body p:not(.statement__lead) { color: var(--ink-3); max-width: 62ch; }
+
+/* ============================================================
+   Quality policy — principles
+   Seven bare labels in seven boxes read as a checklist; each now carries a
+   sentence saying what it means in practice.
+   ============================================================ */
+.principles { list-style: none; margin: 0; padding: 0; counter-reset: none; }
+.principle {
+  display: grid; grid-template-columns: 3.5rem minmax(0, 1fr); gap: 1.25rem;
+  padding: 1.6rem 0; border-bottom: 1px solid var(--line);
+}
+.principle:first-child { padding-top: 0; }
+.principle:last-child { border-bottom: 0; }
+@media (max-width: 560px) { .principle { grid-template-columns: 1fr; gap: .4rem; } }
+.principle__n {
+  font-family: var(--serif); font-size: 1.05rem; color: var(--bordo);
+  line-height: 1.5; font-variant-numeric: tabular-nums;
+}
+.principle__t {
+  font-family: var(--serif); font-size: clamp(1.1rem, 1.7vw, 1.3rem);
+  color: var(--ink); margin: 0 0 .4rem; line-height: 1.35;
+}
+.principle__d { margin: 0; color: var(--ink-3); max-width: 62ch; }
+
 /* Firm facts beside the homepage introduction. Deliberately not a boxed card —
    a bordered panel there read as a luggage tag against the rest of the page. */
 .facts { margin: 0; padding: 0 0 0 1.5rem; border-left: 1px solid var(--line); }
