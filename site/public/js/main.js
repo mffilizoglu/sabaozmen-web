@@ -262,9 +262,23 @@
           if (d.ok) form.reset();
         })
         .catch(function () {
+          /* No backend (static host) or network down: hand the message to the
+             visitor's own mail client instead of losing it. The honeypot and
+             consent fields are not part of the message. */
+          var to = form.dataset.mailto;
+          if (to) {
+            var lines = [];
+            ["name", "email", "phone", "subject", "message"].forEach(function (k) {
+              if (body[k]) lines.push(k + ": " + body[k]);
+            });
+            var subj = body.subject || (body.name ? body.name : "Web sitesi");
+            window.location.href = "mailto:" + to +
+              "?subject=" + encodeURIComponent(subj) +
+              "&body=" + encodeURIComponent(lines.join("\n"));
+          }
           if (out) {
-            out.className = "form-msg form-msg--bad";
-            out.textContent = form.dataset.error || "Bir hata oluştu.";
+            out.className = "form-msg " + (to ? "form-msg--ok" : "form-msg--bad");
+            out.textContent = (to && form.dataset.fallback) || form.dataset.error || "Bir hata oluştu.";
             out.hidden = false;
           }
         })

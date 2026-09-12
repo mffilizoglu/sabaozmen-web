@@ -642,7 +642,8 @@ function contact(lang) {
     <div class="split">
       <div class="rv">
         <form data-contact action="/api/contact" method="post" novalidate
-              data-sending="${attr(T("ct.sending", lang))}" data-error="${attr(T("ct.err", lang))}">
+              data-sending="${attr(T("ct.sending", lang))}" data-error="${attr(T("ct.err", lang))}"
+              data-fallback="${attr(T("ct.fallback", lang))}" data-mailto="${attr(firm.emails.general)}">
           <input type="hidden" name="lang" value="${lang}">
           <div style="display:none" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>
           <div class="grid grid--2" style="gap:0 1.25rem">

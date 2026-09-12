@@ -164,6 +164,7 @@ const t = {
   "ct.send":       { tr: "Gönder",             en: "Send",            de: "Senden" },
   "ct.sending":    { tr: "Gönderiliyor…",      en: "Sending…",        de: "Wird gesendet…" },
   "ct.ok":         { tr: "Mesajınız tarafımıza ulaştı. En kısa sürede dönüş yapacağız.", en: "Your message has reached us. We will respond as soon as possible.", de: "Ihre Nachricht ist bei uns eingegangen. Wir melden uns so bald wie möglich." },
+  "ct.fallback":   { tr: "Form şu an gönderilemiyor; mesajınızı e-posta programınızda hazırladık — göndermeniz yeterli.", en: "The form is unavailable right now; we have prepared your message in your e-mail app — just press send.", de: "Das Formular ist derzeit nicht verfügbar; wir haben Ihre Nachricht in Ihrem E-Mail-Programm vorbereitet — einfach absenden." },
   "ct.err":        { tr: "Mesaj gönderilemedi. Lütfen tekrar deneyin veya doğrudan e-posta yazın.", en: "The message could not be sent. Please try again or write to us directly.", de: "Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt." },
   "ct.required":   { tr: "Bu alan zorunludur.",en: "This field is required.", de: "Dieses Feld ist erforderlich." },
   "ct.consent": {
