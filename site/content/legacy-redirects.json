@@ -1,0 +1,1274 @@
+{
+ "/tr/modul/kurumsal": {
+  "lang": "tr",
+  "key": "about"
+ },
+ "/tr/modul/kurumsal/saba-ozmen-hakkinda": {
+  "lang": "tr",
+  "key": "about"
+ },
+ "/tr/modul/kurumsal/vizyon-misyon": {
+  "lang": "tr",
+  "key": "vision"
+ },
+ "/tr/modul/kurumsal/kalite-politikamiz": {
+  "lang": "tr",
+  "key": "quality"
+ },
+ "/tr/modul/kurumsal/kariyer": {
+  "lang": "tr",
+  "key": "career"
+ },
+ "/tr/modul/kurumsal/kvkk": {
+  "lang": "tr",
+  "key": "privacy"
+ },
+ "/tr/modul/kurumsal/cerez-politikasi": {
+  "lang": "tr",
+  "key": "cookies"
+ },
+ "/tr/modul/ekibimiz": {
+  "lang": "tr",
+  "key": "team"
+ },
+ "/tr/modul/ekibimiz/prof-dr-etem-saba-ozmen": {
+  "lang": "tr",
+  "key": "team",
+  "slug": "etem-saba-ozmen"
+ },
+ "/tr/modul/ekibimiz/mustafa-filizoglu": {
+  "lang": "tr",
+  "key": "team",
+  "slug": "mustafa-filizoglu"
+ },
+ "/tr/modul/ekibimiz/turkan-aktas": {
+  "lang": "tr",
+  "key": "team",
+  "slug": "turkan-aktas"
+ },
+ "/tr/modul/ekibimiz/tugba-kaya-filizoglu": {
+  "lang": "tr",
+  "key": "team",
+  "slug": "tugba-kaya-filizoglu"
+ },
+ "/tr/modul/ekibimiz/satvet-can-ariz": {
+  "lang": "tr",
+  "key": "team",
+  "slug": "satvet-can-ariz"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz": {
+  "lang": "tr",
+  "key": "areas"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/ticaret-ve-sirketler-hukuku": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "ticaret-ve-sirketler-hukuku"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/gayrimenkul-hukuku-ve-kentsel-donusum": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "gayrimenkul-hukuku-ve-kentsel-donusum"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/sozlesmeler-hukuku": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "sozlesmeler-hukuku"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/arabuluculuk": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "arabuluculuk"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/kat-mulkiyeti-hukuku": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "kat-mulkiyeti-hukuku"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/toplu-yapilarda-yonetim-plani-ve-yonetim-hizmet-sozlesmelerinin-hazirlanmasi": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "toplu-yapilarda-yonetim-plani"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/insaat-hukuku": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "insaat-hukuku"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/imar-hukuku": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "imar-hukuku"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/kamulastirma-hukuku": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "kamulastirma-hukuku"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/kadastro-hukuku": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "kadastro-hukuku"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/kooperatifler-hukuku": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "kooperatifler-hukuku"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/barter-mortgage-tasinmaz-rehni-ve-ipotek": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "barter-mortgage-tasinmaz-rehni-ve-ipotek"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/gayrimenkul-yatirim-ortakligi-kurulusu-islemleri-ve-danismanligi": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "gayrimenkul-yatirim-ortakligi"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/orman-hukuku-6292-sayili-kanun-kapsaminda-2-b-arazileri-hakkinda-her-turlu-hukuki-danismanlik-hizmetleri": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "orman-hukuku-ve-2b"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/devre-mulk-ve-devre-tatil-hukuku": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "devre-mulk-ve-devre-tatil-hukuku"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/yabancilara-tasinmaz-satisina-iliskin-her-turlu-hukuki-danismanlik-hizmetleri": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "yabancilara-tasinmaz-satisi"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/tahkim": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "tahkim"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/icra-iflas-hukuku": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "icra-ve-iflas-hukuku"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/is-ve-sosyal-guvenlik-hukuku": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "is-ve-sosyal-guvenlik-hukuku"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/aile-hukuku": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "aile-hukuku"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/miras-hukuku": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "miras-hukuku"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/vakiflar-ve-dernekler-hukuku": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "vakiflar-ve-dernekler-hukuku"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/calisma-ve-oturma-izinleri": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "calisma-ve-oturma-izinleri"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/tuketici-hukuku": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "tuketici-hukuku"
+ },
+ "/tr/modul/uzmanlik-alanlarimiz/kisisel-verilerin-korunmasi-hukuku": {
+  "lang": "tr",
+  "key": "areas",
+  "slug": "kisisel-verilerin-korunmasi-hukuku"
+ },
+ "/tr/modul/makaleler": {
+  "lang": "tr",
+  "key": "articles"
+ },
+ "/tr/modul/makaleler/semenin-aralikli-olarak-odendigi-satim-akdinde-temerrut-nedeni-ile-fesih-sonucu-kismi-tediyenin-saticida-kalacagina-iliskin-sartlarin-hukuki-sonuclari": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "semenin-aralikli-olarak-odendigi-satim-akdinde-temerrut-nedeni-ile"
+ },
+ "/tr/modul/makaleler/devre-mulk-hakki-ve-devre-mulk-hakkina-iliskin-akit-yapma-vaadleri-ile-bu-konuda-noterlerin-islevi": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "devre-mulk-hakki-ve-devre-mulk-hakkina-iliskin-akit-yapma-vaadleri-ile"
+ },
+ "/tr/modul/makaleler/6306-sayili-yasaya-iliskin-guncel-uygulama-hatalari-uzerine-dusunceler-legal-temmuz-2014-stj--av--nazli-osmanagaoglu-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "6306-sayili-yasaya-iliskin-guncel-uygulama-hatalari-uzerine-dusunceler"
+ },
+ "/tr/modul/makaleler/arsa-payi-karsiligi-insaat-sozlesmeleri-konusunda-uygulama-hatalari-dr--tuba-akcura-karaman-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "arsa-payi-karsiligi-insaat-sozlesmeleri-konusunda-uygulama-hatalari"
+ },
+ "/tr/modul/makaleler/6306-sayili-yasa-uygulamalarinda-arsa-payinin-duzeltilmesi-davasina-iliskin-hukum-ve-sonuclar-av--berna-cakmak-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "6306-sayili-yasa-uygulamalarinda-arsa-payinin-duzeltilmesi-davasina"
+ },
+ "/tr/modul/makaleler/avukatlik-ucretine-iliskin-kamulastirma-kanunu-nda-yer-alan-duzenlemelere-yonelik-elestiriler-av--sezgi-cihan-bahadir-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "avukatlik-ucretine-iliskin-kamulastirma-kanunu-nda-yer-alan"
+ },
+ "/tr/modul/makaleler/birlikte-mulkiyette-payli-mulkiyet_elbirligi-mulkiyeti-yapilan-kazandirici-islemler-ve-6306-sayili-kanun-a-dayali-uygulama-aras--gor--gulsah-sinem-aydin-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "birlikte-mulkiyette-payli-mulkiyet-elbirligi-mulkiyeti-yapilan"
+ },
+ "/tr/modul/makaleler/bagislayana-donme-kosullu-bagislama-serhinin-payli-mulkiyetin-sona-ermesi-izale_i-suyu-davasina-iliskin-sonuclari-ve-paya-bagli-intifa-hakkina-dayali-olumsuzluklardan-ders-alinmayisi-uzerine-dusunceler-aras--gor--dr--muge-urem-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "bagislayana-donme-kosullu-bagislama-serhinin-payli-mulkiyetin-sona"
+ },
+ "/tr/modul/makaleler/turkiye-gayrimenkul-hukukunda-yasalarin-dinamik-yapiya-uygun-hale-getirilmesi-uzerine-dusunceler": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "turkiye-gayrimenkul-hukukunda-yasalarin-dinamik-yapiya-uygun-hale"
+ },
+ "/tr/modul/makaleler/gecerli-sebebe-dayanmaksizin-kullanilan-bozucu-yenilik-doguran-hakkin-hukuki-sonuclari-ve-yargitay-hukuk-genel-kurulu-karari-elestirisi-aras--gor--muge-urem-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "gecerli-sebebe-dayanmaksizin-kullanilan-bozucu-yenilik-doguran-hakkin"
+ },
+ "/tr/modul/makaleler/icra-islemlerine-konu-olarak-intifa-hakkinin-paraya-cevrilmesi-uygulamalari-ve-cebren-devri-yanilgisi-uzerine-dusunceler-av--selen-yildirim-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "icra-islemlerine-konu-olarak-intifa-hakkinin-paraya-cevrilmesi"
+ },
+ "/tr/modul/makaleler/tapu-iptal-davasi-olarak-yanlis-adlandirma-ile-acilan-davalar-tescili-isteme-davasi_yolsuz-tescilin-duzeltilmesi-davasi-ars--gor--gulsah-sinem-aydin-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "tapu-iptal-davasi-olarak-yanlis-adlandirma-ile-acilan-davalar-tescili"
+ },
+ "/tr/modul/makaleler/tarim-arazilerinde-yapi-insa-etme-ve-ozellikle-ikamet-amacli-yapilara-iliskin-sorunlar-stj--av--gonul-celiker-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "tarim-arazilerinde-yapi-insa-etme-ve-ozellikle-ikamet-amacli-yapilara"
+ },
+ "/tr/modul/makaleler/tapu-daireleri-uygulamalari-uzerine-dusunceler": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "tapu-daireleri-uygulamalari-uzerine-dusunceler"
+ },
+ "/tr/modul/makaleler/tasinmaz-satis-vaadlerinde-tarih-onceligine-ustunluk-taniyan-yargitay-kararlarina-iliskin-dusunceler-aras--gor--melek-bilgin-yuce-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "tasinmaz-satis-vaadlerinde-tarih-onceligine-ustunluk-taniyan-yargitay"
+ },
+ "/tr/modul/makaleler/mk-md--700-hukmunce-pay-uzerindeki-intifa-haklarinin-payli-halin-giderilmesi-davalarina-iliskin-hukuki-sonuclar-dr--melek-bilgin-yuce-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "mk-md-700-hukmunce-pay-uzerindeki-intifa-haklarinin-payli-halin"
+ },
+ "/tr/modul/makaleler/son-degisiklik-cercevesinde-kadastro-tespitinden-onceki-ayni-hak-iddialarinda-hazinenin-kusursuz-sorumluluguna-iliskin-dusunceler-av--nurgul-kutlu-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "son-degisiklik-cercevesinde-kadastro-tespitinden-onceki-ayni-hak"
+ },
+ "/tr/modul/makaleler/6306-sayili-yasa-uyarinca-donusume-bagli-guncel-sorunlar-av--berna-cakmak-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "6306-sayili-yasa-uyarinca-donusume-bagli-guncel-sorunlar"
+ },
+ "/tr/modul/makaleler/motorlu-tasit-ve-tasinmaz-satisinda-sozlesmeye-konulan-bedelin-nakden-ve-pesin-alindigina-dair-kayitlarin-yarattigi-sancilar-uzerine-dusunceler-ars--gor--gulsah-sinem-aydin-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "motorlu-tasit-ve-tasinmaz-satisinda-sozlesmeye-konulan-bedelin-nakden"
+ },
+ "/tr/modul/makaleler/yapi-kooperatifleri-tarafindan-yoneltilen-kat-mulkiyeti-olusumlarina-yonelik-elestiriler-av--sezgi-cihan-ernas-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "yapi-kooperatifleri-tarafindan-yoneltilen-kat-mulkiyeti-olusumlarina"
+ },
+ "/tr/modul/makaleler/temsil-yetkisi-galati-meshur-olarak-vekaletname-konusunda-yanilgilar-uzerine-dusunceler-av--a--goktug-kaya-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "temsil-yetkisi-galati-meshur-olarak-vekaletname-konusunda-yanilgilar"
+ },
+ "/tr/modul/makaleler/arsa-payi-karsiligi-insaat-sozlesmelerinde-yargitay-kararlari-ile-yaratilan-avans-tapu-kavramina-yonelik-elestiriler-ars--gor--muge-urem-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "arsa-payi-karsiligi-insaat-sozlesmelerinde-yargitay-kararlari-ile"
+ },
+ "/tr/modul/makaleler/evli-kisiyle-birlikte-olan-kadina_erkege-yoneltilen-manevi-tazminat-talebi-ve-ozellikle-konuya-iliskin-yargitay-kararlari-uzerine-dusunceler-yrd--doc--gulsah-vardar-hamamcioglu-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "evli-kisiyle-birlikte-olan-kadina-erkege-yoneltilen-manevi-tazminat"
+ },
+ "/tr/modul/makaleler/genc-hukukculara-birkac-ogut": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "genc-hukukculara-birkac-ogut"
+ },
+ "/tr/modul/makaleler/kooperatifler-kanunu-degisikligi-ve-yeni-ornek-anasozlesmeler-karsisinda-tbk-ve-ttk-acisindan-konut-yapi-kooperatiflerinde-ortaklik-payi-disindaki-odemelerin-niteligi-ile-bu-borclarda-temerrudun-hukum-ve-sonuclari": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "kooperatifler-kanunu-degisikligi-ve-yeni-ornek-anasozlesmeler"
+ },
+ "/tr/modul/makaleler/turk-hukukunda-hacizlerin-serhle-kazandigi-hukuki-nitelik-ve-buna-bagli-hukuki-sonuclarin-irdelenmesi": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "turk-hukukunda-hacizlerin-serhle-kazandigi-hukuki-nitelik-ve-buna"
+ },
+ "/tr/modul/makaleler/paydasliktan-cikarma-davasi-ile-ilgili-bir-hukuk-genel-kurulu-karari-hakkindaki-dusunceler-mk-m--626-a": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "paydasliktan-cikarma-davasi-ile-ilgili-bir-hukuk-genel-kurulu-karari"
+ },
+ "/tr/modul/makaleler/2014-12321-basvuru-numarali-faik-tari-ve-sultan-tari-basvurusuna-iliskin-anayasa-mahkemesi-nin-fahis-hatali-kararinin-elestirisi": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "2014-12321-basvuru-numarali-faik-tari-ve-sultan-tari-basvurusuna"
+ },
+ "/tr/modul/makaleler/6306-sayili-kanun-ve-uygulama-yonetmeligindeki-degisiklikler-ile-bir-turlu-cozulemeyen-hususlara-iliskin-dusunceler-av--burcu-nur-turgut-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "6306-sayili-kanun-ve-uygulama-yonetmeligindeki-degisiklikler-ile-bir"
+ },
+ "/tr/modul/makaleler/ipotekle-yuklu-tasinmazin-devralinmasinda-tapu-dairelerinin-tutumu-ve-yargitay-in-fahis-hatali-kararinin-elestirisi-stj--av--yilmaz-yurekli-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "ipotekle-yuklu-tasinmazin-devralinmasinda-tapu-dairelerinin-tutumu-ve"
+ },
+ "/tr/modul/makaleler/turk-hukuku-acisindan-para-borclarinda-temerrut-faizi-yaninda-ceza-kosulu-talep-edilebilecegine-iliskin-yargitay-kararlarinin-elestirisi-stj--av--turkan-aktas-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "turk-hukuku-acisindan-para-borclarinda-temerrut-faizi-yaninda-ceza"
+ },
+ "/tr/modul/makaleler/634-sayili-kmk-nin-bazi-maddelerin-degistirilmesine-bazi-maddelerin-yururlukten-kaldirilmasina-ve-kanuna-toplu-yapi-ile-ilgili-maddeler-eklenmesine-dair-kanun-tasarisinin-degerlendirilmesi-ogr--gorevlisi-hafize-erden-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "634-sayili-kmk-nin-bazi-maddelerin-degistirilmesine-bazi-maddelerin"
+ },
+ "/tr/modul/makaleler/kat-mulkiyetinde-bahcenin-niteligi-ve-ortak-yer_eklenti-ayrimi-icerisindeki-yeri": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "kat-mulkiyetinde-bahcenin-niteligi-ve-ortak-yer-eklenti-ayrimi"
+ },
+ "/tr/modul/makaleler/insaat-projeleri-cercevesinde-tasinmazda-mevcut-ipoteklerin-kat-irtifakina-kat-mulkiyetine-gecis-sonrasi-hukum-ve-sonuclarinin-tuketici-hukuku-acisindan-degerlendirilmesi-doc--dr--melek-bilgin-yuce-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "insaat-projeleri-cercevesinde-tasinmazda-mevcut-ipoteklerin-kat"
+ },
+ "/tr/modul/makaleler/kamu-arazilerinde-turizm-amacli-kurulmus-ust-hakkinin-sona-ermesinde-yasanan-problemler-av--tuba-korkmaz-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "kamu-arazilerinde-turizm-amacli-kurulmus-ust-hakkinin-sona-ermesinde"
+ },
+ "/tr/modul/makaleler/noterlere-tasinmaz-satis-yetkisi-verilmesi-hakkinda-kanun-degisikliginin-garabet-sonuclari": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "noterlere-tasinmaz-satis-yetkisi-verilmesi-hakkinda-kanun"
+ },
+ "/tr/modul/makaleler/kentsel-donusum-uygulamalarinda-eski-arsa-payindan-payli-mulkiyete-ve-yeni-arsa-payina-uzanan-surecte-yanilgilar-doc--dr--ahmet-ayar-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "kentsel-donusum-uygulamalarinda-eski-arsa-payindan-payli-mulkiyete-ve"
+ },
+ "/tr/modul/makaleler/kat-mulkiyeti-olusumunda-motorlu-tasit-edinimi-engellerine-dayali-elestiriler-ars--gor--zeynep-yilmaz-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "kat-mulkiyeti-olusumunda-motorlu-tasit-edinimi-engellerine-dayali"
+ },
+ "/tr/modul/makaleler/imar-planindaki-degisikligin-veya-iptalin-eser-ve-arsa-payi-karsiligi-insaat-sozlesmesine-etkisi-doc--dr--muge-urem-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "imar-planindaki-degisikligin-veya-iptalin-eser-ve-arsa-payi-karsiligi"
+ },
+ "/tr/modul/makaleler/yuklenicinin-arsa-payi-karsiligi-insaat-sozlesmesinden-dogan-alacak-hakkina-iliskin-kazandirici-islemleri": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "yuklenicinin-arsa-payi-karsiligi-insaat-sozlesmesinden-dogan-alacak"
+ },
+ "/tr/modul/makaleler/kanunen-gecerlilik-sekline-bagli-sozlesmelerde-surenin-uzatilmasina-yonelik-anlasmanin-sekli-doc-dr-muge-urem-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "kanunen-gecerlilik-sekline-bagli-sozlesmelerde-surenin-uzatilmasina"
+ },
+ "/tr/modul/makaleler/tarim-arazilerinin-birlikte-mulkiyete-dayali-olarak-tasarruf-yetkisi-kisitlama-elestirileri-ve-cebri-arttirma-yolu-ile-payli-halin-giderilerek-paraya-cevrilmesi-uygulamasi-av-bersah-tartici-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "tarim-arazilerinin-birlikte-mulkiyete-dayali-olarak-tasarruf-yetkisi"
+ },
+ "/tr/modul/makaleler/turk-borclar-kanunu-na-gore-tasinmaz-satisina-iliskin-hukumlerin-irdelenmesi": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "turk-borclar-kanunu-na-gore-tasinmaz-satisina-iliskin-hukumlerin"
+ },
+ "/tr/modul/makaleler/tmk-m-889-hukmunce-mevcut-ipotegin-birden-cok-tasinmaza-dagitilmasina-bagli-hukum-ve-sonuclar": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "tmk-m-889-hukmunce-mevcut-ipotegin-birden-cok-tasinmaza-dagitilmasina"
+ },
+ "/tr/modul/makaleler/nisanin-bozulmasinda-cayma-akcasi-ve-cezai-sart-mk-m-83-madde-degisikligi": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "nisanin-bozulmasinda-cayma-akcasi-ve-cezai-sart-mk-m-83-madde"
+ },
+ "/tr/modul/makaleler/kat-mulkiyetinde-genel-gider-ve-avansa-katilma-borcunda-kiracilarin-sorumlulugu-stj-av-irem-nur-demirdelen-ile": {
+  "lang": "tr",
+  "key": "articles",
+  "slug": "kat-mulkiyetinde-genel-gider-ve-avansa-katilma-borcunda-kiracilarin"
+ },
+ "/tr/iletisim": {
+  "lang": "tr",
+  "key": "contact"
+ },
+ "/en/modul/corporate": {
+  "lang": "en",
+  "key": "about"
+ },
+ "/en/modul/corporate/about-saba-ozmen": {
+  "lang": "en",
+  "key": "about"
+ },
+ "/en/modul/corporate/vision-mission": {
+  "lang": "en",
+  "key": "vision"
+ },
+ "/en/modul/corporate/quality-policy": {
+  "lang": "en",
+  "key": "quality"
+ },
+ "/en/modul/corporate/career": {
+  "lang": "en",
+  "key": "career"
+ },
+ "/en/modul/corporate/personal-data-protection": {
+  "lang": "en",
+  "key": "privacy"
+ },
+ "/en/modul/corporate/cookie-policy": {
+  "lang": "en",
+  "key": "cookies"
+ },
+ "/en/modul/our-team": {
+  "lang": "en",
+  "key": "team"
+ },
+ "/en/modul/our-team/prof-dr-etem-saba-ozmen": {
+  "lang": "en",
+  "key": "team",
+  "slug": "etem-saba-ozmen"
+ },
+ "/en/modul/our-team/mustafa-filizoglu": {
+  "lang": "en",
+  "key": "team",
+  "slug": "mustafa-filizoglu"
+ },
+ "/en/modul/our-team/turkan-aktas": {
+  "lang": "en",
+  "key": "team",
+  "slug": "turkan-aktas"
+ },
+ "/en/modul/our-team/tugba-kaya-filizoglu": {
+  "lang": "en",
+  "key": "team",
+  "slug": "tugba-kaya-filizoglu"
+ },
+ "/en/modul/our-team/satvet-can-ariz": {
+  "lang": "en",
+  "key": "team",
+  "slug": "satvet-can-ariz"
+ },
+ "/en/modul/our-areas-of-expertise": {
+  "lang": "en",
+  "key": "areas"
+ },
+ "/en/modul/our-areas-of-expertise/commercial-and-corporate-law": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "ticaret-ve-sirketler-hukuku"
+ },
+ "/en/modul/our-areas-of-expertise/real-estate-law-and-urban-transformation": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "gayrimenkul-hukuku-ve-kentsel-donusum"
+ },
+ "/en/modul/our-areas-of-expertise/contract-law": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "sozlesmeler-hukuku"
+ },
+ "/en/modul/our-areas-of-expertise/mediation": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "arabuluculuk"
+ },
+ "/en/modul/our-areas-of-expertise/condominium-law": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "kat-mulkiyeti-hukuku"
+ },
+ "/en/modul/our-areas-of-expertise/preparation-of-management-plans-and-management-service-contracts-for-complex-buildings": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "toplu-yapilarda-yonetim-plani"
+ },
+ "/en/modul/our-areas-of-expertise/construction-law": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "insaat-hukuku"
+ },
+ "/en/modul/our-areas-of-expertise/zoning-law": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "imar-hukuku"
+ },
+ "/en/modul/our-areas-of-expertise/expropriation-law": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "kamulastirma-hukuku"
+ },
+ "/en/modul/our-areas-of-expertise/cadastre-law": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "kadastro-hukuku"
+ },
+ "/en/modul/our-areas-of-expertise/cooperative-law": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "kooperatifler-hukuku"
+ },
+ "/en/modul/our-areas-of-expertise/barter-mortgage-and-real-estate-pledge-and-mortgage": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "barter-mortgage-tasinmaz-rehni-ve-ipotek"
+ },
+ "/en/modul/our-areas-of-expertise/real-estate-investment-trust-reit-formation-transactions-and-consultancy": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "gayrimenkul-yatirim-ortakligi"
+ },
+ "/en/modul/our-areas-of-expertise/forestry-law-and-legal-consultancy-services-regarding-2-b-lands-under-law-no-6292": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "orman-hukuku-ve-2b"
+ },
+ "/en/modul/our-areas-of-expertise/timeshare-and-vacation-ownership-law": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "devre-mulk-ve-devre-tatil-hukuku"
+ },
+ "/en/modul/our-areas-of-expertise/legal-consultancy-services-for-the-sale-of-real-estate-to-foreigners": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "yabancilara-tasinmaz-satisi"
+ },
+ "/en/modul/our-areas-of-expertise/arbitration": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "tahkim"
+ },
+ "/en/modul/our-areas-of-expertise/enforcement-and-bankruptcy-law": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "icra-ve-iflas-hukuku"
+ },
+ "/en/modul/our-areas-of-expertise/labor-and-social-security-law": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "is-ve-sosyal-guvenlik-hukuku"
+ },
+ "/en/modul/our-areas-of-expertise/family-law": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "aile-hukuku"
+ },
+ "/en/modul/our-areas-of-expertise/inheritance-law": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "miras-hukuku"
+ },
+ "/en/modul/our-areas-of-expertise/foundations-and-associations-law": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "vakiflar-ve-dernekler-hukuku"
+ },
+ "/en/modul/our-areas-of-expertise/work-and-residence-permits": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "calisma-ve-oturma-izinleri"
+ },
+ "/en/modul/our-areas-of-expertise/consumer-law": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "tuketici-hukuku"
+ },
+ "/en/modul/our-areas-of-expertise/data-protection-law": {
+  "lang": "en",
+  "key": "areas",
+  "slug": "kisisel-verilerin-korunmasi-hukuku"
+ },
+ "/en/modul/articles": {
+  "lang": "en",
+  "key": "articles"
+ },
+ "/en/modul/articles/legal-consequences-of-conditions-regarding-partial-payment-to-remain-with-the-seller-as-a-result-of-termination-due-to-default-in-a-sales-contract-where-price-is-paid-intermittently": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "semenin-aralikli-olarak-odendigi-satim-akdinde-temerrut-nedeni-ile"
+ },
+ "/en/modul/articles/timeshare-rights-and-promises-to-make-contracts-regarding-timeshare-rights-and-the-function-of-notaries-in-this-matter": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "devre-mulk-hakki-ve-devre-mulk-hakkina-iliskin-akit-yapma-vaadleri-ile"
+ },
+ "/en/modul/articles/thoughts-on-current-application-errors-regarding-law-no-6306-legal-july-2014-with-intern-lawyer-nazli-osmanagaoglu": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "6306-sayili-yasaya-iliskin-guncel-uygulama-hatalari-uzerine-dusunceler"
+ },
+ "/en/modul/articles/application-errors-in-construction-contracts-in-return-for-land-share-with-dr-tuba-akcura-karaman": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "arsa-payi-karsiligi-insaat-sozlesmeleri-konusunda-uygulama-hatalari"
+ },
+ "/en/modul/articles/the-judgment-and-results-regarding-the-case-of-correction-of-land-share-in-the-applications-of-law-no-6306-with-lawyer-berna-cakmak": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "6306-sayili-yasa-uygulamalarinda-arsa-payinin-duzeltilmesi-davasina"
+ },
+ "/en/modul/articles/criticisms-of-the-regulations-in-the-expropriation-law-regarding-attorney-fees-with-lawyer-sezgi-cihan-bahadir": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "avukatlik-ucretine-iliskin-kamulastirma-kanunu-nda-yer-alan"
+ },
+ "/en/modul/articles/acquisitive-transactions-in-joint-ownership-shared-ownership_cooperative-ownership-and-application-based-on-law-no-6306-with-res-asst-gulsah-sinem-aydin": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "birlikte-mulkiyette-payli-mulkiyet-elbirligi-mulkiyeti-yapilan"
+ },
+ "/en/modul/articles/thoughts-on-the-consequences-of-the-conditional-donation-of-return-to-the-donor-in-the-termination-of-shared-ownership-dissolution-of-shares-case-and-the-failure-to-learn-from-the-negativities-based-on-the-usufruct-of-shares-with-res-asst-dr-muge-urem": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "bagislayana-donme-kosullu-bagislama-serhinin-payli-mulkiyetin-sona"
+ },
+ "/en/modul/articles/thoughts-on-adapting-the-laws-to-the-dynamic-structure-in-turkish-real-estate-law": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "turkiye-gayrimenkul-hukukunda-yasalarin-dinamik-yapiya-uygun-hale"
+ },
+ "/en/modul/articles/legal-consequences-of-the-right-creating-a-disruptive-innovation-used-without-a-valid-reason-and-criticism-of-the-decision-of-the-general-assembly-of-the-court-of-cassation-with-res-asst-muge-urem": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "gecerli-sebebe-dayanmaksizin-kullanilan-bozucu-yenilik-doguran-hakkin"
+ },
+ "/en/modul/articles/thoughts-on-the-applications-of-conversion-of-usufruct-into-cash-as-a-subject-of-enforcement-proceedings-and-the-misconception-of-forced-transfer-with-attorney-selen-yildirim": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "icra-islemlerine-konu-olarak-intifa-hakkinin-paraya-cevrilmesi"
+ },
+ "/en/modul/articles/cases-filed-with-misnaming-as-title-deed-cancellation-case-case-for-requesting-registration_case-for-correction-of-illegal-registration-with-res-asst-gulsah-sinem-aydin": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "tapu-iptal-davasi-olarak-yanlis-adlandirma-ile-acilan-davalar-tescili"
+ },
+ "/en/modul/articles/problems-regarding-building-construction-on-agricultural-lands-and-especially-buildings-for-residential-purposes-with-intern-lawyer-gonul-celiker": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "tarim-arazilerinde-yapi-insa-etme-ve-ozellikle-ikamet-amacli-yapilara"
+ },
+ "/en/modul/articles/thoughts-on-land-registry-office-practices": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "tapu-daireleri-uygulamalari-uzerine-dusunceler"
+ },
+ "/en/modul/articles/thoughts-on-the-supreme-court-decisions-granting-priority-to-date-in-real-estate-sales-promises-with-research-assistant-melek-bilgin-yuce": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "tasinmaz-satis-vaadlerinde-tarih-onceligine-ustunluk-taniyan-yargitay"
+ },
+ "/en/modul/articles/legal-conclusions-regarding-the-cases-regarding-the-elimination-of-the-shared-status-of-usufruct-rights-on-shares-according-to-article-700-of-the-cc-with-dr-melek-bilgin-yuce": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "mk-md-700-hukmunce-pay-uzerindeki-intifa-haklarinin-payli-halin"
+ },
+ "/en/modul/articles/thoughts-on-the-strict-liability-of-the-treasury-in-real-rights-claims-before-the-cadastral-determination-within-the-framework-of-the-last-amendment-with-atty-nurgul-kutlu": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "son-degisiklik-cercevesinde-kadastro-tespitinden-onceki-ayni-hak"
+ },
+ "/en/modul/articles/current-problems-related-to-transformation-according-to-law-no-6306-with-atty-berna-cakmak": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "6306-sayili-yasa-uyarinca-donusume-bagli-guncel-sorunlar"
+ },
+ "/en/modul/articles/thoughts-on-the-pains-caused-by-records-of-the-price-set-in-the-contract-for-the-sale-of-motor-vehicles-and-real-estates-being-received-in-cash-and-in-advance-with-res-asst-gulsah-sinem-aydin": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "motorlu-tasit-ve-tasinmaz-satisinda-sozlesmeye-konulan-bedelin-nakden"
+ },
+ "/en/modul/articles/criticisms-towards-condominium-formations-directed-by-construction-cooperatives-with-lawyer-sezgi-cihan-ernas": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "yapi-kooperatifleri-tarafindan-yoneltilen-kat-mulkiyeti-olusumlarina"
+ },
+ "/en/modul/articles/thoughts-on-misconceptions-on-the-authority-to-represent-post-officially-known-as-power-of-attorney-with-attorney-a-goktug-kaya": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "temsil-yetkisi-galati-meshur-olarak-vekaletname-konusunda-yanilgilar"
+ },
+ "/en/modul/articles/criticisms-towards-the-concept-of-advance-title-deed-created-by-the-supreme-court-decisions-in-construction-contracts-in-return-for-land-share-with-res-asst-muge-urem": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "arsa-payi-karsiligi-insaat-sozlesmelerinde-yargitay-kararlari-ile"
+ },
+ "/en/modul/articles/thoughts-on-the-claim-for-non-pecuniary-damages-directed-to-a-woman-or-man-having-an-affair-with-a-married-person-and-the-court-of-cassation-decisions-on-the-subject-in-particular-with-assoc-prof-gulsah-vardar-hamamcioglu": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "evli-kisiyle-birlikte-olan-kadina-erkege-yoneltilen-manevi-tazminat"
+ },
+ "/en/modul/articles/some-advice-for-young-lawyers": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "genc-hukukculara-birkac-ogut"
+ },
+ "/en/modul/articles/the-nature-of-payments-other-than-partnership-shares-in-housing-construction-cooperatives-and-the-provisions-and-consequences-of-default-in-these-debts-in-terms-of-the-tcc-and-ttk-in-the-face-of-the-amendment-of-the-cooperatives-law-and-the-new-model-articles-of-association": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "kooperatifler-kanunu-degisikligi-ve-yeni-ornek-anasozlesmeler"
+ },
+ "/en/modul/articles/analysis-of-the-legal-nature-of-seizures-acquired-by-annotation-in-turkish-law-and-the-legal-consequences-related-to-this": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "turk-hukukunda-hacizlerin-serhle-kazandigi-hukuki-nitelik-ve-buna"
+ },
+ "/en/modul/articles/thoughts-on-a-general-assembly-of-law-decision-regarding-the-case-of-exclusion-from-partnership-civil-code-art-626-a": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "paydasliktan-cikarma-davasi-ile-ilgili-bir-hukuk-genel-kurulu-karari"
+ },
+ "/en/modul/articles/criticism-of-the-exorbitantly-errored-decision-of-the-constitutional-court-regarding-the-application-of-faik-tari-and-sultan-tari-with-application-no-2014-12321": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "2014-12321-basvuru-numarali-faik-tari-ve-sultan-tari-basvurusuna"
+ },
+ "/en/modul/articles/thoughts-on-the-amendments-in-law-no-6306-and-its-implementation-regulation-and-the-unresolved-issues-with-attorney-burcu-nur-turgut": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "6306-sayili-kanun-ve-uygulama-yonetmeligindeki-degisiklikler-ile-bir"
+ },
+ "/en/modul/articles/the-attitude-of-land-registry-offices-in-the-transfer-of-mortgaged-real-estate-and-criticism-of-the-exorbitantly-erroneous-decision-of-the-supreme-court-with-intern-lawyer-yilmaz-yurekli": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "ipotekle-yuklu-tasinmazin-devralinmasinda-tapu-dairelerinin-tutumu-ve"
+ },
+ "/en/modul/articles/criticism-of-the-court-of-cassation-decisions-on-the-possibility-of-requesting-penalty-conditions-in-addition-to-default-interest-in-monetary-debts-in-terms-of-turkish-law-with-intern-lawyer-turkan-aktas": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "turk-hukuku-acisindan-para-borclarinda-temerrut-faizi-yaninda-ceza"
+ },
+ "/en/modul/articles/evaluation-of-the-draft-law-on-amending-some-articles-of-the-kmk-no-634-repealing-some-articles-and-adding-articles-on-mass-building-to-the-law-with-lecturer-hafize-erden": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "634-sayili-kmk-nin-bazi-maddelerin-degistirilmesine-bazi-maddelerin"
+ },
+ "/en/modul/articles/the-nature-of-the-garden-in-condominiums-and-its-place-in-the-common-area-extension-distinction": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "kat-mulkiyetinde-bahcenin-niteligi-ve-ortak-yer-eklenti-ayrimi"
+ },
+ "/en/modul/articles/evaluation-of-the-provisions-and-consequences-of-existing-mortgages-on-real-estate-within-the-framework-of-construction-projects-after-the-transition-to-floor-service-ownership-floor-ownership-from-the-perspective-of-consumer-law-with-assoc-prof-dr-melek-bilgin-yuce": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "insaat-projeleri-cercevesinde-tasinmazda-mevcut-ipoteklerin-kat"
+ },
+ "/en/modul/articles/problems-experienced-in-termination-of-rights-of-superficies-established-for-tourism-purposes-on-public-lands-with-atty-tuba-korkmaz": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "kamu-arazilerinde-turizm-amacli-kurulmus-ust-hakkinin-sona-ermesinde"
+ },
+ "/en/modul/articles/strange-results-of-the-amendment-of-the-law-on-granting-real-estate-sales-authority-to-notaries": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "noterlere-tasinmaz-satis-yetkisi-verilmesi-hakkinda-kanun"
+ },
+ "/en/modul/articles/misconceptions-in-the-process-from-old-land-share-to-shared-ownership-and-new-land-share-in-urban-transformation-applications-with-assoc-prof-dr-ahmet-ayar": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "kentsel-donusum-uygulamalarinda-eski-arsa-payindan-payli-mulkiyete-ve"
+ },
+ "/en/modul/articles/criticisms-based-on-the-obstacles-of-motor-vehicle-acquisition-in-the-formation-of-consolidated-ownership-with-res-asst-zeynep-yilmaz": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "kat-mulkiyeti-olusumunda-motorlu-tasit-edinimi-engellerine-dayali"
+ },
+ "/en/modul/articles/effect-of-change-or-cancellation-in-development-plan-on-construction-contract-in-exchange-for-work-and-land-share-with-assoc-prof-dr-muge-urem": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "imar-planindaki-degisikligin-veya-iptalin-eser-ve-arsa-payi-karsiligi"
+ },
+ "/en/modul/articles/contractor-s-acquisition-transactions-regarding-the-right-to-receivables-arising-from-the-construction-contract-in-return-for-land-share": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "yuklenicinin-arsa-payi-karsiligi-insaat-sozlesmesinden-dogan-alacak"
+ },
+ "/en/modul/articles/form-of-agreement-for-extension-of-term-in-contracts-dependent-on-legal-validity-with-assoc-prof-dr-muge-urem": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "kanunen-gecerlilik-sekline-bagli-sozlesmelerde-surenin-uzatilmasina"
+ },
+ "/en/modul/articles/criticisms-of-the-restriction-on-the-disposition-of-agricultural-lands-based-on-joint-ownership-and-the-implementation-of-converting-it-into-cash-by-eliminating-the-shared-status-through-forced-increase-with-lawyer-bersah-tartici": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "tarim-arazilerinin-birlikte-mulkiyete-dayali-olarak-tasarruf-yetkisi"
+ },
+ "/en/modul/articles/an-examination-of-the-provisions-regarding-the-sale-of-immovable-property-according-to-the-turkish-code-of-obligations": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "turk-borclar-kanunu-na-gore-tasinmaz-satisina-iliskin-hukumlerin"
+ },
+ "/en/modul/articles/provisions-and-consequences-of-distributing-an-existing-mortgage-to-multiple-immovable-properties-according-to-article-889-of-the-turkish-civil-code-tmk": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "tmk-m-889-hukmunce-mevcut-ipotegin-birden-cok-tasinmaza-dagitilmasina"
+ },
+ "/en/modul/articles/penalty-and-break-up-fee-in-case-of-disengagement-amendment-to-article-83-of-the-turkish-civil-code": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "nisanin-bozulmasinda-cayma-akcasi-ve-cezai-sart-mk-m-83-madde"
+ },
+ "/en/modul/articles/tenants-responsibility-for-contributing-to-general-expenses-and-advance-payments-in-condominium-property-with-trainee-lawyer-irem-nur-demirdelen": {
+  "lang": "en",
+  "key": "articles",
+  "slug": "kat-mulkiyetinde-genel-gider-ve-avansa-katilma-borcunda-kiracilarin"
+ },
+ "/en/iletisim": {
+  "lang": "en",
+  "key": "contact"
+ },
+ "/de/modul/uber-uns": {
+  "lang": "de",
+  "key": "about"
+ },
+ "/de/modul/uber-uns/uber-saba-ozmen": {
+  "lang": "de",
+  "key": "about"
+ },
+ "/de/modul/uber-uns/vision-mission": {
+  "lang": "de",
+  "key": "vision"
+ },
+ "/de/modul/uber-uns/unsere-qualitatspolitik": {
+  "lang": "de",
+  "key": "quality"
+ },
+ "/de/modul/uber-uns/karriere": {
+  "lang": "de",
+  "key": "career"
+ },
+ "/de/modul/uber-uns/schutz-personenbezogener-daten": {
+  "lang": "de",
+  "key": "privacy"
+ },
+ "/de/modul/uber-uns/cookie-richtlinie": {
+  "lang": "de",
+  "key": "cookies"
+ },
+ "/de/modul/unsere-anwalte": {
+  "lang": "de",
+  "key": "team"
+ },
+ "/de/modul/unsere-anwalte/prof-dr-etem-saba-ozmen": {
+  "lang": "de",
+  "key": "team",
+  "slug": "etem-saba-ozmen"
+ },
+ "/de/modul/unsere-anwalte/mustafa-filizoglu": {
+  "lang": "de",
+  "key": "team",
+  "slug": "mustafa-filizoglu"
+ },
+ "/de/modul/unsere-anwalte/turkan-aktas": {
+  "lang": "de",
+  "key": "team",
+  "slug": "turkan-aktas"
+ },
+ "/de/modul/unsere-anwalte/tugba-kaya-filizoglu": {
+  "lang": "de",
+  "key": "team",
+  "slug": "tugba-kaya-filizoglu"
+ },
+ "/de/modul/unsere-anwalte/satvet-can-ariz": {
+  "lang": "de",
+  "key": "team",
+  "slug": "satvet-can-ariz"
+ },
+ "/de/modul/unsere-fachgebiete": {
+  "lang": "de",
+  "key": "areas"
+ },
+ "/de/modul/unsere-fachgebiete/ticaret-ve-sirketler-hukuku": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "ticaret-ve-sirketler-hukuku"
+ },
+ "/de/modul/unsere-fachgebiete/gayrimenkul-hukuku-ve-kentsel-donusum": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "gayrimenkul-hukuku-ve-kentsel-donusum"
+ },
+ "/de/modul/unsere-fachgebiete/sozlesmeler-hukuku": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "sozlesmeler-hukuku"
+ },
+ "/de/modul/unsere-fachgebiete/arabuluculuk": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "arabuluculuk"
+ },
+ "/de/modul/unsere-fachgebiete/kat-mulkiyeti-hukuku": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "kat-mulkiyeti-hukuku"
+ },
+ "/de/modul/unsere-fachgebiete/toplu-yapilarda-yonetim-plani-ve-yonetim-hizmet-sozlesmelerinin-hazirlanmasi": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "toplu-yapilarda-yonetim-plani"
+ },
+ "/de/modul/unsere-fachgebiete/insaat-hukuku": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "insaat-hukuku"
+ },
+ "/de/modul/unsere-fachgebiete/imar-hukuku": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "imar-hukuku"
+ },
+ "/de/modul/unsere-fachgebiete/kamulastirma-hukuku": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "kamulastirma-hukuku"
+ },
+ "/de/modul/unsere-fachgebiete/kadastro-hukuku": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "kadastro-hukuku"
+ },
+ "/de/modul/unsere-fachgebiete/kooperatifler-hukuku": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "kooperatifler-hukuku"
+ },
+ "/de/modul/unsere-fachgebiete/barter-mortgage-tasinmaz-rehni-ve-ipotek": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "barter-mortgage-tasinmaz-rehni-ve-ipotek"
+ },
+ "/de/modul/unsere-fachgebiete/gayrimenkul-yatirim-ortakligi-kurulusu-islemleri-ve-danismanligi": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "gayrimenkul-yatirim-ortakligi"
+ },
+ "/de/modul/unsere-fachgebiete/orman-hukuku-6292-sayili-kanun-kapsaminda-2-b-arazileri-hakkinda-her-turlu-hukuki-danismanlik-hizmetleri": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "orman-hukuku-ve-2b"
+ },
+ "/de/modul/unsere-fachgebiete/devre-mulk-ve-devre-tatil-hukuku": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "devre-mulk-ve-devre-tatil-hukuku"
+ },
+ "/de/modul/unsere-fachgebiete/yabancilara-tasinmaz-satisina-iliskin-her-turlu-hukuki-danismanlik-hizmetleri": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "yabancilara-tasinmaz-satisi"
+ },
+ "/de/modul/unsere-fachgebiete/tahkim": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "tahkim"
+ },
+ "/de/modul/unsere-fachgebiete/icra-iflas-hukuku": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "icra-ve-iflas-hukuku"
+ },
+ "/de/modul/unsere-fachgebiete/is-ve-sosyal-guvenlik-hukuku": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "is-ve-sosyal-guvenlik-hukuku"
+ },
+ "/de/modul/unsere-fachgebiete/aile-hukuku": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "aile-hukuku"
+ },
+ "/de/modul/unsere-fachgebiete/miras-hukuku": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "miras-hukuku"
+ },
+ "/de/modul/unsere-fachgebiete/vakiflar-ve-dernekler-hukuku": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "vakiflar-ve-dernekler-hukuku"
+ },
+ "/de/modul/unsere-fachgebiete/calisma-ve-oturma-izinleri": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "calisma-ve-oturma-izinleri"
+ },
+ "/de/modul/unsere-fachgebiete/tuketici-hukuku": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "tuketici-hukuku"
+ },
+ "/de/modul/unsere-fachgebiete/kisisel-verilerin-korunmasi-hukuku": {
+  "lang": "de",
+  "key": "areas",
+  "slug": "kisisel-verilerin-korunmasi-hukuku"
+ },
+ "/de/modul/artikel": {
+  "lang": "de",
+  "key": "articles"
+ },
+ "/de/modul/artikel/rechtliche-folgen-von-bedingungen-bezuglich-des-verbleibs-einer-teilzahlung-beim-verkaufer-infolge-einer-kundigung-wegen-nichterfullung-eines-kaufvertrags-bei-dem-der-preis-zeitweilig-gezahlt-wird": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "semenin-aralikli-olarak-odendigi-satim-akdinde-temerrut-nedeni-ile"
+ },
+ "/de/modul/artikel/timeshare-rechte-und-versprechen-zum-abschluss-von-vertragen-uber-timeshare-rechte-und-die-funktion-von-notaren-in-dieser-angelegenheit": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "devre-mulk-hakki-ve-devre-mulk-hakkina-iliskin-akit-yapma-vaadleri-ile"
+ },
+ "/de/modul/artikel/gedanken-zu-aktuellen-anwendungsfehlern-in-bezug-auf-gesetz-nr-6306-legal-juli-2014-mit-praktikant-rechtsanwalt-nazli-osmanagaoglu": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "6306-sayili-yasaya-iliskin-guncel-uygulama-hatalari-uzerine-dusunceler"
+ },
+ "/de/modul/artikel/anwendungsfehler-bei-bauvertragen-als-gegenleistung-fur-landanteile-mit-dr-tuba-akcura-karaman": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "arsa-payi-karsiligi-insaat-sozlesmeleri-konusunda-uygulama-hatalari"
+ },
+ "/de/modul/artikel/das-urteil-und-die-ergebnisse-im-fall-der-berichtigung-des-landanteils-in-der-anwendung-des-gesetzes-nr-6306-mit-rechtsanwaltin-berna-cakmak": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "6306-sayili-yasa-uygulamalarinda-arsa-payinin-duzeltilmesi-davasina"
+ },
+ "/de/modul/artikel/kritik-an-den-regelungen-des-enteignungsgesetzes-zu-anwaltsgebuhren-mit-rechtsanwalt-sezgi-cihan-bahadir": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "avukatlik-ucretine-iliskin-kamulastirma-kanunu-nda-yer-alan"
+ },
+ "/de/modul/artikel/erwerbstransaktionen-im-miteigentum-gemeinsames-eigentum-genossenschaftseigentum-und-antrag-auf-grundlage-des-gesetzes-nr-6306-mit-res-asst-gulsah-sinem-aydin": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "birlikte-mulkiyette-payli-mulkiyet-elbirligi-mulkiyeti-yapilan"
+ },
+ "/de/modul/artikel/gedanken-zu-den-folgen-der-bedingten-schenkung-der-ruckgabe-an-den-spender-im-fall-der-beendigung-des-gemeinsamen-eigentums-auflosung-von-anteilen-und-des-versaumnisses-aus-den-negativitaten-aufgrund-des-niessbrauchs-von-anteilen-zu-lernen-mit-res-asst-dr-muge-urem": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "bagislayana-donme-kosullu-bagislama-serhinin-payli-mulkiyetin-sona"
+ },
+ "/de/modul/artikel/gedanken-zur-anpassung-der-gesetze-an-die-dynamische-struktur-im-turkischen-immobilienrecht": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "turkiye-gayrimenkul-hukukunda-yasalarin-dinamik-yapiya-uygun-hale"
+ },
+ "/de/modul/artikel/rechtliche-konsequenzen-des-rechts-eine-disruptive-innovation-ohne-triftigen-grund-zu-schaffen-und-kritik-an-der-entscheidung-der-generalversammlung-des-kassationsgerichtshofs-mit-res-asst-muge-urem": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "gecerli-sebebe-dayanmaksizin-kullanilan-bozucu-yenilik-doguran-hakkin"
+ },
+ "/de/modul/artikel/gedanken-zu-den-anwendungen-der-umwandlung-von-niessbrauch-in-bargeld-als-gegenstand-von-vollstreckungsverfahren-und-zum-missverstandnis-der-zwangsubertragung-mit-rechtsanwaltin-selen-yildirim": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "icra-islemlerine-konu-olarak-intifa-hakkinin-paraya-cevrilmesi"
+ },
+ "/de/modul/artikel/falle-die-mit-falscher-benennung-als-fall-der-aufhebung-der-eigentumsurkunde-eingereicht-wurden-fall-zur-beantragung-einer-registrierung_fall-zur-korrektur-einer-illegalen-registrierung-mit-res-asst-gulsah-sinem-aydin": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "tapu-iptal-davasi-olarak-yanlis-adlandirma-ile-acilan-davalar-tescili"
+ },
+ "/de/modul/artikel/probleme-beim-hochbau-auf-landwirtschaftlichen-flachen-und-insbesondere-bei-gebauden-fur-wohnzwecke-mit-rechtsanwalt-gonul-celiker": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "tarim-arazilerinde-yapi-insa-etme-ve-ozellikle-ikamet-amacli-yapilara"
+ },
+ "/de/modul/artikel/gedanken-zur-praxis-des-grundbuchamtes": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "tapu-daireleri-uygulamalari-uzerine-dusunceler"
+ },
+ "/de/modul/artikel/gedanken-zu-den-entscheidungen-des-obersten-gerichtshofs-die-bisher-bei-immobilienverkaufsversprechen-vorrang-gewahren-mit-dem-wissenschaftlichen-mitarbeiter-melek-bilgin-yuce": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "tasinmaz-satis-vaadlerinde-tarih-onceligine-ustunluk-taniyan-yargitay"
+ },
+ "/de/modul/artikel/rechtliche-schlussfolgerungen-zu-den-fallen-betreffend-die-aufhebung-des-gemeinsamen-status-von-niessbrauchsrechten-an-aktien-gemass-artikel-700-des-burgerlichen-gesetzbuchs-mit-dr-melek-bilgin-yuce": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "mk-md-700-hukmunce-pay-uzerindeki-intifa-haklarinin-payli-halin"
+ },
+ "/de/modul/artikel/gedanken-zur-strikten-haftung-des-finanzministeriums-bei-realrechtsanspruchen-vor-der-katasterfeststellung-im-rahmen-der-letzten-verfassungsanderung-mit-rechtsanwalt-nurgul-kutlu": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "son-degisiklik-cercevesinde-kadastro-tespitinden-onceki-ayni-hak"
+ },
+ "/de/modul/artikel/aktuelle-probleme-im-zusammenhang-mit-der-umwandlung-gemass-gesetz-nr-6306-mit-atty-berna-cakmak": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "6306-sayili-yasa-uyarinca-donusume-bagli-guncel-sorunlar"
+ },
+ "/de/modul/artikel/gedanken-zu-den-schmerzen-die-dadurch-entstehen-dass-aufzeichnungen-uber-den-im-vertrag-uber-den-verkauf-von-kraftfahrzeugen-und-immobilien-festgelegten-preis-in-bar-und-im-voraus-erhalten-werden-mit-res-asst-gulsah-sinem-aydin": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "motorlu-tasit-ve-tasinmaz-satisinda-sozlesmeye-konulan-bedelin-nakden"
+ },
+ "/de/modul/artikel/kritik-an-eigentumswohnungsgrundungen-durch-baugenossenschaften-mit-rechtsanwalt-sezgi-cihan-ernas": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "yapi-kooperatifleri-tarafindan-yoneltilen-kat-mulkiyeti-olusumlarina"
+ },
+ "/de/modul/artikel/gedanken-zu-missverstandnissen-uber-die-vertretungsbefugnis-postoffiziell-als-vollmacht-bekannt-mit-rechtsanwalt-a-goktug-kaya": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "temsil-yetkisi-galati-meshur-olarak-vekaletname-konusunda-yanilgilar"
+ },
+ "/de/modul/artikel/kritik-am-konzept-der-vorabtitelurkunde-die-durch-entscheidungen-des-obersten-gerichtshofs-in-bauvertragen-als-gegenleistung-fur-landanteile-geschaffen-wurde-mit-res-asst-muge-urem": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "arsa-payi-karsiligi-insaat-sozlesmelerinde-yargitay-kararlari-ile"
+ },
+ "/de/modul/artikel/gedanken-zum-anspruch-auf-immateriellen-schadenersatz-der-sich-an-eine-frau-oder-einen-mann-richtet-die-eine-affare-mit-einer-verheirateten-person-haben-und-insbesondere-zu-den-entscheidungen-des-kassationsgerichts-zu-diesem-thema-mit-assoc-prof-gulsah-vardar-hamamcioglu": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "evli-kisiyle-birlikte-olan-kadina-erkege-yoneltilen-manevi-tazminat"
+ },
+ "/de/modul/artikel/einige-ratschlage-fur-junge-anwalte": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "genc-hukukculara-birkac-ogut"
+ },
+ "/de/modul/artikel/die-natur-anderer-zahlungen-als-gesellschaftsanteile-an-wohnungsbaugenossenschaften-und-die-bestimmungen-und-folgen-des-verzugs-dieser-schulden-im-sinne-des-tcc-und-ttk-angesichts-der-anderung-des-genossenschaftsgesetzes-und-der-neuen-mustersatzung": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "kooperatifler-kanunu-degisikligi-ve-yeni-ornek-anasozlesmeler"
+ },
+ "/de/modul/artikel/analyse-der-rechtlichen-natur-der-durch-annotation-erworbenen-beschlagnahmen-im-turkischen-recht-und-der-damit-verbundenen-rechtlichen-konsequenzen": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "turk-hukukunda-hacizlerin-serhle-kazandigi-hukuki-nitelik-ve-buna"
+ },
+ "/de/modul/artikel/gedanken-zum-beschluss-der-generalversammlung-zum-fall-des-ausschlusses-aus-der-partnerschaft-art-626-a-bgb": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "paydasliktan-cikarma-davasi-ile-ilgili-bir-hukuk-genel-kurulu-karari"
+ },
+ "/de/modul/artikel/kritik-an-der-vollig-fehlerhaften-entscheidung-des-verfassungsgerichts-zum-antrag-von-faik-tari-und-sultan-tari-mit-antrag-nr-2014-12321": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "2014-12321-basvuru-numarali-faik-tari-ve-sultan-tari-basvurusuna"
+ },
+ "/de/modul/artikel/gedanken-zu-den-anderungen-im-gesetz-nr-6306-und-seine-durchfuhrungsverordnung-und-die-ungelosten-fragen-mit-rechtsanwalt-burcu-nur-turgut": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "6306-sayili-kanun-ve-uygulama-yonetmeligindeki-degisiklikler-ile-bir"
+ },
+ "/de/modul/artikel/die-haltung-von-grundbuchamtern-bei-der-ubertragung-von-hypothekenimmobilien-und-kritik-an-der-exorbitant-fehlerhaften-entscheidung-des-obersten-gerichtshofs-mit-rechtsanwalt-yilmaz-yurekli": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "ipotekle-yuklu-tasinmazin-devralinmasinda-tapu-dairelerinin-tutumu-ve"
+ },
+ "/de/modul/artikel/kritik-an-den-entscheidungen-des-kassationsgerichts-hinsichtlich-der-moglichkeit-zusatzlich-zu-den-verzugszinsen-fur-geldschulden-auch-strafbedingungen-im-sinne-des-turkischen-rechts-zu-fordern-mit-dem-praktikanten-rechtsanwalt-turkan-aktas": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "turk-hukuku-acisindan-para-borclarinda-temerrut-faizi-yaninda-ceza"
+ },
+ "/de/modul/artikel/bewertung-des-gesetzentwurfs-zur-anderung-einiger-artikel-der-kmk-nr-634-aufhebung-einiger-artikel-und-hinzufugung-von-artikeln-zum-massenaufbau-zum-gesetz-mit-dozent-hafize-erden": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "634-sayili-kmk-nin-bazi-maddelerin-degistirilmesine-bazi-maddelerin"
+ },
+ "/de/modul/artikel/die-natur-des-gartens-in-eigentumswohnungen-und-sein-platz-in-der-unterscheidung-zwischen-gemeinschaftsbereich-und-erweiterung": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "kat-mulkiyetinde-bahcenin-niteligi-ve-ortak-yer-eklenti-ayrimi"
+ },
+ "/de/modul/artikel/bewertung-der-bestimmungen-und-auswirkungen-bestehender-hypotheken-auf-immobilien-im-rahmen-von-bauprojekten-nach-dem-ubergang-zum-floor-service-eigentum-floor-eigentum-aus-der-perspektive-des-verbraucherrechts-mit-assoc-prof-dr-melek-bilgin-yuce": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "insaat-projeleri-cercevesinde-tasinmazda-mevcut-ipoteklerin-kat"
+ },
+ "/de/modul/artikel/probleme-bei-der-beendigung-der-rechte-an-zu-touristischen-zwecken-errichteten-grundstucken-auf-offentlichem-grund-und-boden-mit-atty-tuba-korkmaz": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "kamu-arazilerinde-turizm-amacli-kurulmus-ust-hakkinin-sona-ermesinde"
+ },
+ "/de/modul/artikel/merkwurdige-ergebnisse-der-novelle-des-gesetzes-uber-die-erteilung-der-befugnis-zum-verkauf-von-immobilien-an-notare": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "noterlere-tasinmaz-satis-yetkisi-verilmesi-hakkinda-kanun"
+ },
+ "/de/modul/artikel/missverstandnisse-im-prozess-vom-alten-landanteil-zum-gemeinsamen-eigentum-und-neuen-landanteil-bei-stadtischen-transformationsantragen-mit-assoc-prof-dr-ahmet-ayar": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "kentsel-donusum-uygulamalarinda-eski-arsa-payindan-payli-mulkiyete-ve"
+ },
+ "/de/modul/artikel/kritik-aufgrund-der-hindernisse-beim-erwerb-von-kraftfahrzeugen-bei-der-bildung-eines-konsolidierten-eigentums-mit-res-asst-zeynep-yilmaz": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "kat-mulkiyeti-olusumunda-motorlu-tasit-edinimi-engellerine-dayali"
+ },
+ "/de/modul/artikel/auswirkung-der-anderung-oder-stornierung-des-entwicklungsplans-auf-den-bauvertrag-im-austausch-fur-arbeit-und-landteil-mit-assoc-prof-dr-muge-urem": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "imar-planindaki-degisikligin-veya-iptalin-eser-ve-arsa-payi-karsiligi"
+ },
+ "/de/modul/artikel/erwerbsvorgange-des-auftragnehmers-bezuglich-des-anspruchs-auf-forderungen-aus-dem-bauvertrag-gegen-gewahrung-eines-grundstucksanteils": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "yuklenicinin-arsa-payi-karsiligi-insaat-sozlesmesinden-dogan-alacak"
+ },
+ "/de/modul/artikel/formular-fur-eine-vereinbarung-zur-verlangerung-der-laufzeit-von-vertragen-die-von-der-rechtsgultigkeit-abhangen-mit-assoc-prof-dr-muge-urem": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "kanunen-gecerlilik-sekline-bagli-sozlesmelerde-surenin-uzatilmasina"
+ },
+ "/de/modul/artikel/kritik-an-der-beschrankung-der-verausserung-von-landwirtschaftlichen-flachen-aufgrund-gemeinschaftlichen-eigentums-und-der-umsetzung-der-umwandlung-in-bargeld-durch-aufhebung-des-gemeinschaftlichen-status-mittels-erzwungener-wertsteigerung-mit-rechtsanwaltin-bersah-tartici": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "tarim-arazilerinin-birlikte-mulkiyete-dayali-olarak-tasarruf-yetkisi"
+ },
+ "/de/modul/artikel/eine-untersuchung-der-bestimmungen-uber-den-verkauf-von-unbeweglichem-vermogen-gemass-dem-turkischen-obligationenrecht": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "turk-borclar-kanunu-na-gore-tasinmaz-satisina-iliskin-hukumlerin"
+ },
+ "/de/modul/artikel/bestimmungen-und-folgen-der-aufteilung-einer-bestehenden-hypothek-auf-mehrere-immobilien-gemass-artikel-889-des-turkischen-zivilgesetzbuches-tmk": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "tmk-m-889-hukmunce-mevcut-ipotegin-birden-cok-tasinmaza-dagitilmasina"
+ },
+ "/de/modul/artikel/vertragsstrafe-und-entschadigung-bei-vertragsauflosung-anderung-von-artikel-83-des-turkischen-zivilgesetzbuches": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "nisanin-bozulmasinda-cayma-akcasi-ve-cezai-sart-mk-m-83-madde"
+ },
+ "/de/modul/artikel/die-verantwortung-der-mieter-fur-die-beteiligung-an-allgemeinen-kosten-und-vorauszahlungen-in-eigentumswohnungen-mit-rechtsreferendarin-irem-nur-demirdelen": {
+  "lang": "de",
+  "key": "articles",
+  "slug": "kat-mulkiyetinde-genel-gider-ve-avansa-katilma-borcunda-kiracilarin"
+ },
+ "/de/iletisim": {
+  "lang": "de",
+  "key": "contact"
+ }
+}

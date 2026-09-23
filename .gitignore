@@ -57,3 +57,4 @@ ref/.gh_device.json
 ref/.gh_token
 
 dist-gh/
+dist-domain/

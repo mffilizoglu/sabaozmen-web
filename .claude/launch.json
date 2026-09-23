@@ -4,8 +4,22 @@
     {
       "name": "sabaozmen",
       "runtimeExecutable": "node",
-      "runtimeArgs": ["site/server.js"],
+      "runtimeArgs": [
+        "site/server.js"
+      ],
       "port": 4321
+    },
+    {
+      "name": "domain-static",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4400",
+        "--directory",
+        "dist-domain"
+      ],
+      "port": 4400
     }
   ]
 }

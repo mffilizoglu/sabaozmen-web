@@ -158,9 +158,80 @@ fs.writeFileSync(path.join(OUT, "index.html"),
 // Cloudflare Pages / Netlify serve this file as the 404 document.
 fs.copyFileSync(path.join(OUT, "tr", "404", "index.html"), path.join(OUT, "404.html"));
 
+// Old site's URLs (/tr/modul/...) — already indexed by Google and linked from
+// elsewhere. Static hosts such as GitHub Pages cannot answer with a 301, so each
+// one also gets a stub page: meta-refresh plus a canonical pointing at the new
+// page, which search engines treat as a permanent redirect.
+const LEGACY = JSON.parse(fs.readFileSync(path.join(__dirname, "content", "legacy-redirects.json"), "utf8"));
+const legacyLines = [];
+const legacyNoFile = {};
+for (const [from, to] of Object.entries(LEGACY)) {
+  const target = layout.url(to.lang, to.key, to.slug);
+  if (!fs.existsSync(path.join(OUT, target.slice(1), "index.html"))) {
+    console.error("  x legacy redirect %s points at missing page %s", from, target);
+    process.exitCode = 1;
+    continue;
+  }
+  // "/tr/modul/x" -> tr/modul/x.html: both GitHub Pages and Cloudflare serve an
+  // extensionless URL from the matching .html file, without a trailing-slash hop.
+  // Old and new URL are the same (e.g. /tr/iletisim): a stub would loop.
+  if (from === target) continue;
+  // A section URL that also has children (/tr/modul/kurumsal) is a directory
+  // too; hosts differ on whether x.html or x/index.html wins, so write both.
+  const isDir = Object.keys(LEGACY).some((k) => k.startsWith(from + "/"));
+  const files = [path.join(OUT, from.slice(1) + ".html")];
+  if (isDir) files.push(path.join(OUT, from.slice(1), "index.html"));
+  // Some old article slugs exceed the 255-byte filename limit of every
+  // filesystem (and Windows caps whole paths at 260). Those are resolved by the
+  // 404 page instead, which carries a small lookup table.
+  const tooLong = Buffer.byteLength(path.basename(files[0])) > 250 ||
+    (process.platform === "win32" && files.some((f) => f.length >= 259));
+  if (tooLong) { legacyNoFile[from] = target; legacyLines.push(`${from}  ${target}  301`); continue; }
+  for (const file of files) {
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.writeFileSync(file,
+`<!doctype html>
+<html lang="${to.lang}">
+<head>
+<meta charset="utf-8">
+<title>Saba Özmen Avukatlık Ortaklığı</title>
+<link rel="canonical" href="${ORIGIN}${target}">
+<meta http-equiv="refresh" content="0; url=${target}">
+<meta name="robots" content="noindex">
+</head>
+<body><a href="${target}">${target}</a></body>
+</html>`, "utf8");
+  }
+  legacyLines.push(`${from}  ${target}  301`);
+}
+console.log("  %d legacy URLs redirected", legacyLines.length);
+if (Object.keys(legacyNoFile).length) {
+  const f404 = path.join(OUT, "404.html");
+  const body = "(function(){var m=" + JSON.stringify(legacyNoFile) +
+    ",b=" + JSON.stringify(BASE) + ",p=location.pathname.replace(/[/]+$/,'');" +
+    "if(b&&p.indexOf(b)===0)p=p.slice(b.length);try{p=decodeURIComponent(p)}catch(e){}" +
+    "if(m[p])location.replace(b+m[p]);})();";
+  // Escaping mistakes in generated JS fail silently in the browser; parse it here.
+  try { new Function(body); } catch (e) {
+    console.error("  x 404 redirect script does not parse: %s", e.message);
+    process.exitCode = 1;
+  }
+  fs.writeFileSync(f404, fs.readFileSync(f404, "utf8")
+    .replace("</head>", "<script>" + body + "</script>\n</head>"), "utf8");
+  console.log("  %d legacy URLs too long for a file; resolved by 404.html", Object.keys(legacyNoFile).length);
+}
+
 fs.writeFileSync(path.join(OUT, "_redirects"),
 `/  /tr  302
+${legacyLines.join("\n")}
 `, "utf8");
+
+// Custom domain for GitHub Pages. It lives in the published branch, so it has
+// to be part of every build or a redeploy silently drops the domain.
+const CNAME = String(argOf("cname", process.env.SITE_CNAME || "")).trim();
+if (CNAME) fs.writeFileSync(path.join(OUT, "CNAME"), CNAME + "\n", "utf8");
+// GitHub Pages must not run Jekyll over the output (it would hide _headers etc.)
+fs.writeFileSync(path.join(OUT, ".nojekyll"), "", "utf8");
 
 fs.writeFileSync(path.join(OUT, "_headers"),
 `/*
@@ -226,6 +297,33 @@ Sitemap: ${ORIGIN}/sitemap.xml
 
 console.log("  sitemap: %d urls", urls.length);
 
+/* ------------------------------------------- policy that survives any host */
+// GitHub Pages ignores _headers, so the Content-Security-Policy is also put in
+// every page. frame-ancestors is not allowed in a meta tag; everything else is.
+{
+  const CSP_META = "default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; " +
+    "script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; " +
+    "img-src 'self' data: https://maps.gstatic.com https://*.googleapis.com https://*.ggpht.com; " +
+    "font-src 'self'; connect-src 'self'; frame-src https://www.google.com https://maps.google.com; " +
+    "upgrade-insecure-requests";
+  const tag = '<meta charset="utf-8">\n<meta http-equiv="Content-Security-Policy" content="' + CSP_META + '">\n' +
+    '<meta name="referrer" content="strict-origin-when-cross-origin">';
+  let n = 0;
+  (function walk(dir) {
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      const p = path.join(dir, e.name);
+      if (e.isDirectory()) walk(p);
+      else if (e.name.endsWith(".html")) {
+        const html = fs.readFileSync(p, "utf8");
+        if (html.includes("Content-Security-Policy")) continue;
+        const out = html.replace(/<meta charset="utf-8">(\s*<meta name="referrer"[^>]*>)?/i, tag);
+        if (out !== html) { fs.writeFileSync(p, out, "utf8"); n++; }
+      }
+    }
+  })(OUT);
+  console.log("  CSP meta added to %d pages", n);
+}
+
 /* ------------------------------------------------------- base-path rewrite */
 if (BASE) {
   let touched = 0;
@@ -280,8 +378,6 @@ if (BASE) {
     console.log("  base path verified: no absolute URLs escaped");
   }
 
-  // GitHub Pages must not run Jekyll over the output
-  fs.writeFileSync(path.join(OUT, ".nojekyll"), "", "utf8");
 }
 
 /* ------------------------------------------------------------ self-checks */

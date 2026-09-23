@@ -1,0 +1,63 @@
+name: Build and publish to GitHub Pages
+
+# GitHub Pages is the host reachable from Turkey (*.pages.dev is DNS-blocked
+# there). Runs on every push to main, like the Cloudflare workflow, so edits
+# committed by the admin panel reach both.
+#
+# Two modes, switched by the repository variable CUSTOM_DOMAIN:
+#   unset                    → project mirror at mffilizoglu.github.io/sabaozmen-web
+#   CUSTOM_DOMAIN=sabaozmen.av.tr → served at the domain root, with a CNAME file
+# Only set the variable once the domain's DNS points at GitHub (see GECIS-PLANI.md);
+# until then GitHub would redirect the mirror to a domain still showing the old site.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: gh-pages-publish
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build static site
+        env:
+          DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
+        run: |
+          if [ -n "$DOMAIN" ]; then
+            node site/build.js --origin "https://$DOMAIN" --cname "$DOMAIN" --out dist-gh
+          else
+            node site/build.js --origin https://mffilizoglu.github.io/sabaozmen-web --base /sabaozmen-web --out dist-gh
+          fi
+
+      - name: Verify build output
+        env:
+          DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
+        run: |
+          test -f dist-gh/tr/index.html
+          test -f dist-gh/404.html
+          test -f dist-gh/.nojekyll
+          test -f dist-gh/tr/modul/kurumsal/vizyon-misyon.html
+          if [ -n "$DOMAIN" ]; then test "$(cat dist-gh/CNAME)" = "$DOMAIN"; else test ! -f dist-gh/CNAME; fi
+          echo "pages: $(find dist-gh -name index.html | wc -l), legacy stubs: $(find dist-gh -path '*/modul/*' -name '*.html' | wc -l)"
+
+      - name: Publish to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./dist-gh
+          force_orphan: true
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          commit_message: Publish ${{ github.sha }}
