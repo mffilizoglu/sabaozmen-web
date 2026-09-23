@@ -1,87 +1,68 @@
 # sabaozmen.av.tr — yeni siteye geçiş planı
 
-Amaç: alan adının yeni tasarımı göstermesi; **e-posta (Microsoft 365) bir saniye
-bile kesintiye uğramadan**. Mevcut kayıtların tam listesi ve geri dönüş kaydı:
-[DNS-KAYITLARI.md](DNS-KAYITLARI.md).
+Amaç: alan adının yeni tasarımı göstermesi; **e-posta (Microsoft 365 / Exchange)
+bir saniye bile kesintiye uğramadan**. Mevcut kayıtların tam listesi ve geri
+dönüş kaydı: [DNS-KAYITLARI.md](DNS-KAYITLARI.md).
 
-## Kim ne yapabilir?
+## Kim ne yapıyor?
 
-| Erişim | Nerede | Ne için gerekli |
+| Taraf | Rol |
+|---|---|
+| DNS sağlayıcısı (alan adı isim hakkı + DNS) | Web kayıtlarını değiştirir. İletişim bilgisi repoda tutulmaz. |
+| Eski barındırma 5.2.84.41 | Eski PHP site. Geçişte dokunulmaz; 2 hafta sonra kapatılabilir. |
+| GitHub Pages (mffilizoglu/sabaozmen-web) | Yeni site. Ücretsiz, Türkiye'den erişilir, sabit IP'li, otomatik HTTPS. |
+
+Eski MyFC yönetim paneli (`/__myDB/`) ve cPanel geçiş için **gerekmez**.
+
+## Adım 1 — DNS değişikliği (DNS sağlayıcısı yapar)
+
+Yalnızca iki web kaydı değişir:
+
+| Ad | Şu an | Yeni |
 |---|---|---|
-| Eski site yönetim paneli (MyFC) | sabaozmen.av.tr/__myDB/ | **Hiçbir şey.** Sadece eski içeriği yönetir; alan adı yönlendirmesi yapamaz. |
-| Metunic hesabı (alan adı + DNS) | metunic.com.tr müşteri paneli | Geçişin **tek** gereksinimi. NS ya da A kaydı buradan değişir. |
-| cPanel (5.2.84.41:2083) | Alastyr sunucusu | Gerekli değil; eski dosyaların yedeği istenirse. |
+| `sabaozmen.av.tr` (@) | A 5.2.84.41 | A 185.199.108.153 · A 185.199.109.153 · A 185.199.110.153 · A 185.199.111.153 |
+| `www` | A 5.2.84.41 | CNAME `mffilizoglu.github.io` |
 
-Metunic girişi büromuzda yoksa: alan adı ya doğrudan Saba Özmen adına ya da
-MyFC Medya'nın bayi hesabında. MyFC'ye "Metunic panel girişini bize devredin
-**veya** aşağıdaki Adım 3'teki değişikliği yapın" demek yeterli.
+Dokunulmayacaklar: MX, SPF TXT, `selector1/selector2._domainkey` CNAME'leri,
+`autodiscover` CNAME. CAA kaydı yok (Let's Encrypt sertifikası engelsiz).
 
-## Önerilen yol: Cloudflare (site + /admin + iletişim formu, ücretsiz)
+## Adım 2 — GitHub tarafı (ben yaparım, e-posta gönderildiği anda)
 
-Alan adı Cloudflare DNS'e taşınır; site Cloudflare Pages'ten yayınlanır.
-Böylece `sabaozmen.av.tr/admin` Türkiye'den erişilir olur (pages.dev engeli
-yalnızca o alt alan adına özgü; Cloudflare'in kendi IP'leri engelli değil).
+1. Repo değişkeni `CUSTOM_DOMAIN=sabaozmen.av.tr` → iş akışı siteyi kök yola,
+   `CNAME` dosyasıyla yayınlar.
+2. Repo Pages ayarı: custom domain `sabaozmen.av.tr`; DNS yayıldıktan sonra
+   **Enforce HTTPS**.
+3. Cloudflare iş akışı için `SITE_ORIGIN=https://sabaozmen.av.tr` (canonical'lar
+   gerçek alan adını gösterir).
 
-### Adım 1 — Cloudflare'de bölgeyi hazırla (canlıya etkisi YOK)
-Cloudflare panelinde **Add a site → sabaozmen.av.tr → Free**. Cloudflare iki
-ad sunucusu atar (`xxx.ns.cloudflare.com`, `yyy.ns.cloudflare.com`) — not al.
+Adım 2 DNS'ten *önce* yapılır: böylece DNS değiştiği anda GitHub alan adını
+tanır, "site bulunamadı" sayfası hiç görünmez. Bedeli: o arada önizleme adresi
+(github.io) alan adına yönlenir ve DNS değişene kadar eski siteyi gösterir.
 
-### Adım 2 — Kayıtları Cloudflare'e gir (hâlâ canlıya etkisi YOK)
-Cloudflare'in otomatik taraması eksik bırakabilir; **her satır tek tek kontrol edilir.**
+## Adım 3 — Doğrulama (ben yaparım)
 
-| Tip | Ad | Değer | Proxy |
-|---|---|---|---|
-| MX | `@` | `sabaozmen-av-tr.mail.protection.outlook.com` (öncelik 0) | — |
-| TXT | `@` | `v=spf1 include:spf.protection.outlook.com -all` | — |
-| CNAME | `selector1._domainkey` | `selector1-sabaozmen-av-tr._domainkey.sabaozmen.a-v1.dkim.mail.microsoft` | **DNS only (gri)** |
-| CNAME | `selector2._domainkey` | `selector2-sabaozmen-av-tr._domainkey.sabaozmen.a-v1.dkim.mail.microsoft` | **DNS only (gri)** |
-| CNAME | `autodiscover` | `autodiscover.outlook.com` | **DNS only (gri)** |
-| CNAME | `@` | `sabaozmen.pages.dev` | Proxied (turuncu) |
-| CNAME | `www` | `sabaozmen.pages.dev` | Proxied (turuncu) |
+- `nslookup sabaozmen.av.tr 8.8.8.8` → 185.199.x.153; MX değişmemiş olmalı.
+- HTTPS sertifikası: DNS'ten sonra genelde 15–60 dk. Bu sürede `https://`
+  sertifika uyarısı verebilir; `http://` çalışır.
+- Sayfalar: `/tr`, `/en`, `/de`, `/tr/makaleler`, bir makale, `/tr/iletisim`, 404.
+- Eski adresler: `/tr/modul/kurumsal/vizyon-misyon` vb. 261 eski URL yeni
+  sayfalarına yönlenir (Google'daki bağlantılar kırılmaz).
+- Bir test e-postası gönder/al.
+- Google Search Console: alan adı eklenir, yeni sitemap gönderilir.
 
-E-posta kayıtlarında proxy AÇIK kalırsa DKIM ve Outlook otomatik kurulum bozulur — gri olmalı.
-İsteğe bağlı iyileştirme (sonra): `_dmarc` TXT `v=DMARC1; p=none; rua=mailto:sabaozmen@sabaozmen.av.tr`.
+## Bilinen sınırlar (GitHub Pages)
 
-Ardından Cloudflare Pages → proje **sabaozmen** → Custom domains → `sabaozmen.av.tr`
-ve `www.sabaozmen.av.tr` eklenir (CNAME kayıtları otomatik doğrulanır).
+- **/admin alan adında yok** (statik barındırma). Panel seçenekleri: Cloudflare'deki
+  panel (Türkiye dışından / VPN ile), bilgisayardaki `Yonetim-Panelini-Baslat.cmd`,
+  ya da ileride alan adını Cloudflare DNS'e taşıyıp `sabaozmen.av.tr/admin`.
+  Panelden yapılan her kayıt GitHub'a işlenir ve ~1 dk içinde alan adında yayınlanır.
+- **İletişim formu** sunucusuz çalışır: ziyaretçinin e-posta programını mesaj
+  hazır halde açar. Doğrudan gönderim için ileride bir form servisi eklenebilir.
+- Güvenlik başlıkları: CSP her sayfada meta etiket olarak var; `X-Frame-Options`
+  ve HSTS başlığı GitHub Pages'te ayarlanamaz (HTTPS zorunlu kılma açılır).
 
-### Adım 3 — Tek canlı değişiklik: Metunic'te ad sunucuları
-Metunic panelinde alan adının NS kayıtları:
-`ns1.metunic.com.tr`, `ns2.metunic.com.tr` → Cloudflare'in verdiği iki sunucu.
+## Geri dönüş
 
-Yayılma: NS TTL ≈ 20 dk, çoğu yerde 1–2 saat, en geç 24 saat. Bu sürede
-ziyaretçi eski **ya da** yeni siteyi görür; e-posta iki tarafta da aynı
-kayıtlara gittiği için etkilenmez.
-
-### Adım 4 — Geçiş sonrası (ben yaparım)
-- GitHub repo değişkeni `SITE_ORIGIN=https://sabaozmen.av.tr` → canonical/sitemap
-  adresleri gerçek alan adına döner; yeniden dağıtım ~40 sn.
-- Cloudflare Pages ortam değişkenleri: `ADMIN_PASSWORD`, `SESSION_SECRET`,
-  `GITHUB_TOKEN`, `GITHUB_OWNER`, `GITHUB_REPO`, `GITHUB_BRANCH`.
-- Cloudflare'de SSL/TLS **Full (strict)**, "Always Use HTTPS", HSTS.
-- Doğrulama: `https://sabaozmen.av.tr/tr`, `/en`, `/de`, `/tr/makaleler`,
-  `/tr/iletisim` (form), `/admin` (giriş), `/sitemap.xml`; ayrıca bir test
-  e-postası gönder/al, `nslookup -type=MX sabaozmen.av.tr` eski değeri vermeli.
-- Google Search Console'a alan adı eklenir, sitemap gönderilir.
-- İletişim formu için Resend hesabı + `RESEND_API_KEY`; gönderici alan adı
-  doğrulaması için Resend'in vereceği 3 DNS kaydı Cloudflare'e eklenir.
-
-### Geri dönüş
-Metunic'te NS'yi tekrar `ns1/ns2.metunic.com.tr` yapmak yeterli — eski bölge
-Metunic'te silinmediği sürece olduğu gibi durur. **Eski bölgeyi ve Alastyr
-barındırmasını geçişten en az 2 hafta sonra kapatın.**
-
-## Alternatif yol: yalnızca A kaydı (GitHub Pages)
-
-Ad sunucuları Metunic'te kalır; sadece iki web kaydı değişir. Daha küçük
-değişiklik ama **/admin ve form arka ucu olmaz** (form, ziyaretçinin e-posta
-programına düşer — bu yedek davranış sitede hazır).
-
-Metunic DNS'te:
-- `@` A `5.2.84.41` → **sil**, yerine dört A: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-- `www` A `5.2.84.41` → **sil**, yerine CNAME `mffilizoglu.github.io`
-- Diğer hiçbir kayda dokunulmaz.
-
-Sonra ben: repo Pages ayarında custom domain `sabaozmen.av.tr` + Enforce HTTPS,
-`gh-pages` dalını kök yol (`--base` yok, `--origin https://sabaozmen.av.tr`) ve
-`CNAME` dosyasıyla yeniden yayınlarım.
+DNS sağlayıcısından `@` ve `www` kayıtlarını tekrar **A 5.2.84.41** yapmalarını
+istemek yeterli. E-posta kayıtları hiçbir senaryoda değişmez. Eski barındırmayı
+geçişten en az 2 hafta sonra kapatın.

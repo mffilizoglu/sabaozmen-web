@@ -145,11 +145,11 @@ fs.writeFileSync(path.join(OUT, "index.html"),
 <meta charset="utf-8">
 <title>Saba Özmen Avukatlık Ortaklığı</title>
 <link rel="canonical" href="${ORIGIN}/tr">
-<meta http-equiv="refresh" content="0; url=/tr">
+<meta http-equiv="refresh" content="0; url=${BASE}/tr">
 <meta name="robots" content="noindex">
 <script>
   var l = (navigator.language || "tr").slice(0, 2).toLowerCase();
-  location.replace(l === "de" ? "/de" : l === "en" ? "/en" : "/tr");
+  location.replace(${JSON.stringify(BASE)} + (l === "de" ? "/de" : l === "en" ? "/en" : "/tr"));
 </script>
 </head>
 <body><a href="/tr">Saba Özmen Avukatlık Ortaklığı</a></body>
@@ -196,7 +196,7 @@ for (const [from, to] of Object.entries(LEGACY)) {
 <meta charset="utf-8">
 <title>Saba Özmen Avukatlık Ortaklığı</title>
 <link rel="canonical" href="${ORIGIN}${target}">
-<meta http-equiv="refresh" content="0; url=${target}">
+<meta http-equiv="refresh" content="0; url=${BASE}${target}">
 <meta name="robots" content="noindex">
 </head>
 <body><a href="${target}">${target}</a></body>
