@@ -66,7 +66,10 @@
           e.target.classList.add("is-in");
           io.unobserve(e.target);
         });
-      }, { rootMargin: "0px 0px -8% 0px", threshold: 0.06 });
+        // threshold 0, not a fraction: a fraction of a very tall block (the
+        // 46-article list is ~9000px on a phone) can exceed the viewport, and
+        // the block would then stay invisible until scrolled deep into.
+      }, { rootMargin: "0px 0px -8% 0px", threshold: 0 });
 
       // stagger siblings inside a shared container
       var groups = {};
