@@ -24,6 +24,7 @@ export const TYPE_TR = {
 export function shell(o) {
   const nav = [
     ["/admin/avukatlar", "Avukatlarımız"],
+    ["/admin/makaleler", "Makaleler"],
     ["/admin/etkinlikler", "Etkinlikler"],
   ];
   return `<!doctype html>
@@ -344,6 +345,254 @@ export function eventForm({ event, articles, csrf, flash }) {
     </div>
   </form>`;
   return shell({ title: isNew ? "Yeni etkinlik" : (v.title && v.title.tr) || "Etkinlik", active: "/admin/etkinlikler", body, flash, csrf });
+}
+
+/* =============================================================== ARTICLES */
+export const PDF_MAX = 20 * 1024 * 1024;
+
+const missingPills = (a) => {
+  const out = [];
+  if (!a.summary || !a.summary.tr) out.push("Özet yok");
+  if (!a.date) out.push("Tarih yok");
+  if (!a.journal) out.push("Dergi yok");
+  if (!a.pdf) out.push("PDF yok");
+  return out.map((t) => `<span class="ad-pill ad-pill--warn">${esc(t)}</span>`).join(" ");
+};
+
+export function articleList({ articles, csrf, flash }) {
+  const body = `
+  <div class="ad-head">
+    <div><h1>Makaleler</h1><p class="ad-muted">${articles.length} yayın. Başlık, özet, künye bilgileri ve PDF.</p></div>
+    <a class="ad-btn ad-btn--primary" href="/admin/makaleler/yeni">+ Yeni makale</a>
+  </div>
+  <div class="ad-search"><input type="search" data-filter="#artlist" placeholder="Başlık, yazar veya dergide ara…"></div>
+  <table class="ad-table" id="artlist">
+    <thead><tr><th>Başlık</th><th>Tarih</th><th>Dergi</th><th>Eksikler</th><th>Durum</th><th></th></tr></thead>
+    <tbody>
+      ${articles.map((a) => `<tr class="ad-pick-row" data-text="${attr([a.title && a.title.tr, a.coAuthor, a.journal].filter(Boolean).join(" "))}">
+        <td><strong>${esc((a.title && a.title.tr) || "(başlıksız)")}</strong>${a.coAuthor ? `<br><span class="ad-muted ad-small">${esc(a.coAuthor)} ile</span>` : ""}</td>
+        <td class="ad-nowrap">${esc(a.date || "—")}</td>
+        <td>${esc(a.journal || "—")}</td>
+        <td>${missingPills(a)}</td>
+        <td>${a.published === false ? '<span class="ad-pill ad-pill--off">Gizli</span>' : '<span class="ad-pill">Yayında</span>'}</td>
+        <td class="ad-right"><a class="ad-btn" href="/admin/makaleler/${attr(a.slug)}">Düzenle</a></td>
+      </tr>`).join("")}
+    </tbody>
+  </table>
+  ${articles.length ? "" : '<p class="ad-empty">Henüz makale yok.</p>'}`;
+  return shell({ title: "Makaleler", active: "/admin/makaleler", body, flash, csrf });
+}
+
+const linesOf = (arr) => (arr || []).join("\n");
+
+/* A failed "new article" save re-renders the form with what was typed. */
+export function draftArticle(f) {
+  return {
+    isDraft: true, slug: "",
+    title: pickLangs(f, "title"), summary: pickLangs(f, "summary"),
+    keywords: { tr: lineList(f.keywords_tr), en: lineList(f.keywords_en), de: lineList(f.keywords_de) },
+    coAuthor: f.coAuthor, date: f.date, journal: f.journal, volume: f.volume, issue: f.issue,
+    pages: f.pages, orcids: String(f.orcids || "").split(/[,\s]+/).filter(Boolean),
+    topics: asArray(f.topics), published: f.published === "1",
+  };
+}
+
+export function articleForm({ article, tags, team, csrf, flash }) {
+  const isNew = !article || article.isDraft;
+  const v = article || { title: {}, summary: {}, keywords: {}, topics: [], orcids: [], published: true };
+  const topics = new Set(v.topics || []);
+  const linked = new Set((team || []).filter((m) => (m.articleSlugs || []).includes(v.slug)).map((m) => m.slug));
+  const body = `
+  <div class="ad-head">
+    <div>
+      <h1>${isNew ? "Yeni makale" : esc((v.title && v.title.tr) || v.slug)}</h1>
+      <p class="ad-muted">${isNew ? "Yeni yayın ekleyin." : `Sitedeki adresi: <a class="ad-link" href="/tr/makaleler/${attr(v.slug)}" target="_blank" rel="noopener">/tr/makaleler/${esc(v.slug)} ↗</a>`}</p>
+    </div>
+    <a class="ad-link" href="/admin/makaleler">← Listeye dön</a>
+  </div>
+
+  <form class="ad-form" method="post" action="/admin/makaleler/${isNew ? "yeni" : attr(v.slug)}" enctype="multipart/form-data">
+    <input type="hidden" name="_csrf" value="${attr(csrf)}">
+
+    <section class="ad-card">
+      <h2>Başlık</h2>
+      ${langTabs("title", v.title, "Makale başlığı (Türkçe zorunlu)")}
+      ${field("Birlikte yazan (varsa)", "coAuthor", v.coAuthor, { ph: "Doç. Dr. Müge Ürem", wide: true })}
+    </section>
+
+    <section class="ad-card">
+      <h2>Künye</h2>
+      <div class="ad-grid2">
+        ${field("Yayın tarihi", "date", v.date, { ph: "2025-10", hint: "YYYY, YYYY-AA veya YYYY-AA-GG" })}
+        ${field("Dergi / kitap", "journal", v.journal, { ph: "İzmir Barosu Dergisi" })}
+        ${field("Cilt", "volume", v.volume)}
+        ${field("Sayı", "issue", v.issue)}
+        ${field("Sayfa sayısı", "pages", v.pages, { type: "number" })}
+        ${field("ORCID numaraları", "orcids", (v.orcids || []).join(", "), { ph: "0000-0002-8622-9660, …" })}
+      </div>
+    </section>
+
+    <section class="ad-card">
+      <h2>Konular</h2>
+      <p class="ad-small ad-muted">Makaleler sayfasındaki filtrelerde kullanılır. En az bir konu seçin.</p>
+      <div class="ad-checks">
+        ${(tags || []).map((t) => `<label class="ad-check"><input type="checkbox" name="topics" value="${attr(t.slug)}"${topics.has(t.slug) ? " checked" : ""}> ${esc(t.tr)}</label>`).join("")}
+      </div>
+    </section>
+
+    <section class="ad-card">
+      <h2>Özet ve anahtar kelimeler</h2>
+      ${langTabs("summary", v.summary, "Özet / abstract", { rows: 7 })}
+      <div class="ad-i18n">
+        <div class="ad-i18n__label">Anahtar kelimeler <em class="ad-muted">(her satıra bir tane)</em></div>
+        <div class="ad-i18n__grid">
+          ${["tr", "en", "de"].map((l) => `<label class="ad-field"><span>${l.toUpperCase()}</span>
+            <textarea name="keywords_${l}" rows="5">${esc(linesOf(v.keywords && v.keywords[l]))}</textarea></label>`).join("")}
+        </div>
+      </div>
+    </section>
+
+    <section class="ad-card">
+      <h2>PDF</h2>
+      <p class="ad-small">${v.pdf
+        ? `Mevcut dosya: <a class="ad-link" href="${attr(v.pdf)}" target="_blank" rel="noopener">${esc(v.pdf)} ↗</a>`
+        : `<span class="ad-muted">Henüz PDF yok.</span>`}</p>
+      <label class="ad-field">
+        <span>${v.pdf ? "PDF'i değiştir" : "PDF yükle"} <em>en fazla 20 MB</em></span>
+        <input type="file" name="pdf" accept="application/pdf" data-maxmb="20">
+      </label>
+      <p class="ad-small ad-muted">Büyük taranmış dosyalar yavaş açılır; mümkünse metni seçilebilen (taranmamış) PDF yükleyin.</p>
+    </section>
+
+    ${(team || []).length ? `<section class="ad-card">
+      <h2>Avukat profilleri</h2>
+      <p class="ad-small ad-muted">İşaretlenen avukatların profil sayfasında bu makale listelenir.</p>
+      <div class="ad-checks">
+        ${team.map((m) => `<label class="ad-check"><input type="checkbox" name="teamSlugs" value="${attr(m.slug)}"${linked.has(m.slug) ? " checked" : ""}> ${esc(m.name)}</label>`).join("")}
+      </div>
+    </section>` : ""}
+
+    <section class="ad-card">
+      <h2>Yayın durumu</h2>
+      <label class="ad-check"><input type="checkbox" name="published" value="1"${v.published !== false ? " checked" : ""}> Sitede görünsün</label>
+    </section>
+
+    <div class="ad-actions">
+      <button class="ad-btn ad-btn--primary" type="submit">Kaydet</button>
+      <a class="ad-btn" href="/admin/makaleler">Vazgeç</a>
+      ${isNew ? "" : `<button class="ad-btn ad-btn--danger" type="submit" formaction="/admin/makaleler/${attr(v.slug)}/sil"
+        data-confirm="Bu makale ve PDF dosyası siteden kaldırılacak. Emin misiniz?">Sil</button>`}
+    </div>
+    <p class="ad-small ad-muted">Kaydettikten sonra değişiklik yaklaşık 1–2 dakika içinde sitede görünür.</p>
+  </form>`;
+  return shell({ title: isNew ? "Yeni makale" : (v.title && v.title.tr) || "Makale", active: "/admin/makaleler", body, flash, csrf });
+}
+
+/* Article save logic — pure, shared by both storage back-ends. */
+const orNull = (s) => { const t = String(s == null ? "" : s).trim(); return t || null; };
+const lineList = (s) => String(s || "").split(/\r?\n/).map((x) => x.trim()).filter(Boolean);
+const DATE_RE = /^\d{4}(-(0[1-9]|1[0-2])(-(0[1-9]|[12]\d|3[01]))?)?$/;
+
+/** Build the stored record from the form. `prev` is null for a new article. */
+export function buildArticle(f, prev, list, tags) {
+  const title = pickLangs(f, "title");
+  if (!title.tr) throw new Error("Türkçe başlık zorunludur.");
+  const date = String(f.date || "").trim();
+  if (date && !DATE_RE.test(date)) throw new Error("Tarih YYYY, YYYY-AA veya YYYY-AA-GG biçiminde olmalı (ör. 2025-10).");
+  const valid = new Set((tags || []).map((t) => t.slug));
+  const topics = asArray(f.topics).filter((t) => valid.has(t));
+  if (!topics.length) throw new Error("En az bir konu seçin.");
+
+  const p = prev || {};
+  const summary = {
+    tr: orNull(f.summary_tr), en: orNull(f.summary_en), de: orNull(f.summary_de),
+  };
+  const ps = p.summary || {};
+  const summaryChanged = ["tr", "en", "de"].some((l) => (summary[l] || null) !== (ps[l] || null));
+  const pages = parseInt(f.pages, 10);
+
+  const rec = Object.assign({}, p, {
+    id: prev ? p.id : list.reduce((m, a) => Math.max(m, a.id || 0), 0) + 1,
+    slug: prev ? p.slug : uniqueSlug(slugify(title.tr, 65), list.map((a) => a.slug)),
+    title: { tr: title.tr, en: title.en || null, de: title.de || null },
+    coAuthor: orNull(f.coAuthor),
+    date: date || null,
+    year: date ? parseInt(date.slice(0, 4), 10) : null,
+    dateSource: !date ? null : (p.date === date ? p.dateSource || "admin" : "admin"),
+    journal: orNull(f.journal),
+    volume: orNull(f.volume),
+    issue: orNull(f.issue),
+    orcids: String(f.orcids || "").split(/[,\s]+/).map((s) => s.trim()).filter(Boolean),
+    topics,
+    keywords: { tr: lineList(f.keywords_tr), en: lineList(f.keywords_en), de: lineList(f.keywords_de) },
+    summary,
+    summarySource: summaryChanged ? (summary.tr || summary.en ? "admin" : null) : (p.summarySource || null),
+    pages: Number.isFinite(pages) && pages > 0 ? pages : null,
+    pdf: p.pdf || null,
+    published: f.published === "1",
+  });
+  rec.needs = {
+    summary: !summary.tr, date: !rec.date, journal: !rec.journal,
+    scanned: !!(p.needs && p.needs.scanned),
+  };
+  return rec;
+}
+
+/** Newest first; undated keep their relative order at the end. */
+export function sortArticles(list) {
+  return list.slice().sort((a, b) =>
+    (b.date ? 1 : 0) - (a.date ? 1 : 0) ||
+    (a.date && b.date ? String(b.date).localeCompare(String(a.date)) : 0));
+}
+
+export function articleStats(list) {
+  return {
+    total: list.length,
+    withSummary: list.filter((a) => a.summary && a.summary.tr).length,
+    withEnglishAbstract: list.filter((a) => a.summary && a.summary.en).length,
+    withDate: list.filter((a) => a.date).length,
+    withJournal: list.filter((a) => a.journal).length,
+    scanned: list.filter((a) => a.needs && a.needs.scanned).length,
+  };
+}
+
+/** Serialise articles.json the way the generator did. */
+export function articlesDoc(doc, list) {
+  const sorted = sortArticles(list);
+  return JSON.stringify(Object.assign({}, doc, { articles: sorted, stats: articleStats(sorted) }), null, 1) + "\n";
+}
+
+/** Point exactly the chosen members at `slug`. Returns null when nothing changed. */
+export function linkMembers(team, slug, chosen) {
+  const want = new Set(asArray(chosen));
+  let changed = false;
+  const out = team.map((m) => {
+    const has = (m.articleSlugs || []).includes(slug);
+    if (has === want.has(m.slug)) return m;
+    changed = true;
+    const rest = (m.articleSlugs || []).filter((s) => s !== slug);
+    return Object.assign({}, m, { articleSlugs: want.has(m.slug) ? [slug].concat(rest) : rest });
+  });
+  return changed ? out : null;
+}
+
+/** Drop `slug` from every record's articleSlugs. Returns null when nothing changed. */
+export function unlinkEverywhere(records, slug) {
+  let changed = false;
+  const out = records.map((r) => {
+    if (!(r.articleSlugs || []).includes(slug)) return r;
+    changed = true;
+    return Object.assign({}, r, { articleSlugs: r.articleSlugs.filter((s) => s !== slug) });
+  });
+  return changed ? out : null;
+}
+
+export const pdfPathFor = (id) => `/makaleler/pdf/${String(id).padStart(2, "0")}.pdf`;
+
+/** Trust the bytes, not the extension: "%PDF-" must appear within the first 1 KB. */
+export function isPdf(bytes) {
+  const s = String.fromCharCode(...bytes.subarray(0, 1024));
+  return s.indexOf("%PDF-") !== -1;
 }
 
 /* ------------------------------------------------------- shared save logic */

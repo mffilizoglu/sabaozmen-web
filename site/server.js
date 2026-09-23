@@ -39,6 +39,7 @@ const artBySlug = Object.fromEntries(P.ARTICLES.map((a) => [a.slug, a]));
 const store = require("./lib/store");
 const auth = require("./lib/auth");
 const admin = require("./lib/admin");
+const UI = require("../shared/admin-ui.mjs");
 const mp = require("./lib/multipart");
 
 function send(res, status, body, type, extra) {
@@ -242,6 +243,13 @@ async function handleAdmin(req, res, seg) {
       if (!m) return adminHtml(res, admin.teamList({ kind: "bad", text: "Kayıt bulunamadı." }), 404);
       return adminHtml(res, admin.teamForm(m, null));
     }
+    if (sub[0] === "makaleler") {
+      if (sub.length === 1) return adminHtml(res, admin.articleList(null));
+      if (sub[1] === "yeni") return adminHtml(res, admin.articleForm(null, null));
+      const a = admin.articleBySlug(sub[1]);
+      if (!a) return adminHtml(res, admin.articleList({ kind: "bad", text: "Kayıt bulunamadı." }), 404);
+      return adminHtml(res, admin.articleForm(a, null));
+    }
     if (sub[0] === "etkinlikler") {
       if (sub.length === 1) return adminHtml(res, admin.eventList(null));
       if (sub[1] === "yeni") return adminHtml(res, admin.eventForm(null, null));
@@ -253,19 +261,31 @@ async function handleAdmin(req, res, seg) {
   }
 
   if (req.method === "POST") {
+    const isArticle = sub[0] === "makaleler";
+    const back = sub[0] === "etkinlikler" ? admin.eventList : isArticle ? admin.articleList : admin.teamList;
     let parsed;
     try {
-      parsed = await mp.parseRequest(req);
+      // article PDFs may be up to 20 MB; portraits and posters stay at 6 MB
+      parsed = await mp.parseRequest(req, isArticle ? { limit: 22 * 1024 * 1024, fileLimit: 20 * 1024 * 1024 } : null);
     } catch (err) {
       const msg = err.message === "too-large" || err.message === "file-too-large"
-        ? "Dosya çok büyük (en fazla 6 MB)." : "Form okunamadı.";
-      const back = sub[0] === "etkinlikler" ? admin.eventList : admin.teamList;
+        ? (isArticle ? "PDF çok büyük (en fazla 20 MB)." : "Dosya çok büyük (en fazla 6 MB).") : "Form okunamadı.";
       return adminHtml(res, back({ kind: "bad", text: msg }), 413);
     }
     const { fields, files } = parsed;
     if (!auth.csrfOk(fields._csrf)) {
-      const back = sub[0] === "etkinlikler" ? admin.eventList : admin.teamList;
       return adminHtml(res, back({ kind: "bad", text: "Oturum doğrulaması başarısız. Sayfayı yenileyip tekrar deneyin." }), 403);
+    }
+
+    if (isArticle) {
+      try {
+        if (sub[2] === "sil") { admin.deleteArticle(sub[1]); return redirect(res, "/admin/makaleler"); }
+        const a = admin.saveArticle(sub[1], fields, files);
+        return redirect(res, "/admin/makaleler/" + encodeURIComponent(a.slug));
+      } catch (err) {
+        const a = sub[1] === "yeni" ? UI.draftArticle(fields) : admin.articleBySlug(sub[1]);
+        return adminHtml(res, admin.articleForm(a, { kind: "bad", text: err.message || "Kaydedilemedi." }), 400);
+      }
     }
 
     try {

@@ -40,6 +40,13 @@ export async function getFile(env, path) {
   if (r.status === 404) return null;
   if (!r.ok) throw new Error(`GitHub read failed (${r.status}): ${await r.text()}`);
   const d = await r.json();
+  // Files over 1 MB come back without inline content; fetch those raw.
+  if (d.encoding === "none" || (!d.content && d.size > 0)) {
+    const raw = await fetch(url, { headers: Object.assign(headers(env), { Accept: "application/vnd.github.raw" }) });
+    if (!raw.ok) throw new Error(`GitHub read failed (${raw.status}): ${await raw.text()}`);
+    const bytes = new Uint8Array(await raw.arrayBuffer());
+    return { bytes, text: new TextDecoder().decode(bytes), sha: d.sha };
+  }
   // content is base64 with newlines
   const bytes = Uint8Array.from(atob(d.content.replace(/\n/g, "")), (ch) => ch.charCodeAt(0));
   return { bytes, text: new TextDecoder().decode(bytes), sha: d.sha };

@@ -166,3 +166,10 @@ h2 { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter-spaci
 .ad-login h1 { font-size: 1.3rem; }
 .ad-login .ad-field { margin-top: 1rem; }
 .ad-login .ad-btn { justify-content: center; margin-top: .3rem; }
+
+/* Articles */
+.ad-pill--warn { background: #fff4e0; color: #8a5a00; border-color: #f0d9a8; margin: 0 .2rem .2rem 0; }
+.ad-nowrap { white-space: nowrap; }
+.ad-checks { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: .5rem 1.25rem; }
+.ad-pick-row.is-out { display: none; }
+.ad-busy { opacity: .6; pointer-events: none; }

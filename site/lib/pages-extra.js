@@ -13,7 +13,7 @@ const { esc, attr, url, icon } = L;
 const store = require("./store");
 
 const ART = require("../content/articles.json");
-const ARTICLES = ART.articles;
+const ARTICLES = ART.articles.filter((a) => a.published !== false);
 const BY_SLUG = Object.fromEntries(ARTICLES.map((a) => [a.slug, a]));
 
 /* Shared helpers are passed in from pages.js to avoid a require cycle. */

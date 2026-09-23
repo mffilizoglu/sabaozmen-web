@@ -1,7 +1,8 @@
 /* Admin panel on Cloudflare Pages Functions.
 
    Storage is the GitHub repo (see _lib/github.js for why, not KV). Saving
-   commits content/team.json or content/events.json — and any uploaded image —
+   commits content/team.json, events.json or articles.json — and any uploaded
+   image or PDF —
    which triggers a Pages rebuild, so the change is live in about a minute.
 
    Required Pages environment variables:
@@ -16,13 +17,11 @@
 import * as UI from "../../shared/admin-ui.mjs";
 import * as auth from "../_lib/auth.js";
 import * as gh from "../_lib/github.js";
-import ART from "../../site/content/articles.json";
-
 const esc = UI.esc;
 
-const ARTICLES = ART.articles;
 const TEAM_PATH = "site/content/team.json";
 const EVENTS_PATH = "site/content/events.json";
+const ARTICLES_PATH = "site/content/articles.json";
 const UPLOAD_DIR = "site/public/uploads";
 const MAX_UPLOAD = 6 * 1024 * 1024;
 
@@ -73,7 +72,11 @@ async function readForm(request) {
         fields[k] = v;
       }
     } else if (v && v.size) {
-      if (v.size > MAX_UPLOAD) throw new Error("Dosya çok büyük (en fazla 6 MB).");
+      // Article PDFs may be up to 20 MB (measured: well within a Worker's
+      // limits); images stay at 6 MB.
+      if (k === "pdf" ? v.size > UI.PDF_MAX : v.size > MAX_UPLOAD) {
+        throw new Error(k === "pdf" ? "PDF çok büyük (en fazla 20 MB)." : "Dosya çok büyük (en fazla 6 MB).");
+      }
       files[k] = { name: v.name, bytes: new Uint8Array(await v.arrayBuffer()) };
     }
   }
@@ -179,6 +182,46 @@ async function deleteRecord(env, kind, slug, commitFiles) {
   });
 }
 
+/* --------------------------------------------------------------- articles */
+async function saveArticle(env, slug, fields, files, commitFiles) {
+  const { data: doc } = await gh.getJson(env, ARTICLES_PATH, { tags: [], articles: [] });
+  const list = doc.articles || [];
+  const isNew = slug === "yeni";
+  const idx = isNew ? -1 : list.findIndex((a) => a.slug === slug);
+  if (!isNew && idx === -1) throw new Error("Kayıt bulunamadı.");
+  const rec = UI.buildArticle(fields, isNew ? null : list[idx], list, doc.tags);
+
+  if (files.pdf) {
+    if (!UI.isPdf(files.pdf.bytes)) throw new Error("Yüklenen dosya PDF değil.");
+    rec.pdf = UI.pdfPathFor(rec.id);
+    commitFiles.push({ path: "site/public" + rec.pdf, content: files.pdf.bytes });
+  }
+
+  if (isNew) list.push(rec); else list[idx] = rec;
+  commitFiles.push({ path: ARTICLES_PATH, content: UI.articlesDoc(doc, list) });
+
+  const { data: td } = await gh.getJson(env, TEAM_PATH, { team: [] });
+  const team = UI.linkMembers(td.team || [], rec.slug, fields.teamSlugs);
+  if (team) commitFiles.push({ path: TEAM_PATH, content: JSON.stringify({ team }, null, 1) + "\n" });
+  return rec;
+}
+
+async function deleteArticle(env, slug, commitFiles) {
+  const { data: doc } = await gh.getJson(env, ARTICLES_PATH, { tags: [], articles: [] });
+  const list = doc.articles || [];
+  const rec = list.find((a) => a.slug === slug);
+  if (!rec) return;
+  if (rec.pdf && rec.pdf.startsWith("/makaleler/pdf/")) commitFiles.push({ path: "site/public" + rec.pdf, delete: true });
+  commitFiles.push({ path: ARTICLES_PATH, content: UI.articlesDoc(doc, list.filter((a) => a.slug !== slug)) });
+  // nothing may keep pointing at a removed article
+  const { data: td } = await gh.getJson(env, TEAM_PATH, { team: [] });
+  const team = UI.unlinkEverywhere(td.team || [], slug);
+  if (team) commitFiles.push({ path: TEAM_PATH, content: JSON.stringify({ team }, null, 1) + "\n" });
+  const { data: ed } = await gh.getJson(env, EVENTS_PATH, { events: [] });
+  const events = UI.unlinkEverywhere(ed.events || [], slug);
+  if (events) commitFiles.push({ path: EVENTS_PATH, content: JSON.stringify({ events }, null, 1) + "\n" });
+}
+
 /* ---------------------------------------------------------------- router */
 export async function onRequest(context) {
   const { request, env } = context;
@@ -216,6 +259,12 @@ export async function onRequest(context) {
     const { data } = await gh.getJson(env, TEAM_PATH, { team: [] });
     return (data.team || []).slice().sort((a, b) => (a.order || 0) - (b.order || 0));
   };
+  const loadArticleDoc = async () => (await gh.getJson(env, ARTICLES_PATH, { tags: [], articles: [] })).data;
+  const loadArticles = async () => (await loadArticleDoc()).articles || [];
+  const articleForm = async (a, flash) => {
+    const [doc, team] = await Promise.all([loadArticleDoc(), loadTeam()]);
+    return UI.articleForm({ article: a, tags: doc.tags, team, csrf, flash });
+  };
   const loadEvents = async () => {
     const { data } = await gh.getJson(env, EVENTS_PATH, { events: [] });
     return (data.events || []).slice()
@@ -251,19 +300,30 @@ export async function onRequest(context) {
     if (sub[0] === "avukatlar") {
       const members = await loadTeam();
       if (sub.length === 1) return html(UI.teamList({ members, csrf }));
-      if (sub[1] === "yeni") return html(UI.teamForm({ member: null, articles: ARTICLES, csrf }));
+      const articles = await loadArticles();
+      if (sub[1] === "yeni") return html(UI.teamForm({ member: null, articles, csrf }));
       const m = members.find((x) => x.slug === sub[1]);
       if (!m) return html(UI.teamList({ members, csrf, flash: { kind: "bad", text: "Kayıt bulunamadı." } }), 404);
-      return html(UI.teamForm({ member: m, articles: ARTICLES, csrf }));
+      return html(UI.teamForm({ member: m, articles, csrf }));
+    }
+
+    if (sub[0] === "makaleler") {
+      const articles = await loadArticles();
+      if (sub.length === 1) return html(UI.articleList({ articles, csrf }));
+      if (sub[1] === "yeni") return html(await articleForm(null));
+      const a = articles.find((x) => x.slug === sub[1]);
+      if (!a) return html(UI.articleList({ articles, csrf, flash: { kind: "bad", text: "Kayıt bulunamadı." } }), 404);
+      return html(await articleForm(a));
     }
 
     if (sub[0] === "etkinlikler") {
       const events = await loadEvents();
       if (sub.length === 1) return html(UI.eventList({ events, csrf }));
-      if (sub[1] === "yeni") return html(UI.eventForm({ event: null, articles: ARTICLES, csrf }));
+      const articles = await loadArticles();
+      if (sub[1] === "yeni") return html(UI.eventForm({ event: null, articles, csrf }));
       const e = events.find((x) => x.slug === sub[1]);
       if (!e) return html(UI.eventList({ events, csrf, flash: { kind: "bad", text: "Kayıt bulunamadı." } }), 404);
-      return html(UI.eventForm({ event: e, articles: ARTICLES, csrf }));
+      return html(UI.eventForm({ event: e, articles, csrf }));
     }
     return redirect("/admin/avukatlar");
     } catch (err) {
@@ -272,22 +332,46 @@ export async function onRequest(context) {
   }
 
   /* -- POST -- */
+  const listPage = async (flash) => {
+    if (sub[0] === "etkinlikler") return UI.eventList({ events: await loadEvents(), csrf, flash });
+    if (sub[0] === "makaleler") return UI.articleList({ articles: await loadArticles(), csrf, flash });
+    return UI.teamList({ members: await loadTeam(), csrf, flash });
+  };
+
   if (request.method === "POST") {
     let parsed;
     try {
       parsed = await readForm(request);
     } catch (err) {
-      const events = sub[0] === "etkinlikler" ? await loadEvents() : null;
-      const flash = { kind: "bad", text: err.message || "Form okunamadı." };
-      return html(events ? UI.eventList({ events, csrf, flash })
-                         : UI.teamList({ members: await loadTeam(), csrf, flash }), 413);
+      return html(await listPage({ kind: "bad", text: err.message || "Form okunamadı." }), 413);
     }
     const { fields, files } = parsed;
     if (!(await auth.csrfOk(env, fields._csrf))) {
-      const flash = { kind: "bad", text: "Oturum doğrulaması başarısız. Sayfayı yenileyip tekrar deneyin." };
-      return html(sub[0] === "etkinlikler"
-        ? UI.eventList({ events: await loadEvents(), csrf, flash })
-        : UI.teamList({ members: await loadTeam(), csrf, flash }), 403);
+      return html(await listPage({ kind: "bad", text: "Oturum doğrulaması başarısız. Sayfayı yenileyip tekrar deneyin." }), 403);
+    }
+
+    if (sub[0] === "makaleler") {
+      const commitFiles = [];
+      try {
+        if (sub[2] === "sil") {
+          await deleteArticle(env, sub[1], commitFiles);
+          if (commitFiles.length) await gh.commitFiles(env, commitFiles, `Yönetim: makale silindi (${sub[1]})`);
+          return redirect("/admin/makaleler");
+        }
+        const rec = await saveArticle(env, sub[1], fields, files, commitFiles);
+        await gh.commitFiles(env, commitFiles, `Yönetim: makale güncellendi (${rec.slug})`);
+        return redirect("/admin/makaleler/" + encodeURIComponent(rec.slug));
+      } catch (err) {
+        const text = err.message === "conflict"
+          ? "Başka bir değişiklik araya girdi. Sayfayı yenileyip tekrar kaydedin."
+          : (err.message || "Kaydedilemedi.");
+        try {
+          const a = sub[1] === "yeni" ? UI.draftArticle(fields) : (await loadArticles()).find((x) => x.slug === sub[1]);
+          return html(await articleForm(a || null, { kind: "bad", text }), 400);
+        } catch (inner) {
+          return storageError(err);
+        }
+      }
     }
 
     const isTeam = sub[0] === "avukatlar";
@@ -327,11 +411,11 @@ export async function onRequest(context) {
         if (isTeam) {
           const members = await loadTeam();
           const m = sub[1] === "yeni" ? null : members.find((x) => x.slug === sub[1]);
-          return html(UI.teamForm({ member: m, articles: ARTICLES, csrf, flash }), 400);
+          return html(UI.teamForm({ member: m, articles: await loadArticles(), csrf, flash }), 400);
         }
         const events = await loadEvents();
         const e = sub[1] === "yeni" ? null : events.find((x) => x.slug === sub[1]);
-        return html(UI.eventForm({ event: e, articles: ARTICLES, csrf, flash }), 400);
+        return html(UI.eventForm({ event: e, articles: await loadArticles(), csrf, flash }), 400);
       } catch (inner) {
         return storageError(err);
       }

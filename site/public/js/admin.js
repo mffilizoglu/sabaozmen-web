@@ -21,12 +21,30 @@
   document.querySelectorAll("[data-filter]").forEach(function (input) {
     var list = document.querySelector(input.dataset.filter);
     if (!list) return;
-    var items = Array.prototype.slice.call(list.querySelectorAll(".ad-pick"));
+    var items = Array.prototype.slice.call(list.querySelectorAll(".ad-pick, [data-text]"));
     input.addEventListener("input", function () {
       var q = norm(input.value.trim());
       items.forEach(function (li) {
         li.classList.toggle("is-out", !!q && norm(li.dataset.text).indexOf(q) === -1);
       });
+    });
+  });
+
+  /* Catch an oversized file before a long upload that would only be refused,
+     and show that a large upload is in progress. */
+  document.querySelectorAll("form.ad-form").forEach(function (f) {
+    f.addEventListener("submit", function (e) {
+      var big = Array.prototype.filter.call(f.querySelectorAll("input[type=file][data-maxmb]"), function (i) {
+        return i.files && i.files[0] && i.files[0].size > Number(i.dataset.maxmb) * 1024 * 1024;
+      })[0];
+      if (big) {
+        e.preventDefault();
+        window.alert("Dosya çok büyük (en fazla " + big.dataset.maxmb + " MB). Lütfen küçültüp tekrar deneyin.");
+        return;
+      }
+      var btn = e.submitter;
+      if (btn && !btn.formAction.match(/\/sil$/)) { btn.textContent = "Kaydediliyor…"; }
+      f.classList.add("ad-busy");
     });
   });
 

@@ -8,7 +8,8 @@ const L = require("./layout");
 const { esc, attr, url, icon } = L;
 
 const ART = require("../content/articles.json");
-const ARTICLES = ART.articles;
+// Articles hidden in the admin panel ("Sitede görünsün" off) are not rendered.
+const ARTICLES = ART.articles.filter((a) => a.published !== false);
 const TAGS = ART.tags;
 const TAG_BY = Object.fromEntries(TAGS.map((t) => [t.slug, t]));
 
@@ -584,10 +585,10 @@ function articleDetail(lang, a, origin) {
         ${summaryHtml}
         ${enAbstract}
         ${lang !== "tr" ? `<p class="small muted rv">${esc(T("art.langNoteTr", lang))}</p>` : ""}
-        <div class="btn-row mt-4 rv">
+        ${a.pdf ? `<div class="btn-row mt-4 rv">
           <a class="btn btn--primary" href="${attr(a.pdf)}" target="_blank" rel="noopener">${icon.doc} ${esc(T("art.readPdf", lang))}</a>
           <a class="btn btn--ghost" href="${attr(a.pdf)}" download>${icon.dl} ${esc(T("art.download", lang))}</a>
-        </div>
+        </div>` : ""}
         ${related.length ? `
         <hr class="divider">
         <h2 class="rv">${esc(T("art.related", lang))}</h2>
@@ -822,12 +823,12 @@ function scholarlyLd(a, lang, origin, authors) {
     author: authors.map((n) => ({ "@type": "Person", name: n })),
     url: origin + artUrl(a, lang),
     publisher: { "@type": "Organization", name: firm.name[lang] },
-    associatedMedia: { "@type": "MediaObject", contentUrl: origin + a.pdf, encodingFormat: "application/pdf" },
   };
+  if (a.pdf) o.associatedMedia = { "@type": "MediaObject", contentUrl: origin + a.pdf, encodingFormat: "application/pdf" };
   if (a.date) o.datePublished = a.date;
-  if (a.summary.tr) o.abstract = a.summary.tr;
+  if (a.summary && a.summary.tr) o.abstract = a.summary.tr;
   if (a.journal) o.isPartOf = { "@type": "Periodical", name: a.journal };
-  if (a.keywords.tr && a.keywords.tr.length) o.keywords = a.keywords.tr.join(", ");
+  if (a.keywords && a.keywords.tr && a.keywords.tr.length) o.keywords = a.keywords.tr.join(", ");
   return o;
 }
 

@@ -14,7 +14,9 @@ const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
 
-const FILE = path.join(__dirname, "..", "content", "admin.json");
+// ADMIN_AUTH_FILE lets the test suite use a throwaway credential file instead
+// of the real one.
+const FILE = process.env.ADMIN_AUTH_FILE || path.join(__dirname, "..", "content", "admin.json");
 const MAX_AGE = 8 * 60 * 60;          // 8 hours
 const COOKIE = "so_admin";
 

@@ -155,6 +155,81 @@ const check = (name, pass, detail) => {
   check("profile shows linked articles", prof.status === 200 && prof.body.includes("art-list"), "status " + prof.status);
   check("profile shows bar number", prof.body.includes("12345"));
 
+  // 10b. articles: list, create with PDF + attorney link, validate, edit, hide, delete
+  const fs = require("fs");
+  const path = require("path");
+  const { spawnSync } = require("child_process");
+  const ART_FILE = path.join(__dirname, "..", "site", "content", "articles.json");
+  const readArts = () => JSON.parse(fs.readFileSync(ART_FILE, "utf8"));
+  const before = readArts().articles.length;
+
+  r = await req("GET", "/admin/makaleler");
+  check("articles list renders every article", r.status === 200 && (r.body.match(/ad-pick-row/g) || []).length === before,
+    (r.body.match(/ad-pick-row/g) || []).length + " rows / " + before);
+  const aNew = await req("GET", "/admin/makaleler/yeni");
+  check("new-article form offers topics and attorneys", aNew.status === 200 && aNew.body.includes('name="topics"') && aNew.body.includes('name="teamSlugs"'));
+
+  const PDF = Buffer.from("%PDF-1.4\n1 0 obj<<>>endobj\ntrailer<<>>\n%%EOF\n", "latin1");
+  const artFields = (csrf, extra) => Object.assign({
+    _csrf: csrf, title_tr: "Test Makalesi — Kat Mülkiyetinde Deneme", title_en: "Test Article",
+    coAuthor: "Stj. Av. Deneme", date: "2099-01", journal: "Test Hukuk Dergisi", issue: "3", pages: "12",
+    topics: ["kat-mulkiyeti", "sozlesmeler"], summary_tr: "Deneme özeti.", keywords_tr: "Birinci\nİkinci",
+    teamSlugs: ["etem-saba-ozmen"], published: "1",
+  }, extra || {});
+
+  let mpA = multipart(artFields(csrfFrom(aNew.body), { topics: [] }), {});
+  r = await req("POST", "/admin/makaleler/yeni", mpA.body, { "Content-Type": mpA.type, "Content-Length": mpA.body.length });
+  check("article without a topic refused, typed text kept", r.status === 400 && /En az bir konu/.test(r.body) && r.body.includes("Test Hukuk Dergisi"), "status " + r.status);
+
+  mpA = multipart(artFields(csrfFrom(aNew.body), { date: "2025-13" }), {});
+  r = await req("POST", "/admin/makaleler/yeni", mpA.body, { "Content-Type": mpA.type, "Content-Length": mpA.body.length });
+  check("invalid date refused", r.status === 400 && /Tarih/.test(r.body), "status " + r.status);
+
+  mpA = multipart(artFields(csrfFrom(aNew.body)), { pdf: { name: "x.pdf", type: "application/pdf", data: PNG } });
+  r = await req("POST", "/admin/makaleler/yeni", mpA.body, { "Content-Type": mpA.type, "Content-Length": mpA.body.length });
+  check("non-PDF upload refused", r.status === 400 && /PDF değil/.test(r.body), "status " + r.status);
+
+  mpA = multipart(artFields(csrfFrom(aNew.body)), { pdf: { name: "makale.pdf", type: "application/pdf", data: PDF } });
+  r = await req("POST", "/admin/makaleler/yeni", mpA.body, { "Content-Type": mpA.type, "Content-Length": mpA.body.length });
+  const created = readArts().articles.find((a) => a.title.tr.startsWith("Test Makalesi"));
+  check("article created", r.status === 302 && !!created, "status " + r.status);
+  const aSlug = created && created.slug;
+  check("new article gets next id and sorts first (newest)", created && created.id === Math.max(...readArts().articles.map((a) => a.id)) && readArts().articles[0].slug === aSlug);
+  check("fields stored as the site expects", created && created.journal === "Test Hukuk Dergisi" && created.year === 2099 &&
+    created.keywords.tr.length === 2 && created.topics.length === 2 && created.needs.summary === false);
+  const pdfFile = created && path.join(__dirname, "..", "site", "public", created.pdf);
+  check("PDF saved under /makaleler/pdf/", created && created.pdf === "/makaleler/pdf/" + String(created.id).padStart(2, "0") + ".pdf" && fs.existsSync(pdfFile));
+  check("attorney linked from the article form", store.team.bySlug("etem-saba-ozmen").articleSlugs.includes(aSlug));
+  check("stats recomputed", readArts().stats.total === before + 1);
+
+  // renders in a fresh process (the running server caches content at startup)
+  const render = spawnSync(process.execPath, ["-e", `
+    const P = require("./site/lib/pages");
+    const a = P.ARTICLES.find((x) => x.slug === ${JSON.stringify(aSlug)});
+    process.stdout.write(a ? JSON.stringify(P.articleDetail("tr", a, "https://x")) : "missing");
+  `], { cwd: path.join(__dirname, ".."), encoding: "utf8" });
+  check("public article page renders with PDF button", /Test Makalesi/.test(render.stdout) && /makaleler\/pdf/.test(render.stdout), render.stderr.slice(0, 200));
+
+  // edit: unlink attorney, hide
+  const aEdit = await req("GET", "/admin/makaleler/" + aSlug);
+  check("edit form shows stored values", aEdit.status === 200 && aEdit.body.includes("Test Hukuk Dergisi") && aEdit.body.includes("Birinci"));
+  mpA = multipart(artFields(csrfFrom(aEdit.body), { teamSlugs: [], published: "", summary_tr: "Güncellenmiş özet." }), {});
+  r = await req("POST", "/admin/makaleler/" + aSlug, mpA.body, { "Content-Type": mpA.type, "Content-Length": mpA.body.length });
+  const edited = readArts().articles.find((a) => a.slug === aSlug);
+  check("article edited, slug unchanged, PDF kept", r.status === 302 && edited.summary.tr === "Güncellenmiş özet." && edited.pdf === created.pdf);
+  check("attorney unlinked", !store.team.bySlug("etem-saba-ozmen").articleSlugs.includes(aSlug));
+  const hidden = spawnSync(process.execPath, ["-e", `
+    const P = require("./site/lib/pages");
+    process.stdout.write(String(P.ARTICLES.some((x) => x.slug === ${JSON.stringify(aSlug)})));
+  `], { cwd: path.join(__dirname, ".."), encoding: "utf8" });
+  check("hidden article left out of the public site", hidden.stdout === "false", hidden.stdout + hidden.stderr.slice(0, 100));
+
+  // delete
+  mpA = multipart({ _csrf: csrfFrom(aEdit.body) }, {});
+  r = await req("POST", "/admin/makaleler/" + aSlug + "/sil", mpA.body, { "Content-Type": mpA.type, "Content-Length": mpA.body.length });
+  check("article deleted with its PDF", r.status === 302 && !readArts().articles.some((a) => a.slug === aSlug) && !fs.existsSync(pdfFile));
+  check("article count back to start", readArts().articles.length === before);
+
   // 11. clean up the test records
   const delForm = await req("GET", "/admin/etkinlikler/" + slug);
   let mpDel = multipart({ _csrf: csrfFrom(delForm.body) }, {});

@@ -37,7 +37,7 @@ function indexOfBuf(hay, needle, from) {
  * @returns {{fields: Object, files: Object}} fields are strings (repeated names
  * become arrays); files are {filename, type, data}.
  */
-function parse(buf, contentType) {
+function parse(buf, contentType, fileLimit) {
   const m = /boundary=(?:"([^"]+)"|([^;]+))/i.exec(contentType || "");
   if (!m) throw new Error("no-boundary");
   const boundary = Buffer.from("--" + (m[1] || m[2]).trim());
@@ -72,7 +72,7 @@ function parse(buf, contentType) {
       const name = nameM[1];
       if (fileM) {
         if (fileM[1] && body.length) {
-          if (body.length > MAX_FILE) throw new Error("file-too-large");
+          if (body.length > (fileLimit || MAX_FILE)) throw new Error("file-too-large");
           files[name] = {
             filename: fileM[1],
             type: (typeM ? typeM[1] : "application/octet-stream").trim(),
@@ -108,10 +108,13 @@ function parseUrlEncoded(buf) {
   return { fields, files: {} };
 }
 
-async function parseRequest(req) {
+/** opts: { limit: bytes per request, fileLimit: bytes per file } — article
+    PDFs need more room than portraits. */
+async function parseRequest(req, opts) {
+  const o = opts || {};
   const ct = req.headers["content-type"] || "";
-  const buf = await readBody(req);
-  if (ct.startsWith("multipart/form-data")) return parse(buf, ct);
+  const buf = await readBody(req, o.limit);
+  if (ct.startsWith("multipart/form-data")) return parse(buf, ct, o.fileLimit);
   return parseUrlEncoded(buf);
 }
 

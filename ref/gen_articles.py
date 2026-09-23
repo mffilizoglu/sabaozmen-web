@@ -168,6 +168,11 @@ payload = {
 }
 
 dest = '../site/content/articles.json'
+# The admin panel now edits articles.json directly. Regenerating from the PDFs
+# would silently discard every edit made there, so refuse unless asked.
+if os.path.exists(dest) and os.environ.get('OVERWRITE_ADMIN_EDITS') != '1':
+    raise SystemExit('articles.json is maintained in the admin panel; '
+                     'set OVERWRITE_ADMIN_EDITS=1 to regenerate it anyway.')
 os.makedirs(os.path.dirname(dest), exist_ok=True)
 json.dump(payload, open(dest, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 print(json.dumps(payload['stats'], indent=1))

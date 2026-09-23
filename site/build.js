@@ -166,11 +166,15 @@ const LEGACY = JSON.parse(fs.readFileSync(path.join(__dirname, "content", "legac
 const legacyLines = [];
 const legacyNoFile = {};
 for (const [from, to] of Object.entries(LEGACY)) {
-  const target = layout.url(to.lang, to.key, to.slug);
+  let target = layout.url(to.lang, to.key, to.slug);
   if (!fs.existsSync(path.join(OUT, target.slice(1), "index.html"))) {
-    console.error("  x legacy redirect %s points at missing page %s", from, target);
-    process.exitCode = 1;
-    continue;
+    // the page was hidden or deleted since the map was made: use the section
+    target = layout.url(to.lang, to.key);
+    if (!fs.existsSync(path.join(OUT, target.slice(1), "index.html"))) {
+      console.error("  x legacy redirect %s has no target (not even %s)", from, target);
+      process.exitCode = 1;
+      continue;
+    }
   }
   // "/tr/modul/x" -> tr/modul/x.html: both GitHub Pages and Cloudflare serve an
   // extensionless URL from the matching .html file, without a trailing-slash hop.

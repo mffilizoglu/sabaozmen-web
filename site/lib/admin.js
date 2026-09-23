@@ -21,18 +21,33 @@ const auth = require("./auth");
 const mp = require("./multipart");
 const UI = require("../../shared/admin-ui.mjs");
 
-const ART = require("../content/articles.json");
-const ARTICLES = ART.articles;
 const UPLOADS = path.join(__dirname, "..", "public", "uploads");
+const ARTICLES_FILE = path.join(__dirname, "..", "content", "articles.json");
+const PDF_DIR = path.join(__dirname, "..", "public", "makaleler", "pdf");
+
+/* Read fresh on every request: the panel edits this file, so a copy cached at
+   startup would show stale titles in the pickers. */
+const readArticles = () => JSON.parse(fs.readFileSync(ARTICLES_FILE, "utf8"));
+const liveArticles = () => readArticles().articles || [];
+
+function writeText(file, text) {
+  const tmp = file + ".tmp";
+  fs.writeFileSync(tmp, text, "utf8");
+  fs.renameSync(tmp, file);
+}
 
 /* --------------------------------------------------------------- rendering */
 const csrf = () => auth.csrfToken();
 
 const loginPage = (err) => UI.loginPage(err, csrf());
 const teamList = (flash) => UI.teamList({ members: store.team.all(), csrf: csrf(), flash });
-const teamForm = (m, flash) => UI.teamForm({ member: m, articles: ARTICLES, csrf: csrf(), flash });
+const teamForm = (m, flash) => UI.teamForm({ member: m, articles: liveArticles(), csrf: csrf(), flash });
 const eventList = (flash) => UI.eventList({ events: store.events.all(), csrf: csrf(), flash });
-const eventForm = (e, flash) => UI.eventForm({ event: e, articles: ARTICLES, csrf: csrf(), flash });
+const eventForm = (e, flash) => UI.eventForm({ event: e, articles: liveArticles(), csrf: csrf(), flash });
+const articleList = (flash) => UI.articleList({ articles: liveArticles(), csrf: csrf(), flash });
+const articleForm = (a, flash) =>
+  UI.articleForm({ article: a, tags: readArticles().tags, team: store.team.all(), csrf: csrf(), flash });
+const articleBySlug = (slug) => liveArticles().find((a) => a.slug === slug) || null;
 
 /* ----------------------------------------------------------------- saving */
 function saveUpload(file, kind) {
@@ -149,6 +164,44 @@ function deleteEvent(slug) {
   store.events.save(list.filter((x) => x.slug !== slug));
 }
 
+function saveArticle(slug, fields, files) {
+  const doc = readArticles();
+  const list = doc.articles || [];
+  const isNew = slug === "yeni";
+  const idx = isNew ? -1 : list.findIndex((a) => a.slug === slug);
+  if (!isNew && idx === -1) throw new Error("Kayıt bulunamadı.");
+  const rec = UI.buildArticle(fields, isNew ? null : list[idx], list, doc.tags);
+
+  if (files.pdf) {
+    if (!UI.isPdf(files.pdf.data)) throw new Error("Yüklenen dosya PDF değil.");
+    rec.pdf = UI.pdfPathFor(rec.id);
+    fs.mkdirSync(PDF_DIR, { recursive: true });
+    fs.writeFileSync(path.join(PDF_DIR, path.basename(rec.pdf)), files.pdf.data);
+  }
+
+  if (isNew) list.push(rec); else list[idx] = rec;
+  writeText(ARTICLES_FILE, UI.articlesDoc(doc, list));
+  const team = UI.linkMembers(store.team.all(), rec.slug, fields.teamSlugs);
+  if (team) store.team.save(team);
+  return rec;
+}
+
+function deleteArticle(slug) {
+  const doc = readArticles();
+  const list = doc.articles || [];
+  const rec = list.find((a) => a.slug === slug);
+  if (!rec) return;
+  if (rec.pdf && rec.pdf.startsWith("/makaleler/pdf/")) {
+    try { fs.unlinkSync(path.join(PDF_DIR, path.basename(rec.pdf))); } catch (e) { /* already gone */ }
+  }
+  writeText(ARTICLES_FILE, UI.articlesDoc(doc, list.filter((a) => a.slug !== slug)));
+  // nothing may keep pointing at a removed article
+  const team = UI.unlinkEverywhere(store.team.all(), slug);
+  if (team) store.team.save(team);
+  const events = UI.unlinkEverywhere(store.events.all(), slug);
+  if (events) store.events.save(events);
+}
+
 function seedEvents() {
   if (store.events.all().length) return 0;
   const out = UI.sampleEvents();
@@ -158,5 +211,7 @@ function seedEvents() {
 
 module.exports = {
   loginPage, teamList, teamForm, eventList, eventForm,
+  articleList, articleForm, articleBySlug,
   saveTeam, saveEvent, deleteTeam, deleteEvent, seedEvents,
+  saveArticle, deleteArticle,
 };
