@@ -85,6 +85,11 @@ const t = {
     en: "An abstract for this study is in preparation. The full text is available via the PDF link.",
     de: "Eine Zusammenfassung dieser Arbeit wird vorbereitet. Der Volltext ist über den PDF-Link abrufbar.",
   },
+  "art.summaryEditorial": {
+    tr: "Bu çalışmanın yazar tarafından hazırlanmış bir özeti bulunmadığından, aşağıdaki kısa tanıtım yayın bilgilerine dayanılarak hazırlanmıştır.",
+    en: "The study has no author abstract; the short description below was prepared from its publication details.",
+    de: "Die Arbeit hat keine Zusammenfassung des Autors; die folgende Kurzbeschreibung beruht auf den Veröffentlichungsangaben.",
+  },
   "art.summaryIntro": {
     tr: "Aşağıdaki metin, çalışmanın giriş bölümünden alınmıştır.",
     en: "The text below is taken from the introduction to the study.",

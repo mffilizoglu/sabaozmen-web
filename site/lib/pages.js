@@ -582,16 +582,18 @@ function articleDetail(lang, a, origin) {
       <p>${esc(text)}</p>
     </div>`;
 
-  const introNote = a.summarySource === "pdf-intro" ? "art.summaryIntro" : null;
+  const introNote = a.summarySource === "pdf-intro" ? "art.summaryIntro"
+    : a.summarySource === "editorial" ? "art.summaryEditorial" : null;
+  const enNote = a.summarySource === "editorial" ? "art.summaryEditorial" : null;
   const parts = [];
 
   if (lang === "tr") {
     if (a.summary.tr) parts.push(block("art.abstract", a.summary.tr, introNote));
-    if (a.summary.en) parts.push(block("art.abstractEn", a.summary.en));
+    if (a.summary.en) parts.push(block("art.abstractEn", a.summary.en, enNote));
   } else {
     // On an EN/DE page the English abstract leads; the Turkish one is labelled
     // as Turkish rather than presented as if the reader could read it.
-    if (a.summary.en) parts.push(block("art.abstract", a.summary.en));
+    if (a.summary.en) parts.push(block("art.abstract", a.summary.en, enNote));
     if (a.summary.tr) parts.push(block("art.abstractTr", a.summary.tr, introNote));
   }
   if (!parts.length) parts.push(`<div class="note rv">${esc(T("art.summaryPending", lang))}</div>`);
