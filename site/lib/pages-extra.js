@@ -101,7 +101,7 @@ function eventCard(e, lang) {
   // Landscape posters would lose half their width to the portrait frame:
   // they are shown whole, over a blurred copy of themselves.
   const wide = e.poster && e.posterW && e.posterH && e.posterW / e.posterH > 1.15;
-  return `<a class="ev-card rv" href="${evUrl(e, lang)}" data-evtype="${attr(e.type)}">
+  return `<a class="ev-card rv" href="${evUrl(e, lang)}" data-evtype="${attr(e.type)}" data-year="${attr(evYear(e) || "none")}">
     <div class="ev-card__poster${wide ? " is-wide" : ""}"${wide ? ` style="--poster:url('${attr(e.poster)}')"` : ""}>
       ${e.poster
         ? posterImg(e, title, ' loading="lazy" decoding="async"')
@@ -136,7 +136,10 @@ function eventList(lang) {
     ${types.length > 1 ? `<div class="filters rv">
       ${types.map((t) => `<button class="chip" type="button" data-evtype="${attr(t)}" aria-pressed="false">${esc(typeLabel(t, lang))}<span class="chip__n">${counts[t]}</span></button>`).join("")}
     </div>` : ""}
-    <p class="small muted rv"><strong data-evcount>${all.length}</strong> ${esc(T("ev.count", lang))}</p>
+    <div class="archive-top rv">
+      ${L.yearSelect(lang, L.yearCounts(all, evYear), "evyear")}
+      <p class="archive-count"><strong data-evcount>${all.length}</strong> ${esc(T("ev.count", lang))}</p>
+    </div>
     <div data-evgrid>
       ${years.map((y) => `<section class="ev-year" data-evyear>
         <h2 class="ev-year__h">${esc(y || T("ev.noDate", lang))}</h2>

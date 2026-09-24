@@ -128,7 +128,7 @@ function artItem(a, lang) {
     (a.keywords.tr || []).join(" "), a.topics.map((t) => tagLabel(t, lang)).join(" "),
   ].filter(Boolean).join(" ");
 
-  return `<li class="art-item" data-topics="${attr(a.topics.join(" "))}" data-search="${attr(searchBlob)}">
+  return `<li class="art-item" data-topics="${attr(a.topics.join(" "))}" data-year="${attr((a.date || "").slice(0, 4) || "none")}" data-search="${attr(searchBlob)}">
     <a class="art-link" href="${artUrl(a, lang)}">
       <div class="art-date${d ? "" : " art-date--none"}">${esc(d || T("art.noDate", lang))}</div>
       <div>
@@ -541,6 +541,7 @@ function articleList(lang) {
         <label class="skip" for="artq">${esc(T("art.searchLbl", lang))}</label>
         <input id="artq" type="search" data-search placeholder="${attr(T("art.search", lang))}" autocomplete="off">
       </div>
+      ${L.yearSelect(lang, L.yearCounts(ARTICLES, (a) => (a.date || "").slice(0, 4)), "artyear")}
       <p class="archive-count"><strong data-count>${ARTICLES.length}</strong> ${esc(T("art.count", lang))}</p>
     </div>
 

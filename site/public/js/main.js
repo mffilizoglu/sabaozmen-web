@@ -157,6 +157,7 @@
     var chips = Array.prototype.slice.call(document.querySelectorAll("[data-topic]"));
     var countEl = document.querySelector("[data-count]");
     var emptyEl = document.querySelector("[data-empty]");
+    var yearSel = document.querySelector("[data-yearsel]");
     var activeTopic = "";
 
     function norm(s) {
@@ -174,13 +175,16 @@
         var topics = (li.dataset.topics || "").split(" ");
         var okQ = !q || hay.indexOf(q) !== -1;
         var okT = !activeTopic || topics.indexOf(activeTopic) !== -1;
-        var vis = okQ && okT;
+        var okY = !yearSel || !yearSel.value || li.dataset.year === yearSel.value;
+        var vis = okQ && okT && okY;
         li.classList.toggle("is-out", !vis);
         if (vis) shown++;
       });
       if (countEl) countEl.textContent = shown;
       if (emptyEl) emptyEl.hidden = shown !== 0;
     }
+
+    if (yearSel) yearSel.addEventListener("change", apply);
 
     if (input) {
       var t;
@@ -348,7 +352,23 @@
     var evYears = Array.prototype.slice.call(evGrid.querySelectorAll("[data-evyear]"));
     var evCount = document.querySelector("[data-evcount]");
     var evEmpty = document.querySelector("[data-evempty]");
+    var evYearSel = document.querySelector("[data-yearsel]");
     var activeType = "";
+    var evApply = function () {
+      var yr = evYearSel ? evYearSel.value : "";
+      var shown = 0;
+      cards.forEach(function (card) {
+        var vis = (!activeType || card.dataset.evtype === activeType) && (!yr || card.dataset.year === yr);
+        card.classList.toggle("is-out", !vis);
+        if (vis) shown++;
+      });
+      // a year with no matching event disappears along with its heading
+      evYears.forEach(function (y) {
+        y.hidden = !y.querySelector(".ev-card:not(.is-out)");
+      });
+      if (evCount) evCount.textContent = shown;
+      if (evEmpty) evEmpty.hidden = shown !== 0;
+    };
     evChips.forEach(function (c) {
       c.addEventListener("click", function () {
         var v = c.dataset.evtype;
@@ -356,20 +376,10 @@
         evChips.forEach(function (o) {
           o.setAttribute("aria-pressed", o.dataset.evtype === activeType ? "true" : "false");
         });
-        var shown = 0;
-        cards.forEach(function (card) {
-          var vis = !activeType || card.dataset.evtype === activeType;
-          card.classList.toggle("is-out", !vis);
-          if (vis) shown++;
-        });
-        // a year with no matching event disappears along with its heading
-        evYears.forEach(function (y) {
-          y.hidden = !y.querySelector(".ev-card:not(.is-out)");
-        });
-        if (evCount) evCount.textContent = shown;
-        if (evEmpty) evEmpty.hidden = shown !== 0;
+        evApply();
       });
     });
+    if (evYearSel) evYearSel.addEventListener("change", evApply);
   }
 
   /* ---------------------------------------------------------

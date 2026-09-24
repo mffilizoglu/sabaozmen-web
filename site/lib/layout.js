@@ -296,4 +296,27 @@ ${ld}
 </html>`;
 }
 
-module.exports = { page, header, footer, logo, logoMark, icon, url, esc, attr, navModel, LANG_LABEL, LANG_SHORT };
+/* Year filter: a native select (a chip per year would run to two dozen
+   chips on the article archive). items = [{ y: "2025", n: 4 }, …]; an empty
+   y means undated. */
+function yearSelect(lang, items, id) {
+  const { T } = require("../content/i18n");
+  return `<label class="yearsel" for="${id}">
+    <span class="yearsel__l">${esc(T("f.year", lang))}</span>
+    <select id="${id}" data-yearsel>
+      <option value="">${esc(T("f.allYears", lang))}</option>
+      ${items.map((i) => `<option value="${attr(i.y || "none")}">${esc(i.y || T("f.noDate", lang))} (${i.n})</option>`).join("")}
+    </select>
+    ${icon.chev}
+  </label>`;
+}
+
+/* [{y, n}] newest first, undated last. */
+function yearCounts(list, yearOf) {
+  const c = new Map();
+  list.forEach((x) => { const y = yearOf(x); c.set(y, (c.get(y) || 0) + 1); });
+  return [...c.entries()].map(([y, n]) => ({ y, n }))
+    .sort((a, b) => (!a.y) - (!b.y) || b.y.localeCompare(a.y));
+}
+
+module.exports = { yearSelect, yearCounts, page, header, footer, logo, logoMark, icon, url, esc, attr, navModel, LANG_LABEL, LANG_SHORT };

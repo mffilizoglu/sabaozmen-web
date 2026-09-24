@@ -532,6 +532,21 @@ body.menu-open { overflow: hidden; }
 
 .archive-top { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem; }
 .archive-top .searchbar { flex: 1 1 320px; margin-bottom: 0; }
+.yearsel { position: relative; display: inline-flex; align-items: center; flex: 0 0 auto; }
+.yearsel__l {
+  position: absolute; left: 1rem; top: 50%; transform: translateY(-50%);
+  font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-4); pointer-events: none;
+}
+.yearsel select {
+  appearance: none; -webkit-appearance: none;
+  font-family: var(--sans); font-size: .95rem; color: var(--ink);
+  padding: .95rem 2.6rem .95rem 3.9rem; min-width: 11.5rem;
+  border: 1px solid var(--line); border-radius: 14px; background: var(--paper); cursor: pointer;
+  transition: border-color var(--dur-s) var(--ease-soft), box-shadow var(--dur-s) var(--ease-soft);
+}
+.yearsel select:hover { border-color: var(--bordo); }
+.yearsel select:focus { outline: none; border-color: var(--bordo); box-shadow: 0 0 0 4px var(--bordo-glow); }
+.yearsel svg { position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); color: var(--ink-4); pointer-events: none; }
 .archive-count { margin: 0; font-size: .85rem; color: var(--ink-4); white-space: nowrap; }
 .archive-count strong { color: var(--bordo); font-size: 1.05rem; font-family: var(--serif); }
 
