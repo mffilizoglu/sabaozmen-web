@@ -39,6 +39,7 @@ const artBySlug = Object.fromEntries(P.ARTICLES.map((a) => [a.slug, a]));
 const store = require("./lib/store");
 const auth = require("./lib/auth");
 const admin = require("./lib/admin");
+const SEO = require("./lib/seo");
 const UI = require("../shared/admin-ui.mjs");
 const mp = require("./lib/multipart");
 
@@ -331,8 +332,10 @@ const server = http.createServer((req, res) => {
   if (req.method !== "GET" && req.method !== "HEAD") return send(res, 405, "Method Not Allowed", "text/plain");
 
   if (pathname === "/robots.txt") {
-    return send(res, 200, `User-agent: *\nAllow: /\n\nSitemap: ${origin(req)}/sitemap.xml\n`, MIME[".txt"]);
+    return send(res, 200, SEO.robots(origin(req)), MIME[".txt"]);
   }
+  if (pathname === "/llms.txt") return send(res, 200, SEO.llms(origin(req)), MIME[".txt"]);
+  if (pathname === "/llms-full.txt") return send(res, 200, SEO.llmsFull(origin(req)), MIME[".txt"]);
   if (pathname === "/sitemap.xml") return sitemap(req, res);
 
   // static assets
@@ -388,7 +391,7 @@ const server = http.createServer((req, res) => {
     case "cookies": return mk(P.legal(lang, "cookies"));
     case "areas":
       if (!tail.length) return mk(P.areaList(lang));
-      if (areaBySlug[tail[0]]) return mk(P.areaDetail(lang, areaBySlug[tail[0]]));
+      if (areaBySlug[tail[0]]) return mk(P.areaDetail(lang, areaBySlug[tail[0]], origin(req)));
       return notFoundPage(req, res, lang);
     case "articles":
       if (!tail.length) return mk(P.articleList(lang));

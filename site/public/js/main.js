@@ -343,7 +343,9 @@
   var evGrid = document.querySelector("[data-evgrid]");
   if (evGrid) {
     var cards = Array.prototype.slice.call(evGrid.querySelectorAll(".ev-card"));
-    var evChips = Array.prototype.slice.call(document.querySelectorAll("[data-evtype]"));
+    // .chip only: the cards carry data-evtype too, and must not act as filters
+    var evChips = Array.prototype.slice.call(document.querySelectorAll(".chip[data-evtype]"));
+    var evYears = Array.prototype.slice.call(evGrid.querySelectorAll("[data-evyear]"));
     var evCount = document.querySelector("[data-evcount]");
     var evEmpty = document.querySelector("[data-evempty]");
     var activeType = "";
@@ -359,6 +361,10 @@
           var vis = !activeType || card.dataset.evtype === activeType;
           card.classList.toggle("is-out", !vis);
           if (vis) shown++;
+        });
+        // a year with no matching event disappears along with its heading
+        evYears.forEach(function (y) {
+          y.hidden = !y.querySelector(".ev-card:not(.is-out)");
         });
         if (evCount) evCount.textContent = shown;
         if (evEmpty) evEmpty.hidden = shown !== 0;

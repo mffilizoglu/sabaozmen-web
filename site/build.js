@@ -116,7 +116,7 @@ for (const lang of LANGS) {
   }
   for (const a of areas) {
     const p = layout.url(lang, "areas", a.slug);
-    writePage(p, render(P.areaDetail(lang, a), lang, p));
+    writePage(p, render(P.areaDetail(lang, a, ORIGIN), lang, p));
   }
   for (const a of P.ARTICLES) {
     const p = layout.url(lang, "articles", a.slug);
@@ -269,36 +269,34 @@ for (const lang of LANGS) {
     LANGS.forEach((x) => { alts[x] = ORIGIN + layout.url(x, key); });
     urls.push({ loc: ORIGIN + layout.url(lang, key), pri: key === "home" ? "1.0" : "0.7", alts });
   }
-  const each = (items, key, pri) => items.forEach((it) => {
+  const each = (items, key, pri, img) => items.forEach((it) => {
     const alts = {};
     LANGS.forEach((x) => { alts[x] = ORIGIN + layout.url(x, key, it.slug); });
-    urls.push({ loc: ORIGIN + layout.url(lang, key, it.slug), pri, alts });
+    const images = img ? [img(it)].filter(Boolean).map((p) => ORIGIN + p) : [];
+    urls.push({ loc: ORIGIN + layout.url(lang, key, it.slug), pri, alts, images });
   });
   each(areas, "areas", "0.6");
   each(P.ARTICLES, "articles", "0.8");
-  each(store.team.published(), "team", "0.6");
-  each(store.events.published(), "events", "0.6");
+  each(store.team.published(), "team", "0.6", (m) => m.photo);
+  each(store.events.published(), "events", "0.6", (e) => e.poster);
 }
 
 fs.writeFileSync(path.join(OUT, "sitemap.xml"),
 `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${urls.map((u) => `  <url>
     <loc>${u.loc}</loc>
 ${LANGS.map((x) => `    <xhtml:link rel="alternate" hreflang="${x}" href="${u.alts[x]}"/>`).join("\n")}
-    <priority>${u.pri}</priority>
+${(u.images || []).map((i) => `    <image:image><image:loc>${i}</image:loc></image:image>\n`).join("")}    <priority>${u.pri}</priority>
   </url>`).join("\n")}
 </urlset>
 `, "utf8");
 
-fs.writeFileSync(path.join(OUT, "robots.txt"),
-`User-agent: *
-Allow: /
-Disallow: /admin
-
-Sitemap: ${ORIGIN}/sitemap.xml
-`, "utf8");
-
+// robots.txt and llms.txt come from lib/seo.js, shared with the dev server
+const SEO = require("./lib/seo");
+fs.writeFileSync(path.join(OUT, "robots.txt"), SEO.robots(ORIGIN), "utf8");
+fs.writeFileSync(path.join(OUT, "llms.txt"), SEO.llms(ORIGIN), "utf8");
+fs.writeFileSync(path.join(OUT, "llms-full.txt"), SEO.llmsFull(ORIGIN), "utf8");
 console.log("  sitemap: %d urls", urls.length);
 
 /* ------------------------------------------- policy that survives any host */

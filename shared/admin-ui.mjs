@@ -15,10 +15,26 @@ export const esc = (s) =>
 
 export const attr = esc;
 
-export const EVENT_TYPES = ["tv", "konferans", "kongre", "etkinlik"];
+/* Event vocabulary — the single source for the admin form, the save logic and
+   the public pages (which read labels for EN/DE from i18n.js). */
+export const EVENT_TYPES = [
+  "kongre", "sempozyum", "konferans", "panel", "seminer",
+  "egitim", "webinar", "soylesi", "tv", "etkinlik",
+];
 export const TYPE_TR = {
-  tv: "TV Programı", konferans: "Konferans", kongre: "Kongre", etkinlik: "Etkinlik",
+  kongre: "Kongre", sempozyum: "Sempozyum", konferans: "Konferans", panel: "Panel",
+  seminer: "Seminer", egitim: "Eğitim Programı", webinar: "Çevrimiçi Eğitim",
+  soylesi: "Söyleşi", tv: "TV Programı", etkinlik: "Etkinlik",
 };
+/* The firm member's part in the event. */
+export const EVENT_ROLES = ["konusmaci", "egitmen", "oturum-baskani", "moderator", "bilim-kurulu", "konuk"];
+export const ROLE_TR = {
+  konusmaci: "Konuşmacı", egitmen: "Eğitmen", "oturum-baskani": "Oturum Başkanı",
+  moderator: "Moderatör", "bilim-kurulu": "Bilim Kurulu Üyesi", konuk: "Konuk",
+};
+/* Maps to schema.org eventAttendanceMode. */
+export const EVENT_FORMATS = ["yuz-yuze", "cevrimici", "hibrit"];
+export const FORMAT_TR = { "yuz-yuze": "Yüz yüze", cevrimici: "Çevrimiçi", hibrit: "Hibrit (yüz yüze + çevrimiçi)" };
 
 /* ------------------------------------------------------------------ shell */
 export function shell(o) {
@@ -264,15 +280,22 @@ export function eventList({ events, csrf, flash }) {
   return shell({ title: "Etkinlikler", active: "/admin/etkinlikler", body, flash, csrf });
 }
 
-export function eventForm({ event, articles, csrf, flash }) {
+export function eventForm({ event, articles, team, areas, csrf, flash }) {
   const isNew = !event;
-  const v = event || { title: {}, venue: {}, summary: {}, body: {}, type: "etkinlik", articleSlugs: [], published: true };
+  const v = event || {
+    title: {}, venue: {}, summary: {}, body: {}, talks: [], type: "seminer", format: "yuz-yuze",
+    roles: ["konusmaci"], articleSlugs: [], teamSlugs: [], areaSlugs: [], organizers: [], published: true,
+  };
   const chosen = new Set(v.articleSlugs || []);
+  const roles = new Set(v.roles || []);
+  const teamSet = new Set(v.teamSlugs || []);
+  const areaSet = new Set(v.areaSlugs || []);
+  const talkLines = (l) => (v.talks || []).map((t) => (t && t[l]) || "").filter(Boolean).join("\n");
   const body = `
   <div class="ad-head">
     <div>
       <h1>${isNew ? "Yeni etkinlik" : esc((v.title && v.title.tr) || v.slug)}</h1>
-      <p class="ad-muted">${isNew ? "Yeni kayıt oluşturun." : "Bilgileri güncelleyin."}</p>
+      <p class="ad-muted">${isNew ? "Yeni kayıt oluşturun." : `Sitedeki adresi: <a class="ad-link" href="/tr/egitim-ve-kongreler/${attr(v.slug)}" target="_blank" rel="noopener">/tr/egitim-ve-kongreler/${esc(v.slug)} ↗</a>`}</p>
     </div>
     <a class="ad-link" href="/admin/etkinlikler">← Listeye dön</a>
   </div>
@@ -281,7 +304,7 @@ export function eventForm({ event, articles, csrf, flash }) {
     <input type="hidden" name="_csrf" value="${attr(csrf)}">
 
     <section class="ad-card">
-      <h2>Tür ve tarih</h2>
+      <h2>Tür, tarih ve biçim</h2>
       <div class="ad-grid2">
         <label class="ad-field">
           <span>Tür</span>
@@ -289,18 +312,59 @@ export function eventForm({ event, articles, csrf, flash }) {
             ${EVENT_TYPES.map((t) => `<option value="${attr(t)}"${v.type === t ? " selected" : ""}>${esc(TYPE_TR[t])}</option>`).join("")}
           </select>
         </label>
-        ${field("Şehir", "city", v.city, { ph: "İstanbul" })}
+        <label class="ad-field">
+          <span>Biçim</span>
+          <select name="format">
+            ${EVENT_FORMATS.map((f) => `<option value="${attr(f)}"${(v.format || "yuz-yuze") === f ? " selected" : ""}>${esc(FORMAT_TR[f])}</option>`).join("")}
+          </select>
+        </label>
         ${field("Tarih", "date", v.date, { type: "date" })}
         ${field("Bitiş tarihi (çok günlü ise)", "endDate", v.endDate, { type: "date" })}
+        ${field("Başlangıç saati", "startTime", v.startTime, { type: "time" })}
+        ${field("Bitiş saati", "endTime", v.endTime, { type: "time" })}
       </div>
     </section>
 
     <section class="ad-card">
-      <h2>Başlık ve yer</h2>
-      ${langTabs("title", v.title, "Başlık")}
-      ${langTabs("venue", v.venue, "Yer / program adı")}
-      ${field("Bağlantı (varsa)", "link", v.link, { type: "url", ph: "https://…", wide: true })}
-      ${field("Katılımcılar", "speakers", (v.speakers || []).join(", "), { ph: "Prof. Dr. Etem Sabâ Özmen, …", wide: true })}
+      <h2>Başlık ve düzenleyen</h2>
+      ${langTabs("title", v.title, "Etkinlik başlığı (Türkçe zorunlu)")}
+      ${field("Düzenleyen kurumlar (her satıra bir kurum)", "organizers", (v.organizers || []).join("\n"), { rows: 3, wide: true, ph: "İstanbul Barosu\nÇevre Kent ve İmar Hukuku Komisyonu" })}
+    </section>
+
+    <section class="ad-card">
+      <h2>Yer</h2>
+      ${langTabs("venue", v.venue, "Salon / program adı (çevrimiçi ise platform, ör. Zoom)")}
+      <div class="ad-grid2">
+        ${field("Şehir", "city", v.city, { ph: "İstanbul" })}
+        ${field("Açık adres (varsa)", "address", v.address, { ph: "İstiklal Cad. … Beyoğlu" })}
+      </div>
+    </section>
+
+    <section class="ad-card">
+      <h2>Katılım</h2>
+      <p class="ad-small ad-muted">Etkinlikte yer alan avukatlarımız ve üstlendikleri görev. Seçilen avukatların profil sayfasında bu etkinlik listelenir.</p>
+      <div class="ad-checks">
+        ${(team || []).map((m) => `<label class="ad-check"><input type="checkbox" name="teamSlugs" value="${attr(m.slug)}"${teamSet.has(m.slug) ? " checked" : ""}> ${esc(m.name)}</label>`).join("")}
+      </div>
+      <div class="ad-checks" style="margin-top:1rem">
+        ${EVENT_ROLES.map((r) => `<label class="ad-check"><input type="checkbox" name="roles" value="${attr(r)}"${roles.has(r) ? " checked" : ""}> ${esc(ROLE_TR[r])}</label>`).join("")}
+      </div>
+      <div class="ad-i18n" style="margin-top:1rem">
+        <div class="ad-i18n__label">Sunum / tebliğ başlıkları <em class="ad-muted">(her satıra bir başlık)</em></div>
+        <div class="ad-i18n__grid">
+          ${["tr", "en", "de"].map((l) => `<label class="ad-field"><span>${l.toUpperCase()}</span>
+            <textarea name="talks_${l}" rows="3">${esc(talkLines(l))}</textarea></label>`).join("")}
+        </div>
+      </div>
+      ${field("Diğer katılımcılar (virgülle)", "speakers", (v.speakers || []).join(", "), { ph: "Av. Ayça Yakupoğlu, …", wide: true })}
+    </section>
+
+    <section class="ad-card">
+      <h2>Program</h2>
+      <p class="ad-small ad-muted">İsteğe bağlı. Oturum başlığı <code>## </code> ile, konuşma <code>- </code> ile başlar:<br>
+        <code>## 10:30–12:00 | Birinci Oturum | Oturum Başkanı: Prof. Dr. …</code><br>
+        <code>- Prof. Dr. … (Kurum) — Sunum başlığı</code></p>
+      ${field("Program", "program", v.program, { rows: 10, wide: true })}
     </section>
 
     <section class="ad-card">
@@ -315,7 +379,7 @@ export function eventForm({ event, articles, csrf, flash }) {
             <span>Afiş yükle <em>JPG / PNG / WebP, en fazla 6 MB</em></span>
             <input type="file" name="poster" accept="image/jpeg,image/png,image/webp">
           </label>
-          <p class="ad-small ad-muted">Liste görünümünde 4:5 oranında kırpılır; detay sayfasında tam boy gösterilir.</p>
+          <p class="ad-small ad-muted">Zoom kimliği, parola, IBAN gibi bilgiler içeren afişleri yüklemeden önce bu kısımları kırpın.</p>
           ${v.poster ? `<label class="ad-check"><input type="checkbox" name="poster_clear" value="1"> Mevcut afişi kaldır</label>` : ""}
         </div>
       </div>
@@ -323,13 +387,18 @@ export function eventForm({ event, articles, csrf, flash }) {
 
     <section class="ad-card">
       <h2>Metin</h2>
-      ${langTabs("summary", v.summary, "Kısa özet (liste ve arama motorları için)", { rows: 3 })}
+      ${langTabs("summary", v.summary, "Kısa özet — arama motorları ve paylaşımlar için (en fazla ~155 karakter)", { rows: 3 })}
       ${langTabs("body", v.body, "Ayrıntılı metin (boş satır bırakarak paragraf ayırın)", { rows: 7 })}
+      ${field("Bağlantı (varsa)", "link", v.link, { type: "url", ph: "https://…", wide: true })}
     </section>
 
     <section class="ad-card">
-      <h2>Makale eşleştirme</h2>
-      ${articlePicker("evartpick", articles, chosen)}
+      <h2>İlişkili içerik</h2>
+      <p class="ad-small ad-muted">Çalışma alanı ve makale sayfalarından bu etkinliğe bağlantı verilir.</p>
+      <div class="ad-checks">
+        ${(areas || []).map((a) => `<label class="ad-check"><input type="checkbox" name="areaSlugs" value="${attr(a.slug)}"${areaSet.has(a.slug) ? " checked" : ""}> ${esc(a.name)}</label>`).join("")}
+      </div>
+      <div style="margin-top:1rem">${articlePicker("evartpick", articles, chosen)}</div>
     </section>
 
     <section class="ad-card">
@@ -343,8 +412,110 @@ export function eventForm({ event, articles, csrf, flash }) {
       ${isNew ? "" : `<button class="ad-btn ad-btn--danger" type="submit" formaction="/admin/etkinlikler/${attr(v.slug)}/sil"
         data-confirm="Bu etkinlik silinecek. Emin misiniz?">Sil</button>`}
     </div>
+    <p class="ad-small ad-muted">Kaydettikten sonra değişiklik yaklaşık 1–2 dakika içinde sitede görünür.</p>
   </form>`;
   return shell({ title: isNew ? "Yeni etkinlik" : (v.title && v.title.tr) || "Etkinlik", active: "/admin/etkinlikler", body, flash, csrf });
+}
+
+/* Event save logic — pure, shared by both storage back-ends. */
+const TIME_RE = /^([01]\d|2[0-3]):[0-5]\d$/;
+const DAY_RE = /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/;
+
+export function buildEvent(f, prev, list, known) {
+  const title = pickLangs(f, "title");
+  if (!title.tr) throw new Error("Türkçe başlık zorunludur.");
+  const date = String(f.date || "").trim();
+  const endDate = String(f.endDate || "").trim();
+  if (date && !DAY_RE.test(date)) throw new Error("Tarih geçersiz.");
+  if (endDate && (!DAY_RE.test(endDate) || (date && endDate < date))) throw new Error("Bitiş tarihi başlangıçtan önce olamaz.");
+  const startTime = String(f.startTime || "").trim();
+  const endTime = String(f.endTime || "").trim();
+  if ((startTime && !TIME_RE.test(startTime)) || (endTime && !TIME_RE.test(endTime))) throw new Error("Saat SS:DD biçiminde olmalı.");
+  const link = String(f.link || "").trim();
+  if (link && !/^https:\/\/[^\s]+$/.test(link)) throw new Error("Bağlantı https:// ile başlamalı.");
+
+  const k = known || {};
+  const only = (vals, allowed) => asArray(vals).filter((x) => !allowed || allowed.includes(x));
+  const talks = {};
+  ["tr", "en", "de"].forEach((l) => { talks[l] = lineList(f["talks_" + l]); });
+  const p = prev || {};
+
+  return Object.assign({}, p, {
+    slug: prev ? p.slug : uniqueSlug(slugify(title.tr), list.map((x) => x.slug)),
+    type: EVENT_TYPES.includes(f.type) ? f.type : "etkinlik",
+    format: EVENT_FORMATS.includes(f.format) ? f.format : "yuz-yuze",
+    title,
+    venue: pickLangs(f, "venue"),
+    summary: pickLangs(f, "summary"),
+    body: pickLangs(f, "body"),
+    city: String(f.city || "").trim(),
+    address: String(f.address || "").trim(),
+    date, endDate, startTime, endTime, link,
+    organizers: lineList(f.organizers),
+    roles: only(f.roles, EVENT_ROLES),
+    talks: talks.tr.map((t, i) => ({ tr: t, en: talks.en[i] || "", de: talks.de[i] || "" })),
+    program: String(f.program || "").replace(/\r\n/g, "\n").trim(),
+    speakers: String(f.speakers || "").split(",").map((s) => s.trim()).filter(Boolean),
+    teamSlugs: only(f.teamSlugs, k.team),
+    areaSlugs: only(f.areaSlugs, k.areas),
+    articleSlugs: asArray(f.articleSlugs),
+    published: f.published === "1",
+    poster: p.poster || "",
+  });
+}
+
+/* Program mini-markup → sessions. Kept tolerant: anything unrecognised is a note.
+     ## 10:30–12:00 | Birinci Oturum | Oturum Başkanı: Prof. Dr. X
+     - Prof. Dr. Y (Kurum) — Başlık                                      */
+export function parseProgram(text) {
+  const sessions = [];
+  let cur = null;
+  const start = (head) => {
+    const parts = head.split("|").map((s) => s.trim()).filter(Boolean);
+    const time = parts[0] && /^\d{1,2}[.:]\d{2}/.test(parts[0]) ? parts.shift() : "";
+    cur = { time, title: parts.shift() || "", meta: parts, items: [] };
+    sessions.push(cur);
+  };
+  String(text || "").split(/\r?\n/).forEach((raw) => {
+    const line = raw.trim();
+    if (!line) return;
+    if (line.startsWith("## ")) return start(line.slice(3));
+    if (!cur) start("");
+    if (line.startsWith("- ")) {
+      const s = line.slice(2);
+      const m = s.split(/\s+[—–]\s+/);
+      cur.items.push(m.length > 1 ? { who: m[0].trim(), what: m.slice(1).join(" — ").trim() } : { who: s.trim(), what: "" });
+    } else {
+      cur.items.push({ who: "", what: line, note: true });
+    }
+  });
+  return sessions;
+}
+
+/* Pixel size from the file header (JPEG / PNG / WebP), for width/height attributes. */
+export function imageSize(b) {
+  if (!b || b.length < 30) return null;
+  if (b[0] === 0x89 && b[1] === 0x50) return { w: (b[16] << 24 | b[17] << 16 | b[18] << 8 | b[19]) >>> 0, h: (b[20] << 24 | b[21] << 16 | b[22] << 8 | b[23]) >>> 0 };
+  if (b[0] === 0xff && b[1] === 0xd8) {
+    let i = 2;
+    while (i + 9 < b.length) {
+      if (b[i] !== 0xff) { i++; continue; }
+      const m = b[i + 1];
+      if (m >= 0xc0 && m <= 0xcf && m !== 0xc4 && m !== 0xc8 && m !== 0xcc) {
+        return { h: b[i + 5] << 8 | b[i + 6], w: b[i + 7] << 8 | b[i + 8] };
+      }
+      i += 2 + (b[i + 2] << 8 | b[i + 3]);
+    }
+    return null;
+  }
+  const ascii = (a, n) => String.fromCharCode(...b.subarray(a, a + n));
+  if (ascii(0, 4) === "RIFF" && ascii(8, 4) === "WEBP") {
+    const kind = ascii(12, 4);
+    if (kind === "VP8X") return { w: 1 + (b[24] | b[25] << 8 | b[26] << 16), h: 1 + (b[27] | b[28] << 8 | b[29] << 16) };
+    if (kind === "VP8 ") return { w: (b[26] | b[27] << 8) & 0x3fff, h: (b[28] | b[29] << 8) & 0x3fff };
+    if (kind === "VP8L") { const x = b[21] | b[22] << 8 | b[23] << 16 | b[24] << 24; return { w: (x & 0x3fff) + 1, h: ((x >> 14) & 0x3fff) + 1 }; }
+  }
+  return null;
 }
 
 /* =============================================================== ARTICLES */
@@ -421,7 +592,7 @@ export function articleForm({ article, tags, team, csrf, flash }) {
     </section>
 
     <section class="ad-card">
-      <h2>Künye</h2>
+      <h2>Yayın bilgileri</h2>
       <div class="ad-grid2">
         ${field("Yayın tarihi", "date", v.date, { ph: "2025-10", hint: "YYYY, YYYY-AA veya YYYY-AA-GG" })}
         ${field("Dergi / kitap", "journal", v.journal, { ph: "İzmir Barosu Dergisi" })}

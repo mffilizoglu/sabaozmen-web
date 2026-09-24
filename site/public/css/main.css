@@ -941,3 +941,77 @@ body.menu-open { overflow: hidden; }
 .small { font-size: .85rem; }
 .center { text-align: center; }
 .divider { height: 1px; background: var(--line); border: 0; margin-block: clamp(3rem, 6vw, 5rem); }
+
+/* ------------------------------------------------ events: list by year */
+.ev-year { margin-top: 2.5rem; }
+.ev-year:first-child { margin-top: 1.5rem; }
+.ev-year__h {
+  font-family: var(--sans); font-size: .78rem; font-weight: 600; letter-spacing: .18em;
+  color: var(--ink-4); padding-bottom: .75rem; margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+.ev-card__online {
+  position: absolute; right: .75rem; top: .75rem;
+  font-size: .68rem; font-weight: 600; letter-spacing: .06em;
+  padding: .3rem .6rem; border-radius: 999px; background: var(--bordo); color: #fff;
+}
+
+/* ------------------------------------------------ events: detail */
+.ev-talk {
+  margin: 0 0 2rem; padding: 1.25rem 1.4rem; border-radius: 14px;
+  background: var(--bordo-tint); border: 1px solid var(--bordo-line);
+}
+.ev-talk__label {
+  font-family: var(--sans); font-size: .7rem; font-weight: 600; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--bordo-deep); margin-bottom: .5rem;
+}
+.ev-talk__t { font-family: var(--serif); font-size: 1.12rem; line-height: 1.45; color: var(--ink); margin: 0; }
+.ev-talk__t + .ev-talk__t { margin-top: .75rem; padding-top: .75rem; border-top: 1px solid var(--bordo-line); }
+
+.ev-program { display: grid; gap: 1.5rem; }
+.ev-program__h { display: flex; flex-wrap: wrap; align-items: baseline; gap: .35rem .75rem; margin-bottom: .6rem; }
+.ev-program__time { font-family: var(--sans); font-size: .8rem; font-weight: 600; color: var(--bordo); font-variant-numeric: tabular-nums; }
+.ev-program__h strong { font-family: var(--sans); font-size: .95rem; color: var(--ink); }
+.ev-program__meta { font-size: .85rem; color: var(--ink-3); }
+.ev-program__list { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--line); }
+.ev-program__list li { padding: .45rem 0 .45rem 1rem; display: grid; gap: .1rem; }
+.ev-program__list li.is-ours { border-left: 2px solid var(--bordo); margin-left: -2px; background: linear-gradient(90deg, var(--bordo-tint), transparent 70%); }
+.ev-program__who { font-size: .9rem; font-weight: 500; color: var(--ink-2); }
+.ev-program__what { font-size: .9rem; color: var(--ink-3); font-style: italic; }
+.ev-program__note { font-size: .85rem; color: var(--ink-4); }
+
+.aside-links { list-style: none; margin: 0; padding: 0; display: grid; gap: .7rem; }
+.aside-links a { color: var(--ink-2); font-weight: 400; font-size: .9rem; }
+.aside-links .small { display: block; margin-top: .15rem; }
+
+/* ------------------------------------------------ events: compact rows */
+.ev-rows { list-style: none; margin: 1rem 0 0; padding: 0; border-top: 1px solid var(--line); }
+.ev-row a {
+  display: grid; grid-template-columns: minmax(0, 11rem) minmax(0, 1fr); gap: .2rem 1.25rem;
+  padding: .9rem 0; border-bottom: 1px solid var(--line); color: inherit;
+  transition: background var(--dur-s) var(--ease-soft);
+}
+.ev-row a:hover { background: var(--paper-2); }
+.ev-row__date { grid-row: span 2; font-size: .82rem; font-weight: 500; color: var(--bordo); font-variant-numeric: tabular-nums; }
+.ev-row__t { font-family: var(--serif); font-size: 1rem; color: var(--ink); line-height: 1.4; }
+.ev-row__org { font-size: .8rem; color: var(--ink-4); }
+@media (max-width: 560px) {
+  .ev-row a { grid-template-columns: minmax(0, 1fr); }
+  .ev-row__date { grid-row: auto; }
+}
+
+/* ------------------------------------------------ practice-area detail */
+.ticks, .laws { list-style: none; margin: .5rem 0 0; padding: 0; display: grid; gap: .6rem; }
+.ticks li { position: relative; padding-left: 1.6rem; color: var(--ink-2); }
+.ticks li::before {
+  content: ""; position: absolute; left: 0; top: .55em; width: .75rem; height: .4rem;
+  border-left: 2px solid var(--bordo); border-bottom: 2px solid var(--bordo); transform: rotate(-45deg);
+}
+.laws li { padding: .7rem 1rem; border-radius: 10px; background: var(--paper-2); border: 1px solid var(--line-2); font-size: .92rem; color: var(--ink-2); }
+.ev-card__poster img { object-position: top center; }
+.ev-card__poster.is-wide::before {
+  content: ""; position: absolute; inset: -24px;
+  background: var(--poster) center / cover no-repeat;
+  filter: blur(22px) saturate(.9) brightness(.85); transform: scale(1.08);
+}
+.ev-card__poster.is-wide img { position: relative; object-fit: contain; object-position: center; }

@@ -22,6 +22,7 @@ const mp = require("./multipart");
 const UI = require("../../shared/admin-ui.mjs");
 
 const UPLOADS = path.join(__dirname, "..", "public", "uploads");
+const AREAS = require("../content/data").areas.map((a) => ({ slug: a.slug, name: a.name.tr }));
 const ARTICLES_FILE = path.join(__dirname, "..", "content", "articles.json");
 const PDF_DIR = path.join(__dirname, "..", "public", "makaleler", "pdf");
 
@@ -43,7 +44,8 @@ const loginPage = (err) => UI.loginPage(err, csrf());
 const teamList = (flash) => UI.teamList({ members: store.team.all(), csrf: csrf(), flash });
 const teamForm = (m, flash) => UI.teamForm({ member: m, articles: liveArticles(), csrf: csrf(), flash });
 const eventList = (flash) => UI.eventList({ events: store.events.all(), csrf: csrf(), flash });
-const eventForm = (e, flash) => UI.eventForm({ event: e, articles: liveArticles(), csrf: csrf(), flash });
+const eventForm = (e, flash) =>
+  UI.eventForm({ event: e, articles: liveArticles(), team: store.team.all(), areas: AREAS, csrf: csrf(), flash });
 const articleList = (flash) => UI.articleList({ articles: liveArticles(), csrf: csrf(), flash });
 const articleForm = (a, flash) =>
   UI.articleForm({ article: a, tags: readArticles().tags, team: store.team.all(), csrf: csrf(), flash });
@@ -115,34 +117,22 @@ function saveEvent(slug, fields, files) {
   const idx = isNew ? -1 : list.findIndex((e) => e.slug === slug);
   if (!isNew && idx === -1) throw new Error("Kayıt bulunamadı.");
 
-  const title = UI.pickLangs(fields, "title");
-  if (!title.tr) throw new Error("Türkçe başlık zorunludur.");
-
   const prev = isNew ? {} : list[idx];
-  const e = Object.assign({}, prev, {
-    slug: isNew ? UI.uniqueSlug(UI.slugify(title.tr), list.map((x) => x.slug)) : prev.slug,
-    type: UI.EVENT_TYPES.includes(fields.type) ? fields.type : "etkinlik",
-    title,
-    venue: UI.pickLangs(fields, "venue"),
-    summary: UI.pickLangs(fields, "summary"),
-    body: UI.pickLangs(fields, "body"),
-    city: String(fields.city || "").trim(),
-    date: String(fields.date || "").trim(),
-    endDate: String(fields.endDate || "").trim(),
-    link: String(fields.link || "").trim(),
-    speakers: String(fields.speakers || "").split(",").map((s) => s.trim()).filter(Boolean),
-    articleSlugs: UI.asArray(fields.articleSlugs),
-    published: fields.published === "1",
-    poster: prev.poster || "",
+  const e = UI.buildEvent(fields, isNew ? null : prev, list, {
+    team: store.team.all().map((m) => m.slug), areas: AREAS.map((a) => a.slug),
   });
 
   if (files.poster) {
     const next = saveUpload(files.poster, "events");
     removeUpload(prev.poster);
     e.poster = next;
+    const dim = UI.imageSize(files.poster.data);
+    e.posterW = dim ? dim.w : undefined;
+    e.posterH = dim ? dim.h : undefined;
   } else if (fields.poster_clear === "1") {
     removeUpload(prev.poster);
     e.poster = "";
+    delete e.posterW; delete e.posterH;
   }
 
   if (isNew) list.push(e); else list[idx] = e;

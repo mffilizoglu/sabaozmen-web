@@ -1,3 +1,2110 @@
 {
- "events": []
+ "events": [
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [
+    "Av. Melis Metin Biçkin (moderatör)"
+   ],
+   "organizers": [
+    "İstanbul Barosu Kat Mülkiyeti Hukuku Komisyonu"
+   ],
+   "areaSlugs": [
+    "gayrimenkul-hukuku-ve-kentsel-donusum",
+    "kat-mulkiyeti-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "İstiklal Caddesi Orhan Adli Apaydın Sokak No: 2 Beyoğlu / İstanbul",
+   "link": "",
+   "endDate": "",
+   "startTime": "18:30",
+   "endTime": "",
+   "published": true,
+   "slug": "kentsel-donusumde-guncel-sorunlar-ve-cozum-yollari-paneli-istanbul-barosu-2026",
+   "type": "panel",
+   "date": "2026-07-01",
+   "city": "İstanbul",
+   "title": {
+    "tr": "Panel: Kentsel Dönüşümde Güncel Sorunlar ve Çözüm Yolları — İstanbul Barosu",
+    "en": "Panel: Current Problems and Solutions in Urban Regeneration — Istanbul Bar Association",
+    "de": "Podium: Aktuelle Probleme und Lösungen der Stadterneuerung — Anwaltskammer Istanbul"
+   },
+   "venue": {
+    "tr": "İstanbul Barosu Merkez Bina, Av. Orhan Adli Apaydın Konferans Salonu",
+    "en": "Istanbul Bar Association Headquarters, Av. Orhan Adli Apaydın Conference Hall",
+    "de": "Hauptgebäude der Anwaltskammer Istanbul, Konferenzsaal Av. Orhan Adli Apaydın"
+   },
+   "summary": {
+    "tr": "İstanbul Barosu KMH Komisyonu panelinde Prof. Dr. Etem Sabâ Özmen kentsel dönüşümdeki güncel sorunları ve çözüm yollarını anlattı.",
+    "en": "At an Istanbul Bar Condominium Law Commission panel, Prof. Dr. Etem Sabâ Özmen discussed current problems and solutions in urban regeneration.",
+    "de": "Beim Podium der Kommission für Wohnungseigentumsrecht der Anwaltskammer Istanbul sprach Prof. Dr. Etem Sabâ Özmen über Probleme der Stadterneuerung."
+   },
+   "body": {
+    "tr": "İstanbul Barosu Kat Mülkiyeti Hukuku Komisyonu'nun panelinde açılış konuşmalarını Av. Mehmedali Barış Beşli ve Av. Nuran Dinç Akgün yaptı; Av. Melis Metin Biçkin'in moderatörlüğünde Prof. Dr. Etem Sabâ Özmen kentsel dönüşüm uygulamasındaki güncel sorunları ve çözüm önerilerini anlattı.",
+    "en": "Opened by Av. Mehmedali Barış Beşli and Av. Nuran Dinç Akgün and moderated by Av. Melis Metin Biçkin, the panel heard Prof. Dr. Etem Sabâ Özmen on current problems in urban regeneration practice and possible solutions.",
+    "de": "Nach Eröffnung durch Av. Mehmedali Barış Beşli und Av. Nuran Dinç Akgün und unter Moderation von Av. Melis Metin Biçkin sprach Prof. Dr. Etem Sabâ Özmen über aktuelle Probleme der Stadterneuerung und Lösungsansätze."
+   },
+   "order": 36,
+   "poster": "/img/events/kentsel-donusumde-guncel-sorunlar-ve-cozum-yollari-paneli-istanbul-barosu-2026.jpg",
+   "posterW": 1200,
+   "posterH": 1200
+  },
+  {
+   "format": "cevrimici",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "SİYÖMDER — Site Yöneticileri ve Müdürleri Yardımlaşma ve Dayanışma Derneği"
+   ],
+   "areaSlugs": [
+    "kat-mulkiyeti-hukuku",
+    "toplu-yapilarda-yonetim-plani"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "20:00",
+   "endTime": "22:00",
+   "published": true,
+   "slug": "634-sayili-kanun-degisikligi-ve-uygulamalari-siyomder-2026",
+   "type": "webinar",
+   "date": "2026-06-10",
+   "title": {
+    "tr": "634 Sayılı Kanun Değişikliği ve Uygulamaları — SİYÖMDER",
+    "en": "The Amendment of Law No. 634 and its Application — SİYÖMDER",
+    "de": "Die Änderung des Gesetzes Nr. 634 und ihre Anwendung — SİYÖMDER"
+   },
+   "venue": {
+    "tr": "Zoom (çevrimiçi)",
+    "en": "Zoom (online)",
+    "de": "Zoom (online)"
+   },
+   "summary": {
+    "tr": "SİYÖMDER'in çevrimiçi toplantısında Prof. Dr. Etem Sabâ Özmen, 634 sayılı Kat Mülkiyeti Kanunu'ndaki değişikliği ve uygulamayı anlattı.",
+    "en": "Online SİYÖMDER session in which Prof. Dr. Etem Sabâ Özmen explained the amendment of Condominium Law No. 634 and its application.",
+    "de": "Online-Sitzung von SİYÖMDER: Prof. Dr. Etem Sabâ Özmen erläuterte die Änderung des Wohnungseigentumsgesetzes Nr. 634 und ihre Anwendung."
+   },
+   "body": {
+    "tr": "Site Yöneticileri ve Müdürleri Yardımlaşma ve Dayanışma Derneği Eğitim Akademisi'nin toplantısında 634 sayılı Kat Mülkiyeti Kanunu'ndaki değişikliklerin site ve apartman yönetimindeki uygulaması ele alındı.",
+    "en": "At a session of the association's training academy, the discussion turned to how the amendments to Condominium Law No. 634 apply in the management of residential sites and apartment buildings.",
+    "de": "In einer Sitzung der Akademie des Verbands ging es um die Anwendung der Änderungen des Wohnungseigentumsgesetzes Nr. 634 in der Verwaltung von Wohnanlagen."
+   },
+   "order": 35,
+   "poster": "/img/events/634-sayili-kanun-degisikligi-ve-uygulamalari-siyomder-2026.jpg",
+   "posterW": 851,
+   "posterH": 1200
+  },
+  {
+   "format": "cevrimici",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [
+    {
+     "tr": "Bir Asra Dayanan Yanılgıyla Taşınmaz Mülkiyetinin Devrine İlişkin Hüküm ve Sonuçlar",
+     "en": "A Century-old Misconception: Rules and Consequences of Transferring Ownership of Real Property",
+     "de": "Ein hundertjähriger Irrtum: Regeln und Folgen der Übertragung von Grundeigentum"
+    }
+   ],
+   "speakers": [],
+   "organizers": [
+    "Hasan Kalyoncu Üniversitesi Hukuk Fakültesi"
+   ],
+   "areaSlugs": [
+    "gayrimenkul-hukuku-ve-kentsel-donusum",
+    "miras-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "## 09:30 | Açılış Konuşması\n- Prof. Dr. Gül Rengin Küçükerdoğan (Rektör V.)\n## 10:00–12:00 | I. Oturum | Oturum Başkanı: Prof. Dr. Oğuz Sadık Aydos (Ankara Hacı Bayram Veli Üniversitesi)\n- Prof. Dr. Ali Akyıldız (Başkent Üniversitesi) — Vakıf Hukukumuzun Modern Hukukla Uyumlaştırılması Süreci: Türk Medeni Kanunu\n- Prof. Dr. Şebnem Akipek Öcal (TED Üniversitesi) — TMK'nın 100. Yılında Soybağının Reddi Davası\n- Prof. Dr. Etem Sabâ Özmen — Bir Asra Dayanan Yanılgıyla Taşınmaz Mülkiyetinin Devrine İlişkin Hüküm ve Sonuçlar\n- Prof. Dr. İbrahim Gül (Bolu Abant İzzet Baysal Üniversitesi) — Bitmeyen Tartışma: Değişen Faiz Oranları ve Hukuki Belirlilik\n## 13:00–15:00 | II. Oturum | Oturum Başkanı: Prof. Dr. Şebnem Akipek Öcal\n- Prof. Dr. Mehmet Köksal (Avrupa Liderlik Üniversitesi) — Adil Yargılanma İlkesi Çerçevesinde Medeni Kanun'da Yapılması Gereken Değişiklikler\n- Prof. Dr. Oğuz Sadık Aydos (Ankara Hacı Bayram Veli Üniversitesi) — Arsa Payı Karşılığı İnşaat Sözleşmelerinin Sona Ermesi ve Nama İfa Süreci\n- Dr. Öğr. Üyesi Ahmet Murat Arpacı (Hasan Kalyoncu Üniversitesi) — TMK m. 725 Kapsamında Taşkın İnşaat Düzenlemesinin Normatif Yetersizliği",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "09:30",
+   "endTime": "15:00",
+   "published": true,
+   "slug": "turk-medeni-kanununun-100-yili-sempozyumu-hasan-kalyoncu-universitesi-2026",
+   "type": "sempozyum",
+   "date": "2026-05-11",
+   "title": {
+    "tr": "Türk Medeni Kanununun 100. Yılı Sempozyumu — Hasan Kalyoncu Üniversitesi",
+    "en": "Symposium on the Centenary of the Turkish Civil Code — Hasan Kalyoncu University",
+    "de": "Symposium zum 100. Jahrestag des Türkischen Zivilgesetzbuchs — Hasan-Kalyoncu-Universität"
+   },
+   "venue": {
+    "tr": "Zoom (çevrimiçi)",
+    "en": "Zoom (online)",
+    "de": "Zoom (online)"
+   },
+   "summary": {
+    "tr": "Türk Medeni Kanunu'nun 100. yılı sempozyumunda Prof. Dr. Etem Sabâ Özmen taşınmaz mülkiyetinin devrine ilişkin bir asırlık yanılgıyı anlattı.",
+    "en": "At the Turkish Civil Code centenary symposium, Prof. Dr. Etem Sabâ Özmen spoke on a century-old misconception about transferring real property.",
+    "de": "Beim Symposium zum 100. Jahrestag des ZGB sprach Prof. Dr. Etem Sabâ Özmen über einen hundertjährigen Irrtum bei der Grundstücksübertragung."
+   },
+   "body": {
+    "tr": "Hasan Kalyoncu Üniversitesi Hukuk Fakültesi'nin Türk Medeni Kanunu'nun yürürlüğe girişinin 100. yılı için çevrimiçi düzenlediği sempozyumun birinci oturumunda Prof. Dr. Etem Sabâ Özmen, taşınmaz mülkiyetinin devrine ilişkin köklü bir yanılgının hüküm ve sonuçlarını değerlendirdi.",
+    "en": "In the first session of the online symposium held by Hasan Kalyoncu University Faculty of Law for the centenary of the Turkish Civil Code, Prof. Dr. Etem Sabâ Özmen examined a deep-rooted misconception about the transfer of ownership of real property.",
+    "de": "In der ersten Sitzung des Online-Symposiums der Juristischen Fakultät der Hasan-Kalyoncu-Universität zum 100. Jahrestag des Türkischen Zivilgesetzbuchs untersuchte Prof. Dr. Etem Sabâ Özmen einen tief verwurzelten Irrtum bei der Übertragung von Grundeigentum."
+   },
+   "order": 34,
+   "poster": "/img/events/turk-medeni-kanununun-100-yili-sempozyumu-hasan-kalyoncu-universitesi-2026.jpg",
+   "posterW": 849,
+   "posterH": 1200
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "konuk"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [
+    "Sefa Kabaalioğlu (moderatör)",
+    "Av. Şimal Melike Tol"
+   ],
+   "organizers": [
+    "Kanal 12"
+   ],
+   "areaSlugs": [
+    "devre-mulk-ve-devre-tatil-hukuku",
+    "tuketici-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "20:00",
+   "endTime": "",
+   "published": true,
+   "slug": "tuketici-bilinci-devre-tatil-kanal-12-2026",
+   "type": "tv",
+   "date": "2026-04-13",
+   "title": {
+    "tr": "Sefa Kabaalioğlu ile Tüketici Bilinci: Devre Tatil Alanların Bilmesi Gereken Kritik Gerçekler",
+    "en": "Consumer Awareness with Sefa Kabaalioğlu: What Timeshare Buyers Need to Know",
+    "de": "Verbraucherbewusstsein mit Sefa Kabaalioğlu: Was Timesharing-Käufer wissen müssen"
+   },
+   "venue": {
+    "tr": "Kanal 12 — canlı yayın (Digiturk 606. kanal)",
+    "en": "Kanal 12 — live broadcast (Digiturk channel 606)",
+    "de": "Kanal 12 — Live-Sendung (Digiturk Kanal 606)"
+   },
+   "summary": {
+    "tr": "Kanal 12'de canlı yayın: Prof. Dr. Etem Sabâ Özmen, devre tatil alanların bilmesi gerekenleri Sefa Kabaalioğlu'nun programında anlattı.",
+    "en": "Live on Kanal 12: Prof. Dr. Etem Sabâ Özmen explained what timeshare buyers need to know, on Sefa Kabaalioğlu's programme.",
+    "de": "Live auf Kanal 12: Prof. Dr. Etem Sabâ Özmen erklärte in der Sendung von Sefa Kabaalioğlu, was Timesharing-Käufer wissen müssen."
+   },
+   "body": {
+    "tr": "Tüketici Bilinci programının canlı yayınında Prof. Dr. Etem Sabâ Özmen ve Av. Şimal Melike Tol, devre tatil sözleşmelerinde tüketicinin hakları, cayma hakkı ve uygulamada sık karşılaşılan sorunlar hakkında bilgi verdi.",
+    "en": "On the live broadcast of the Consumer Awareness programme, Prof. Dr. Etem Sabâ Özmen and Av. Şimal Melike Tol explained consumers' rights under timeshare-holiday contracts, the right of withdrawal and the problems most often met in practice.",
+    "de": "In der Live-Sendung erläuterten Prof. Dr. Etem Sabâ Özmen und Av. Şimal Melike Tol die Rechte von Verbrauchern bei Timesharing-Verträgen, das Widerrufsrecht und häufige Probleme in der Praxis."
+   },
+   "order": 33,
+   "poster": "/img/events/tuketici-bilinci-devre-tatil-kanal-12-2026.jpg",
+   "posterW": 1200,
+   "posterH": 1200
+  },
+  {
+   "format": "cevrimici",
+   "roles": [
+    "egitmen"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "Hukukeğitim"
+   ],
+   "areaSlugs": [
+    "gayrimenkul-hukuku-ve-kentsel-donusum"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "20:30",
+   "endTime": "22:30",
+   "published": true,
+   "slug": "payli-mulkiyette-yasal-onalim-hakkinin-kullanilmasi-2026",
+   "type": "webinar",
+   "date": "2026-03-18",
+   "title": {
+    "tr": "Son Değişiklikler Çerçevesinde Paylı Mülkiyette Yasal Önalım Hakkının Kullanılmasına İlişkin Hüküm ve Sonuçlar",
+    "en": "Exercising the Statutory Pre-emption Right in Co-ownership after the Latest Amendments",
+    "de": "Ausübung des gesetzlichen Vorkaufsrechts beim Miteigentum nach den jüngsten Änderungen"
+   },
+   "venue": {
+    "tr": "Hukukeğitim (çevrimiçi)",
+    "en": "Hukukeğitim (online)",
+    "de": "Hukukeğitim (online)"
+   },
+   "summary": {
+    "tr": "Ücretsiz çevrimiçi eğitim: son değişiklikler çerçevesinde paylı mülkiyette yasal önalım (şufa) hakkının kullanılması ve sonuçları.",
+    "en": "Free online course on exercising the statutory pre-emption right in co-owned property after the latest amendments.",
+    "de": "Kostenloser Online-Kurs zur Ausübung des gesetzlichen Vorkaufsrechts beim Miteigentum nach den jüngsten Änderungen."
+   },
+   "body": {
+    "tr": "120 dakikalık eğitimde paylı mülkiyette paydaşlara tanınan yasal önalım hakkının kullanılma şartları, süreleri ve son yasal değişikliklerin bu hakka etkisi ele alındı. Eğitimin kaydı Hukukeğitim'de izlenebilmektedir.",
+    "en": "The 120-minute course covered the conditions and time limits for co-owners to exercise the statutory pre-emption right and the effect of the latest statutory amendments. A recording is available on Hukukeğitim.",
+    "de": "Der 120-minütige Kurs behandelte Voraussetzungen und Fristen des gesetzlichen Vorkaufsrechts der Miteigentümer und die Folgen der jüngsten Gesetzesänderungen. Eine Aufzeichnung ist bei Hukukeğitim abrufbar."
+   },
+   "order": 32,
+   "poster": "/img/events/payli-mulkiyette-yasal-onalim-hakkinin-kullanilmasi-2026.jpg",
+   "posterW": 1080,
+   "posterH": 1080
+  },
+  {
+   "format": "cevrimici",
+   "roles": [
+    "egitmen"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "Hukukeğitim"
+   ],
+   "areaSlugs": [
+    "kamulastirma-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "20:30",
+   "endTime": "22:30",
+   "published": true,
+   "slug": "son-aym-kararlari-kamulastirma-iptal-talepleri-bedel-tespiti-davasi-2026",
+   "type": "webinar",
+   "date": "2026-03-10",
+   "title": {
+    "tr": "Son AYM Kararları Doğrultusunda Kamulaştırma İşlemine İlişkin İptal Taleplerinin Kamulaştırma Bedelinin Tespiti Davasına Etkileri",
+    "en": "Effect of Annulment Claims against Expropriation on Valuation Proceedings, in Light of Recent Constitutional Court Decisions",
+    "de": "Auswirkungen von Anfechtungsbegehren gegen Enteignungen auf das Entschädigungsverfahren im Licht neuer Verfassungsgerichtsentscheidungen"
+   },
+   "venue": {
+    "tr": "Hukukeğitim (çevrimiçi)",
+    "en": "Hukukeğitim (online)",
+    "de": "Hukukeğitim (online)"
+   },
+   "summary": {
+    "tr": "Ücretsiz çevrimiçi eğitim: son AYM kararları ışığında kamulaştırmaya karşı iptal taleplerinin asliye hukukta görülen bedel tespiti davasına etkisi.",
+    "en": "Free online course on how annulment claims against expropriation affect valuation actions in the civil courts, after recent Constitutional Court rulings.",
+    "de": "Kostenloser Online-Kurs: Anfechtung von Enteignungen und ihre Wirkung auf Entschädigungsklagen nach neueren Verfassungsgerichtsentscheidungen."
+   },
+   "body": {
+    "tr": "120 dakikalık eğitimde, Anayasa Mahkemesi'nin son kararları doğrultusunda idari yargıda ileri sürülen iptal taleplerinin asliye hukuk mahkemesinde görülen kamulaştırma bedelinin tespiti ve tescil davası üzerindeki etkileri ele alındı. Eğitimin kaydı Hukukeğitim'de izlenebilmektedir.",
+    "en": "The 120-minute course examined how annulment claims brought in the administrative courts affect the valuation-and-registration action heard by the civil courts, in light of recent Constitutional Court decisions. A recording is available on Hukukeğitim.",
+    "de": "Der 120-minütige Kurs behandelte, wie verwaltungsgerichtliche Anfechtungsbegehren das zivilgerichtliche Verfahren zur Festsetzung der Enteignungsentschädigung beeinflussen. Eine Aufzeichnung ist bei Hukukeğitim abrufbar."
+   },
+   "order": 31,
+   "poster": "/img/events/son-aym-kararlari-kamulastirma-iptal-talepleri-bedel-tespiti-davasi-2026.jpg",
+   "posterW": 1080,
+   "posterH": 1080
+  },
+  {
+   "format": "cevrimici",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "SİYÖMDER — Site Yöneticileri ve Müdürleri Yardımlaşma ve Dayanışma Derneği"
+   ],
+   "areaSlugs": [
+    "kat-mulkiyeti-hukuku",
+    "toplu-yapilarda-yonetim-plani"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "20:00",
+   "endTime": "22:00",
+   "published": true,
+   "slug": "kat-mulkiyeti-kanununda-yapilan-duzenlemelere-yonelik-elestiriler-siyomder-2026",
+   "type": "webinar",
+   "date": "2026-01-13",
+   "title": {
+    "tr": "Kat Mülkiyeti Kanunu'nda Yapılan Düzenlemelere Yönelik Eleştiriler ve Çözüm Önerileri — SİYÖMDER",
+    "en": "Critique of the Amendments to the Condominium Law and Proposed Solutions — SİYÖMDER",
+    "de": "Kritik an den Änderungen des Wohnungseigentumsgesetzes und Lösungsvorschläge — SİYÖMDER"
+   },
+   "venue": {
+    "tr": "Zoom (çevrimiçi)",
+    "en": "Zoom (online)",
+    "de": "Zoom (online)"
+   },
+   "summary": {
+    "tr": "SİYÖMDER Eğitim Akademisi'nin çevrimiçi toplantısında Kat Mülkiyeti Kanunu'ndaki düzenlemeler eleştirel olarak değerlendirildi.",
+    "en": "Online session of the SİYÖMDER academy for site managers, critically assessing the amendments to the Condominium Law.",
+    "de": "Online-Sitzung der SİYÖMDER-Akademie für Wohnanlagenverwalter zur kritischen Bewertung der Änderungen des Wohnungseigentumsgesetzes."
+   },
+   "body": {
+    "tr": "Site yöneticileri ve müdürlerine yönelik toplantıda Prof. Dr. Etem Sabâ Özmen, 634 sayılı Kat Mülkiyeti Kanunu'nda yapılan son düzenlemelerin uygulamada yarattığı sorunları ve çözüm önerilerini anlattı.",
+    "en": "Speaking to site and building managers, Prof. Dr. Etem Sabâ Özmen set out the practical problems created by recent amendments to Condominium Law No. 634 and proposed solutions.",
+    "de": "Vor Verwaltern von Wohnanlagen erläuterte Prof. Dr. Etem Sabâ Özmen die praktischen Probleme der jüngsten Änderungen des Wohnungseigentumsgesetzes Nr. 634 und Lösungsvorschläge."
+   },
+   "order": 30,
+   "poster": "/img/events/kat-mulkiyeti-kanununda-yapilan-duzenlemelere-yonelik-elestiriler-siyomder-2026.jpg",
+   "posterW": 851,
+   "posterH": 1200
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen",
+    "tugba-kaya-filizoglu"
+   ],
+   "talks": [],
+   "speakers": [
+    "Av. Nuran Dinç Akgün (moderatör)"
+   ],
+   "organizers": [
+    "İstanbul Barosu Kat Mülkiyeti Hukuku Komisyonu"
+   ],
+   "areaSlugs": [
+    "kat-mulkiyeti-hukuku",
+    "toplu-yapilarda-yonetim-plani"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "18:00",
+   "endTime": "",
+   "published": true,
+   "slug": "kat-mulkiyeti-hukukunda-guncel-sorunlar-istanbul-barosu-kmh-komisyonu-2025",
+   "type": "konferans",
+   "date": "2025-12-17",
+   "city": "İstanbul",
+   "title": {
+    "tr": "Kat Mülkiyeti Hukuku'nda Güncel Sorunlar — İstanbul Barosu KMH Komisyonu",
+    "en": "Current Issues in Condominium Law — Istanbul Bar Condominium Law Commission",
+    "de": "Aktuelle Fragen des Wohnungseigentumsrechts — Kommission der Anwaltskammer Istanbul"
+   },
+   "venue": {
+    "tr": "İstanbul Barosu Konferans Salonu",
+    "en": "Istanbul Bar Association Conference Hall",
+    "de": "Konferenzsaal der Anwaltskammer Istanbul"
+   },
+   "summary": {
+    "tr": "İstanbul Barosu KMH Komisyonu genel üye toplantısında Prof. Dr. Etem Sabâ Özmen ve Av. Tuğba Kaya Filizoğlu kat mülkiyetindeki güncel sorunları anlattı.",
+    "en": "At the Istanbul Bar Condominium Law Commission meeting, Prof. Dr. Etem Sabâ Özmen and Av. Tuğba Kaya Filizoğlu discussed current condominium issues.",
+    "de": "Kommission für Wohnungseigentumsrecht, Anwaltskammer Istanbul: Prof. Dr. Etem Sabâ Özmen und Av. Tuğba Kaya Filizoğlu zu aktuellen Fragen."
+   },
+   "body": {
+    "tr": "İstanbul Barosu Kat Mülkiyeti Hukuku Komisyonu'nun genel üye toplantısı oturumunda Prof. Dr. Etem Sabâ Özmen ve ortağımız Av. Tuğba Kaya Filizoğlu, kat mülkiyeti hukukundaki güncel uyuşmazlıklara ilişkin değerlendirmelerini paylaştı ve soruları yanıtladı. Açılış konuşmasını Av. Mehmedali Barış Beşli yaptı, oturumu Av. Nuran Dinç Akgün yönetti.",
+    "en": "At a session of the Istanbul Bar Condominium Law Commission's general meeting, Prof. Dr. Etem Sabâ Özmen and our partner Av. Tuğba Kaya Filizoğlu shared their assessment of current condominium disputes and answered questions. The session was opened by Av. Mehmedali Barış Beşli and moderated by Av. Nuran Dinç Akgün.",
+    "de": "In einer Sitzung der Mitgliederversammlung der Kommission für Wohnungseigentumsrecht der Anwaltskammer Istanbul stellten Prof. Dr. Etem Sabâ Özmen und unsere Partnerin Av. Tuğba Kaya Filizoğlu ihre Einschätzung aktueller Streitfragen vor und beantworteten Fragen."
+   },
+   "order": 29,
+   "poster": "/img/events/kat-mulkiyeti-hukukunda-guncel-sorunlar-istanbul-barosu-kmh-komisyonu-2025.jpg",
+   "posterW": 1200,
+   "posterH": 1200
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "egitmen"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "İstanbul Arel Üniversitesi Sürekli Eğitim Merkezi (ARELSEM)"
+   ],
+   "areaSlugs": [
+    "kat-mulkiyeti-hukuku",
+    "toplu-yapilarda-yonetim-plani"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "2025-12-13",
+   "startTime": "",
+   "endTime": "",
+   "published": true,
+   "slug": "kat-mulkiyeti-mevzuatindan-kaynakli-nitelikli-hesaplamalar-arelsem-2025",
+   "type": "egitim",
+   "date": "2025-12-06",
+   "city": "İstanbul",
+   "title": {
+    "tr": "Kat Mülkiyeti Mevzuatından Kaynaklı Nitelikli Hesaplamalar Eğitimi — ARELSEM",
+    "en": "Qualified Calculations under Condominium Legislation — Istanbul Arel University Training",
+    "de": "Istanbul-Arel-Universität: Qualifizierte Berechnungen im Wohnungseigentumsrecht"
+   },
+   "venue": {
+    "tr": "İstanbul Arel Üniversitesi Cevizlibağ Yerleşkesi",
+    "en": "Istanbul Arel University Cevizlibağ Campus",
+    "de": "Istanbul-Arel-Universität, Campus Cevizlibağ"
+   },
+   "summary": {
+    "tr": "İstanbul Arel Üniversitesi ARELSEM'de 24 saatlik eğitim: kat mülkiyeti mevzuatından kaynaklı nitelikli hesaplamalar (6, 7 ve 13 Aralık 2025).",
+    "en": "A 24-hour course at Istanbul Arel University's continuing-education centre on calculations under condominium law (6, 7 and 13 December 2025).",
+    "de": "24-stündiger Kurs an der Istanbul-Arel-Universität zu Berechnungen im Wohnungseigentumsrecht (6., 7. und 13. Dezember 2025)."
+   },
+   "body": {
+    "tr": "6, 7 ve 13 Aralık 2025 tarihlerinde yapılan 24 saatlik programda, kat mülkiyetinde arsa payı, ortak gider ve avans dağılımı ile yönetim planına dayalı hesaplamalar uygulamalı olarak işlendi.",
+    "en": "Held on 6, 7 and 13 December 2025 over 24 hours, the programme worked through land-share, common-expense and advance calculations and those based on the management plan.",
+    "de": "An drei Tagen (6., 7. und 13. Dezember 2025) mit 24 Stunden wurden Berechnungen zu Grundstücksanteilen, gemeinsamen Kosten, Vorschüssen und dem Verwaltungsplan praktisch erarbeitet."
+   },
+   "order": 28,
+   "poster": "/img/events/kat-mulkiyeti-mevzuatindan-kaynakli-nitelikli-hesaplamalar-arelsem-2025.jpg",
+   "posterW": 960,
+   "posterH": 1200
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [
+    {
+     "tr": "Hatalı İsimlendirmeyle \"Tapu İptal\" Tabiri Altında Farklılaşan Dava Türleri ve Usul Hukuku Açısından Sonuçları",
+     "en": "Actions Wrongly Labelled 'Land Registry Cancellation': the Distinct Types and their Procedural Consequences",
+     "de": "Fälschlich als 'Grundbuchlöschung' bezeichnete Klagen: die verschiedenen Arten und ihre prozessualen Folgen"
+    },
+    {
+     "tr": "Kamulaştırma Hukuku Esasları",
+     "en": "Principles of Expropriation Law",
+     "de": "Grundsätze des Enteignungsrechts"
+    }
+   ],
+   "speakers": [
+    "Av. Baran Ortaboy (moderatör)",
+    "Doç. Dr. Müge Ürem Nokay",
+    "Hâkim Dr. Murat Nokay"
+   ],
+   "organizers": [
+    "Batman Barosu"
+   ],
+   "areaSlugs": [
+    "gayrimenkul-hukuku-ve-kentsel-donusum",
+    "kamulastirma-hukuku",
+    "kadastro-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "## 10:30–11:10 | 1. Oturum\n- Prof. Dr. Etem Sabâ Özmen (Maltepe Üniversitesi Özel Hukuk Anabilim Dalı Başkanı) — Hatalı İsimlendirmeyle \"Tapu İptal\" Tabiri Altında Farklılaşan Dava Türleri ve Usul Hukuku Açısından Sonuçları\n## 11:20–11:45 | 2. Oturum\n- Doç. Dr. Müge Ürem Nokay (İstanbul Sabahattin Zaim Üniversitesi) — 2025 Yılındaki YİBBGK Kararıyla \"Avans Tapu\" İçtihadından Dönülmesine Bağlı Sonuçlar\n## 11:45–12:10 | 3. Oturum\n- Hâkim Dr. Murat Nokay (İstanbul Anadolu 2. Asliye Ticaret Mahkemesi) — Borç İlişkilerinin Kaynaklarına Dayalı \"Taleplerin Yarışması\" Bağlamında Aynî Neticeli Davalar\n## 13:30–17:00 | 4. Oturum\n- Prof. Dr. Etem Sabâ Özmen — Kamulaştırma Hukuku Esasları",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "10:30",
+   "endTime": "17:00",
+   "published": true,
+   "slug": "tasinmaz-hukuku-sempozyumu-batman-barosu-2025",
+   "type": "sempozyum",
+   "date": "2025-11-01",
+   "city": "Batman",
+   "title": {
+    "tr": "Taşınmaz Hukuku Sempozyumu — Batman Barosu",
+    "en": "Real Property Law Symposium — Batman Bar Association",
+    "de": "Symposium zum Immobilienrecht — Anwaltskammer Batman"
+   },
+   "venue": {
+    "tr": "Batman Barosu Av. Tahir Elçi Konferans Salonu",
+    "en": "Batman Bar Association, Av. Tahir Elçi Conference Hall",
+    "de": "Anwaltskammer Batman, Konferenzsaal Av. Tahir Elçi"
+   },
+   "summary": {
+    "tr": "Batman Barosu Taşınmaz Hukuku Sempozyumu'nda Prof. Dr. Etem Sabâ Özmen \"tapu iptal\" davaları ve kamulaştırma hukuku üzerine iki oturum yaptı.",
+    "en": "At the Batman Bar real property symposium, Prof. Dr. Etem Sabâ Özmen gave two sessions: on 'title cancellation' actions and on expropriation law.",
+    "de": "Beim Immobilienrechtssymposium der Anwaltskammer Batman gestaltete Prof. Dr. Etem Sabâ Özmen zwei Sitzungen zu Grundbuchklagen und Enteignungsrecht."
+   },
+   "body": {
+    "tr": "Av. Baran Ortaboy'un moderatörlüğündeki sempozyumda Doç. Dr. Müge Ürem Nokay \"avans tapu\" içtihadından dönülmesinin sonuçlarını, Hâkim Dr. Murat Nokay ise taleplerin yarışması bağlamında aynî neticeli davaları anlattı.",
+    "en": "Moderated by Av. Baran Ortaboy, the symposium also heard Assoc. Prof. Dr. Müge Ürem Nokay on the consequences of abandoning the 'advance title deed' case law and Judge Dr. Murat Nokay on in-rem actions in the context of competing claims.",
+    "de": "Unter der Moderation von Av. Baran Ortaboy sprachen außerdem Doç. Dr. Müge Ürem Nokay über die Abkehr von der 'Vorschuss-Grundbuch'-Rechtsprechung und Richter Dr. Murat Nokay über dingliche Klagen im Rahmen der Anspruchskonkurrenz."
+   },
+   "order": 27,
+   "poster": "/img/events/tasinmaz-hukuku-sempozyumu-batman-barosu-2025.jpg",
+   "posterW": 828,
+   "posterH": 1098
+  },
+  {
+   "format": "cevrimici",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [
+    {
+     "tr": "\"Avans Tapu\" Konulu İçtihatlardan Dönülmesi Yolunda İçtihadı Birleştirme Kararından Yeniden Dönülmesi Gerekliliği Yolunda Düşünceler",
+     "en": "Why the Unifying Decision Abandoning the 'Advance Title Deed' Case Law Should Itself Be Revisited",
+     "de": "Überlegungen, warum die Vereinheitlichungsentscheidung zur Abkehr von der 'Vorschuss-Grundbuch'-Rechtsprechung erneut überdacht werden sollte"
+    }
+   ],
+   "speakers": [],
+   "organizers": [
+    "Hukukeğitim",
+    "Tüketici Hukuku Enstitüsü"
+   ],
+   "areaSlugs": [
+    "gayrimenkul-hukuku-ve-kentsel-donusum",
+    "sozlesmeler-hukuku",
+    "insaat-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "2025-10-25",
+   "startTime": "",
+   "endTime": "",
+   "published": true,
+   "slug": "vi-borclar-hukuku-kongresi-avans-tapu-ictihadi-2025",
+   "type": "kongre",
+   "date": "2025-10-23",
+   "title": {
+    "tr": "VI. Borçlar Hukuku Kongresi — 3. Oturum: Taşınmaz Hukuku",
+    "en": "6th Congress of the Law of Obligations — Session 3: Real Property Law",
+    "de": "6. Kongress zum Schuldrecht — 3. Sitzung: Immobilienrecht"
+   },
+   "venue": {
+    "tr": "Hukukeğitim (çevrimiçi)",
+    "en": "Hukukeğitim (online)",
+    "de": "Hukukeğitim (online)"
+   },
+   "summary": {
+    "tr": "VI. Borçlar Hukuku Kongresi'nde Prof. Dr. Etem Sabâ Özmen, \"avans tapu\" içtihadından dönen İBK kararının yeniden değerlendirilmesini önerdi.",
+    "en": "At the 6th Congress of the Law of Obligations, Prof. Dr. Etem Sabâ Özmen argued for revisiting the unifying decision on 'advance title deeds'.",
+    "de": "Beim 6. Schuldrechtskongress plädierte Prof. Dr. Etem Sabâ Özmen dafür, die Vereinheitlichungsentscheidung zum 'Vorschuss-Grundbuch' zu überdenken."
+   },
+   "body": {
+    "tr": "Hukukeğitim ve Tüketici Hukuku Enstitüsü'nün düzenlediği kongrenin taşınmaz hukuku oturumunda Prof. Dr. Etem Sabâ Özmen, arsa payı karşılığı inşaat sözleşmelerinde yükleniciye henüz edimini ifa etmeden yapılan \"avans tapu\" devirlerine ilişkin 2025 tarihli içtihadı birleştirme kararını eleştirel olarak değerlendirdi. Oturum 24 Ekim 2025'te çevrimiçi gerçekleşti.",
+    "en": "In the real property session of the congress organised by Hukukeğitim and the Consumer Law Institute, Prof. Dr. Etem Sabâ Özmen critically assessed the 2025 unifying decision on 'advance' transfers of title to contractors who have not yet performed under land-share-for-construction contracts. The session took place online on 24 October 2025.",
+    "de": "In der Immobilienrechtssitzung des von Hukukeğitim und dem Institut für Verbraucherrecht veranstalteten Kongresses bewertete Prof. Dr. Etem Sabâ Özmen kritisch die Vereinheitlichungsentscheidung von 2025 zu vorzeitigen Eigentumsübertragungen an Bauunternehmer. Die Sitzung fand am 24. Oktober 2025 online statt."
+   },
+   "order": 26,
+   "poster": "/img/events/vi-borclar-hukuku-kongresi-avans-tapu-ictihadi-2025.jpg",
+   "posterW": 597,
+   "posterH": 925
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [
+    "Av. Ayça Yakupoğlu"
+   ],
+   "organizers": [
+    "TMMOB Mimarlar Odası İstanbul Büyükkent Şubesi",
+    "Anadolu II. Büyükkent Bölge Temsilciliği"
+   ],
+   "areaSlugs": [
+    "imar-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "Feyzullah Mah. Kartallı Sk. No: 9 Maltepe / İstanbul",
+   "link": "",
+   "endDate": "",
+   "startTime": "19:00",
+   "endTime": "",
+   "published": true,
+   "slug": "imar-hakki-aktarimi-esaslari-soylesi-mimarlar-odasi-2025",
+   "type": "soylesi",
+   "date": "2025-10-16",
+   "city": "İstanbul",
+   "title": {
+    "tr": "Söyleşi: İmar Hakkı Aktarımı Esasları — Mimarlar Odası",
+    "en": "Talk: Principles of Transferring Development Rights — Chamber of Architects",
+    "de": "Gespräch: Grundsätze der Übertragung von Baurechten — Architektenkammer"
+   },
+   "venue": {
+    "tr": "TMMOB Mimarlar Odası Anadolu II. Büyükkent Bölge Temsilciliği",
+    "en": "Chamber of Architects (TMMOB), Anatolia II Metropolitan Regional Office",
+    "de": "Architektenkammer (TMMOB), Regionalvertretung Anadolu II"
+   },
+   "summary": {
+    "tr": "Mimarlar Odası İstanbul Büyükkent Şubesi'nde imar hakkı aktarımı üzerine söyleşi: Prof. Dr. Etem Sabâ Özmen ve Av. Ayça Yakupoğlu.",
+    "en": "A talk on transferring development rights at the Istanbul branch of the Chamber of Architects, with Prof. Dr. Etem Sabâ Özmen and Av. Ayça Yakupoğlu.",
+    "de": "Gespräch zur Übertragung von Baurechten bei der Istanbuler Architektenkammer mit Prof. Dr. Etem Sabâ Özmen und Av. Ayça Yakupoğlu."
+   },
+   "body": {
+    "tr": "Mimarlar ve hukukçuları bir araya getiren söyleşide imar hakkı aktarımının esasları, planlama ve mülkiyet hakkı açısından değerlendirildi.",
+    "en": "Bringing architects and lawyers together, the talk examined the principles of transferring development rights from the perspectives of planning and property rights.",
+    "de": "Das Gespräch brachte Architekten und Juristen zusammen und beleuchtete die Baurechtsübertragung aus Sicht von Planung und Eigentumsrecht."
+   },
+   "order": 25,
+   "poster": "/img/events/imar-hakki-aktarimi-esaslari-soylesi-mimarlar-odasi-2025.jpg",
+   "posterW": 1080,
+   "posterH": 1080
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [
+    "Av. Ayça Yakupoğlu (kolaylaştırıcı)"
+   ],
+   "organizers": [
+    "İstanbul Barosu Çevre Kent ve İmar Hukuku Komisyonu"
+   ],
+   "areaSlugs": [
+    "imar-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "18:00",
+   "endTime": "",
+   "published": true,
+   "slug": "imar-hakki-aktarimi-esaslari-istanbul-barosu-2025",
+   "type": "konferans",
+   "date": "2025-10-10",
+   "city": "İstanbul",
+   "title": {
+    "tr": "İmar Hakkı Aktarımı Esasları — İstanbul Barosu",
+    "en": "Principles of Transferring Development Rights — Istanbul Bar Association",
+    "de": "Grundsätze der Übertragung von Baurechten — Anwaltskammer Istanbul"
+   },
+   "venue": {
+    "tr": "İstanbul Barosu Konferans Salonu",
+    "en": "Istanbul Bar Association Conference Hall",
+    "de": "Konferenzsaal der Anwaltskammer Istanbul"
+   },
+   "summary": {
+    "tr": "İstanbul Barosu Çevre Kent ve İmar Hukuku Komisyonu'nun programında Prof. Dr. Etem Sabâ Özmen imar hakkı aktarımının esaslarını anlattı.",
+    "en": "At an Istanbul Bar Environment, City and Zoning Law Commission event, Prof. Dr. Etem Sabâ Özmen set out the principles of transferring development rights.",
+    "de": "Anwaltskammer Istanbul, Kommission für Stadt- und Baurecht: Prof. Dr. Etem Sabâ Özmen erläuterte die Grundsätze der Übertragung von Baurechten."
+   },
+   "body": {
+    "tr": "Av. Ayça Yakupoğlu'nun kolaylaştırıcılığında yapılan programda, imar hakkı aktarımına ilişkin mevzuat, hak sahipliğinin belirlenmesi ve aktarım sürecinde ortaya çıkan hukuki sorunlar ele alındı.",
+    "en": "Facilitated by Av. Ayça Yakupoğlu, the session covered the legislation on transferring development rights, how entitlement is established and the legal problems that arise during the transfer.",
+    "de": "Unter der Moderation von Av. Ayça Yakupoğlu ging es um die Rechtsgrundlagen der Baurechtsübertragung, die Feststellung der Berechtigten und Rechtsfragen im Übertragungsverfahren."
+   },
+   "order": 24,
+   "poster": "/img/events/imar-hakki-aktarimi-esaslari-istanbul-barosu-2025.jpg",
+   "posterW": 1200,
+   "posterH": 1200
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "Eskişehir Barosu",
+    "Eskişehir Barosu Eğitim, Kültür, Sanat ve Spor Komisyonu"
+   ],
+   "areaSlugs": [
+    "insaat-hukuku",
+    "sozlesmeler-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "14:00",
+   "endTime": "",
+   "published": true,
+   "slug": "arsa-payi-karsiligi-insaat-sozlesmesinin-sona-erdirilmesi-ibk-eskisehir-barosu-2025",
+   "type": "seminer",
+   "date": "2025-10-03",
+   "city": "Eskişehir",
+   "title": {
+    "tr": "Arsa Payı Karşılığı İnşaat Sözleşmesinin Taraflarca Sona Erdirilmesi ve Son İBK Kararına Bağlı Sonuçlar",
+    "en": "Termination of Land-Share-for-Construction Contracts by the Parties and the Latest Unification-of-Judgments Decision",
+    "de": "Beendigung des Bauleistungsvertrags gegen Grundstücksanteil durch die Parteien und die jüngste Entscheidung zur Rechtsprechungsvereinheitlichung"
+   },
+   "venue": {
+    "tr": "Eskişehir Barosu Hizmet Binası, Av. Cemre Parmaksız Konferans Salonu",
+    "en": "Eskişehir Bar Association Building, Av. Cemre Parmaksız Conference Hall",
+    "de": "Gebäude der Anwaltskammer Eskişehir, Konferenzsaal Av. Cemre Parmaksız"
+   },
+   "summary": {
+    "tr": "Eskişehir Barosu semineri: arsa payı karşılığı inşaat sözleşmesinin sona erdirilmesi ve Yargıtay'ın son içtihadı birleştirme kararının sonuçları.",
+    "en": "Eskişehir Bar seminar on terminating land-share-for-construction contracts and the effects of the Court of Cassation's latest unifying decision.",
+    "de": "Seminar der Anwaltskammer Eskişehir zur Beendigung von Bauleistungsverträgen gegen Grundstücksanteil und zur jüngsten Vereinheitlichungsentscheidung."
+   },
+   "body": {
+    "tr": "Seminerde arsa sahibi ve yüklenicinin sözleşmeyi sona erdirme yolları ile Yargıtay İçtihadı Birleştirme Büyük Genel Kurulu'nun 2025 tarihli kararının üçüncü kişilere yapılan devirler ve tapu kayıtları üzerindeki etkileri değerlendirildi.",
+    "en": "The seminar reviewed how landowner and contractor may bring the contract to an end, and the effect of the 2025 decision of the Court of Cassation's Grand General Assembly on Unification of Judgments on transfers to third parties and on the land register.",
+    "de": "Behandelt wurden die Wege zur Vertragsbeendigung für Grundstückseigentümer und Bauunternehmer sowie die Auswirkungen der Entscheidung der Großen Generalversammlung des Kassationshofs von 2025 auf Übertragungen an Dritte und das Grundbuch."
+   },
+   "order": 23,
+   "poster": "/img/events/arsa-payi-karsiligi-insaat-sozlesmesinin-sona-erdirilmesi-ibk-eskisehir-barosu-2025.jpg",
+   "posterW": 960,
+   "posterH": 1200
+  },
+  {
+   "format": "cevrimici",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [
+    "Av. Mikail Enes Çuban (moderatör)"
+   ],
+   "organizers": [
+    "Gayrimenkul Hukuku Derneği (GHD)"
+   ],
+   "areaSlugs": [
+    "imar-hukuku",
+    "gayrimenkul-hukuku-ve-kentsel-donusum"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "20:00",
+   "endTime": "22:00",
+   "published": true,
+   "slug": "imar-hakki-transferi-webinar-gayrimenkul-hukuku-dernegi-2025",
+   "type": "webinar",
+   "date": "2025-09-22",
+   "title": {
+    "tr": "İmar Hakkı Transferi — Gayrimenkul Hukuku Derneği Webinarı",
+    "en": "Transfer of Development Rights — Real Estate Law Association Webinar",
+    "de": "Übertragung von Baurechten — Webinar des Vereins für Immobilienrecht"
+   },
+   "venue": {
+    "tr": "Zoom (çevrimiçi)",
+    "en": "Zoom (online)",
+    "de": "Zoom (online)"
+   },
+   "summary": {
+    "tr": "Gayrimenkul Hukuku Derneği webinarında Prof. Dr. Etem Sabâ Özmen imar hakkı transferini anlattı; moderatör Av. Mikail Enes Çuban.",
+    "en": "Real Estate Law Association webinar in which Prof. Dr. Etem Sabâ Özmen explained the transfer of development rights.",
+    "de": "Webinar des Vereins für Immobilienrecht: Prof. Dr. Etem Sabâ Özmen erläuterte die Übertragung von Baurechten."
+   },
+   "body": {
+    "tr": "Webinarda, imar planıyla kısıtlanan taşınmazlar için öngörülen imar hakkı transferi (aktarımı) kurumunun hukuki esasları ve uygulamadaki sorunları ele alındı.",
+    "en": "The webinar dealt with the legal basis and practical problems of transferring development rights from plots restricted by zoning plans.",
+    "de": "Das Webinar behandelte Rechtsgrundlagen und Praxisprobleme der Übertragung von Baurechten bei Grundstücken, die durch Bebauungspläne beschränkt sind."
+   },
+   "order": 22,
+   "poster": "/img/events/imar-hakki-transferi-webinar-gayrimenkul-hukuku-dernegi-2025.jpg",
+   "posterW": 1052,
+   "posterH": 1071
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "egitmen"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [
+    "Dr. Öğr. Üyesi Hande Deniz (eğitim koordinatörü)"
+   ],
+   "organizers": [
+    "Doğuş Üniversitesi Sürekli Eğitim Uygulama ve Araştırma Merkezi (DOUSEM)"
+   ],
+   "areaSlugs": [
+    "kat-mulkiyeti-hukuku",
+    "toplu-yapilarda-yonetim-plani"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "2025-09-21",
+   "startTime": "",
+   "endTime": "",
+   "published": true,
+   "slug": "kat-mulkiyeti-mevzuatindan-kaynaklanan-nitelikli-hesaplamalar-dousem-2025",
+   "type": "egitim",
+   "date": "2025-09-18",
+   "city": "İstanbul",
+   "title": {
+    "tr": "Kat Mülkiyeti Mevzuatından Kaynaklanan Nitelikli Hesaplamalar Eğitimi — DOUSEM",
+    "en": "Qualified Calculations under Condominium Legislation — Doğuş University Training",
+    "de": "Doğuş-Universität: Qualifizierte Berechnungen im Wohnungseigentumsrecht"
+   },
+   "venue": {
+    "tr": "Doğuş Üniversitesi Çengelköy Kampüsü",
+    "en": "Doğuş University Çengelköy Campus",
+    "de": "Doğuş-Universität, Campus Çengelköy"
+   },
+   "summary": {
+    "tr": "Doğuş Üniversitesi DOUSEM'de 24 saatlik eğitim: kat mülkiyeti mevzuatından doğan nitelikli hesaplamalar; eğitmen Prof. Dr. Etem Sabâ Özmen.",
+    "en": "A 24-hour course at Doğuş University's continuing-education centre on qualified calculations under condominium law.",
+    "de": "24-stündiger Kurs am Weiterbildungszentrum der Doğuş-Universität zu Berechnungen im Wohnungseigentumsrecht."
+   },
+   "body": {
+    "tr": "Dört gün süren 24 saatlik programda arsa payı, ortak gider ve avans paylaşımı, yönetim planı ve kat mülkiyeti uyuşmazlıklarında ihtiyaç duyulan hesaplamalar uygulamalı olarak işlendi.",
+    "en": "Over four days and 24 hours, the programme worked through the calculations needed in condominium matters — land shares, allocation of common expenses and advances, management plans and related disputes.",
+    "de": "In vier Tagen und 24 Stunden wurden die im Wohnungseigentum benötigten Berechnungen praktisch erarbeitet — Grundstücksanteile, Verteilung gemeinsamer Kosten und Vorschüsse, Verwaltungspläne und Streitfälle."
+   },
+   "order": 21,
+   "poster": "/img/events/kat-mulkiyeti-mevzuatindan-kaynaklanan-nitelikli-hesaplamalar-dousem-2025.jpg",
+   "posterW": 848,
+   "posterH": 1200
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [
+    {
+     "tr": "Kentsel Dönüşümde Kat Mülkiyeti Uygulamaları, Sınırlı Aynî Haklar ve Şerhler",
+     "en": "Condominium Practice, Limited Real Rights and Annotations in Urban Regeneration",
+     "de": "Wohnungseigentum, beschränkte dingliche Rechte und Vormerkungen in der Stadterneuerung"
+    }
+   ],
+   "speakers": [],
+   "organizers": [
+    "İstanbul Barosu Meslek İçi Eğitim Merkezi",
+    "İstanbul Barosu Çevre Kent ve İmar Hukuku Komisyonu"
+   ],
+   "areaSlugs": [
+    "gayrimenkul-hukuku-ve-kentsel-donusum",
+    "kat-mulkiyeti-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "## 28 Haziran 2025 Cumartesi, 10:00–12:00 | 1. Oturum | Açılış: Av. Gülay Çolak Çalışkan (Çevre Kent ve İmar Hukuku Komisyonu Başkanı)\n- Av. Serkan Çakmaklı — Riskli Yapılar, Riskli Alanlar ve Rezerv Yapı Alanlarında Uygulama İşlemleri (kolaylaştırıcı: Av. Yasin Ataç)\n## 12:15–13:15 | 2. Oturum\n- Mimar Ayper Urlu (TMMOB İstanbul Büyükkent Şubesi Anadolu 1 BKBT Yönetim Kurulu Üyesi) — Kentsel Dönüşümde Arsa Payının Önemi (kolaylaştırıcı: Av. Yasin Ataç)\n## 14:00–15:30 | 3. Oturum\n- Dr. Öğr. Üyesi Kürşad Yağcı (İstanbul Üniversitesi Hukuk Fakültesi) — Uygulamada 6306 Sayılı Kanun Kapsamında Yaşanan Mülkiyet Hakkı İhlalleri ve Tartışmalar (kolaylaştırıcı: Av. Sezen Tekin)\n## 15:45–17:00 | 4. Oturum\n- Prof. Dr. Erol Köktürk — 6306 Sayılı Yasanın ve Uygulamaların Yarattığı Güvensizlikler (kolaylaştırıcı: Av. Sezen Tekin)\n## 29 Haziran 2025 Pazar, 10:30–12:30 | 1. Oturum\n- Prof. Dr. Etem Sabâ Özmen — Kentsel Dönüşümde Kat Mülkiyeti Uygulamaları, Sınırlı Aynî Haklar ve Şerhler (kolaylaştırıcı: Av. Ayça Yakupoğlu)\n## 13:30–16:00 | 2. Oturum | Kentsel Dönüşümde Belediyelerin Rolü\n- Av. Ali Rıza İlgezdi (Eyüpsultan Belediyesi Kentsel Dönüşüm Müdürü)\n- Mimar Bihterin Güven (Kadıköy Belediyesi Eski İmar Müdürü)",
+   "address": "",
+   "link": "",
+   "endDate": "2025-06-29",
+   "startTime": "",
+   "endTime": "",
+   "published": true,
+   "slug": "hukukculara-yonelik-kentsel-donusum-uygulamalari-egitim-programi-istanbul-barosu-2025",
+   "type": "egitim",
+   "date": "2025-06-28",
+   "city": "İstanbul",
+   "title": {
+    "tr": "Hukukçulara Yönelik Eğitim Programı: Kentsel Dönüşüm Uygulamaları",
+    "en": "Training Programme for Lawyers: Urban Regeneration in Practice",
+    "de": "Fortbildungsprogramm für Juristen: Stadterneuerung in der Praxis"
+   },
+   "venue": {
+    "tr": "İstanbul Barosu Konferans Salonu",
+    "en": "Istanbul Bar Association Conference Hall",
+    "de": "Konferenzsaal der Anwaltskammer Istanbul"
+   },
+   "summary": {
+    "tr": "İstanbul Barosu'nun iki günlük kentsel dönüşüm eğitiminde Prof. Dr. Etem Sabâ Özmen kat mülkiyeti, sınırlı aynî haklar ve şerhleri anlattı.",
+    "en": "In the Istanbul Bar's two-day urban regeneration course, Prof. Dr. Etem Sabâ Özmen covered condominium practice, limited real rights and annotations.",
+    "de": "Zweitägiger Stadterneuerungskurs der Anwaltskammer Istanbul: Prof. Dr. Etem Sabâ Özmen zu Wohnungseigentum, dinglichen Rechten und Vormerkungen."
+   },
+   "body": {
+    "tr": "İstanbul Barosu Meslek İçi Eğitim Merkezi ile Çevre Kent ve İmar Hukuku Komisyonu'nun iki günlük programında riskli yapılar, arsa payı, 6306 sayılı Kanun uygulaması ve belediyelerin rolü ele alındı. Prof. Dr. Etem Sabâ Özmen ikinci günün ilk oturumunda konuştu. Katılım sınırlıydı ve dijital sertifika verildi.",
+    "en": "The Istanbul Bar's two-day programme covered risky buildings, land shares, the application of Law No. 6306 and the role of municipalities. Prof. Dr. Etem Sabâ Özmen spoke in the first session of day two. Places were limited; participants received a digital certificate.",
+    "de": "Das zweitägige Programm der Anwaltskammer Istanbul behandelte gefährdete Gebäude, Grundstücksanteile, die Anwendung des Gesetzes Nr. 6306 und die Rolle der Kommunen. Prof. Dr. Etem Sabâ Özmen sprach in der ersten Sitzung des zweiten Tages."
+   },
+   "order": 20,
+   "poster": "/img/events/hukukculara-yonelik-kentsel-donusum-uygulamalari-egitim-programi-istanbul-barosu-2025.jpg",
+   "posterW": 848,
+   "posterH": 1200
+  },
+  {
+   "format": "cevrimici",
+   "roles": [
+    "egitmen"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "Hukukeğitim"
+   ],
+   "areaSlugs": [
+    "kamulastirma-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "19:00",
+   "endTime": "",
+   "published": true,
+   "slug": "kamulastirma-kanunu-10-xiv-ve-14-son-fikra-iptaline-bagli-sonuclar-2025",
+   "type": "webinar",
+   "date": "2025-05-21",
+   "title": {
+    "tr": "Kamulaştırma Kanunu 10/XIV ve 14/Son Fıkra Hükümlerinin İptaline Bağlı Sonuçlar",
+    "en": "Consequences of the Annulment of Articles 10(14) and 14 (Final Paragraph) of the Expropriation Law",
+    "de": "Folgen der Aufhebung von Art. 10 Abs. 14 und Art. 14 letzter Absatz des Enteignungsgesetzes"
+   },
+   "venue": {
+    "tr": "Hukukeğitim (çevrimiçi)",
+    "en": "Hukukeğitim (online)",
+    "de": "Hukukeğitim (online)"
+   },
+   "summary": {
+    "tr": "Ücretsiz çevrimiçi eğitim: Anayasa Mahkemesi'nin Kamulaştırma Kanunu 10/XIV ve 14/son fıkrayı iptal etmesinin sonuçları.",
+    "en": "Free online course on the consequences of the Constitutional Court annulling Articles 10(14) and 14 (final paragraph) of the Expropriation Law.",
+    "de": "Kostenloser Online-Kurs zu den Folgen der Aufhebung von Bestimmungen des Enteignungsgesetzes durch das Verfassungsgericht."
+   },
+   "body": {
+    "tr": "Eğitimde, 2942 sayılı Kamulaştırma Kanunu'nun 10. maddesinin on dördüncü fıkrası ile 14. maddesinin son fıkrasının iptalinin, kamulaştırma bedelinin tespiti ve iptal davaları üzerindeki etkileri değerlendirildi.",
+    "en": "The course assessed the effect of annulling the fourteenth paragraph of Article 10 and the final paragraph of Article 14 of Expropriation Law No. 2942 on valuation proceedings and annulment actions.",
+    "de": "Bewertet wurden die Auswirkungen der Aufhebung von Art. 10 Abs. 14 und Art. 14 letzter Absatz des Enteignungsgesetzes Nr. 2942 auf Entschädigungs- und Anfechtungsverfahren."
+   },
+   "order": 19,
+   "poster": "/img/events/kamulastirma-kanunu-10-xiv-ve-14-son-fikra-iptaline-bagli-sonuclar-2025.jpg",
+   "posterW": 1200,
+   "posterH": 675
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "konusmaci",
+    "oturum-baskani",
+    "bilim-kurulu"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [
+    {
+     "tr": "Sorumluluk Hukuku Açısından Borcun Kaynaklarına Dayalı Taleplerin Yarışma Esasları",
+     "en": "Principles Governing Competing Claims Based on Different Sources of Obligation in Liability Law",
+     "de": "Grundsätze der Anspruchskonkurrenz aus verschiedenen Schuldquellen im Haftungsrecht"
+    }
+   ],
+   "speakers": [],
+   "organizers": [
+    "İstanbul Gedik Üniversitesi Hukuk Fakültesi"
+   ],
+   "areaSlugs": [
+    "sozlesmeler-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "## 10:15–10:30 | Açılış Konuşması\n- Prof. Dr. Korkut Kanadoğlu (İstanbul Gedik Üniversitesi Hukuk Fakültesi)\n## 10:30–12:00 | Birinci Oturum | Oturum Başkanı: Prof. Dr. Etem Sabâ Özmen\n- Prof. Dr. Ahmet Başözen (İstanbul Gedik Üniversitesi) — Sorumluluk Hukukunda İspat Güçlüklerinin Aşılması Bağlamında İlk Görünüş İspatının Uygulanması\n- Doç. Dr. Hülya Atlan Gürer (İstanbul Gedik Üniversitesi) — Beden Bütünlüğünün İhlali Nedeniyle Ekonomik Geleceğin Sarsılmasından Doğan Zararların Tazmini\n- Dr. Öğr. Üyesi Elif Yavuz (İstanbul Aydın Üniversitesi) — Ev Başkanının Sorumluluğu\n- Dr. Öğr. Üyesi Mazlum Doğan (İstanbul Gedik Üniversitesi) — Haksız Fiil Hukukuna Hukuk ve Ekonomi Akımı Tarafından Yüklenen Anlamın Eleştirisi\n## 13:00–14:10 | İkinci Oturum | Oturum Başkanı: Prof. Dr. Halûk Nami Nomer\n- Prof. Dr. Etem Sabâ Özmen (Maltepe Üniversitesi) — Sorumluluk Hukuku Açısından Borcun Kaynaklarına Dayalı Taleplerin Yarışma Esasları\n- Dr. Öğr. Üyesi Güray Türker (Okan Üniversitesi) — Tam Otonom Araçlar ve Karayolu Kazalarından Doğan Hukuki Sorumluluk\n- Hâkim Murat Nokay (İstanbul Anadolu 1. Asliye Ticaret Mahkemesi) — Dava Sebebi ve Hukuki Sebep Kavramlarının Borcun Kaynaklarına Dayalı Taleplerin Yarışması Kapsamında Görünümleri\n## 14:30–16:00 | Üçüncü Oturum | Oturum Başkanı: Em. Hâkim Ahmet Özgan (Yargıtay 11. Hukuk Dairesi Onursal Başkanı)\n- Prof. Dr. Kerim Atamer (İstanbul Gedik Üniversitesi) — Türk Ticaret Kanunu Uyarınca Sorumluluk Sigortalarında Tazminat Alacaklısı\n- Prof. Dr. Melek Bilgin Yüce (Maltepe Üniversitesi) — TBK m.114/II Atfıyla Borca Aykırılık Hâlinde Tazminatın Hesabında Uygulanacak Hükümlerin Değerlendirilmesi\n- Dr. Öğr. Üyesi Can Göksoy (Dokuz Eylül Üniversitesi) — Kamuyu Aydınlatma Belgelerinden Sorumlulukta İlliyet Bağı Konusunda ABD Hukukunda Kabul Edilen 'Fraud on the Market' Teorisi ve Türk Sermaye Piyasası Hukukundaki Etkileri\n- Dr. Onur Gürer (Piri Reis Üniversitesi) — Vakıf (Özel) Üniversitesi Akademik Personelinin Sözleşmesinin Yenilenmemesi Nedeniyle Talep Ettiği Maddi ve Manevi Tazminatın Belirlenmesinde Yaşanan Sorunlara İlişkin Bir İnceleme",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "10:15",
+   "endTime": "16:00",
+   "published": true,
+   "slug": "sorumluluk-hukuku-sempozyumu-istanbul-gedik-universitesi-2025",
+   "type": "sempozyum",
+   "date": "2025-03-21",
+   "city": "İstanbul",
+   "title": {
+    "tr": "Sorumluluk Hukuku Sempozyumu",
+    "en": "Symposium on Liability Law",
+    "de": "Symposium zum Haftungsrecht"
+   },
+   "venue": {
+    "tr": "İstanbul Anadolu Adliyesi Şehit Murat Uzun Konferans Salonu (E Blok Zemin Kat)",
+    "en": "Istanbul Anatolian Courthouse, Şehit Murat Uzun Conference Hall (Block E, ground floor)",
+    "de": "Justizgebäude Istanbul-Anadolu, Konferenzsaal Şehit Murat Uzun (Block E, Erdgeschoss)"
+   },
+   "summary": {
+    "tr": "İstanbul Gedik Üniversitesi sempozyumunda Prof. Dr. Etem Sabâ Özmen bilim kurulunda yer aldı, oturum yönetti ve taleplerin yarışmasını anlattı.",
+    "en": "At Istanbul Gedik University's symposium Prof. Dr. Etem Sabâ Özmen sat on the scientific committee, chaired a session and spoke on competing claims.",
+    "de": "Symposium der Gedik-Universität: Prof. Dr. Etem Sabâ Özmen im wissenschaftlichen Beirat, als Sitzungsleiter und mit einem Vortrag zur Anspruchskonkurrenz."
+   },
+   "body": {
+    "tr": "İstanbul Gedik Üniversitesi Hukuk Fakültesi'nin düzenlediği sempozyumda Prof. Dr. Etem Sabâ Özmen bilim kurulu üyesiydi; birinci oturuma başkanlık etti ve ikinci oturumda borcun kaynaklarına dayalı taleplerin yarışmasına ilişkin tebliğini sundu.",
+    "en": "At the symposium organised by Istanbul Gedik University Faculty of Law, Prof. Dr. Etem Sabâ Özmen served on the scientific committee, chaired the first session and presented his paper on competing claims in the second.",
+    "de": "Beim Symposium der Juristischen Fakultät der Istanbul-Gedik-Universität gehörte Prof. Dr. Etem Sabâ Özmen dem wissenschaftlichen Beirat an, leitete die erste Sitzung und trug in der zweiten Sitzung zur Anspruchskonkurrenz vor."
+   },
+   "order": 18,
+   "poster": "/img/events/sorumluluk-hukuku-sempozyumu-istanbul-gedik-universitesi-2025.jpg",
+   "posterW": 848,
+   "posterH": 1200
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "konusmaci",
+    "oturum-baskani"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [
+    {
+     "tr": "Tüketicinin Korunması Hakkında Kanunun Devreli Tatil Düzenlemesinin Garabetine İlişkin Hüküm ve Sonuçlar",
+     "en": "The Anomaly of the Timeshare-Holiday Provisions in the Consumer Protection Law: Rules and Consequences",
+     "de": "Die Ungereimtheit der Timesharing-Regelung im Verbraucherschutzgesetz: Regeln und Folgen"
+    }
+   ],
+   "speakers": [],
+   "organizers": [
+    "İstanbul Arel Üniversitesi",
+    "Tüketici Örgütleri Konfederasyonu (TÖK)",
+    "Bahçeşehir Üniversitesi"
+   ],
+   "areaSlugs": [
+    "tuketici-hukuku",
+    "devre-mulk-ve-devre-tatil-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "## 9:30–9:45 | Açılış Konuşmaları\n- Prof. Dr. Bahtışen Kavak (Arel Üniversitesi MYO Müdürü)\n- Prof. Dr. K. Emre Gökyayla (Bahçeşehir Üniversitesi Hukuk Fakültesi)\n- Fuat Engin (Tüketici Örgütleri Konfederasyonu Genel Başkanı)\n## 9:45–11:00 | 1. Oturum | Başkan: Prof. Dr. Kadir Emre Gökyayla\n- Prof. Dr. Etem Sabâ Özmen (Maltepe Üniversitesi Hukuk Fakültesi) — Tüketicinin Korunması Hakkında Kanunun Devreli Tatil Düzenlemesinin Garabetine İlişkin Hüküm ve Sonuçlar\n- Doç. Dr. Meliha Sermin Paksoy — Velilerin Özel Okul ile İmtihanı\n- Dr. Öğr. Üyesi Dilşah Buşra Kartal (Kocaeli Üniversitesi) — Elektronik Haberleşme Abonelik Sözleşmesinin Tüketici Tarafından Feshi\n- Ar. Gör. İlkin Demirtaş (Bahçeşehir Üniversitesi) — Airbnb Kira Sözleşmelerinin Uygulama Alanı\n## 11:15–12:15 | 2. Oturum | Başkan: Prof. Dr. Etem Sabâ Özmen\n- Prof. Dr. Şebnem Akipek Öcal (TED Üniversitesi) — Doğrudan Satışlar\n- Fuat Engin (TÖK) — Tüketici Uyuşmazlıklarında Hak Arama Yolları\n- Dr. Öğr. Üyesi Seda Baş (Samsun Üniversitesi) — Bankanın Mevduat Üzerinde Hapis Hakkını Kullanıp Kullanamayacağı Üzerine Bir Değerlendirme\n- Av. Dr. M. Emir Üstündağ (İstanbul Barosu) — Tüketici Hukuku Perspektifinden Tacir\n- Fevzi Yiğit Çakı (Altınbaş Üniversitesi) — Yanıltıcı Reklamlar Yoluyla Tüketiciye Karşı Ayıplı İfada Bulunulması Halinde Tüketicinin Başvurabileceği Kanun Hükümlerinin Değerlendirilmesi\n## 13:30–15:00 | 3. Oturum | Başkan: Prof. Dr. Aslı Makaracı Başak\n- Prof. Dr. Murat Topuz (Marmara Üniversitesi) — Mukayeseli Hukukta Piramit Satış (Ponzi Şeması-Saadet Zinciri)\n- Dr. Öğr. Üyesi Funda Çelebi (Maltepe Üniversitesi) — Tüketici Hukukunda Sözleşme Yapma Zorunluluğu\n- Ar. Gör. Nihal Özkardeş (Bahçeşehir Üniversitesi) — Kamu Hizmeti İlkelerinden Bedelsizlik İlkesi\n- Av. Arb. Hande Yavşan Güvendik (İstanbul Barosu) — Tüketici Hakem Heyeti ve Dava Şartı Arabuluculuğa Başvuru Usullerinin Değerlendirilmesi\n## 15:15–17:00 | 4. Oturum | Başkan: Fuat Engin\n- Prof. Dr. Ebru Ceylan (İstanbul Aydın Üniversitesi) — Kredi Kartı Sözleşmesinin Şartlarıyla İlgili 5464 Sayılı Banka ve Kredi Kartları Kanunundaki Düzenlemelerin Tüketicilerin Korunması Bakımından Değerlendirilmesi\n- Dr. Öğr. Üyesi Pelin Işıntan (MEF Üniversitesi) — Tüketicinin Sosyal Medya Etkileyicileri Tarafından Yapılan Reklamlara Karşı Korunması\n- Dr. Öğr. Üyesi Gözde Zeytin Çağrı (İstanbul Arel Üniversitesi) — Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği Kapsamında Gıda Hakkında Bilgilendirme\n- Öğr. Gör. Hümeyra Duman Kılıç (İstanbul Arel Üniversitesi) — Yapay Zekâ Destekli Satış ve Reklamların Tüketici Hakları Üzerine Etkileri: Aldatıcı Ticari Uygulamalar ve Hukuki Koruma\n17:00 — Sertifika takdimi",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "09:00",
+   "endTime": "17:00",
+   "published": true,
+   "slug": "2-tuketici-hukukunun-guncel-sorunlari-sempozyumu-2025",
+   "type": "sempozyum",
+   "date": "2025-03-14",
+   "city": "İstanbul",
+   "title": {
+    "tr": "2. Tüketici Hukukunun Güncel Sorunları Sempozyumu",
+    "en": "2nd Symposium on Current Issues in Consumer Law",
+    "de": "2. Symposium zu aktuellen Fragen des Verbraucherrechts"
+   },
+   "venue": {
+    "tr": "Bahçeşehir Üniversitesi Beşiktaş Yerleşkesi, Fazıl Say Salonu",
+    "en": "Bahçeşehir University Beşiktaş Campus, Fazıl Say Hall",
+    "de": "Bahçeşehir-Universität, Campus Beşiktaş, Fazıl-Say-Saal"
+   },
+   "summary": {
+    "tr": "Prof. Dr. Etem Sabâ Özmen sempozyumda devreli tatil düzenlemesine ilişkin tebliğ sundu ve ikinci oturuma başkanlık etti.",
+    "en": "Prof. Dr. Etem Sabâ Özmen presented a paper on the timeshare-holiday rules and chaired the second session of the symposium.",
+    "de": "Prof. Dr. Etem Sabâ Özmen hielt einen Vortrag zur Timesharing-Regelung und leitete die zweite Sitzung des Symposiums."
+   },
+   "body": {
+    "tr": "İstanbul Arel Üniversitesi, Tüketici Örgütleri Konfederasyonu ve Bahçeşehir Üniversitesi'nin düzenlediği sempozyumda Prof. Dr. Etem Sabâ Özmen birinci oturumda 6502 sayılı Kanun'daki devre tatil düzenlemesini değerlendirdi, ikinci oturumu ise yönetti. Katılım ücretsizdi; katılımcılara sertifika verildi.",
+    "en": "At the symposium organised by Istanbul Arel University, the Confederation of Consumer Organisations and Bahçeşehir University, Prof. Dr. Etem Sabâ Özmen assessed the timeshare-holiday provisions of Law No. 6502 in the first session and chaired the second. Attendance was free, with certificates for participants.",
+    "de": "Beim Symposium der Istanbul-Arel-Universität, des Verbraucherverbände-Dachverbands und der Bahçeşehir-Universität bewertete Prof. Dr. Etem Sabâ Özmen in der ersten Sitzung die Timesharing-Regelung des Gesetzes Nr. 6502 und leitete die zweite Sitzung. Die Teilnahme war kostenlos."
+   },
+   "order": 17,
+   "poster": "/img/events/2-tuketici-hukukunun-guncel-sorunlari-sempozyumu-2025.jpg",
+   "posterW": 739,
+   "posterH": 1050
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [
+    {
+     "tr": "İnşa Halinde Bağımsız Bölüm Satışında (Pay ve Kat İrtifakına Konu) Taşınmaz Mülkiyeti Devri ve Eser Edimlerinin Birlikte Borçlanılması",
+     "en": "Sale of Units under Construction: Joint Obligation to Transfer Ownership (Shares and Floor Easements) and to Perform Construction Work",
+     "de": "Verkauf von Einheiten im Bau: gemeinsame Verpflichtung zur Eigentumsübertragung (Anteile und Stockwerksdienstbarkeit) und zur Werkleistung"
+    }
+   ],
+   "speakers": [
+    "Prof. Dr. Cevdet Yavuz (oturum başkanı)",
+    "Prof. Dr. Turgut Öz",
+    "Prof. Dr. Emrehan İnal",
+    "Prof. Dr. Umut Yeniocak"
+   ],
+   "organizers": [
+    "Hukukeğitim",
+    "Yeditepe Üniversitesi Hukuk Fakültesi",
+    "Tüketici Hukuku Enstitüsü"
+   ],
+   "areaSlugs": [
+    "sozlesmeler-hukuku",
+    "insaat-hukuku",
+    "kat-mulkiyeti-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "## 3. Oturum | Taşınmaz Sözleşmeleri | Oturum Başkanı: Prof. Dr. Cevdet Yavuz\n- Prof. Dr. Etem Sabâ Özmen — İnşa Halinde Bağımsız Bölüm Satışında (Pay ve Kat İrtifakına Konu) Taşınmaz Mülkiyeti Devri ve Eser Edimlerinin Birlikte Borçlanılması\n- Prof. Dr. Turgut Öz — Noterde Taşınmaz Satışı\n- Prof. Dr. Emrehan İnal — Gelir Paylaşımlı İnşaat Sözleşmelerinde Alıcı-Üçüncü Kişilerin Hukuki Durumu\n- Prof. Dr. Umut Yeniocak — Gelir Paylaşımına Dayalı İnşaat Sözleşmesinin Uyarlanması",
+   "address": "",
+   "link": "",
+   "endDate": "2024-10-26",
+   "startTime": "",
+   "endTime": "",
+   "published": true,
+   "slug": "v-borclar-hukuku-kongresi-tasinmaz-sozlesmeleri-oturumu-2024",
+   "type": "kongre",
+   "date": "2024-10-24",
+   "title": {
+    "tr": "V. Borçlar Hukuku Kongresi — 3. Oturum: Taşınmaz Sözleşmeleri",
+    "en": "5th Congress of the Law of Obligations — Session 3: Real Property Contracts",
+    "de": "5. Kongress zum Schuldrecht — 3. Sitzung: Immobilienverträge"
+   },
+   "venue": {
+    "tr": "V. Borçlar Hukuku Kongresi",
+    "en": "5th Congress of the Law of Obligations",
+    "de": "5. Schuldrechtskongress"
+   },
+   "summary": {
+    "tr": "V. Borçlar Hukuku Kongresi'nin taşınmaz sözleşmeleri oturumunda Prof. Dr. Etem Sabâ Özmen inşa halinde bağımsız bölüm satışını anlattı.",
+    "en": "In the real property contracts session of the 5th Congress of the Law of Obligations, Prof. Dr. Etem Sabâ Özmen spoke on sales of units under construction.",
+    "de": "In der Sitzung Immobilienverträge des 5. Schuldrechtskongresses sprach Prof. Dr. Etem Sabâ Özmen über den Verkauf von Einheiten im Bau."
+   },
+   "body": {
+    "tr": "Hukukeğitim, Yeditepe Üniversitesi Hukuk Fakültesi ve Tüketici Hukuku Enstitüsü'nün düzenlediği kongrenin Prof. Dr. Cevdet Yavuz başkanlığındaki 3. oturumu taşınmaz sözleşmelerine ayrıldı.",
+    "en": "Organised by Hukukeğitim, Yeditepe University Faculty of Law and the Consumer Law Institute, the congress devoted its third session, chaired by Prof. Dr. Cevdet Yavuz, to real property contracts.",
+    "de": "Der von Hukukeğitim, der Juristischen Fakultät der Yeditepe-Universität und dem Institut für Verbraucherrecht veranstaltete Kongress widmete seine dritte Sitzung unter Leitung von Prof. Dr. Cevdet Yavuz den Immobilienverträgen."
+   },
+   "order": 16,
+   "poster": "/img/events/v-borclar-hukuku-kongresi-tasinmaz-sozlesmeleri-oturumu-2024.jpg",
+   "posterW": 1080,
+   "posterH": 1080
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "Eskişehir Barosu"
+   ],
+   "areaSlugs": [
+    "gayrimenkul-hukuku-ve-kentsel-donusum",
+    "kadastro-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "14:00",
+   "endTime": "",
+   "published": true,
+   "slug": "tasinmaza-yonelik-ayni-neticeli-talepler-tapu-iptal-davasi-eskisehir-barosu-2024",
+   "type": "seminer",
+   "date": "2024-09-27",
+   "city": "Eskişehir",
+   "title": {
+    "tr": "Taşınmaza Yönelik Aynî Neticeli Talepler ve Uygulamada Yanlış Tabir ile Tapu İptal Davası Başlığı Altında Farklılaşan Dava Türleri",
+    "en": "In-rem Claims over Real Property and the Distinct Actions Wrongly Grouped as 'Land Registry Cancellation'",
+    "de": "Dingliche Ansprüche an Grundstücken und die fälschlich unter 'Grundbuchberichtigungsklage' zusammengefassten Klagearten"
+   },
+   "venue": {
+    "tr": "Eskişehir Barosu Hizmet Binası",
+    "en": "Eskişehir Bar Association Building",
+    "de": "Gebäude der Anwaltskammer Eskişehir"
+   },
+   "summary": {
+    "tr": "Eskişehir Barosu semineri: uygulamada \"tapu iptal davası\" diye anılan, aslında farklı nitelikteki aynî neticeli dava türleri.",
+    "en": "Eskişehir Bar seminar on the different in-rem actions that practice lumps together under the label 'land registry cancellation'.",
+    "de": "Seminar der Anwaltskammer Eskişehir zu den verschiedenen dinglichen Klagen, die die Praxis als 'Grundbuchlöschungsklage' bezeichnet."
+   },
+   "body": {
+    "tr": "Seminerde, tescilin düzeltilmesi, tapu iptali ve tescil, tapu tahsis belgesine dayalı talepler gibi birbirinden farklı sonuç ve şartlara sahip davaların tek başlık altında toplanmasının usul ve esas bakımından doğurduğu sorunlar incelendi.",
+    "en": "The seminar looked at the procedural and substantive problems caused by treating actions with different requirements and effects — rectification of the register, cancellation and registration, and similar claims — as a single type.",
+    "de": "Das Seminar untersuchte die verfahrens- und materiellrechtlichen Probleme, die entstehen, wenn Klagen mit unterschiedlichen Voraussetzungen und Wirkungen — etwa Berichtigung, Löschung und Eintragung — als eine Klageart behandelt werden."
+   },
+   "order": 15,
+   "poster": "/img/events/tasinmaza-yonelik-ayni-neticeli-talepler-tapu-iptal-davasi-eskisehir-barosu-2024.jpg",
+   "posterW": 699,
+   "posterH": 1200
+  },
+  {
+   "format": "cevrimici",
+   "roles": [
+    "egitmen"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "Hukukeğitim",
+    "AristoOFFICE"
+   ],
+   "areaSlugs": [
+    "kooperatifler-hukuku",
+    "imar-hukuku",
+    "tuketici-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "19:00",
+   "endTime": "",
+   "published": true,
+   "slug": "arazilerde-bungalov-tiny-house-pay-satisi-kooperatif-uyeligi-2024",
+   "type": "webinar",
+   "date": "2024-05-08",
+   "title": {
+    "tr": "Arazilerde Bungalov / Tiny House Özgüleme İçeriği ile Pay Satışı veya Kooperatif Üyeliği Pazarlamasında Yatırımcıları Bekleyen Sıkıntılar",
+    "en": "Risks for Investors in Land Shares or Cooperative Memberships Marketed for Bungalows and Tiny Houses",
+    "de": "Risiken für Anleger beim Verkauf von Grundstücksanteilen oder Genossenschaftsanteilen für Bungalows und Tiny Houses"
+   },
+   "venue": {
+    "tr": "Hukukeğitim (çevrimiçi)",
+    "en": "Hukukeğitim (online)",
+    "de": "Hukukeğitim (online)"
+   },
+   "summary": {
+    "tr": "Ücretsiz çevrimiçi eğitim: bungalov/tiny house vaadiyle arazi payı veya kooperatif üyeliği satışında yatırımcıların karşılaştığı riskler.",
+    "en": "Free online course on the risks investors face when land shares or cooperative memberships are sold with a bungalow or tiny-house promise.",
+    "de": "Kostenloser Online-Kurs zu Anlegerrisiken beim Verkauf von Grundstücks- oder Genossenschaftsanteilen mit Bungalow-Versprechen."
+   },
+   "body": {
+    "tr": "Eğitimde, tarım ve orman niteliğindeki arazilerde belirli bir alanın bungalov veya tiny house için özgüleneceği vaadiyle yapılan paylı mülkiyet ve kooperatif üyeliği satışlarının imar, tapu ve kooperatif hukuku bakımından doğurduğu riskler anlatıldı.",
+    "en": "The course set out the zoning, land-registry and cooperative-law risks of sales of co-ownership shares or cooperative memberships in agricultural or forest land marketed with the promise that a plot will be allocated for a bungalow or tiny house.",
+    "de": "Erläutert wurden die bau-, grundbuch- und genossenschaftsrechtlichen Risiken, wenn Miteigentums- oder Genossenschaftsanteile an Agrar- oder Waldflächen mit dem Versprechen einer Parzelle für Bungalow oder Tiny House verkauft werden."
+   },
+   "order": 14,
+   "poster": "/img/events/arazilerde-bungalov-tiny-house-pay-satisi-kooperatif-uyeligi-2024.jpg",
+   "posterW": 720,
+   "posterH": 420
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "egitmen"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [
+    "Doç. Dr. Gülşah Vardar Hamamcıoğlu",
+    "Prof. Dr. Melek Bilgin Yüce"
+   ],
+   "organizers": [
+    "Maltepe Üniversitesi Hukuk Fakültesi",
+    "Maltepe Üniversitesi Hukuk Mentorluğu"
+   ],
+   "areaSlugs": [
+    "gayrimenkul-hukuku-ve-kentsel-donusum",
+    "kat-mulkiyeti-hukuku",
+    "insaat-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "## 4 Mayıs 2024, 18:00–20:00\n- Prof. Dr. Etem Sabâ Özmen\n## 11 Mayıs 2024, 18:00–20:00\n- Doç. Dr. Gülşah Vardar Hamamcıoğlu\n## 18 Mayıs 2024, 18:00–20:00\n- Prof. Dr. Melek Bilgin Yüce",
+   "address": "",
+   "link": "",
+   "endDate": "2024-05-18",
+   "startTime": "18:00",
+   "endTime": "20:00",
+   "published": true,
+   "slug": "gayrimenkul-hukuku-sertifika-programi-maltepe-universitesi-2024",
+   "type": "egitim",
+   "date": "2024-05-04",
+   "city": "İstanbul",
+   "title": {
+    "tr": "Gayrimenkul Hukuku Sertifika Programı",
+    "en": "Certificate Programme in Real Estate Law",
+    "de": "Zertifikatsprogramm Immobilienrecht"
+   },
+   "venue": {
+    "tr": "Maltepe Üniversitesi Hukuk Fakültesi, Amfi I",
+    "en": "Maltepe University Faculty of Law, Lecture Hall I",
+    "de": "Juristische Fakultät der Maltepe-Universität, Hörsaal I"
+   },
+   "summary": {
+    "tr": "Maltepe Üniversitesi Hukuk Fakültesi'nin üç haftalık Gayrimenkul Hukuku Sertifika Programı; ilk oturumun eğitmeni Prof. Dr. Etem Sabâ Özmen.",
+    "en": "Maltepe University Faculty of Law's three-week certificate programme in real estate law; first session taught by Prof. Dr. Etem Sabâ Özmen.",
+    "de": "Dreiwöchiges Zertifikatsprogramm Immobilienrecht der Maltepe-Universität; die erste Einheit leitete Prof. Dr. Etem Sabâ Özmen."
+   },
+   "body": {
+    "tr": "Üç cumartesi günü süren programın 4 Mayıs oturumunu Prof. Dr. Etem Sabâ Özmen, 11 Mayıs oturumunu Doç. Dr. Gülşah Vardar Hamamcıoğlu, 18 Mayıs oturumunu Prof. Dr. Melek Bilgin Yüce verdi. Tüm oturumlara katılanlara sertifika verildi.",
+    "en": "The programme ran over three Saturdays: Prof. Dr. Etem Sabâ Özmen taught on 4 May, Assoc. Prof. Dr. Gülşah Vardar Hamamcıoğlu on 11 May and Prof. Dr. Melek Bilgin Yüce on 18 May. Participants attending all sessions received a certificate.",
+    "de": "Das Programm lief an drei Samstagen: Prof. Dr. Etem Sabâ Özmen am 4. Mai, Doç. Dr. Gülşah Vardar Hamamcıoğlu am 11. Mai und Prof. Dr. Melek Bilgin Yüce am 18. Mai. Wer alle Einheiten besuchte, erhielt ein Zertifikat."
+   },
+   "order": 13,
+   "poster": "/img/events/gayrimenkul-hukuku-sertifika-programi-maltepe-universitesi-2024.jpg",
+   "posterW": 1200,
+   "posterH": 1200
+  },
+  {
+   "format": "cevrimici",
+   "roles": [
+    "egitmen"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "Hukukeğitim",
+    "AristoOFFICE"
+   ],
+   "areaSlugs": [
+    "devre-mulk-ve-devre-tatil-hukuku",
+    "kat-mulkiyeti-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "19:00",
+   "endTime": "",
+   "published": true,
+   "slug": "devre-mulk-emlak-vergisi-muafiyeti-7464-sayili-kanun-gunubirlik-kiralama-2024",
+   "type": "webinar",
+   "date": "2024-04-24",
+   "title": {
+    "tr": "Devre Mülk Hakkının Emeklinin Emlak Vergisi Muafiyetini Kaldırması ve 7464 Sayılı Kanun Uyarınca Günübirlik Kiralanmasına Dayalı Yanılgılar",
+    "en": "Timeshare Rights: Loss of Pensioners' Property-Tax Exemption and Short-term Letting under Law No. 7464",
+    "de": "Timesharing: Verlust der Grundsteuerbefreiung für Rentner und Kurzzeitvermietung nach Gesetz Nr. 7464"
+   },
+   "venue": {
+    "tr": "Hukukeğitim (çevrimiçi)",
+    "en": "Hukukeğitim (online)",
+    "de": "Hukukeğitim (online)"
+   },
+   "summary": {
+    "tr": "Ücretsiz çevrimiçi eğitim: devre mülkün emeklinin emlak vergisi muafiyetine etkisi ve 7464 sayılı Kanun'a göre günübirlik kiralama.",
+    "en": "Free online course: how a timeshare affects a pensioner's property-tax exemption, and short-term letting under Law No. 7464.",
+    "de": "Kostenloser Online-Kurs: Timesharing, Grundsteuerbefreiung für Rentner und Kurzzeitvermietung nach Gesetz Nr. 7464."
+   },
+   "body": {
+    "tr": "Eğitimde devre mülk hakkı sahibi emeklilerin tek konut emlak vergisi muafiyetini kaybetmesi sorunu ile 7464 sayılı Kanun'la düzenlenen konutların turizm amaçlı kiralanması kurallarının devre mülke uygulanması ele alındı.",
+    "en": "The course addressed the question of pensioners with a timeshare losing their single-dwelling property-tax exemption, and how the rules on letting homes for tourism introduced by Law No. 7464 apply to timeshares.",
+    "de": "Behandelt wurden der Verlust der Grundsteuerbefreiung für Rentner mit Timesharing-Recht und die Anwendung der durch Gesetz Nr. 7464 eingeführten Regeln zur touristischen Vermietung auf Timesharing."
+   },
+   "order": 12,
+   "poster": "/img/events/devre-mulk-emlak-vergisi-muafiyeti-7464-sayili-kanun-gunubirlik-kiralama-2024.jpg",
+   "posterW": 720,
+   "posterH": 420
+  },
+  {
+   "format": "cevrimici",
+   "roles": [
+    "egitmen"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "Hukukeğitim",
+    "AristoOFFICE"
+   ],
+   "areaSlugs": [
+    "insaat-hukuku",
+    "sozlesmeler-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "19:00",
+   "endTime": "",
+   "published": true,
+   "slug": "gelir-hasilat-paylasimli-tasinmaz-sozlesmesi-yanilgilar-2024",
+   "type": "webinar",
+   "date": "2024-04-17",
+   "title": {
+    "tr": "Gelir (Hasılat) Paylaşımlı Taşınmaz Sözleşmesi Yapılmasına Bağlı Yanılgılar",
+    "en": "Misconceptions in Revenue-Sharing Real Property Contracts",
+    "de": "Irrtümer beim Abschluss von Immobilienverträgen mit Erlösbeteiligung"
+   },
+   "venue": {
+    "tr": "Hukukeğitim (çevrimiçi)",
+    "en": "Hukukeğitim (online)",
+    "de": "Hukukeğitim (online)"
+   },
+   "summary": {
+    "tr": "Ücretsiz çevrimiçi eğitim: gelir (hasılat) paylaşımlı taşınmaz sözleşmelerinin kurulmasında uygulamadaki yanılgılar.",
+    "en": "Free online course on misconceptions when concluding revenue-sharing contracts for real property development.",
+    "de": "Kostenloser Online-Kurs zu Irrtümern beim Abschluss von Immobilienverträgen mit Erlösbeteiligung."
+   },
+   "body": {
+    "tr": "Arsa sahibi ile yüklenicinin satış hasılatını paylaştığı gelir paylaşımlı modelde sözleşmenin niteliği, şekli ve tarafların hakları; Hukukeğitim ve AristoOFFICE'in ücretsiz eğitiminde değerlendirildi.",
+    "en": "The course examined the nature and form of the revenue-sharing model, in which landowner and contractor share sales proceeds, and the parties' rights under it.",
+    "de": "Der Kurs behandelte Rechtsnatur, Form und Rechte der Parteien beim Erlösbeteiligungsmodell, bei dem Grundstückseigentümer und Bauunternehmer den Verkaufserlös teilen."
+   },
+   "order": 11,
+   "poster": "/img/events/gelir-hasilat-paylasimli-tasinmaz-sozlesmesi-yanilgilar-2024.jpg",
+   "posterW": 720,
+   "posterH": 420
+  },
+  {
+   "format": "cevrimici",
+   "roles": [
+    "egitmen"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [
+    "Değer Birol Alveroğlu (Beyoğlu 40. Noteri, moderatör)"
+   ],
+   "organizers": [
+    "Hukukeğitim"
+   ],
+   "areaSlugs": [
+    "kat-mulkiyeti-hukuku",
+    "sozlesmeler-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "20:30",
+   "endTime": "",
+   "published": true,
+   "slug": "adi-ortakliklarda-kat-mulkiyeti-olusumunda-motorlu-tasit-araci-edinimi-2024",
+   "type": "webinar",
+   "date": "2024-03-27",
+   "title": {
+    "tr": "Adi Ortaklıklarda ve Kat Mülkiyeti Oluşumunda Motorlu Taşıt Aracı Edinimi",
+    "en": "Acquisition of Motor Vehicles by Simple Partnerships and in Condominium Formation",
+    "de": "Erwerb von Kraftfahrzeugen durch einfache Gesellschaften und bei der Begründung von Wohnungseigentum"
+   },
+   "venue": {
+    "tr": "Hukukeğitim (çevrimiçi)",
+    "en": "Hukukeğitim (online)",
+    "de": "Hukukeğitim (online)"
+   },
+   "summary": {
+    "tr": "Ücretsiz çevrimiçi eğitim: adi ortaklıklarda ve kat mülkiyeti oluşumunda motorlu taşıt edinimi; moderatör Beyoğlu 40. Noteri Değer Birol Alveroğlu.",
+    "en": "Free online course on the acquisition of motor vehicles by simple partnerships and in condominium formation, moderated by a notary.",
+    "de": "Kostenloser Online-Kurs zum Kfz-Erwerb durch einfache Gesellschaften und bei Wohnungseigentum, moderiert von einem Notar."
+   },
+   "body": {
+    "tr": "Beyoğlu 40. Noteri Değer Birol Alveroğlu'nun moderatörlüğünde yapılan eğitimde, adi ortaklıkların ve kat malikleri topluluğunun motorlu taşıt edinmesinin hukuki ve noterlik uygulamasındaki sonuçları tartışıldı.",
+    "en": "Moderated by Değer Birol Alveroğlu, notary public (Beyoğlu 40th Notary), the course discussed the legal and notarial consequences of motor vehicles acquired by simple partnerships and by condominium communities.",
+    "de": "Unter der Moderation des Notars Değer Birol Alveroğlu (40. Notariat Beyoğlu) wurden die rechtlichen und notariellen Folgen des Kfz-Erwerbs durch einfache Gesellschaften und Wohnungseigentümergemeinschaften erörtert."
+   },
+   "order": 10,
+   "poster": "/img/events/adi-ortakliklarda-kat-mulkiyeti-olusumunda-motorlu-tasit-araci-edinimi-2024.jpg",
+   "posterW": 1200,
+   "posterH": 611
+  },
+  {
+   "format": "cevrimici",
+   "roles": [
+    "egitmen"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "Hukukeğitim",
+    "AristoOFFICE"
+   ],
+   "areaSlugs": [
+    "sozlesmeler-hukuku",
+    "insaat-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "19:00",
+   "endTime": "",
+   "published": true,
+   "slug": "resmi-sekle-bagli-sozlesmelerden-dogan-alacak-hakkinin-devri-2024",
+   "type": "webinar",
+   "date": "2024-03-20",
+   "title": {
+    "tr": "Resmî Şekle Bağlı Sözleşmelerden Doğan Alacak Hakkının Devri Konusunda Yanılgılar",
+    "en": "Misconceptions about Assigning Claims Arising from Contracts Requiring Official Form",
+    "de": "Irrtümer bei der Abtretung von Forderungen aus formbedürftigen Verträgen"
+   },
+   "venue": {
+    "tr": "Hukukeğitim (çevrimiçi)",
+    "en": "Hukukeğitim (online)",
+    "de": "Hukukeğitim (online)"
+   },
+   "summary": {
+    "tr": "Ücretsiz çevrimiçi eğitim: resmî şekle bağlı sözleşmelerden doğan alacakların devrinde uygulamadaki yanılgılar.",
+    "en": "Free online course on misconceptions in practice when assigning claims that arise from contracts subject to official form.",
+    "de": "Kostenloser Online-Kurs zu Praxisirrtümern bei der Abtretung von Forderungen aus formbedürftigen Verträgen."
+   },
+   "body": {
+    "tr": "Hukukeğitim ve AristoOFFICE'in ücretsiz çevrimiçi eğitiminde, özellikle taşınmaz satış vaadi ve arsa payı karşılığı inşaat sözleşmesi gibi resmî şekle bağlı sözleşmelerden doğan alacakların devrine ilişkin yaygın yanılgılar ele alındı.",
+    "en": "This free online course by Hukukeğitim and AristoOFFICE addressed common misconceptions about assigning claims under contracts that require official form, such as promises to sell real property and land-share-for-construction contracts.",
+    "de": "Der kostenlose Online-Kurs von Hukukeğitim und AristoOFFICE behandelte verbreitete Irrtümer bei der Abtretung von Forderungen aus formbedürftigen Verträgen wie Grundstückskaufversprechen und Bauleistungsverträgen gegen Grundstücksanteil."
+   },
+   "order": 9,
+   "poster": "/img/events/resmi-sekle-bagli-sozlesmelerden-dogan-alacak-hakkinin-devri-2024.jpg",
+   "posterW": 740,
+   "posterH": 744
+  },
+  {
+   "format": "cevrimici",
+   "roles": [
+    "egitmen"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "Hukukeğitim",
+    "AristoOFFICE"
+   ],
+   "areaSlugs": [
+    "sozlesmeler-hukuku",
+    "ticaret-ve-sirketler-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "19:00",
+   "endTime": "",
+   "published": true,
+   "slug": "adi-ortakliklarin-kazanc-paylasma-amaci-gutmeyen-faaliyetleri-2024",
+   "type": "webinar",
+   "date": "2024-03-13",
+   "title": {
+    "tr": "Adi Ortaklıkların Kazanç Paylaşma Amacı Gütmeyen Faaliyetleri Konusunda Yanılgılar",
+    "en": "Misconceptions about the Non-profit Activities of Simple Partnerships",
+    "de": "Irrtümer über nicht gewinnorientierte Tätigkeiten einfacher Gesellschaften"
+   },
+   "venue": {
+    "tr": "Hukukeğitim (çevrimiçi)",
+    "en": "Hukukeğitim (online)",
+    "de": "Hukukeğitim (online)"
+   },
+   "summary": {
+    "tr": "Hukukeğitim'de ücretsiz çevrimiçi eğitim: adi ortaklıkların kazanç paylaşma amacı gütmeyen faaliyetlerine ilişkin yaygın yanılgılar.",
+    "en": "Free online course on Hukukeğitim about common misconceptions concerning simple partnerships pursuing non-profit activities.",
+    "de": "Kostenloser Online-Kurs bei Hukukeğitim zu verbreiteten Irrtümern über einfache Gesellschaften ohne Gewinnzweck."
+   },
+   "body": {
+    "tr": "Hukukeğitim ve AristoOFFICE iş birliğiyle düzenlenen ücretsiz çevrimiçi eğitimde Prof. Dr. Etem Sabâ Özmen, Türk Borçlar Kanunu'ndaki adi ortaklık hükümlerinin kazanç paylaşımı amacı taşımayan ortak faaliyetlere uygulanmasını değerlendirdi.",
+    "en": "In this free online course by Hukukeğitim and AristoOFFICE, Prof. Dr. Etem Sabâ Özmen examined how the simple-partnership provisions of the Turkish Code of Obligations apply to joint activities without a profit-sharing aim.",
+    "de": "In diesem kostenlosen Online-Kurs von Hukukeğitim und AristoOFFICE untersuchte Prof. Dr. Etem Sabâ Özmen die Anwendung der Vorschriften über die einfache Gesellschaft im türkischen Obligationengesetz auf gemeinsame Tätigkeiten ohne Gewinnzweck."
+   },
+   "order": 8,
+   "poster": "/img/events/adi-ortakliklarin-kazanc-paylasma-amaci-gutmeyen-faaliyetleri-2024.jpg",
+   "posterW": 740,
+   "posterH": 744
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "egitmen"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "Türkiye Barolar Birliği",
+    "Şırnak Barosu"
+   ],
+   "areaSlugs": [
+    "gayrimenkul-hukuku-ve-kentsel-donusum",
+    "kadastro-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "13:00",
+   "endTime": "",
+   "published": true,
+   "slug": "tasinmaz-davalari-sirnak-barosu-2024",
+   "type": "seminer",
+   "date": "2024-03-09",
+   "city": "Şırnak",
+   "title": {
+    "tr": "Taşınmaz Davaları — Meslek İçi Eğitim Semineri",
+    "en": "Real Property Litigation — Professional Training Seminar",
+    "de": "Immobilienprozesse — berufliche Fortbildung"
+   },
+   "venue": {
+    "tr": "Şırnak Barosu Hizmet Binası",
+    "en": "Şırnak Bar Association Building",
+    "de": "Gebäude der Anwaltskammer Şırnak"
+   },
+   "summary": {
+    "tr": "TBB ve Şırnak Barosu meslek içi eğitim seminerinde Prof. Dr. Etem Sabâ Özmen taşınmaz davalarını anlattı.",
+    "en": "Prof. Dr. Etem Sabâ Özmen taught real property litigation at a professional training seminar of the TBB and the Şırnak Bar.",
+    "de": "Prof. Dr. Etem Sabâ Özmen unterrichtete Immobilienprozesse im Fortbildungsseminar von TBB und Anwaltskammer Şırnak."
+   },
+   "body": {
+    "tr": "Türkiye Barolar Birliği ile Şırnak Barosu'nun meslek içi eğitim programında taşınmaz mülkiyetine ilişkin dava türleri, usul ve ispat sorunları uygulama örnekleriyle ele alındı. Katılımcılara katılım belgesi verildi.",
+    "en": "Part of the professional training programme of the Union of Turkish Bar Associations and the Şırnak Bar, the seminar covered the types of actions concerning real property, with procedural and evidentiary issues illustrated by practice. Participants received a certificate of attendance.",
+    "de": "Im Fortbildungsprogramm des Türkischen Anwaltskammerverbands und der Anwaltskammer Şırnak wurden die Klagearten rund um Grundeigentum sowie Verfahrens- und Beweisfragen an Praxisbeispielen behandelt. Die Teilnehmenden erhielten eine Bescheinigung."
+   },
+   "order": 7,
+   "poster": "/img/events/tasinmaz-davalari-sirnak-barosu-2024.jpg",
+   "posterW": 1200,
+   "posterH": 1200
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [
+    "Av. Ali Rıza İlgezdi",
+    "Av. Recep Köse (moderatör)"
+   ],
+   "organizers": [
+    "İstanbul Barosu",
+    "İstanbul Barosu Staj Eğitim Merkezi (SEM)"
+   ],
+   "areaSlugs": [
+    "gayrimenkul-hukuku-ve-kentsel-donusum"
+   ],
+   "articleSlugs": [],
+   "program": "## 16:00 | Açılış Konuşmaları\n- Av. Filiz Saraç (İstanbul Barosu Başkanı)\n- Av. Özlem Aksungar (İstanbul Barosu SEM Yürütme Kurulu Başkanı)\n- Av. Doç. Dr. Ahmet Ayar (İstanbul Barosu Yönetim Kurulu Üyesi)\n## Konuşmacılar | Moderatör: Av. Recep Köse (İstanbul Barosu SEM Yürütme Kurulu Üyesi)\n- Prof. Dr. Etem Sabâ Özmen (Maltepe Üniversitesi Hukuk Fakültesi)\n- Av. Ali Rıza İlgezdi (İstanbul Barosu SEM Yürütme Kurulu Üyesi)",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "16:00",
+   "endTime": "",
+   "published": true,
+   "slug": "son-yasal-degisikliklerle-kentsel-donusum-istanbul-barosu-sem-2023",
+   "type": "seminer",
+   "date": "2023-12-12",
+   "city": "İstanbul",
+   "title": {
+    "tr": "Son Yasal Değişikliklerle Kentsel Dönüşüm — İstanbul Barosu SEM Seminerleri 35",
+    "en": "Urban Regeneration after the Latest Amendments — Istanbul Bar Training Centre Seminar 35",
+    "de": "Stadterneuerung nach den jüngsten Gesetzesänderungen — Seminar 35 des Ausbildungszentrums der Anwaltskammer Istanbul"
+   },
+   "venue": {
+    "tr": "İstanbul Barosu Merkez Bina Konferans Salonu",
+    "en": "Istanbul Bar Association Headquarters, Conference Hall",
+    "de": "Hauptgebäude der Anwaltskammer Istanbul, Konferenzsaal"
+   },
+   "summary": {
+    "tr": "İstanbul Barosu Staj Eğitim Merkezi seminerinde son yasal değişikliklerle kentsel dönüşüm ele alındı; konuşmacı Prof. Dr. Etem Sabâ Özmen.",
+    "en": "Istanbul Bar training-centre seminar on urban regeneration after the latest statutory amendments, with Prof. Dr. Etem Sabâ Özmen.",
+    "de": "Seminar des Ausbildungszentrums der Anwaltskammer Istanbul zur Stadterneuerung nach den jüngsten Gesetzesänderungen."
+   },
+   "body": {
+    "tr": "İstanbul Barosu Staj Eğitim Merkezi'nin 35. seminerinde Prof. Dr. Etem Sabâ Özmen ve Av. Ali Rıza İlgezdi, 7471 sayılı Kanun'la değişen kentsel dönüşüm mevzuatını ve uygulamadaki yansımalarını değerlendirdi.",
+    "en": "In the 35th seminar of the Istanbul Bar's trainee training centre, Prof. Dr. Etem Sabâ Özmen and Av. Ali Rıza İlgezdi reviewed the urban regeneration legislation as amended in 2023 and its effect in practice.",
+    "de": "Im 35. Seminar des Ausbildungszentrums der Anwaltskammer Istanbul erörterten Prof. Dr. Etem Sabâ Özmen und Av. Ali Rıza İlgezdi das 2023 geänderte Stadterneuerungsrecht und seine praktischen Folgen."
+   },
+   "order": 6,
+   "poster": "/img/events/son-yasal-degisikliklerle-kentsel-donusum-istanbul-barosu-sem-2023.jpg",
+   "posterW": 1198,
+   "posterH": 1200
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "Eskişehir Barosu"
+   ],
+   "areaSlugs": [
+    "gayrimenkul-hukuku-ve-kentsel-donusum"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "14:00",
+   "endTime": "",
+   "published": true,
+   "slug": "7471-sayili-kanun-kentsel-donusum-uygulamalari-eskisehir-barosu-2023",
+   "type": "seminer",
+   "date": "2023-12-08",
+   "city": "Eskişehir",
+   "title": {
+    "tr": "7471 Sayılı Kanun Değişiklikleriyle Kentsel Dönüşüm Uygulamaları",
+    "en": "Urban Regeneration Practice after the Amendments of Law No. 7471",
+    "de": "Stadterneuerung nach den Änderungen durch das Gesetz Nr. 7471"
+   },
+   "venue": {
+    "tr": "Eskişehir Barosu Hizmet Binası, Av. Cemre Parmaksız Konferans Salonu",
+    "en": "Eskişehir Bar Association Building, Av. Cemre Parmaksız Conference Hall",
+    "de": "Gebäude der Anwaltskammer Eskişehir, Konferenzsaal Av. Cemre Parmaksız"
+   },
+   "summary": {
+    "tr": "Eskişehir Barosu'nda Prof. Dr. Etem Sabâ Özmen, 7471 sayılı Kanun'la değişen 6306 sayılı Kanun kapsamındaki kentsel dönüşüm uygulamalarını anlattı.",
+    "en": "At the Eskişehir Bar, Prof. Dr. Etem Sabâ Özmen discussed urban regeneration under Law No. 6306 as amended by Law No. 7471.",
+    "de": "Bei der Anwaltskammer Eskişehir erläuterte Prof. Dr. Etem Sabâ Özmen die Stadterneuerung nach Gesetz Nr. 6306 in der Fassung des Gesetzes Nr. 7471."
+   },
+   "body": {
+    "tr": "Kasım 2023'te yürürlüğe giren 7471 sayılı Kanun, 6306 sayılı Afet Riski Altındaki Alanların Dönüştürülmesi Hakkında Kanun'da önemli değişiklikler yaptı. Seminerde bu değişikliklerin kentsel dönüşüm uygulamalarına etkileri değerlendirildi.",
+    "en": "Law No. 7471, in force since November 2023, made significant changes to Law No. 6306 on the Transformation of Areas under Disaster Risk. The seminar assessed their effect on urban regeneration practice.",
+    "de": "Das seit November 2023 geltende Gesetz Nr. 7471 änderte das Gesetz Nr. 6306 über die Umgestaltung katastrophengefährdeter Gebiete erheblich. Das Seminar bewertete die Folgen für die Praxis der Stadterneuerung."
+   },
+   "order": 5,
+   "poster": "/img/events/7471-sayili-kanun-kentsel-donusum-uygulamalari-eskisehir-barosu-2023.jpg",
+   "posterW": 1200,
+   "posterH": 1200
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [
+    {
+     "tr": "Taşınır ve Taşınmazların Paylaştırılmasına ve Ortaklığın Giderilmesine İlişkin Uyuşmazlıklar ile Kat Mülkiyeti Kanunundan Kaynaklanan Uyuşmazlıklar",
+     "en": "Disputes over the Division of Movables and Immovables and the Dissolution of Co-ownership, and Disputes under the Condominium Law",
+     "de": "Streitigkeiten über die Teilung von beweglichen und unbeweglichen Sachen, die Aufhebung des Miteigentums und nach dem Wohnungseigentumsgesetz"
+    }
+   ],
+   "speakers": [],
+   "organizers": [
+    "Türkiye Barolar Birliği",
+    "TBB Arabuluculuk ve Uzlaştırma Komisyonu"
+   ],
+   "areaSlugs": [
+    "arabuluculuk",
+    "kat-mulkiyeti-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "## 13:30–14:00 | Açılış Konuşmaları\n- Av. Ayşe Gonca Gülçin (Arabuluculuk ve Uzlaştırma Komisyonu Yürütme Kurulu Üyesi)\n- Av. Abdülbaki Çelebi (Arabuluculuk ve Uzlaştırma Komisyonu Koordinatörü, TBB Yönetim Kurulu Üyesi)\n## 14:00–14:45 | Birinci Oturum | Moderatör: Av. Arb. Mustafa Murat Bilgin (Antalya Barosu)\n- Prof. Dr. Etem Sabâ Özmen (Maltepe Üniversitesi Medeni Hukuk Anabilim Dalı Başkanı) — Taşınır ve Taşınmazların Paylaştırılmasına ve Ortaklığın Giderilmesine İlişkin Uyuşmazlıklar ile Kat Mülkiyeti Kanunundan Kaynaklanan Uyuşmazlıklar\nSoru-cevap: 14:45–15:15\n## 15:30–16:15 | İkinci Oturum | Moderatör: Av. Arb. Hamdi Can Ünsal (Ankara Barosu)\n- Av. Arb. Nezih Dağdeviren (Konya Barosu) — Bu Uyuşmazlıklarda Dava Şartı Arabuluculuk Uygulaması, Uygulama Sorunları ve Çözüm Önerileri\nSoru-cevap: 16:15–16:45",
+   "address": "Oğuzlar Mah. Barış Manço Cad. Av. Özdemir Özok Sok. No: 8 Balgat / Ankara",
+   "link": "",
+   "endDate": "",
+   "startTime": "13:30",
+   "endTime": "16:45",
+   "published": true,
+   "slug": "ortakligin-giderilmesi-kat-mulkiyeti-dava-sarti-arabuluculuk-tbb-2023",
+   "type": "konferans",
+   "date": "2023-10-21",
+   "city": "Ankara",
+   "title": {
+    "tr": "Ortaklığın Giderilmesi ve Kat Mülkiyeti Kanunundan Doğan Uyuşmazlıklarda Dava Şartı Arabuluculuk",
+    "en": "Mandatory Mediation in Partition Actions and Condominium Law Disputes",
+    "de": "Obligatorische Mediation bei Teilungsklagen und Streitigkeiten nach dem Wohnungseigentumsgesetz"
+   },
+   "venue": {
+    "tr": "TBB Av. Özdemir Özok Kongre ve Kültür Merkezi",
+    "en": "TBB Av. Özdemir Özok Congress and Culture Centre",
+    "de": "Kongress- und Kulturzentrum Av. Özdemir Özok der TBB"
+   },
+   "summary": {
+    "tr": "Türkiye Barolar Birliği'nin Ankara'daki programında ortaklığın giderilmesi ve KMK uyuşmazlıklarında dava şartı arabuluculuk tartışıldı.",
+    "en": "Union of Turkish Bar Associations programme in Ankara on mandatory mediation for partition actions and condominium disputes.",
+    "de": "Programm des Türkischen Anwaltskammerverbands in Ankara zur Pflichtmediation bei Teilungsklagen und Wohnungseigentumsstreitigkeiten."
+   },
+   "body": {
+    "tr": "7445 sayılı Kanun'la getirilen yeni dava şartı arabuluculuk uygulamasının ele alındığı programın birinci oturumunda Prof. Dr. Etem Sabâ Özmen, paylaştırma ve ortaklığın giderilmesi uyuşmazlıklarını ve Kat Mülkiyeti Kanunu'ndan doğan uyuşmazlıkları anlattı.",
+    "en": "The programme addressed the new requirement of mediation before litigation. In the first session Prof. Dr. Etem Sabâ Özmen spoke on partition and co-ownership disputes and on disputes under the Condominium Law.",
+    "de": "Das Programm befasste sich mit der neu eingeführten Pflichtmediation vor Klageerhebung. In der ersten Sitzung sprach Prof. Dr. Etem Sabâ Özmen über Teilungs- und Miteigentumsstreitigkeiten sowie Streitigkeiten nach dem Wohnungseigentumsgesetz."
+   },
+   "order": 4,
+   "poster": "/img/events/ortakligin-giderilmesi-kat-mulkiyeti-dava-sarti-arabuluculuk-tbb-2023.jpg",
+   "posterW": 848,
+   "posterH": 1200
+  },
+  {
+   "format": "hibrit",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [
+    {
+     "tr": "Yüklenicinin Arsa Payı Karşılığı İnşaat Sözleşmesinden Doğan Alacak Hakkına İlişkin Kazandırıcı İşlemleri (Borçlanma ve Tasarruf İşlemleri)",
+     "en": "The Contractor's Dispositive Transactions Concerning Claims under a Land-Share-for-Construction Contract (Obligatory and Dispositive Acts)",
+     "de": "Zuwendungsgeschäfte des Bauunternehmers über Forderungen aus dem Grundstücksanteil-gegen-Bauleistung-Vertrag (Verpflichtungs- und Verfügungsgeschäfte)"
+    }
+   ],
+   "speakers": [],
+   "organizers": [
+    "Maltepe Üniversitesi Hukuk Fakültesi"
+   ],
+   "areaSlugs": [
+    "insaat-hukuku",
+    "gayrimenkul-hukuku-ve-kentsel-donusum",
+    "imar-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "## 13:30 | Açılış\n- Prof. Dr. Edibe Sözen (Maltepe Üniversitesi Rektörü) — Açılış konuşması\n- Prof. Dr. Dilek Yılmazcan (Maltepe Üniversitesi Hukuk Fakültesi Dekan V.) — Açılış konuşması\n- Dr. Avni Çelik (Sinpaş Holding Yönetim Kurulu Başkanı) — Gayrimenkul Sektöründe Yatırım Ortamının İyileştirilmesinin Ekonomiye Etkileri\n## 14:15 | Birinci Oturum | Oturum Başkanı: Prof. Dr. Yusuf Aksar\n- Prof. Dr. Halil Kalabalık (İstanbul Sabahattin Zaim Üniversitesi) — İmar Hukukunda Kamulaştırma Kısıtlılık İlişkisi ve Kısıtlanan Taşınmazların Emlak Vergisi\n- Prof. Dr. Etem Sabâ Özmen (Maltepe Üniversitesi) — Yüklenicinin Arsa Payı Karşılığı İnşaat Sözleşmesinden Doğan Alacak Hakkına İlişkin Kazandırıcı İşlemleri (Borçlanma ve Tasarruf İşlemleri)\n- Doç. Dr. Gülşah Vardar Hamamcıoğlu (Maltepe Üniversitesi) — Arsa Payı Karşılığı İnşaat Sözleşmesinde Tarafların Haklarına İlişkin Hüküm ve Sonuçlar\n## 15:45 | İkinci Oturum | Oturum Başkanı: Prof. Dr. Dilek Yılmazcan\n- Av. Prof. Dr. Funda Başaran Yavaşlar (İstanbul Kültür Üniversitesi) — Değerli Konut Vergisi Anayasaya Aykırı mı?\n- Av. Prof. Dr. Mehmet Koç (Yeminli Mali Müşavir) — Yap-İşlet-Devret Modeline Göre Yapılan İşlerde KDV Planlaması\n- Dr. Bumin Doğrusöz (Marmara Üniversitesi) — Emlak Vergisi Uygulamasına İlişkin Sorunlar\n- Mustafa Balcı (İstanbul 3. Vergi Mahkemesi Başkanı) — Arsa ve Arazi Birim Değerlerine İlişkin Takdir Komisyonu Kararlarına Karşı Açılacak Davalarda Süre Aşımı Sorunu",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "13:30",
+   "endTime": "",
+   "published": true,
+   "slug": "hukuki-ve-mali-yonden-tasinmaz-hukuku-sempozyumu-maltepe-2023",
+   "type": "sempozyum",
+   "date": "2023-10-19",
+   "city": "İstanbul",
+   "title": {
+    "tr": "Hukuki ve Malî Yönden Taşınmaz Hukuku Sempozyumu",
+    "en": "Symposium on Real Property Law from a Legal and Fiscal Perspective",
+    "de": "Symposium zum Immobilienrecht aus rechtlicher und steuerlicher Sicht"
+   },
+   "venue": {
+    "tr": "Marma Hotel Istanbul Asia",
+    "en": "Marma Hotel Istanbul Asia",
+    "de": "Marma Hotel Istanbul Asia"
+   },
+   "summary": {
+    "tr": "Maltepe Üniversitesi sempozyumunda Prof. Dr. Etem Sabâ Özmen, arsa payı karşılığı inşaat sözleşmesinde yüklenicinin kazandırıcı işlemlerini sundu.",
+    "en": "At Maltepe University's symposium, Prof. Dr. Etem Sabâ Özmen presented on the contractor's transactions under land-share-for-construction contracts.",
+    "de": "Symposium der Maltepe-Universität: Prof. Dr. Etem Sabâ Özmen zu Geschäften des Bauunternehmers beim Bauleistungsvertrag gegen Grundstücksanteil."
+   },
+   "body": {
+    "tr": "Cumhuriyetin 100. yılında Maltepe Üniversitesi Hukuk Fakültesi tarafından yüz yüze ve çevrimiçi olarak düzenlenen sempozyum, taşınmaz hukukunun özel hukuk ve vergi hukuku boyutlarını bir araya getirdi. Prof. Dr. Etem Sabâ Özmen birinci oturumda tebliğ sundu.",
+    "en": "Organised by Maltepe University Faculty of Law in the centenary year of the Republic, both in person and online, the symposium brought together the private-law and tax-law dimensions of real property law. Prof. Dr. Etem Sabâ Özmen presented a paper in the first session.",
+    "de": "Das von der Juristischen Fakultät der Maltepe-Universität im 100. Jahr der Republik in Präsenz und online veranstaltete Symposium verband zivil- und steuerrechtliche Fragen des Immobilienrechts. Prof. Dr. Etem Sabâ Özmen trug in der ersten Sitzung vor."
+   },
+   "order": 3,
+   "poster": "/img/events/hukuki-ve-mali-yonden-tasinmaz-hukuku-sempozyumu-maltepe-2023.jpg",
+   "posterW": 667,
+   "posterH": 1024
+  },
+  {
+   "format": "cevrimici",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "İstanbul Medipol Üniversitesi",
+    "İdeal Hukuk Kulübü",
+    "Hukukçular Derneği Gençlik Komisyonu"
+   ],
+   "areaSlugs": [
+    "gayrimenkul-hukuku-ve-kentsel-donusum",
+    "insaat-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "15:00",
+   "endTime": "",
+   "published": true,
+   "slug": "deprem-hukuku-medipol-universitesi-2023",
+   "type": "webinar",
+   "date": "2023-04-11",
+   "city": "",
+   "title": {
+    "tr": "Prof. Dr. Etem Sabâ Özmen ile Deprem Hukuku",
+    "en": "Earthquake Law with Prof. Dr. Etem Sabâ Özmen",
+    "de": "Erdbebenrecht mit Prof. Dr. Etem Sabâ Özmen"
+   },
+   "venue": {
+    "tr": "Zoom (çevrimiçi)",
+    "en": "Zoom (online)",
+    "de": "Zoom (online)"
+   },
+   "summary": {
+    "tr": "Medipol Üniversitesi İdeal Hukuk Kulübü ve Hukukçular Derneği Gençlik Komisyonu'nun çevrimiçi etkinliğinde deprem hukuku ele alındı.",
+    "en": "An online session on earthquake law, hosted by Istanbul Medipol University's İdeal Law Club and the Jurists' Association Youth Commission.",
+    "de": "Online-Veranstaltung zum Erdbebenrecht, ausgerichtet vom İdeal-Rechtsclub der Medipol-Universität und der Jugendkommission des Juristenvereins."
+   },
+   "body": {
+    "tr": "Şubat 2023 depremlerinin ardından düzenlenen çevrimiçi etkinlikte Prof. Dr. Etem Sabâ Özmen, deprem sonrası ortaya çıkan hukuki sorunları taşınmaz, yapı ve sorumluluk hukuku açısından değerlendirdi.",
+    "en": "Held online after the February 2023 earthquakes, the session examined the legal questions arising after the disaster from the perspective of property, construction and liability law.",
+    "de": "Die nach den Erdbeben vom Februar 2023 online abgehaltene Veranstaltung behandelte die Rechtsfragen nach der Katastrophe aus Sicht des Immobilien-, Bau- und Haftungsrechts."
+   },
+   "order": 2,
+   "poster": "/img/events/deprem-hukuku-medipol-universitesi-2023.jpg",
+   "posterW": 1080,
+   "posterH": 1080
+  },
+  {
+   "format": "yuz-yuze",
+   "roles": [
+    "egitmen"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "Türkiye Barolar Birliği",
+    "İzmir Barosu"
+   ],
+   "areaSlugs": [
+    "gayrimenkul-hukuku-ve-kentsel-donusum",
+    "kamulastirma-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "13:00",
+   "endTime": "",
+   "published": true,
+   "slug": "kentsel-donusum-kamulastirma-kamulastirmasiz-el-atma-izmir-barosu-2023",
+   "type": "seminer",
+   "date": "2023-02-11",
+   "city": "İzmir",
+   "title": {
+    "tr": "Kentsel Dönüşüm, Kamulaştırma ve Kamulaştırmasız El Atma — Meslek İçi Eğitim Semineri",
+    "en": "Urban Regeneration, Expropriation and De Facto Expropriation — Professional Training Seminar",
+    "de": "Stadterneuerung, Enteignung und faktische Enteignung — berufliche Fortbildung"
+   },
+   "venue": {
+    "tr": "İzmir Bölge Adliye Mahkemeleri Binası Konferans Salonu",
+    "en": "İzmir Regional Courts of Appeal Building, Conference Hall",
+    "de": "Konferenzsaal des Gebäudes der Regionalen Berufungsgerichte İzmir"
+   },
+   "summary": {
+    "tr": "TBB ve İzmir Barosu meslek içi eğitim seminerinde Prof. Dr. Etem Sabâ Özmen kentsel dönüşüm, kamulaştırma ve kamulaştırmasız el atmayı anlattı.",
+    "en": "At the TBB and İzmir Bar training seminar, Prof. Dr. Etem Sabâ Özmen lectured on urban regeneration, expropriation and de facto expropriation.",
+    "de": "Im Fortbildungsseminar von TBB und Anwaltskammer İzmir referierte Prof. Dr. Etem Sabâ Özmen über Stadterneuerung und Enteignung."
+   },
+   "body": {
+    "tr": "Türkiye Barolar Birliği ve İzmir Barosu'nun Meslek İçi Eğitim Seminerleri kapsamında düzenlenen programda eğitmen Prof. Dr. Etem Sabâ Özmen; kentsel dönüşüm uygulamalarını, kamulaştırma sürecini ve kamulaştırmasız el atmaya ilişkin hukuki sorunları ele aldı. Katılımcılara katılım belgesi verildi.",
+    "en": "Held within the professional training seminars of the Union of Turkish Bar Associations and the İzmir Bar Association, the session covered urban regeneration practice, the expropriation procedure and the legal problems of de facto expropriation (kamulaştırmasız el atma). Participants received a certificate of attendance.",
+    "de": "Im Rahmen der beruflichen Fortbildungsseminare des Türkischen Anwaltskammerverbands und der Anwaltskammer İzmir behandelte Prof. Dr. Etem Sabâ Özmen die Praxis der Stadterneuerung, das Enteignungsverfahren und Rechtsfragen der faktischen Enteignung. Die Teilnehmenden erhielten eine Teilnahmebescheinigung."
+   },
+   "order": 1,
+   "poster": "/img/events/kentsel-donusum-kamulastirma-kamulastirmasiz-el-atma-izmir-barosu-2023.jpg",
+   "posterW": 1200,
+   "posterH": 1200
+  },
+  {
+   "format": "cevrimici",
+   "roles": [
+    "konusmaci"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [
+    {
+     "tr": "Kentsel Dönüşümde Kat Mülkiyeti Uygulamaları ile Sınırlı Aynî Haklar ve Şerhler",
+     "en": "Condominium Practice, Limited Real Rights and Annotations in Urban Regeneration",
+     "de": "Wohnungseigentum, beschränkte dingliche Rechte und Vormerkungen in der Stadterneuerung"
+    }
+   ],
+   "speakers": [
+    "Erdal Sanlı",
+    "Prof. Dr. Gülsün Aygörmez",
+    "Prof. Dr. Hasan İşgüzar",
+    "Prof. Dr. Hasan Sınar",
+    "Prof. Dr. Haluk Burcuoğlu"
+   ],
+   "organizers": [
+    "Akansel Eğitim Danışmanlık"
+   ],
+   "areaSlugs": [
+    "gayrimenkul-hukuku-ve-kentsel-donusum",
+    "kat-mulkiyeti-hukuku"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "",
+   "endTime": "",
+   "published": false,
+   "slug": "online-zirve-hukuk-semineri-kentsel-donusumde-kat-mulkiyeti",
+   "type": "seminer",
+   "date": "",
+   "title": {
+    "tr": "Online Zirve Hukuk Semineri — Kentsel Dönüşümde Kat Mülkiyeti Uygulamaları",
+    "en": "Online Summit Law Seminar — Condominium Practice in Urban Regeneration",
+    "de": "Online-Gipfelseminar Recht — Wohnungseigentum in der Stadterneuerung"
+   },
+   "venue": {
+    "tr": "Çevrimiçi",
+    "en": "Online",
+    "de": "Online"
+   },
+   "summary": {
+    "tr": "Online Zirve Hukuk Semineri'nde Prof. Dr. Etem Sabâ Özmen kentsel dönüşümde kat mülkiyeti uygulamalarını, sınırlı aynî hakları ve şerhleri anlattı.",
+    "en": "At the Online Summit Law Seminar, Prof. Dr. Etem Sabâ Özmen spoke on condominium practice, limited real rights and annotations in urban regeneration.",
+    "de": "Beim Online-Gipfelseminar sprach Prof. Dr. Etem Sabâ Özmen über Wohnungseigentum, beschränkte dingliche Rechte und Vormerkungen in der Stadterneuerung."
+   },
+   "body": {
+    "tr": "Akansel Eğitim Danışmanlık'ın düzenlediği çevrimiçi seminerde Yargıtay Onursal Birinci Başkan Vekili Erdal Sanlı, Prof. Dr. Gülsün Aygörmez, Prof. Dr. Hasan İşgüzar, Prof. Dr. Hasan Sınar ve Prof. Dr. Haluk Burcuoğlu da konuşmacı olarak yer aldı.",
+    "en": "The online seminar organised by Akansel Eğitim Danışmanlık also featured Erdal Sanlı, Honorary First Deputy President of the Court of Cassation, and Professors Gülsün Aygörmez, Hasan İşgüzar, Hasan Sınar and Haluk Burcuoğlu.",
+    "de": "Das von Akansel Eğitim Danışmanlık veranstaltete Online-Seminar bot zudem Beiträge von Erdal Sanlı, Ehrenvizepräsident des Kassationshofs, sowie den Professoren Gülsün Aygörmez, Hasan İşgüzar, Hasan Sınar und Haluk Burcuoğlu."
+   },
+   "order": 37,
+   "poster": "/img/events/online-zirve-hukuk-semineri-kentsel-donusumde-kat-mulkiyeti.jpg",
+   "posterW": 1049,
+   "posterH": 1200
+  }
+ ]
 }

@@ -65,7 +65,9 @@ const team = {
 };
 
 /* ---------------------------------------------------------------- events */
-const EVENT_TYPES = ["tv", "konferans", "kongre", "etkinlik"];
+// The vocabulary lives in shared/admin-ui.mjs so the admin form and the
+// public pages cannot disagree about it.
+const { EVENT_TYPES } = require("../../shared/admin-ui.mjs");
 
 const events = {
   all() {

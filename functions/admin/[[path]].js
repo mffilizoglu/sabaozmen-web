@@ -17,6 +17,9 @@
 import * as UI from "../../shared/admin-ui.mjs";
 import * as auth from "../_lib/auth.js";
 import * as gh from "../_lib/github.js";
+import DATA from "../../site/content/data.js";
+
+const AREAS = DATA.areas.map((a) => ({ slug: a.slug, name: a.name.tr }));
 const esc = UI.esc;
 
 const TEAM_PATH = "site/content/team.json";
@@ -123,23 +126,9 @@ async function saveRecord(env, kind, slug, fields, files, commitFiles) {
     });
     rec.order = isNew ? list.length + 1 : (parseInt(fields.order, 10) || prev.order || 0);
   } else {
-    const title = UI.pickLangs(fields, "title");
-    if (!title.tr) throw new Error("Türkçe başlık zorunludur.");
-    rec = Object.assign({}, prev, {
-      slug: isNew ? UI.uniqueSlug(UI.slugify(title.tr), list.map((x) => x.slug)) : prev.slug,
-      type: UI.EVENT_TYPES.includes(fields.type) ? fields.type : "etkinlik",
-      title,
-      venue: UI.pickLangs(fields, "venue"),
-      summary: UI.pickLangs(fields, "summary"),
-      body: UI.pickLangs(fields, "body"),
-      city: String(fields.city || "").trim(),
-      date: String(fields.date || "").trim(),
-      endDate: String(fields.endDate || "").trim(),
-      link: String(fields.link || "").trim(),
-      speakers: String(fields.speakers || "").split(",").map((s) => s.trim()).filter(Boolean),
-      articleSlugs: UI.asArray(fields.articleSlugs),
-      published: fields.published === "1",
-      poster: prev.poster || "",
+    const { data: td } = await gh.getJson(env, TEAM_PATH, { team: [] });
+    rec = UI.buildEvent(fields, isNew ? null : prev, list, {
+      team: (td.team || []).map((m) => m.slug), areas: AREAS.map((a) => a.slug),
     });
   }
 
@@ -152,6 +141,11 @@ async function saveRecord(env, kind, slug, fields, files, commitFiles) {
     const name = await randomName(sig.ext);
     commitFiles.push({ path: `${UPLOAD_DIR}/${sub}/${name}`, content: file.bytes });
     rec[imgField] = `/uploads/${sub}/${name}`;
+    if (!isTeam) {
+      const dim = UI.imageSize(file.bytes);
+      rec.posterW = dim ? dim.w : undefined;
+      rec.posterH = dim ? dim.h : undefined;
+    }
     if (prev[imgField] && prev[imgField].startsWith("/uploads/")) {
       commitFiles.push({ path: `site/public${prev[imgField]}`, delete: true });
     }
@@ -160,6 +154,7 @@ async function saveRecord(env, kind, slug, fields, files, commitFiles) {
       commitFiles.push({ path: `site/public${prev[imgField]}`, delete: true });
     }
     rec[imgField] = "";
+    if (!isTeam) { delete rec.posterW; delete rec.posterH; }
   }
 
   if (isNew) list.push(rec); else list[idx] = rec;
@@ -320,10 +315,11 @@ export async function onRequest(context) {
       const events = await loadEvents();
       if (sub.length === 1) return html(UI.eventList({ events, csrf }));
       const articles = await loadArticles();
-      if (sub[1] === "yeni") return html(UI.eventForm({ event: null, articles, csrf }));
+      const team = await loadTeam();
+      if (sub[1] === "yeni") return html(UI.eventForm({ event: null, articles, team, areas: AREAS, csrf }));
       const e = events.find((x) => x.slug === sub[1]);
       if (!e) return html(UI.eventList({ events, csrf, flash: { kind: "bad", text: "Kayıt bulunamadı." } }), 404);
-      return html(UI.eventForm({ event: e, articles, csrf }));
+      return html(UI.eventForm({ event: e, articles, team, areas: AREAS, csrf }));
     }
     return redirect("/admin/avukatlar");
     } catch (err) {
@@ -415,7 +411,7 @@ export async function onRequest(context) {
         }
         const events = await loadEvents();
         const e = sub[1] === "yeni" ? null : events.find((x) => x.slug === sub[1]);
-        return html(UI.eventForm({ event: e, articles: await loadArticles(), csrf, flash }), 400);
+        return html(UI.eventForm({ event: e, articles: await loadArticles(), team: await loadTeam(), areas: AREAS, csrf, flash }), 400);
       } catch (inner) {
         return storageError(err);
       }

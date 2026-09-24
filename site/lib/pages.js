@@ -4,6 +4,8 @@ const { T } = require("../content/i18n");
 const D = require("../content/data");
 const { firm, areas, pages: P, home: H } = D;
 const store = require("./store");
+// Longer practice-area texts (overview, typical matters, legislation).
+const AREA_TEXT = require("../content/areas-detail");
 const L = require("./layout");
 const { esc, attr, url, icon } = L;
 
@@ -377,7 +379,7 @@ function areaList(lang) {
     description: trunc(T("areas.lede", lang), 155), active: "areas", altPaths: alts("areas") };
 }
 
-function areaDetail(lang, area) {
+function areaDetail(lang, area, origin) {
   // Articles whose topics overlap this area, matched by slug keyword.
   const map = {
     "kat-mulkiyeti-hukuku": ["kat-mulkiyeti"],
@@ -399,6 +401,8 @@ function areaDetail(lang, area) {
   };
   const topics = map[area.slug] || [];
   const related = ARTICLES.filter((a) => a.topics.some((t) => topics.includes(t))).slice(0, 6);
+  const evs = extra.eventsForArea(area.slug);
+  const txt = (AREA_TEXT[area.slug] || {})[lang] || null;
   const others = areas.filter((a) => a.slug !== area.slug).slice(0, 8);
 
   const body = phero(lang, {
@@ -414,6 +418,16 @@ function areaDetail(lang, area) {
     <div class="split">
       <div class="doc">
         <p class="lede rv">${esc(area.desc[lang])}</p>
+        ${txt ? `
+        ${txt.intro.map((p) => `<p class="rv">${esc(p)}</p>`).join("")}
+        <h2 class="mt-4 rv">${esc(T("areas.scope", lang))}</h2>
+        <ul class="ticks rv">${txt.scope.map((s) => `<li>${esc(s)}</li>`).join("")}</ul>
+        ${txt.laws && txt.laws.length ? `<h2 class="mt-4 rv">${esc(T("areas.laws", lang))}</h2>
+        <ul class="laws rv">${txt.laws.map((s) => `<li>${esc(s)}</li>`).join("")}</ul>` : ""}` : ""}
+        ${evs.length ? `
+        <h2 class="mt-4 rv">${esc(T("areas.events", lang))}</h2>
+        <ul class="ev-rows rv">${evs.slice(0, 8).map((e) => extra.eventRow(e, lang)).join("")}</ul>
+        ${evs.length > 8 ? `<div class="btn-row mt-2 rv"><a class="btn btn--ghost" href="${url(lang, "events")}">${esc(T("cta.all", lang))}</a></div>` : ""}` : ""}
         ${related.length ? `
         <h2 class="mt-4 rv">${esc(T("areas.related", lang))}</h2>
         <ul class="art-list rv">${related.map((a) => artItem(a, lang)).join("")}</ul>` : ""}
@@ -434,10 +448,30 @@ function areaDetail(lang, area) {
 
   return {
     body,
-    title: `${area.name[lang]} — ${firm.name[lang]}`,
+    // Full firm name when it fits; long area names keep the short brand instead.
+    title: (area.name[lang].length + firm.name[lang].length < 72)
+      ? `${area.name[lang]} — ${firm.name[lang]}`
+      : `${trunc(area.name[lang], 62)} | Saba Özmen`,
     description: trunc(area.desc[lang], 155),
     active: "areas",
     altPaths: alts("areas", { tr: area.slug, en: area.slug, de: area.slug }),
+    breadcrumbs: [
+      { label: T("nav.home", lang), href: url(lang, "home") },
+      { label: T("nav.areas", lang), href: url(lang, "areas") },
+      { label: area.name[lang], href: areaUrl(area, lang) },
+    ],
+    jsonLd: [{
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: area.name[lang],
+      serviceType: area.name[lang],
+      description: area.desc[lang],
+      url: (origin || "") + areaUrl(area, lang),
+      provider: { "@type": "LegalService", "@id": (origin || "") + "/#firm", name: firm.name[lang] },
+      areaServed: { "@type": "Country", name: "Türkiye" },
+      ...(txt ? { hasOfferCatalog: { "@type": "OfferCatalog", name: area.name[lang],
+        itemListElement: txt.scope.map((s) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: s } })) } } : {}),
+    }],
   };
 }
 
@@ -614,17 +648,32 @@ function articleDetail(lang, a, origin) {
   </div>
 </section>`;
 
-  const desc = a.summary.tr
-    ? trunc(a.summary.tr, 155)
-    : trunc(`${artTitle(a, lang)} — ${authors.join(", ")}${a.journal ? ", " + a.journal : ""}.`, 155);
+  // A page's description must be in the page's language, and unique: EN/DE
+  // pages without their own abstract describe the article instead of
+  // repeating the Turkish one. Abstracts that open with a shouted title (an
+  // artefact of PDF extraction) are skipped for the same reason.
+  const own = a.summary && a.summary[lang];
+  const usable = own && !/^[^a-zçğıöşü]{40}/.test(own);
+  const byline = ["Prof. Dr. Etem Sabâ Özmen"].concat(a.coAuthor ? [a.coAuthor] : []).join(lang === "tr" ? " ve " : lang === "de" ? " und " : " and ");
+  const langNote = lang === "tr" ? "" : " " + T("art.langNoteTr", lang);
+  const desc = usable
+    ? trunc(own, 155)
+    : trunc(`${artTitle(a, lang)} — ${byline}${a.journal ? ", " + a.journal : ""}${a.year ? " (" + a.year + ")" : ""}.${langNote}`, 155);
 
   return {
     body, progress: true,
-    title: `${trunc(artTitle(a, lang), 70)} — ${firm.name[lang]}`,
+    // Long academic titles: the topic must lead; results cut at ~60 chars.
+    title: `${trunc(artTitle(a, lang), 62)} | Saba Özmen`,
     description: desc,
     active: "articles",
     ogType: "article",
     altPaths: alts("articles", { tr: a.slug, en: a.slug, de: a.slug }),
+    breadcrumbs: [
+      { label: T("nav.home", lang), href: url(lang, "home") },
+      { label: T("nav.articles", lang), href: url(lang, "articles") },
+      { label: artTitle(a, lang), href: artUrl(a, lang) },
+    ],
+    headExtra: citationMeta(a, origin, authors),
     jsonLd: [scholarlyLd(a, lang, origin, authors)],
   };
 }
@@ -808,10 +857,35 @@ function legalServiceLd(lang, origin) {
       addressCountry: "TR",
     },
     sameAs: [firm.linkedin],
-    areaServed: "TR",
+    areaServed: { "@type": "Country", name: "Türkiye" },
     knowsLanguage: ["tr", "en", "de"],
     memberOf: { "@type": "Organization", name: firm.bar[lang] },
+    "@id": origin + "/#firm",
+    logo: origin + "/img/icon-512.png",
+    description: H.lede[lang],
+    knowsAbout: areas.map((x) => x.name[lang]),
+    founder: { "@type": "Person", name: "Prof. Dr. Etem Sabâ Özmen", url: origin + url(lang, "team", "etem-saba-ozmen") },
+    contactPoint: [{
+      "@type": "ContactPoint", contactType: "customer service",
+      telephone: firm.phones[0], email: firm.emails.general, availableLanguage: ["Turkish", "English", "German"],
+    }],
+    hasMap: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(firm.mapsQuery || firm.address.street),
   };
+}
+
+/* Highwire Press tags: what Google Scholar reads to list an article. */
+function citationMeta(a, origin, authors) {
+  const strip = (n) => String(n).replace(/^(?:(?:Prof\.|Doç\.|Dr\.|Öğr\.|Üyesi|Arş\.|Ar\.|Gör\.|Av\.|Stj\.|Arb\.)\s*)+/g, "").trim();
+  const tags = [["citation_title", a.title.tr]];
+  authors.forEach((n) => tags.push(["citation_author", strip(n)]));
+  if (a.date) tags.push(["citation_publication_date", a.date.replace(/-/g, "/")]);
+  if (a.journal) tags.push(["citation_journal_title", a.journal]);
+  if (a.volume) tags.push(["citation_volume", a.volume]);
+  if (a.issue) tags.push(["citation_issue", a.issue]);
+  if (a.pdf) tags.push(["citation_pdf_url", origin + a.pdf]);
+  tags.push(["citation_language", "tr"]);
+  (a.keywords && a.keywords.tr || []).slice(0, 10).forEach((k) => tags.push(["citation_keywords", k]));
+  return tags.map(([n, v]) => `<meta name="${n}" content="${attr(v)}">`).join("\n  ");
 }
 
 function scholarlyLd(a, lang, origin, authors) {
@@ -820,10 +894,22 @@ function scholarlyLd(a, lang, origin, authors) {
     "@type": "ScholarlyArticle",
     headline: artTitle(a, lang),
     inLanguage: "tr",
-    author: authors.map((n) => ({ "@type": "Person", name: n })),
+    author: authors.map((n, i) => {
+      const p = { "@type": "Person", name: n };
+      if (i === 0) {
+        const m = store.team.bySlug("etem-saba-ozmen");
+        if (m) p.url = origin + url(lang, "team", m.slug);
+        if (m && m.orcid) p.sameAs = "https://orcid.org/" + m.orcid;
+      }
+      return p;
+    }),
     url: origin + artUrl(a, lang),
-    publisher: { "@type": "Organization", name: firm.name[lang] },
+    mainEntityOfPage: origin + artUrl(a, lang),
+    publisher: { "@type": "Organization", name: firm.name[lang], url: origin + "/" + lang },
+    isAccessibleForFree: true,
   };
+  if (a.title.en && lang !== "en") o.alternativeHeadline = a.title.en;
+  if (a.year) o.copyrightYear = a.year;
   if (a.pdf) o.associatedMedia = { "@type": "MediaObject", contentUrl: origin + a.pdf, encodingFormat: "application/pdf" };
   if (a.date) o.datePublished = a.date;
   if (a.summary && a.summary.tr) o.abstract = a.summary.tr;

@@ -208,7 +208,10 @@ function footer(lang) {
 /**
  * @param {object} o
  *  lang, title, description, path, active, body, altPaths, jsonLd, ogType,
- *  bodyClass, progress
+ *  bodyClass, progress,
+ *  ogImage     {path, w, h} — page-specific share image (default /img/og.png)
+ *  breadcrumbs [{label, href}] — emitted as schema.org BreadcrumbList
+ *  headExtra   raw <meta> tags (article citation tags for Google Scholar)
  */
 function page(o) {
   const lang = o.lang;
@@ -222,11 +225,25 @@ function page(o) {
   ).join("\n  ") +
   `\n  <link rel="alternate" hreflang="x-default" href="${attr(origin + ((o.altPaths && o.altPaths.tr) || "/tr"))}">`;
 
-  const ogImg = origin + "/img/og.png";
+  const og = o.ogImage && o.ogImage.path
+    ? { url: origin + o.ogImage.path, w: o.ogImage.w, h: o.ogImage.h,
+        type: /.png$/i.test(o.ogImage.path) ? "image/png" : /.webp$/i.test(o.ogImage.path) ? "image/webp" : "image/jpeg" }
+    : { url: origin + "/img/og.png", w: 1200, h: 630, type: "image/png" };
+  const ogImg = og.url;
   const title = o.title;
   const desc = o.description;
 
-  const ld = (o.jsonLd || []).map(
+  const jsonLd = (o.jsonLd || []).slice();
+  if (o.breadcrumbs && o.breadcrumbs.length > 1) {
+    jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: o.breadcrumbs.map((c, i) => ({
+        "@type": "ListItem", position: i + 1, name: c.label, item: origin + c.href,
+      })),
+    });
+  }
+  const ld = jsonLd.map(
     (j) => `<script type="application/ld+json">${JSON.stringify(j).replace(/</g, "\\u003c")}</script>`
   ).join("\n  ");
 
@@ -247,13 +264,15 @@ function page(o) {
   <meta property="og:description" content="${attr(desc)}">
   <meta property="og:url" content="${attr(canonical)}">
   <meta property="og:image" content="${attr(ogImg)}">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:type" content="image/png">
+  ${og.w ? `<meta property="og:image:width" content="${og.w}">` : ""}
+  ${og.h ? `<meta property="og:image:height" content="${og.h}">` : ""}
+  <meta property="og:image:type" content="${og.type}">
+  <meta property="og:image:alt" content="${attr(title)}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${attr(title)}">
   <meta name="twitter:description" content="${attr(desc)}">
   <meta name="twitter:image" content="${attr(ogImg)}">
+  ${o.headExtra || ""}
 
   <meta name="theme-color" content="#a01944">
   <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
