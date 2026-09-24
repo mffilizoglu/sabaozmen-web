@@ -91,7 +91,9 @@ async function handlePost(request, env, h) {
 
   if (!valid) return json({ ok: false, message: MSG.err[lang] }, 400, h);
 
-  const key = env.RESEND_API_KEY;
+  // Strip a byte-order mark and whitespace: a key pasted through a Windows
+  // pipe arrived as "﻿re_…", and Resend rejects the header outright.
+  const key = String(env.RESEND_API_KEY || "").replace(/^﻿/, "").trim();
   if (!key) {
     console.log("contact: RESEND_API_KEY not set — enquiry not delivered");
     return json({ ok: false, message: MSG.unconfigured[lang] }, 503, h);
