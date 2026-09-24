@@ -76,7 +76,7 @@ function build(x) {
       ? { tr: "Sunum" + (talks.length > 1 ? "lar" : ""), en: "Presentation" + (talks.length > 1 ? "s" : ""), de: "Vortr" + (talks.length > 1 ? "äge" : "ag") }[l]
         + ": " + talks.map((k) => (l === "de" ? "„" + (k.de || k.en || k.tr) + "“" : '"' + (k[l] || k.en || k.tr) + '"')).join("; ") + "."
       : "";
-    const sp = (x.speakers || []).map((p) => people(p, l));
+    const sp = x.team ? [] : (x.speakers || []).map((p) => people(p, l));   // team talks are told in the note
     const others = sp.length
       ? { tr: `Programda ayrıca ${joinL(sp, "tr")} yer aldı.`, en: `The programme also featured ${joinL(sp, "en")}.`, de: `Außerdem wirkten ${joinL(sp, "de")} mit.` }[l]
       : "";
@@ -100,7 +100,7 @@ function build(x) {
     slug, src: x.poster ? x.poster.src : null, crop: x.poster && x.poster.crop, blank: x.poster && x.poster.blank,
     type: x.type, format: x.format || "yuz-yuze", date: x.date || "", endDate: x.endDate || "",
     startTime: x.start || "", endTime: x.end || "", city: x.city || "", address: x.address || "",
-    roles, teamSlugs: ["etem-saba-ozmen"], organizers: org,
+    roles, teamSlugs: ["etem-saba-ozmen"].concat(x.team || []), organizers: org,
     talks: talks.map((k) => ({ tr: k.tr, en: k.en || k.tr, de: k.de || k.en || k.tr })),
     speakers: x.speakers || [], areaSlugs: x.areas || [], articleSlugs: [],
     program: x.program || "", link: "",
@@ -528,7 +528,13 @@ const L = [
     areas: [DEV, TUK],
     title: { tr: "Tüketici Hukuku Kongresi (Kasım 2025)", en: "Consumer Law Congress (November 2025)", de: "Kongress zum Verbraucherrecht (November 2025)" } },
   { type: "sempozyum", date: "2025-12-19", start: "09:15", end: "10:30", city: "İstanbul", org: ["İstanbul 29 Mayıs Üniversitesi Hukuk Fakültesi"], venue: "AE115",
-    roles: ["oturum-baskani"], areas: [AILE, MIRAS],
+    roles: ["oturum-baskani"], areas: [AILE, MIRAS], team: ["turkan-aktas"],
+    speakers: ["Dr. Öğr. Üyesi Cemile Turgut", "Av. Türkan Aktaş Güner"],
+    note: {
+      tr: "Prof. Dr. Etem Saba Özmen'in başkanlık ettiği 1. oturumda (09:15–10:30) Dr. Öğr. Üyesi Cemile Turgut ve ekibimizden Av. Türkan Aktaş Güner \"Mal Ortaklığı Rejiminin Seçilmesinin Taşınmaz Hukukuna İlişkin Sonuçları\" başlıklı ortak bildiriyi sundu.",
+      en: "In session 1 (09:15–10:30), chaired by Prof. Dr. Etem Saba Özmen, Dr. Cemile Turgut and our colleague Av. Türkan Aktaş Güner presented a joint paper on the consequences for real property law of choosing the community-of-property regime.",
+      de: "In der von Prof. Dr. Etem Saba Özmen geleiteten 1. Sitzung (09:15–10:30) stellten Dr. Cemile Turgut und unsere Kollegin Av. Türkan Aktaş Güner einen gemeinsamen Beitrag über die Folgen der Wahl der Gütergemeinschaft für das Immobilienrecht vor.",
+    },
     poster: A("2025/aralık 2025/19.12.2025/aile_hukuku_gundemleri_sempozyumu_i_-_19_aralik_2025_copy.jpg"),
     title: { tr: "Aile Hukuku Gündemleri Sempozyumu I (İstanbul 29 Mayıs Üniversitesi)", en: "Family Law Agenda Symposium I (Istanbul 29 Mayıs University)", de: "Symposium Familienrecht aktuell I (Istanbul-29-Mayıs-Universität)" } },
 
@@ -555,12 +561,20 @@ const UPDATES = {
     date: "2026-05-15", published: true,
     poster: { src: "AFIS:2026/15.05.2026 zoom.jpg", crop: [0, 0, 1, 0.925] },
   },
+  /* The firm confirmed the archive poster's date (7 Nisan 2026, 20:30). */
+  "payli-mulkiyette-yasal-onalim-hakkinin-kullanilmasi-2026": { date: "2026-04-07", startTime: "20:30" },
   "sorumluluk-hukuku-sempozyumu-istanbul-gedik-universitesi-2025": {
     poster: { src: "AFIS:2025/mart 2025/21 mart 2025_gedik üniversitesi.jpg" },
   },
 };
 
 const ARCHIVE = L.map(build);
+
+/* Added after the first import: re-apply to the already imported record. */
+["aile-hukuku-gundemleri-sempozyumu-i-istanbul-29-mayis-2025"].forEach((slug) => {
+  const e = ARCHIVE.find((x) => x.slug === slug);
+  UPDATES[slug] = { teamSlugs: e.teamSlugs, speakers: e.speakers, body: e.body };
+});
 module.exports = { ARCHIVE, UPDATES };
 
 /* node ref/events_archive.js  — adds the archive events to events.json and

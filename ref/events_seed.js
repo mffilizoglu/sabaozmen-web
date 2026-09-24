@@ -1207,7 +1207,7 @@ add({
 const NOTES = [
   "tasinmaza-yonelik-ayni-neticeli-talepler-…-2024: poster (story) shows '27 Eylül Cuma' without a year; 2024 is the matching Friday.",
   "son-aym-kararlari-…-2026: poster says 11 Şubat 2026 19:00; the Hukukeğitim course page says 10 Mart 2026 20:30 (used). Poster date line removed.",
-  "payli-mulkiyette-yasal-onalim-…-2026: poster says 18 Şubat 2026 19:00; the Hukukeğitim course page says 18 Mart 2026 20:30 (used). Poster date line removed.",
+  "payli-mulkiyette-yasal-onalim-…-2026: poster says 18 Şubat 2026 19:00; superseded: the firm confirmed 7 Nisan 2026 20:30 (ref/events_archive.js). Poster date line removed.",
   "tuketici-bilinci-…-2026: poster shows '13 Nisan Pazartesi' without a year; 2026 is the matching Monday.",
   "online-zirve-hukuk-semineri-…: no date anywhere — hidden until the firm supplies it.",
   "turk-medeni-kanununun-100-yili-…: the WhatsApp image was the speaker invitation (Zoom link) — the university's public poster is used instead.",

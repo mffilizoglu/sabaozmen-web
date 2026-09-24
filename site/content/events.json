@@ -290,6 +290,58 @@
    "posterH": 1200
   },
   {
+   "format": "cevrimici",
+   "roles": [
+    "egitmen"
+   ],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "talks": [],
+   "speakers": [],
+   "organizers": [
+    "Hukukeğitim"
+   ],
+   "areaSlugs": [
+    "gayrimenkul-hukuku-ve-kentsel-donusum"
+   ],
+   "articleSlugs": [],
+   "program": "",
+   "address": "",
+   "link": "",
+   "endDate": "",
+   "startTime": "20:30",
+   "endTime": "22:30",
+   "published": true,
+   "slug": "payli-mulkiyette-yasal-onalim-hakkinin-kullanilmasi-2026",
+   "type": "webinar",
+   "date": "2026-04-07",
+   "title": {
+    "tr": "Son Değişiklikler Çerçevesinde Paylı Mülkiyette Yasal Önalım Hakkının Kullanılmasına İlişkin Hüküm ve Sonuçlar",
+    "en": "Exercising the Statutory Pre-emption Right in Co-ownership after the Latest Amendments",
+    "de": "Ausübung des gesetzlichen Vorkaufsrechts beim Miteigentum nach den jüngsten Änderungen"
+   },
+   "venue": {
+    "tr": "Hukukeğitim (çevrimiçi)",
+    "en": "Hukukeğitim (online)",
+    "de": "Hukukeğitim (online)"
+   },
+   "summary": {
+    "tr": "Ücretsiz çevrimiçi eğitim: son değişiklikler çerçevesinde paylı mülkiyette yasal önalım (şufa) hakkının kullanılması ve sonuçları.",
+    "en": "Free online course on exercising the statutory pre-emption right in co-owned property after the latest amendments.",
+    "de": "Kostenloser Online-Kurs zur Ausübung des gesetzlichen Vorkaufsrechts beim Miteigentum nach den jüngsten Änderungen."
+   },
+   "body": {
+    "tr": "120 dakikalık eğitimde paylı mülkiyette paydaşlara tanınan yasal önalım hakkının kullanılma şartları, süreleri ve son yasal değişikliklerin bu hakka etkisi ele alındı. Eğitimin kaydı Hukukeğitim'de izlenebilmektedir.",
+    "en": "The 120-minute course covered the conditions and time limits for co-owners to exercise the statutory pre-emption right and the effect of the latest statutory amendments. A recording is available on Hukukeğitim.",
+    "de": "Der 120-minütige Kurs behandelte Voraussetzungen und Fristen des gesetzlichen Vorkaufsrechts der Miteigentümer und die Folgen der jüngsten Gesetzesänderungen. Eine Aufzeichnung ist bei Hukukeğitim abrufbar."
+   },
+   "order": 32,
+   "poster": "/img/events/payli-mulkiyette-yasal-onalim-hakkinin-kullanilmasi-2026.jpg",
+   "posterW": 1080,
+   "posterH": 1080
+  },
+  {
    "slug": "kamulastirma-hukuku-ve-kamulastirmasiz-el-atma-esaslari-meslek-2026",
    "type": "seminer",
    "format": "yuz-yuze",
@@ -404,58 +456,6 @@
    "poster": "/img/events/turk-medeni-kanununun-kabulunun-yuzuncu-yili-sempozyumu-tokat-2026.jpg",
    "posterW": 849,
    "posterH": 1200
-  },
-  {
-   "format": "cevrimici",
-   "roles": [
-    "egitmen"
-   ],
-   "teamSlugs": [
-    "etem-saba-ozmen"
-   ],
-   "talks": [],
-   "speakers": [],
-   "organizers": [
-    "Hukukeğitim"
-   ],
-   "areaSlugs": [
-    "gayrimenkul-hukuku-ve-kentsel-donusum"
-   ],
-   "articleSlugs": [],
-   "program": "",
-   "address": "",
-   "link": "",
-   "endDate": "",
-   "startTime": "20:30",
-   "endTime": "22:30",
-   "published": true,
-   "slug": "payli-mulkiyette-yasal-onalim-hakkinin-kullanilmasi-2026",
-   "type": "webinar",
-   "date": "2026-03-18",
-   "title": {
-    "tr": "Son Değişiklikler Çerçevesinde Paylı Mülkiyette Yasal Önalım Hakkının Kullanılmasına İlişkin Hüküm ve Sonuçlar",
-    "en": "Exercising the Statutory Pre-emption Right in Co-ownership after the Latest Amendments",
-    "de": "Ausübung des gesetzlichen Vorkaufsrechts beim Miteigentum nach den jüngsten Änderungen"
-   },
-   "venue": {
-    "tr": "Hukukeğitim (çevrimiçi)",
-    "en": "Hukukeğitim (online)",
-    "de": "Hukukeğitim (online)"
-   },
-   "summary": {
-    "tr": "Ücretsiz çevrimiçi eğitim: son değişiklikler çerçevesinde paylı mülkiyette yasal önalım (şufa) hakkının kullanılması ve sonuçları.",
-    "en": "Free online course on exercising the statutory pre-emption right in co-owned property after the latest amendments.",
-    "de": "Kostenloser Online-Kurs zur Ausübung des gesetzlichen Vorkaufsrechts beim Miteigentum nach den jüngsten Änderungen."
-   },
-   "body": {
-    "tr": "120 dakikalık eğitimde paylı mülkiyette paydaşlara tanınan yasal önalım hakkının kullanılma şartları, süreleri ve son yasal değişikliklerin bu hakka etkisi ele alındı. Eğitimin kaydı Hukukeğitim'de izlenebilmektedir.",
-    "en": "The 120-minute course covered the conditions and time limits for co-owners to exercise the statutory pre-emption right and the effect of the latest statutory amendments. A recording is available on Hukukeğitim.",
-    "de": "Der 120-minütige Kurs behandelte Voraussetzungen und Fristen des gesetzlichen Vorkaufsrechts der Miteigentümer und die Folgen der jüngsten Gesetzesänderungen. Eine Aufzeichnung ist bei Hukukeğitim abrufbar."
-   },
-   "order": 32,
-   "poster": "/img/events/payli-mulkiyette-yasal-onalim-hakkinin-kullanilmasi-2026.jpg",
-   "posterW": 1080,
-   "posterH": 1080
   },
   {
    "format": "cevrimici",
@@ -630,13 +630,17 @@
     "oturum-baskani"
    ],
    "teamSlugs": [
-    "etem-saba-ozmen"
+    "etem-saba-ozmen",
+    "turkan-aktas"
    ],
    "organizers": [
     "İstanbul 29 Mayıs Üniversitesi Hukuk Fakültesi"
    ],
    "talks": [],
-   "speakers": [],
+   "speakers": [
+    "Dr. Öğr. Üyesi Cemile Turgut",
+    "Av. Türkan Aktaş Güner"
+   ],
    "areaSlugs": [
     "aile-hukuku",
     "miras-hukuku"
@@ -660,9 +664,9 @@
     "de": "Symposium Familienrecht aktuell I (Istanbul-29-Mayıs-Universität) — İstanbul 29 Mayıs Üniversitesi Hukuk Fakültesi, 19. Dezember 2025. Prof. Dr. Etem Saba Özmen leitete eine Sitzung."
    },
    "body": {
-    "tr": "İstanbul 29 Mayıs Üniversitesi Hukuk Fakültesi tarafından 19 Aralık 2025 tarihinde düzenlenen \"Aile Hukuku Gündemleri Sempozyumu I (İstanbul 29 Mayıs Üniversitesi)\" programında Prof. Dr. Etem Saba Özmen oturum başkanlığı yaptı. Yer: AE115, İstanbul.",
-    "en": "Prof. Dr. Etem Saba Özmen chaired a session at \"Family Law Agenda Symposium I (Istanbul 29 Mayıs University)\", organised by İstanbul 29 Mayıs Üniversitesi Hukuk Fakültesi, on 19 December 2025. Venue: AE115, İstanbul.",
-    "de": "Prof. Dr. Etem Saba Özmen leitete eine Sitzung: „Symposium Familienrecht aktuell I (Istanbul-29-Mayıs-Universität)“, veranstaltet von İstanbul 29 Mayıs Üniversitesi Hukuk Fakültesi, 19. Dezember 2025. Ort: AE115, İstanbul."
+    "tr": "İstanbul 29 Mayıs Üniversitesi Hukuk Fakültesi tarafından 19 Aralık 2025 tarihinde düzenlenen \"Aile Hukuku Gündemleri Sempozyumu I (İstanbul 29 Mayıs Üniversitesi)\" programında Prof. Dr. Etem Saba Özmen oturum başkanlığı yaptı. Yer: AE115, İstanbul. Prof. Dr. Etem Saba Özmen'in başkanlık ettiği 1. oturumda (09:15–10:30) Dr. Öğr. Üyesi Cemile Turgut ve ekibimizden Av. Türkan Aktaş Güner \"Mal Ortaklığı Rejiminin Seçilmesinin Taşınmaz Hukukuna İlişkin Sonuçları\" başlıklı ortak bildiriyi sundu.",
+    "en": "Prof. Dr. Etem Saba Özmen chaired a session at \"Family Law Agenda Symposium I (Istanbul 29 Mayıs University)\", organised by İstanbul 29 Mayıs Üniversitesi Hukuk Fakültesi, on 19 December 2025. Venue: AE115, İstanbul. In session 1 (09:15–10:30), chaired by Prof. Dr. Etem Saba Özmen, Dr. Cemile Turgut and our colleague Av. Türkan Aktaş Güner presented a joint paper on the consequences for real property law of choosing the community-of-property regime.",
+    "de": "Prof. Dr. Etem Saba Özmen leitete eine Sitzung: „Symposium Familienrecht aktuell I (Istanbul-29-Mayıs-Universität)“, veranstaltet von İstanbul 29 Mayıs Üniversitesi Hukuk Fakültesi, 19. Dezember 2025. Ort: AE115, İstanbul. In der von Prof. Dr. Etem Saba Özmen geleiteten 1. Sitzung (09:15–10:30) stellten Dr. Cemile Turgut und unsere Kollegin Av. Türkan Aktaş Güner einen gemeinsamen Beitrag über die Folgen der Wahl der Gütergemeinschaft für das Immobilienrecht vor."
    },
    "published": true,
    "order": 127,
