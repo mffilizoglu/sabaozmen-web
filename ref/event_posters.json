@@ -181,7 +181,387 @@
  },
  "online-zirve-hukuk-semineri-kentsel-donusumde-kat-mulkiyeti": {
   "path": "/img/events/online-zirve-hukuk-semineri-kentsel-donusumde-kat-mulkiyeti.jpg",
-  "w": 1049,
+  "w": 1038,
   "h": 1200
+ },
+ "kat-mulkiyeti-hukuku-meslek-ici-egitim-semineri-mugla-barosu-2017": {
+  "path": "/img/events/kat-mulkiyeti-hukuku-meslek-ici-egitim-semineri-mugla-barosu-2017.jpg",
+  "w": 860,
+  "h": 1200
+ },
+ "kat-mulkiyeti-hukuku-ve-kentsel-donusum-aydin-barosu-2017": {
+  "path": "/img/events/kat-mulkiyeti-hukuku-ve-kentsel-donusum-aydin-barosu-2017.jpg",
+  "w": 860,
+  "h": 1200
+ },
+ "kamulastirma-hukuku-ve-kentsel-donusum-adana-barosu-2017": {
+  "path": "/img/events/kamulastirma-hukuku-ve-kentsel-donusum-adana-barosu-2017.jpg",
+  "w": 857,
+  "h": 1200
+ },
+ "kamulastirma-hukuku-ve-kentsel-donusum-edirne-barosu-2017": {
+  "path": "/img/events/kamulastirma-hukuku-ve-kentsel-donusum-edirne-barosu-2017.jpg",
+  "w": 860,
+  "h": 1200
+ },
+ "tasinmaz-hukukunun-guncel-sorunlari-sempozyumu-maltepe-2018": {
+  "path": "/img/events/tasinmaz-hukukunun-guncel-sorunlari-sempozyumu-maltepe-2018.jpg",
+  "w": 846,
+  "h": 1200
+ },
+ "kat-mulkiyeti-hukuku-kentsel-donusum-ve-imar-barisi-uygulamalari-2018": {
+  "path": "/img/events/kat-mulkiyeti-hukuku-kentsel-donusum-ve-imar-barisi-uygulamalari-2018.jpg",
+  "w": 675,
+  "h": 1200
+ },
+ "kat-mulkiyeti-hukuku-kentsel-donusum-imar-barisi-ve-18-madde-2018": {
+  "path": "/img/events/kat-mulkiyeti-hukuku-kentsel-donusum-imar-barisi-ve-18-madde-2018.jpg",
+  "w": 860,
+  "h": 1200
+ },
+ "yargitay-uygulamasi-cercevesinde-borclar-hukuku-ve-esya-2018": {
+  "path": "/img/events/yargitay-uygulamasi-cercevesinde-borclar-hukuku-ve-esya-2018.jpg",
+  "w": 840,
+  "h": 1200
+ },
+ "kat-mulkiyeti-hukuku-ve-kentsel-donusum-uygulamalari-sempozyumu-2018": {
+  "path": "/img/events/kat-mulkiyeti-hukuku-ve-kentsel-donusum-uygulamalari-sempozyumu-2018.jpg",
+  "w": 724,
+  "h": 1024
+ },
+ "yargitay-kararlari-isiginda-guncel-medeni-hukuk-problemleri-2018": {
+  "path": "/img/events/yargitay-kararlari-isiginda-guncel-medeni-hukuk-problemleri-2018.jpg",
+  "w": 857,
+  "h": 1200
+ },
+ "kat-mulkiyeti-hukuku-uygulamalari-sempozyumu-kadir-has-2019": {
+  "path": "/img/events/kat-mulkiyeti-hukuku-uygulamalari-sempozyumu-kadir-has-2019.jpg",
+  "w": 855,
+  "h": 1200
+ },
+ "kentsel-donusum-ve-hukuk-sempozyumu-antalya-bilim-universitesi-2019": {
+  "path": "/img/events/kentsel-donusum-ve-hukuk-sempozyumu-antalya-bilim-universitesi-2019.jpg",
+  "w": 857,
+  "h": 1200
+ },
+ "insaat-hukuku-sempozyumu-marmara-universitesi-2019": {
+  "path": "/img/events/insaat-hukuku-sempozyumu-marmara-universitesi-2019.jpg",
+  "w": 709,
+  "h": 727
+ },
+ "tuketici-hukukunun-guncel-sorunlari-sempozyumu-galatasaray-2019": {
+  "path": "/img/events/tuketici-hukukunun-guncel-sorunlari-sempozyumu-galatasaray-2019.jpg",
+  "w": 633,
+  "h": 864
+ },
+ "imar-hukukunda-guncel-sorunlar-sempozyumu-maltepe-universitesi-2019": {
+  "path": "/img/events/imar-hukukunda-guncel-sorunlar-sempozyumu-maltepe-universitesi-2019.jpg",
+  "w": 849,
+  "h": 1200
+ },
+ "uluslararasi-esya-hukuku-sempozyumu-dokuz-eylul-universitesi-2019": {
+  "path": "/img/events/uluslararasi-esya-hukuku-sempozyumu-dokuz-eylul-universitesi-2019.jpg",
+  "w": 813,
+  "h": 1200
+ },
+ "tasinmaz-davalari-sematik-anlatimi-egitimi-aristo-akademi-2019": {
+  "path": "/img/events/tasinmaz-davalari-sematik-anlatimi-egitimi-aristo-akademi-2019.jpg",
+  "w": 848,
+  "h": 1200
+ },
+ "kat-mulkiyeti-hukuku-egitimi-aristo-akademi-2019": {
+  "path": "/img/events/kat-mulkiyeti-hukuku-egitimi-aristo-akademi-2019.jpg",
+  "w": 848,
+  "h": 1200
+ },
+ "arsa-payi-karsiligi-insaat-sozlesmeleri-bazli-sozlesme-yapma-2019": {
+  "path": "/img/events/arsa-payi-karsiligi-insaat-sozlesmeleri-bazli-sozlesme-yapma-2019.jpg",
+  "w": 848,
+  "h": 1200
+ },
+ "kentsel-donusum-hukuku-cercevesinde-imar-barisi-uygulamalari-ve-2020": {
+  "path": "/img/events/kentsel-donusum-hukuku-cercevesinde-imar-barisi-uygulamalari-ve-2020.jpg",
+  "w": 848,
+  "h": 1200
+ },
+ "kamulastirma-hukuku-ve-kamulastirmasiz-el-atma-davalari-aristo-2020": {
+  "path": "/img/events/kamulastirma-hukuku-ve-kamulastirmasiz-el-atma-davalari-aristo-2020.jpg",
+  "w": 848,
+  "h": 1200
+ },
+ "imar-hukukuna-iliskin-davalar-ve-imar-kanunundaki-son-2020": {
+  "path": "/img/events/imar-hukukuna-iliskin-davalar-ve-imar-kanunundaki-son-2020.jpg",
+  "w": 848,
+  "h": 1200
+ },
+ "kamulastirma-hukuku-ve-kamulastirmasiz-el-atma-davalari-2020": {
+  "path": "/img/events/kamulastirma-hukuku-ve-kamulastirmasiz-el-atma-davalari-2020.jpg",
+  "w": 800,
+  "h": 1200
+ },
+ "on-odemeli-konut-satis-sozlesmeleri-aristo-akademi-2020": {
+  "path": "/img/events/on-odemeli-konut-satis-sozlesmeleri-aristo-akademi-2020.jpg",
+  "w": 848,
+  "h": 1200
+ },
+ "aristo-hukuk-canli-egitim-serisi-nisan-2020": {
+  "path": "/img/events/aristo-hukuk-canli-egitim-serisi-nisan-2020.jpg",
+  "w": 720,
+  "h": 420
+ },
+ "kat-mulkiyeti-teorisi-ve-temel-kavramlar-istanbul-barosu-canli-2020": {
+  "path": "/img/events/kat-mulkiyeti-teorisi-ve-temel-kavramlar-istanbul-barosu-canli-2020.jpg",
+  "w": 1200,
+  "h": 1200
+ },
+ "sozlesme-yapma-teknikleri-istanbul-barosu-canli-yayini-2020": {
+  "path": "/img/events/sozlesme-yapma-teknikleri-istanbul-barosu-canli-yayini-2020.jpg",
+  "w": 900,
+  "h": 904
+ },
+ "turofed-icra-kurulu-toplantisi-2020": {
+  "path": "/img/events/turofed-icra-kurulu-toplantisi-2020.jpg",
+  "w": 1200,
+  "h": 1129
+ },
+ "normallesme-ve-tesislerin-acildigi-evrede-karsilasilabilecek-2020": {
+  "path": "/img/events/normallesme-ve-tesislerin-acildigi-evrede-karsilasilabilecek-2020.jpg",
+  "w": 1200,
+  "h": 1153
+ },
+ "kentsel-donusumdeki-uyusmazliklar-ve-cozum-yollari-tbb-online-2020": {
+  "path": "/img/events/kentsel-donusumdeki-uyusmazliklar-ve-cozum-yollari-tbb-online-2020.jpg",
+  "w": 1200,
+  "h": 1200
+ },
+ "deprem-ozel-hukuka-iliskin-sorunlar-tbb-online-egitim-2020": {
+  "path": "/img/events/deprem-ozel-hukuka-iliskin-sorunlar-tbb-online-egitim-2020.jpg",
+  "w": 1200,
+  "h": 1200
+ },
+ "20-soruda-6306-sayili-kanun-cercevesinde-kentsel-donusum-2020": {
+  "path": "/img/events/20-soruda-6306-sayili-kanun-cercevesinde-kentsel-donusum-2020.jpg",
+  "w": 800,
+  "h": 800
+ },
+ "20-soruda-imar-barisi-sonrasi-yasanan-guncel-uyusmazliklarin-2020": {
+  "path": "/img/events/20-soruda-imar-barisi-sonrasi-yasanan-guncel-uyusmazliklarin-2020.jpg",
+  "w": 800,
+  "h": 800
+ },
+ "20-soruda-arsa-payi-karsiligi-insaat-sozlesmesinin-2020": {
+  "path": "/img/events/20-soruda-arsa-payi-karsiligi-insaat-sozlesmesinin-2020.jpg",
+  "w": 800,
+  "h": 800
+ },
+ "20-soruda-kat-mulkiyetinde-yonetim-plani-sorunlari-ve-hazirlama-2021": {
+  "path": "/img/events/20-soruda-kat-mulkiyetinde-yonetim-plani-sorunlari-ve-hazirlama-2021.jpg",
+  "w": 800,
+  "h": 800
+ },
+ "20-soruda-devreli-tatil-sistemi-hukuku-ve-uyusmazliklarin-cozum-2021": {
+  "path": "/img/events/20-soruda-devreli-tatil-sistemi-hukuku-ve-uyusmazliklarin-cozum-2021.jpg",
+  "w": 800,
+  "h": 800
+ },
+ "20-soruda-ceza-kosulu-turleri-ve-sozlesmelerde-ceza-kosuluna-2021": {
+  "path": "/img/events/20-soruda-ceza-kosulu-turleri-ve-sozlesmelerde-ceza-kosuluna-2021.jpg",
+  "w": 800,
+  "h": 800
+ },
+ "kamulastirmasiz-el-atma-tbb-online-egitim-2021": {
+  "path": "/img/events/kamulastirmasiz-el-atma-tbb-online-egitim-2021.jpg",
+  "w": 1200,
+  "h": 1200
+ },
+ "20-soruda-hatali-tabirle-kullanilan-tapu-iptal-davalari-2021": {
+  "path": "/img/events/20-soruda-hatali-tabirle-kullanilan-tapu-iptal-davalari-2021.jpg",
+  "w": 800,
+  "h": 800
+ },
+ "arsa-payi-karsiligi-insaat-sozlesmeleri-uyusmazliklari-tekirdag-2021": {
+  "path": "/img/events/arsa-payi-karsiligi-insaat-sozlesmeleri-uyusmazliklari-tekirdag-2021.jpg",
+  "w": 840,
+  "h": 1200
+ },
+ "tasinmaz-rehni-ve-ipotek-diyarbakir-barosu-meslek-ici-egitim-2021": {
+  "path": "/img/events/tasinmaz-rehni-ve-ipotek-diyarbakir-barosu-meslek-ici-egitim-2021.jpg",
+  "w": 1200,
+  "h": 675
+ },
+ "sozlesmelerde-borca-aykirilik-hallerinin-siniflandirilmasi-2021": {
+  "path": "/img/events/sozlesmelerde-borca-aykirilik-hallerinin-siniflandirilmasi-2021.jpg",
+  "w": 857,
+  "h": 1200
+ },
+ "kat-mulkiyeti-hukuku-zirvesi-hukukegitim-2021": {
+  "path": "/img/events/kat-mulkiyeti-hukuku-zirvesi-hukukegitim-2021.jpg",
+  "w": 720,
+  "h": 420
+ },
+ "kamulastirma-hukuku-meslek-ici-egitim-semineri-mersin-barosu-2021": {
+  "path": "/img/events/kamulastirma-hukuku-meslek-ici-egitim-semineri-mersin-barosu-2021.jpg",
+  "w": 640,
+  "h": 888
+ },
+ "afet-riski-konseptinde-kentsel-yenileme-ve-mulkiyet-yonetim-2021": {
+  "path": "/img/events/afet-riski-konseptinde-kentsel-yenileme-ve-mulkiyet-yonetim-2021.jpg",
+  "w": 848,
+  "h": 1200
+ },
+ "saba-ozmen-ile-tasinmaz-hukuku-ankara-barosu-egitim-serisi-2022": {
+  "path": "/img/events/saba-ozmen-ile-tasinmaz-hukuku-ankara-barosu-egitim-serisi-2022.jpg",
+  "w": 960,
+  "h": 1200
+ },
+ "satis-vaadi-sozlesmesi-ve-arsa-payi-karsiligi-insaat-sozlesmesi-2022": {
+  "path": "/img/events/satis-vaadi-sozlesmesi-ve-arsa-payi-karsiligi-insaat-sozlesmesi-2022.jpg",
+  "w": 857,
+  "h": 1200
+ },
+ "bina-site-ve-tesis-yonetimi-egitim-ve-sertifika-programi-duzce-2022": {
+  "path": "/img/events/bina-site-ve-tesis-yonetimi-egitim-ve-sertifika-programi-duzce-2022.jpg",
+  "w": 1200,
+  "h": 686
+ },
+ "tamamlanmayan-yarim-kalmis-yapilarin-kat-mulkiyetine-gecis-2022": {
+  "path": "/img/events/tamamlanmayan-yarim-kalmis-yapilarin-kat-mulkiyetine-gecis-2022.jpg",
+  "w": 1200,
+  "h": 1198
+ },
+ "turk-medeni-kanununun-yururluge-girisinin-20-yili-sempozyumu-2022": {
+  "path": "/img/events/turk-medeni-kanununun-yururluge-girisinin-20-yili-sempozyumu-2022.jpg",
+  "w": 857,
+  "h": 1200
+ },
+ "kamulastirma-hukuku-meslek-ici-egitim-semineri-tekirdag-barosu-2022": {
+  "path": "/img/events/kamulastirma-hukuku-meslek-ici-egitim-semineri-tekirdag-barosu-2022.jpg",
+  "w": 857,
+  "h": 1200
+ },
+ "av-musir-kaya-canpolat-anisina-turk-borclar-kanununun-onuncu-2022": {
+  "path": "/img/events/av-musir-kaya-canpolat-anisina-turk-borclar-kanununun-onuncu-2022.jpg",
+  "w": 720,
+  "h": 949
+ },
+ "anayasa-mahkemesinin-son-iptal-kararlari-dogrultusunda-2022": {
+  "path": "/img/events/anayasa-mahkemesinin-son-iptal-kararlari-dogrultusunda-2022.jpg",
+  "w": 986,
+  "h": 1200
+ },
+ "turk-medeni-hukukundaki-guncel-gelismeler-sempozyumu-viii-2022": {
+  "path": "/img/events/turk-medeni-hukukundaki-guncel-gelismeler-sempozyumu-viii-2022.jpg",
+  "w": 858,
+  "h": 1200
+ },
+ "sozlesmelere-ceza-kosulu-hukumlerinin-konulmasina-iliskin-2023": {
+  "path": "/img/events/sozlesmelere-ceza-kosulu-hukumlerinin-konulmasina-iliskin-2023.jpg",
+  "w": 720,
+  "h": 420
+ },
+ "arsa-payi-karsiligi-insaat-sozlesmelerinde-yuklenicinin-2023": {
+  "path": "/img/events/arsa-payi-karsiligi-insaat-sozlesmelerinde-yuklenicinin-2023.jpg",
+  "w": 720,
+  "h": 420
+ },
+ "kamulastirma-hukuku-meslek-ici-egitim-semineri-izmir-barosu-2023": {
+  "path": "/img/events/kamulastirma-hukuku-meslek-ici-egitim-semineri-izmir-barosu-2023.jpg",
+  "w": 1200,
+  "h": 1200
+ },
+ "kat-mulkiyeti-hukukundan-dogan-uyusmazliklar-izmir-barosu-2023": {
+  "path": "/img/events/kat-mulkiyeti-hukukundan-dogan-uyusmazliklar-izmir-barosu-2023.jpg",
+  "w": 1080,
+  "h": 1080
+ },
+ "depremin-hukuki-boyutu-120-gunde-sesimizi-duyan-var-mi-2023": {
+  "path": "/img/events/depremin-hukuki-boyutu-120-gunde-sesimizi-duyan-var-mi-2023.jpg",
+  "w": 758,
+  "h": 1058
+ },
+ "tgrt-haber-site-aidatlarina-fahis-zamlar-nasil-onlenecek-2023": {
+  "path": "/img/events/tgrt-haber-site-aidatlarina-fahis-zamlar-nasil-onlenecek-2023.jpg",
+  "w": 576,
+  "h": 547
+ },
+ "tapu-iptal-tabiri-altinda-farklilasan-dava-turleri-ve-usul-2024": {
+  "path": "/img/events/tapu-iptal-tabiri-altinda-farklilasan-dava-turleri-ve-usul-2024.jpg",
+  "w": 576,
+  "h": 577
+ },
+ "prof-dr-mustafa-durali-anma-paneli-ozel-hukukta-guncel-2024": {
+  "path": "/img/events/prof-dr-mustafa-durali-anma-paneli-ozel-hukukta-guncel-2024.jpg",
+  "w": 856,
+  "h": 1200
+ },
+ "cumhuriyetle-bir-asir-reformlardan-medeni-hukuk-sempozyumu-2024": {
+  "path": "/img/events/cumhuriyetle-bir-asir-reformlardan-medeni-hukuk-sempozyumu-2024.jpg",
+  "w": 848,
+  "h": 1200
+ },
+ "tasinmaz-davalari-sematik-anlatim-izgader-2024": {
+  "path": "/img/events/tasinmaz-davalari-sematik-anlatim-izgader-2024.jpg",
+  "w": 819,
+  "h": 1136
+ },
+ "alacagin-devrine-dayali-kavram-kargasalari-ve-noter-islemlerine-2024": {
+  "path": "/img/events/alacagin-devrine-dayali-kavram-kargasalari-ve-noter-islemlerine-2024.jpg",
+  "w": 720,
+  "h": 420
+ },
+ "arsa-payi-karsiligi-insaat-sozlesmesi-bazli-sozlesme-yapma-2024": {
+  "path": "/img/events/arsa-payi-karsiligi-insaat-sozlesmesi-bazli-sozlesme-yapma-2024.jpg",
+  "w": 576,
+  "h": 577
+ },
+ "kamulastirma-hukukunun-esaslari-izgader-2024": {
+  "path": "/img/events/kamulastirma-hukukunun-esaslari-izgader-2024.jpg",
+  "w": 576,
+  "h": 577
+ },
+ "uygulamada-yanlis-tabir-ile-tapu-iptal-davasi-basligi-altinda-2024": {
+  "path": "/img/events/uygulamada-yanlis-tabir-ile-tapu-iptal-davasi-basligi-altinda-2024.jpg",
+  "w": 1200,
+  "h": 1199
+ },
+ "deprem-ve-kentsel-donusumde-hukuki-sorunlar-semineri-fenerbahce-2025": {
+  "path": "/img/events/deprem-ve-kentsel-donusumde-hukuki-sorunlar-semineri-fenerbahce-2025.jpg",
+  "w": 675,
+  "h": 1200
+ },
+ "yargitay-son-ibk-isiginda-apkisler-arsa-sahipleri-ve-tuketici-2025": {
+  "path": "/img/events/yargitay-son-ibk-isiginda-apkisler-arsa-sahipleri-ve-tuketici-2025.jpg",
+  "w": 828,
+  "h": 1036
+ },
+ "kentsel-donusum-uygulamalari-egitimi-istanbul-barosu-kasim-2025": {
+  "path": "/img/events/kentsel-donusum-uygulamalari-egitimi-istanbul-barosu-kasim-2025.jpg",
+  "w": 737,
+  "h": 1039
+ },
+ "anayasa-mahkemesi-kararlari-isiginda-munzam-zarar-sorunu-ve-2025": {
+  "path": "/img/events/anayasa-mahkemesi-kararlari-isiginda-munzam-zarar-sorunu-ve-2025.jpg",
+  "w": 735,
+  "h": 1200
+ },
+ "aile-hukuku-gundemleri-sempozyumu-i-istanbul-29-mayis-2025": {
+  "path": "/img/events/aile-hukuku-gundemleri-sempozyumu-i-istanbul-29-mayis-2025.jpg",
+  "w": 849,
+  "h": 1200
+ },
+ "kat-malikleri-kurulu-gundeminde-isletme-projesi-kavrami-ve-2026": {
+  "path": "/img/events/kat-malikleri-kurulu-gundeminde-isletme-projesi-kavrami-ve-2026.jpg",
+  "w": 851,
+  "h": 1200
+ },
+ "turk-medeni-kanununun-kabulunun-yuzuncu-yili-sempozyumu-tokat-2026": {
+  "path": "/img/events/turk-medeni-kanununun-kabulunun-yuzuncu-yili-sempozyumu-tokat-2026.jpg",
+  "w": 849,
+  "h": 1200
+ },
+ "kamulastirma-hukuku-ve-kamulastirmasiz-el-atma-esaslari-meslek-2026": {
+  "path": "/img/events/kamulastirma-hukuku-ve-kamulastirmasiz-el-atma-esaslari-meslek-2026.jpg",
+  "w": 720,
+  "h": 1008
  }
 }

@@ -316,7 +316,7 @@ function eventLd(e, lang, origin, members) {
   };
   if (e.date) o.startDate = isoAt(e.date, e.startTime);
   if (e.endDate || e.endTime) o.endDate = isoAt(e.endDate || e.date, e.endTime);
-  if (e.poster) o.image = [origin + e.poster];
+  o.image = [origin + (e.poster || "/img/og.png")];
   if (loc(e.summary, lang)) o.description = loc(e.summary, lang);
   if ((e.organizers || []).length) {
     o.organizer = e.organizers.map((n) => ({ "@type": "Organization", name: n }));
