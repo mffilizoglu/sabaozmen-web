@@ -158,7 +158,7 @@ verdiği bilgiler. Alanlar sitede hazır; içerik ortaklıktan gelmelidir.
 
 | Avukat | Eksik |
 |---|---|
-| Prof. Dr. Etem Sabâ Özmen | baro sicil no, mesleğe başlama tarihi, mezun olunan fakülte, yabancı diller |
+| Prof. Dr. Etem Saba Özmen | baro sicil no, mesleğe başlama tarihi, mezun olunan fakülte, yabancı diller |
 | Mustafa Filizoğlu | baro sicil no, mesleğe başlama tarihi, mezun olunan fakülte, yabancı diller, kısa özgeçmiş |
 | Türkan Aktaş | profesyonel portre, baro sicil no, mesleğe başlama tarihi, mezun olunan fakülte, yabancı diller, kısa özgeçmiş |
 | Tuğba Kaya Filizoğlu | profesyonel portre, e-posta, baro sicil no, mesleğe başlama tarihi, mezun olunan fakülte, yabancı diller, kısa özgeçmiş |

@@ -94,7 +94,7 @@ const check = (name, pass, detail) => {
     venue_tr: "Test Salonu", city: "İstanbul", date: "2026-05-12",
     summary_tr: "Bu kayıt otomatik test tarafından oluşturulmuştur.",
     body_tr: "Birinci paragraf.\n\nİkinci paragraf.",
-    speakers: "Prof. Dr. Etem Sabâ Özmen, Av. Test",
+    speakers: "Prof. Dr. Etem Saba Özmen, Av. Test",
     published: "1",
   }, { poster: { name: "afis.png", type: "image/png", data: PNG } });
   r = await req("POST", "/admin/etkinlikler/yeni", mpOk.body, { "Content-Type": mpOk.type, "Content-Length": mpOk.body.length });
@@ -138,7 +138,7 @@ const check = (name, pass, detail) => {
   const tCsrf = csrfFrom(tForm.body);
   const someSlugs = require("../site/content/articles.json").articles.slice(0, 3).map((a) => a.slug);
   let mpT = multipart({
-    _csrf: tCsrf, name: "Prof. Dr. Etem Sabâ Özmen",
+    _csrf: tCsrf, name: "Prof. Dr. Etem Saba Özmen",
     role_tr: "Kurucu Ortak", role_en: "Founding Partner", role_de: "Gründungspartner",
     email: "sabaozmen@sabaozmen.av.tr", barNo: "12345", startYear: "1990",
     faculty: "Test Hukuk Fakültesi", languages: "Almanca, İngilizce",

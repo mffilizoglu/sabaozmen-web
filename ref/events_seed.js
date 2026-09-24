@@ -42,14 +42,14 @@ add({
     de: "Konferenzsaal des Gebäudes der Regionalen Berufungsgerichte İzmir",
   },
   summary: {
-    tr: "TBB ve İzmir Barosu meslek içi eğitim seminerinde Prof. Dr. Etem Sabâ Özmen kentsel dönüşüm, kamulaştırma ve kamulaştırmasız el atmayı anlattı.",
-    en: "At the TBB and İzmir Bar training seminar, Prof. Dr. Etem Sabâ Özmen lectured on urban regeneration, expropriation and de facto expropriation.",
-    de: "Im Fortbildungsseminar von TBB und Anwaltskammer İzmir referierte Prof. Dr. Etem Sabâ Özmen über Stadterneuerung und Enteignung.",
+    tr: "TBB ve İzmir Barosu meslek içi eğitim seminerinde Prof. Dr. Etem Saba Özmen kentsel dönüşüm, kamulaştırma ve kamulaştırmasız el atmayı anlattı.",
+    en: "At the TBB and İzmir Bar training seminar, Prof. Dr. Etem Saba Özmen lectured on urban regeneration, expropriation and de facto expropriation.",
+    de: "Im Fortbildungsseminar von TBB und Anwaltskammer İzmir referierte Prof. Dr. Etem Saba Özmen über Stadterneuerung und Enteignung.",
   },
   body: {
-    tr: "Türkiye Barolar Birliği ve İzmir Barosu'nun Meslek İçi Eğitim Seminerleri kapsamında düzenlenen programda eğitmen Prof. Dr. Etem Sabâ Özmen; kentsel dönüşüm uygulamalarını, kamulaştırma sürecini ve kamulaştırmasız el atmaya ilişkin hukuki sorunları ele aldı. Katılımcılara katılım belgesi verildi.",
+    tr: "Türkiye Barolar Birliği ve İzmir Barosu'nun Meslek İçi Eğitim Seminerleri kapsamında düzenlenen programda eğitmen Prof. Dr. Etem Saba Özmen; kentsel dönüşüm uygulamalarını, kamulaştırma sürecini ve kamulaştırmasız el atmaya ilişkin hukuki sorunları ele aldı. Katılımcılara katılım belgesi verildi.",
     en: "Held within the professional training seminars of the Union of Turkish Bar Associations and the İzmir Bar Association, the session covered urban regeneration practice, the expropriation procedure and the legal problems of de facto expropriation (kamulaştırmasız el atma). Participants received a certificate of attendance.",
-    de: "Im Rahmen der beruflichen Fortbildungsseminare des Türkischen Anwaltskammerverbands und der Anwaltskammer İzmir behandelte Prof. Dr. Etem Sabâ Özmen die Praxis der Stadterneuerung, das Enteignungsverfahren und Rechtsfragen der faktischen Enteignung. Die Teilnehmenden erhielten eine Teilnahmebescheinigung.",
+    de: "Im Rahmen der beruflichen Fortbildungsseminare des Türkischen Anwaltskammerverbands und der Anwaltskammer İzmir behandelte Prof. Dr. Etem Saba Özmen die Praxis der Stadterneuerung, das Enteignungsverfahren und Rechtsfragen der faktischen Enteignung. Die Teilnehmenden erhielten eine Teilnahmebescheinigung.",
   },
 });
 
@@ -60,9 +60,9 @@ add({
   organizers: ["İstanbul Medipol Üniversitesi", "İdeal Hukuk Kulübü", "Hukukçular Derneği Gençlik Komisyonu"],
   areaSlugs: ["gayrimenkul-hukuku-ve-kentsel-donusum", "insaat-hukuku"],
   title: {
-    tr: "Prof. Dr. Etem Sabâ Özmen ile Deprem Hukuku",
-    en: "Earthquake Law with Prof. Dr. Etem Sabâ Özmen",
-    de: "Erdbebenrecht mit Prof. Dr. Etem Sabâ Özmen",
+    tr: "Prof. Dr. Etem Saba Özmen ile Deprem Hukuku",
+    en: "Earthquake Law with Prof. Dr. Etem Saba Özmen",
+    de: "Erdbebenrecht mit Prof. Dr. Etem Saba Özmen",
   },
   venue: { tr: "Zoom (çevrimiçi)", en: "Zoom (online)", de: "Zoom (online)" },
   summary: {
@@ -71,7 +71,7 @@ add({
     de: "Online-Veranstaltung zum Erdbebenrecht, ausgerichtet vom İdeal-Rechtsclub der Medipol-Universität und der Jugendkommission des Juristenvereins.",
   },
   body: {
-    tr: "Şubat 2023 depremlerinin ardından düzenlenen çevrimiçi etkinlikte Prof. Dr. Etem Sabâ Özmen, deprem sonrası ortaya çıkan hukuki sorunları taşınmaz, yapı ve sorumluluk hukuku açısından değerlendirdi.",
+    tr: "Şubat 2023 depremlerinin ardından düzenlenen çevrimiçi etkinlikte Prof. Dr. Etem Saba Özmen, deprem sonrası ortaya çıkan hukuki sorunları taşınmaz, yapı ve sorumluluk hukuku açısından değerlendirdi.",
     en: "Held online after the February 2023 earthquakes, the session examined the legal questions arising after the disaster from the perspective of property, construction and liability law.",
     de: "Die nach den Erdbeben vom Februar 2023 online abgehaltene Veranstaltung behandelte die Rechtsfragen nach der Katastrophe aus Sicht des Immobilien-, Bau- und Haftungsrechts.",
   },
@@ -95,14 +95,14 @@ add({
     de: "Zuwendungsgeschäfte des Bauunternehmers über Forderungen aus dem Grundstücksanteil-gegen-Bauleistung-Vertrag (Verpflichtungs- und Verfügungsgeschäfte)",
   }],
   summary: {
-    tr: "Maltepe Üniversitesi sempozyumunda Prof. Dr. Etem Sabâ Özmen, arsa payı karşılığı inşaat sözleşmesinde yüklenicinin kazandırıcı işlemlerini sundu.",
-    en: "At Maltepe University's symposium, Prof. Dr. Etem Sabâ Özmen presented on the contractor's transactions under land-share-for-construction contracts.",
-    de: "Symposium der Maltepe-Universität: Prof. Dr. Etem Sabâ Özmen zu Geschäften des Bauunternehmers beim Bauleistungsvertrag gegen Grundstücksanteil.",
+    tr: "Maltepe Üniversitesi sempozyumunda Prof. Dr. Etem Saba Özmen, arsa payı karşılığı inşaat sözleşmesinde yüklenicinin kazandırıcı işlemlerini sundu.",
+    en: "At Maltepe University's symposium, Prof. Dr. Etem Saba Özmen presented on the contractor's transactions under land-share-for-construction contracts.",
+    de: "Symposium der Maltepe-Universität: Prof. Dr. Etem Saba Özmen zu Geschäften des Bauunternehmers beim Bauleistungsvertrag gegen Grundstücksanteil.",
   },
   body: {
-    tr: "Cumhuriyetin 100. yılında Maltepe Üniversitesi Hukuk Fakültesi tarafından yüz yüze ve çevrimiçi olarak düzenlenen sempozyum, taşınmaz hukukunun özel hukuk ve vergi hukuku boyutlarını bir araya getirdi. Prof. Dr. Etem Sabâ Özmen birinci oturumda tebliğ sundu.",
-    en: "Organised by Maltepe University Faculty of Law in the centenary year of the Republic, both in person and online, the symposium brought together the private-law and tax-law dimensions of real property law. Prof. Dr. Etem Sabâ Özmen presented a paper in the first session.",
-    de: "Das von der Juristischen Fakultät der Maltepe-Universität im 100. Jahr der Republik in Präsenz und online veranstaltete Symposium verband zivil- und steuerrechtliche Fragen des Immobilienrechts. Prof. Dr. Etem Sabâ Özmen trug in der ersten Sitzung vor.",
+    tr: "Cumhuriyetin 100. yılında Maltepe Üniversitesi Hukuk Fakültesi tarafından yüz yüze ve çevrimiçi olarak düzenlenen sempozyum, taşınmaz hukukunun özel hukuk ve vergi hukuku boyutlarını bir araya getirdi. Prof. Dr. Etem Saba Özmen birinci oturumda tebliğ sundu.",
+    en: "Organised by Maltepe University Faculty of Law in the centenary year of the Republic, both in person and online, the symposium brought together the private-law and tax-law dimensions of real property law. Prof. Dr. Etem Saba Özmen presented a paper in the first session.",
+    de: "Das von der Juristischen Fakultät der Maltepe-Universität im 100. Jahr der Republik in Präsenz und online veranstaltete Symposium verband zivil- und steuerrechtliche Fragen des Immobilienrechts. Prof. Dr. Etem Saba Özmen trug in der ersten Sitzung vor.",
   },
   program: [
     "## 13:30 | Açılış",
@@ -111,7 +111,7 @@ add({
     "- Dr. Avni Çelik (Sinpaş Holding Yönetim Kurulu Başkanı) — Gayrimenkul Sektöründe Yatırım Ortamının İyileştirilmesinin Ekonomiye Etkileri",
     "## 14:15 | Birinci Oturum | Oturum Başkanı: Prof. Dr. Yusuf Aksar",
     "- Prof. Dr. Halil Kalabalık (İstanbul Sabahattin Zaim Üniversitesi) — İmar Hukukunda Kamulaştırma Kısıtlılık İlişkisi ve Kısıtlanan Taşınmazların Emlak Vergisi",
-    "- Prof. Dr. Etem Sabâ Özmen (Maltepe Üniversitesi) — Yüklenicinin Arsa Payı Karşılığı İnşaat Sözleşmesinden Doğan Alacak Hakkına İlişkin Kazandırıcı İşlemleri (Borçlanma ve Tasarruf İşlemleri)",
+    "- Prof. Dr. Etem Saba Özmen (Maltepe Üniversitesi) — Yüklenicinin Arsa Payı Karşılığı İnşaat Sözleşmesinden Doğan Alacak Hakkına İlişkin Kazandırıcı İşlemleri (Borçlanma ve Tasarruf İşlemleri)",
     "- Doç. Dr. Gülşah Vardar Hamamcıoğlu (Maltepe Üniversitesi) — Arsa Payı Karşılığı İnşaat Sözleşmesinde Tarafların Haklarına İlişkin Hüküm ve Sonuçlar",
     "## 15:45 | İkinci Oturum | Oturum Başkanı: Prof. Dr. Dilek Yılmazcan",
     "- Av. Prof. Dr. Funda Başaran Yavaşlar (İstanbul Kültür Üniversitesi) — Değerli Konut Vergisi Anayasaya Aykırı mı?",
@@ -149,16 +149,16 @@ add({
     de: "Programm des Türkischen Anwaltskammerverbands in Ankara zur Pflichtmediation bei Teilungsklagen und Wohnungseigentumsstreitigkeiten.",
   },
   body: {
-    tr: "7445 sayılı Kanun'la getirilen yeni dava şartı arabuluculuk uygulamasının ele alındığı programın birinci oturumunda Prof. Dr. Etem Sabâ Özmen, paylaştırma ve ortaklığın giderilmesi uyuşmazlıklarını ve Kat Mülkiyeti Kanunu'ndan doğan uyuşmazlıkları anlattı.",
-    en: "The programme addressed the new requirement of mediation before litigation. In the first session Prof. Dr. Etem Sabâ Özmen spoke on partition and co-ownership disputes and on disputes under the Condominium Law.",
-    de: "Das Programm befasste sich mit der neu eingeführten Pflichtmediation vor Klageerhebung. In der ersten Sitzung sprach Prof. Dr. Etem Sabâ Özmen über Teilungs- und Miteigentumsstreitigkeiten sowie Streitigkeiten nach dem Wohnungseigentumsgesetz.",
+    tr: "7445 sayılı Kanun'la getirilen yeni dava şartı arabuluculuk uygulamasının ele alındığı programın birinci oturumunda Prof. Dr. Etem Saba Özmen, paylaştırma ve ortaklığın giderilmesi uyuşmazlıklarını ve Kat Mülkiyeti Kanunu'ndan doğan uyuşmazlıkları anlattı.",
+    en: "The programme addressed the new requirement of mediation before litigation. In the first session Prof. Dr. Etem Saba Özmen spoke on partition and co-ownership disputes and on disputes under the Condominium Law.",
+    de: "Das Programm befasste sich mit der neu eingeführten Pflichtmediation vor Klageerhebung. In der ersten Sitzung sprach Prof. Dr. Etem Saba Özmen über Teilungs- und Miteigentumsstreitigkeiten sowie Streitigkeiten nach dem Wohnungseigentumsgesetz.",
   },
   program: [
     "## 13:30–14:00 | Açılış Konuşmaları",
     "- Av. Ayşe Gonca Gülçin (Arabuluculuk ve Uzlaştırma Komisyonu Yürütme Kurulu Üyesi)",
     "- Av. Abdülbaki Çelebi (Arabuluculuk ve Uzlaştırma Komisyonu Koordinatörü, TBB Yönetim Kurulu Üyesi)",
     "## 14:00–14:45 | Birinci Oturum | Moderatör: Av. Arb. Mustafa Murat Bilgin (Antalya Barosu)",
-    "- Prof. Dr. Etem Sabâ Özmen (Maltepe Üniversitesi Medeni Hukuk Anabilim Dalı Başkanı) — Taşınır ve Taşınmazların Paylaştırılmasına ve Ortaklığın Giderilmesine İlişkin Uyuşmazlıklar ile Kat Mülkiyeti Kanunundan Kaynaklanan Uyuşmazlıklar",
+    "- Prof. Dr. Etem Saba Özmen (Maltepe Üniversitesi Medeni Hukuk Anabilim Dalı Başkanı) — Taşınır ve Taşınmazların Paylaştırılmasına ve Ortaklığın Giderilmesine İlişkin Uyuşmazlıklar ile Kat Mülkiyeti Kanunundan Kaynaklanan Uyuşmazlıklar",
     "Soru-cevap: 14:45–15:15",
     "## 15:30–16:15 | İkinci Oturum | Moderatör: Av. Arb. Hamdi Can Ünsal (Ankara Barosu)",
     "- Av. Arb. Nezih Dağdeviren (Konya Barosu) — Bu Uyuşmazlıklarda Dava Şartı Arabuluculuk Uygulaması, Uygulama Sorunları ve Çözüm Önerileri",
@@ -183,9 +183,9 @@ add({
     de: "Gebäude der Anwaltskammer Eskişehir, Konferenzsaal Av. Cemre Parmaksız",
   },
   summary: {
-    tr: "Eskişehir Barosu'nda Prof. Dr. Etem Sabâ Özmen, 7471 sayılı Kanun'la değişen 6306 sayılı Kanun kapsamındaki kentsel dönüşüm uygulamalarını anlattı.",
-    en: "At the Eskişehir Bar, Prof. Dr. Etem Sabâ Özmen discussed urban regeneration under Law No. 6306 as amended by Law No. 7471.",
-    de: "Bei der Anwaltskammer Eskişehir erläuterte Prof. Dr. Etem Sabâ Özmen die Stadterneuerung nach Gesetz Nr. 6306 in der Fassung des Gesetzes Nr. 7471.",
+    tr: "Eskişehir Barosu'nda Prof. Dr. Etem Saba Özmen, 7471 sayılı Kanun'la değişen 6306 sayılı Kanun kapsamındaki kentsel dönüşüm uygulamalarını anlattı.",
+    en: "At the Eskişehir Bar, Prof. Dr. Etem Saba Özmen discussed urban regeneration under Law No. 6306 as amended by Law No. 7471.",
+    de: "Bei der Anwaltskammer Eskişehir erläuterte Prof. Dr. Etem Saba Özmen die Stadterneuerung nach Gesetz Nr. 6306 in der Fassung des Gesetzes Nr. 7471.",
   },
   body: {
     tr: "Kasım 2023'te yürürlüğe giren 7471 sayılı Kanun, 6306 sayılı Afet Riski Altındaki Alanların Dönüştürülmesi Hakkında Kanun'da önemli değişiklikler yaptı. Seminerde bu değişikliklerin kentsel dönüşüm uygulamalarına etkileri değerlendirildi.",
@@ -212,14 +212,14 @@ add({
     de: "Hauptgebäude der Anwaltskammer Istanbul, Konferenzsaal",
   },
   summary: {
-    tr: "İstanbul Barosu Staj Eğitim Merkezi seminerinde son yasal değişikliklerle kentsel dönüşüm ele alındı; konuşmacı Prof. Dr. Etem Sabâ Özmen.",
-    en: "Istanbul Bar training-centre seminar on urban regeneration after the latest statutory amendments, with Prof. Dr. Etem Sabâ Özmen.",
+    tr: "İstanbul Barosu Staj Eğitim Merkezi seminerinde son yasal değişikliklerle kentsel dönüşüm ele alındı; konuşmacı Prof. Dr. Etem Saba Özmen.",
+    en: "Istanbul Bar training-centre seminar on urban regeneration after the latest statutory amendments, with Prof. Dr. Etem Saba Özmen.",
     de: "Seminar des Ausbildungszentrums der Anwaltskammer Istanbul zur Stadterneuerung nach den jüngsten Gesetzesänderungen.",
   },
   body: {
-    tr: "İstanbul Barosu Staj Eğitim Merkezi'nin 35. seminerinde Prof. Dr. Etem Sabâ Özmen ve Av. Ali Rıza İlgezdi, 7471 sayılı Kanun'la değişen kentsel dönüşüm mevzuatını ve uygulamadaki yansımalarını değerlendirdi.",
-    en: "In the 35th seminar of the Istanbul Bar's trainee training centre, Prof. Dr. Etem Sabâ Özmen and Av. Ali Rıza İlgezdi reviewed the urban regeneration legislation as amended in 2023 and its effect in practice.",
-    de: "Im 35. Seminar des Ausbildungszentrums der Anwaltskammer Istanbul erörterten Prof. Dr. Etem Sabâ Özmen und Av. Ali Rıza İlgezdi das 2023 geänderte Stadterneuerungsrecht und seine praktischen Folgen.",
+    tr: "İstanbul Barosu Staj Eğitim Merkezi'nin 35. seminerinde Prof. Dr. Etem Saba Özmen ve Av. Ali Rıza İlgezdi, 7471 sayılı Kanun'la değişen kentsel dönüşüm mevzuatını ve uygulamadaki yansımalarını değerlendirdi.",
+    en: "In the 35th seminar of the Istanbul Bar's trainee training centre, Prof. Dr. Etem Saba Özmen and Av. Ali Rıza İlgezdi reviewed the urban regeneration legislation as amended in 2023 and its effect in practice.",
+    de: "Im 35. Seminar des Ausbildungszentrums der Anwaltskammer Istanbul erörterten Prof. Dr. Etem Saba Özmen und Av. Ali Rıza İlgezdi das 2023 geänderte Stadterneuerungsrecht und seine praktischen Folgen.",
   },
   program: [
     "## 16:00 | Açılış Konuşmaları",
@@ -227,7 +227,7 @@ add({
     "- Av. Özlem Aksungar (İstanbul Barosu SEM Yürütme Kurulu Başkanı)",
     "- Av. Doç. Dr. Ahmet Ayar (İstanbul Barosu Yönetim Kurulu Üyesi)",
     "## Konuşmacılar | Moderatör: Av. Recep Köse (İstanbul Barosu SEM Yürütme Kurulu Üyesi)",
-    "- Prof. Dr. Etem Sabâ Özmen (Maltepe Üniversitesi Hukuk Fakültesi)",
+    "- Prof. Dr. Etem Saba Özmen (Maltepe Üniversitesi Hukuk Fakültesi)",
     "- Av. Ali Rıza İlgezdi (İstanbul Barosu SEM Yürütme Kurulu Üyesi)",
   ].join("\n"),
 });
@@ -247,9 +247,9 @@ add({
   },
   venue: { tr: "Şırnak Barosu Hizmet Binası", en: "Şırnak Bar Association Building", de: "Gebäude der Anwaltskammer Şırnak" },
   summary: {
-    tr: "TBB ve Şırnak Barosu meslek içi eğitim seminerinde Prof. Dr. Etem Sabâ Özmen taşınmaz davalarını anlattı.",
-    en: "Prof. Dr. Etem Sabâ Özmen taught real property litigation at a professional training seminar of the TBB and the Şırnak Bar.",
-    de: "Prof. Dr. Etem Sabâ Özmen unterrichtete Immobilienprozesse im Fortbildungsseminar von TBB und Anwaltskammer Şırnak.",
+    tr: "TBB ve Şırnak Barosu meslek içi eğitim seminerinde Prof. Dr. Etem Saba Özmen taşınmaz davalarını anlattı.",
+    en: "Prof. Dr. Etem Saba Özmen taught real property litigation at a professional training seminar of the TBB and the Şırnak Bar.",
+    de: "Prof. Dr. Etem Saba Özmen unterrichtete Immobilienprozesse im Fortbildungsseminar von TBB und Anwaltskammer Şırnak.",
   },
   body: {
     tr: "Türkiye Barolar Birliği ile Şırnak Barosu'nun meslek içi eğitim programında taşınmaz mülkiyetine ilişkin dava türleri, usul ve ispat sorunları uygulama örnekleriyle ele alındı. Katılımcılara katılım belgesi verildi.",
@@ -278,9 +278,9 @@ add({
     de: "Kostenloser Online-Kurs bei Hukukeğitim zu verbreiteten Irrtümern über einfache Gesellschaften ohne Gewinnzweck.",
   },
   body: {
-    tr: "Hukukeğitim ve AristoOFFICE iş birliğiyle düzenlenen ücretsiz çevrimiçi eğitimde Prof. Dr. Etem Sabâ Özmen, Türk Borçlar Kanunu'ndaki adi ortaklık hükümlerinin kazanç paylaşımı amacı taşımayan ortak faaliyetlere uygulanmasını değerlendirdi.",
-    en: "In this free online course by Hukukeğitim and AristoOFFICE, Prof. Dr. Etem Sabâ Özmen examined how the simple-partnership provisions of the Turkish Code of Obligations apply to joint activities without a profit-sharing aim.",
-    de: "In diesem kostenlosen Online-Kurs von Hukukeğitim und AristoOFFICE untersuchte Prof. Dr. Etem Sabâ Özmen die Anwendung der Vorschriften über die einfache Gesellschaft im türkischen Obligationengesetz auf gemeinsame Tätigkeiten ohne Gewinnzweck.",
+    tr: "Hukukeğitim ve AristoOFFICE iş birliğiyle düzenlenen ücretsiz çevrimiçi eğitimde Prof. Dr. Etem Saba Özmen, Türk Borçlar Kanunu'ndaki adi ortaklık hükümlerinin kazanç paylaşımı amacı taşımayan ortak faaliyetlere uygulanmasını değerlendirdi.",
+    en: "In this free online course by Hukukeğitim and AristoOFFICE, Prof. Dr. Etem Saba Özmen examined how the simple-partnership provisions of the Turkish Code of Obligations apply to joint activities without a profit-sharing aim.",
+    de: "In diesem kostenlosen Online-Kurs von Hukukeğitim und AristoOFFICE untersuchte Prof. Dr. Etem Saba Özmen die Anwendung der Vorschriften über die einfache Gesellschaft im türkischen Obligationengesetz auf gemeinsame Tätigkeiten ohne Gewinnzweck.",
   },
 });
 
@@ -407,18 +407,18 @@ add({
     de: "Juristische Fakultät der Maltepe-Universität, Hörsaal I",
   },
   summary: {
-    tr: "Maltepe Üniversitesi Hukuk Fakültesi'nin üç haftalık Gayrimenkul Hukuku Sertifika Programı; ilk oturumun eğitmeni Prof. Dr. Etem Sabâ Özmen.",
-    en: "Maltepe University Faculty of Law's three-week certificate programme in real estate law; first session taught by Prof. Dr. Etem Sabâ Özmen.",
-    de: "Dreiwöchiges Zertifikatsprogramm Immobilienrecht der Maltepe-Universität; die erste Einheit leitete Prof. Dr. Etem Sabâ Özmen.",
+    tr: "Maltepe Üniversitesi Hukuk Fakültesi'nin üç haftalık Gayrimenkul Hukuku Sertifika Programı; ilk oturumun eğitmeni Prof. Dr. Etem Saba Özmen.",
+    en: "Maltepe University Faculty of Law's three-week certificate programme in real estate law; first session taught by Prof. Dr. Etem Saba Özmen.",
+    de: "Dreiwöchiges Zertifikatsprogramm Immobilienrecht der Maltepe-Universität; die erste Einheit leitete Prof. Dr. Etem Saba Özmen.",
   },
   body: {
-    tr: "Üç cumartesi günü süren programın 4 Mayıs oturumunu Prof. Dr. Etem Sabâ Özmen, 11 Mayıs oturumunu Doç. Dr. Gülşah Vardar Hamamcıoğlu, 18 Mayıs oturumunu Prof. Dr. Melek Bilgin Yüce verdi. Tüm oturumlara katılanlara sertifika verildi.",
-    en: "The programme ran over three Saturdays: Prof. Dr. Etem Sabâ Özmen taught on 4 May, Assoc. Prof. Dr. Gülşah Vardar Hamamcıoğlu on 11 May and Prof. Dr. Melek Bilgin Yüce on 18 May. Participants attending all sessions received a certificate.",
-    de: "Das Programm lief an drei Samstagen: Prof. Dr. Etem Sabâ Özmen am 4. Mai, Doç. Dr. Gülşah Vardar Hamamcıoğlu am 11. Mai und Prof. Dr. Melek Bilgin Yüce am 18. Mai. Wer alle Einheiten besuchte, erhielt ein Zertifikat.",
+    tr: "Üç cumartesi günü süren programın 4 Mayıs oturumunu Prof. Dr. Etem Saba Özmen, 11 Mayıs oturumunu Doç. Dr. Gülşah Vardar Hamamcıoğlu, 18 Mayıs oturumunu Prof. Dr. Melek Bilgin Yüce verdi. Tüm oturumlara katılanlara sertifika verildi.",
+    en: "The programme ran over three Saturdays: Prof. Dr. Etem Saba Özmen taught on 4 May, Assoc. Prof. Dr. Gülşah Vardar Hamamcıoğlu on 11 May and Prof. Dr. Melek Bilgin Yüce on 18 May. Participants attending all sessions received a certificate.",
+    de: "Das Programm lief an drei Samstagen: Prof. Dr. Etem Saba Özmen am 4. Mai, Doç. Dr. Gülşah Vardar Hamamcıoğlu am 11. Mai und Prof. Dr. Melek Bilgin Yüce am 18. Mai. Wer alle Einheiten besuchte, erhielt ein Zertifikat.",
   },
   program: [
     "## 4 Mayıs 2024, 18:00–20:00",
-    "- Prof. Dr. Etem Sabâ Özmen",
+    "- Prof. Dr. Etem Saba Özmen",
     "## 11 Mayıs 2024, 18:00–20:00",
     "- Doç. Dr. Gülşah Vardar Hamamcıoğlu",
     "## 18 Mayıs 2024, 18:00–20:00",
@@ -495,9 +495,9 @@ add({
   },
   venue: { tr: "V. Borçlar Hukuku Kongresi", en: "5th Congress of the Law of Obligations", de: "5. Schuldrechtskongress" },
   summary: {
-    tr: "V. Borçlar Hukuku Kongresi'nin taşınmaz sözleşmeleri oturumunda Prof. Dr. Etem Sabâ Özmen inşa halinde bağımsız bölüm satışını anlattı.",
-    en: "In the real property contracts session of the 5th Congress of the Law of Obligations, Prof. Dr. Etem Sabâ Özmen spoke on sales of units under construction.",
-    de: "In der Sitzung Immobilienverträge des 5. Schuldrechtskongresses sprach Prof. Dr. Etem Sabâ Özmen über den Verkauf von Einheiten im Bau.",
+    tr: "V. Borçlar Hukuku Kongresi'nin taşınmaz sözleşmeleri oturumunda Prof. Dr. Etem Saba Özmen inşa halinde bağımsız bölüm satışını anlattı.",
+    en: "In the real property contracts session of the 5th Congress of the Law of Obligations, Prof. Dr. Etem Saba Özmen spoke on sales of units under construction.",
+    de: "In der Sitzung Immobilienverträge des 5. Schuldrechtskongresses sprach Prof. Dr. Etem Saba Özmen über den Verkauf von Einheiten im Bau.",
   },
   body: {
     tr: "Hukukeğitim, Yeditepe Üniversitesi Hukuk Fakültesi ve Tüketici Hukuku Enstitüsü'nün düzenlediği kongrenin Prof. Dr. Cevdet Yavuz başkanlığındaki 3. oturumu taşınmaz sözleşmelerine ayrıldı.",
@@ -506,7 +506,7 @@ add({
   },
   program: [
     "## 3. Oturum | Taşınmaz Sözleşmeleri | Oturum Başkanı: Prof. Dr. Cevdet Yavuz",
-    "- Prof. Dr. Etem Sabâ Özmen — İnşa Halinde Bağımsız Bölüm Satışında (Pay ve Kat İrtifakına Konu) Taşınmaz Mülkiyeti Devri ve Eser Edimlerinin Birlikte Borçlanılması",
+    "- Prof. Dr. Etem Saba Özmen — İnşa Halinde Bağımsız Bölüm Satışında (Pay ve Kat İrtifakına Konu) Taşınmaz Mülkiyeti Devri ve Eser Edimlerinin Birlikte Borçlanılması",
     "- Prof. Dr. Turgut Öz — Noterde Taşınmaz Satışı",
     "- Prof. Dr. Emrehan İnal — Gelir Paylaşımlı İnşaat Sözleşmelerinde Alıcı-Üçüncü Kişilerin Hukuki Durumu",
     "- Prof. Dr. Umut Yeniocak — Gelir Paylaşımına Dayalı İnşaat Sözleşmesinin Uyarlanması",
@@ -538,14 +538,14 @@ add({
     de: "Bahçeşehir-Universität, Campus Beşiktaş, Fazıl-Say-Saal",
   },
   summary: {
-    tr: "Prof. Dr. Etem Sabâ Özmen sempozyumda devreli tatil düzenlemesine ilişkin tebliğ sundu ve ikinci oturuma başkanlık etti.",
-    en: "Prof. Dr. Etem Sabâ Özmen presented a paper on the timeshare-holiday rules and chaired the second session of the symposium.",
-    de: "Prof. Dr. Etem Sabâ Özmen hielt einen Vortrag zur Timesharing-Regelung und leitete die zweite Sitzung des Symposiums.",
+    tr: "Prof. Dr. Etem Saba Özmen sempozyumda devreli tatil düzenlemesine ilişkin tebliğ sundu ve ikinci oturuma başkanlık etti.",
+    en: "Prof. Dr. Etem Saba Özmen presented a paper on the timeshare-holiday rules and chaired the second session of the symposium.",
+    de: "Prof. Dr. Etem Saba Özmen hielt einen Vortrag zur Timesharing-Regelung und leitete die zweite Sitzung des Symposiums.",
   },
   body: {
-    tr: "İstanbul Arel Üniversitesi, Tüketici Örgütleri Konfederasyonu ve Bahçeşehir Üniversitesi'nin düzenlediği sempozyumda Prof. Dr. Etem Sabâ Özmen birinci oturumda 6502 sayılı Kanun'daki devre tatil düzenlemesini değerlendirdi, ikinci oturumu ise yönetti. Katılım ücretsizdi; katılımcılara sertifika verildi.",
-    en: "At the symposium organised by Istanbul Arel University, the Confederation of Consumer Organisations and Bahçeşehir University, Prof. Dr. Etem Sabâ Özmen assessed the timeshare-holiday provisions of Law No. 6502 in the first session and chaired the second. Attendance was free, with certificates for participants.",
-    de: "Beim Symposium der Istanbul-Arel-Universität, des Verbraucherverbände-Dachverbands und der Bahçeşehir-Universität bewertete Prof. Dr. Etem Sabâ Özmen in der ersten Sitzung die Timesharing-Regelung des Gesetzes Nr. 6502 und leitete die zweite Sitzung. Die Teilnahme war kostenlos.",
+    tr: "İstanbul Arel Üniversitesi, Tüketici Örgütleri Konfederasyonu ve Bahçeşehir Üniversitesi'nin düzenlediği sempozyumda Prof. Dr. Etem Saba Özmen birinci oturumda 6502 sayılı Kanun'daki devre tatil düzenlemesini değerlendirdi, ikinci oturumu ise yönetti. Katılım ücretsizdi; katılımcılara sertifika verildi.",
+    en: "At the symposium organised by Istanbul Arel University, the Confederation of Consumer Organisations and Bahçeşehir University, Prof. Dr. Etem Saba Özmen assessed the timeshare-holiday provisions of Law No. 6502 in the first session and chaired the second. Attendance was free, with certificates for participants.",
+    de: "Beim Symposium der Istanbul-Arel-Universität, des Verbraucherverbände-Dachverbands und der Bahçeşehir-Universität bewertete Prof. Dr. Etem Saba Özmen in der ersten Sitzung die Timesharing-Regelung des Gesetzes Nr. 6502 und leitete die zweite Sitzung. Die Teilnahme war kostenlos.",
   },
   program: [
     "## 9:30–9:45 | Açılış Konuşmaları",
@@ -553,11 +553,11 @@ add({
     "- Prof. Dr. K. Emre Gökyayla (Bahçeşehir Üniversitesi Hukuk Fakültesi)",
     "- Fuat Engin (Tüketici Örgütleri Konfederasyonu Genel Başkanı)",
     "## 9:45–11:00 | 1. Oturum | Başkan: Prof. Dr. Kadir Emre Gökyayla",
-    "- Prof. Dr. Etem Sabâ Özmen (Maltepe Üniversitesi Hukuk Fakültesi) — Tüketicinin Korunması Hakkında Kanunun Devreli Tatil Düzenlemesinin Garabetine İlişkin Hüküm ve Sonuçlar",
+    "- Prof. Dr. Etem Saba Özmen (Maltepe Üniversitesi Hukuk Fakültesi) — Tüketicinin Korunması Hakkında Kanunun Devreli Tatil Düzenlemesinin Garabetine İlişkin Hüküm ve Sonuçlar",
     "- Doç. Dr. Meliha Sermin Paksoy — Velilerin Özel Okul ile İmtihanı",
     "- Dr. Öğr. Üyesi Dilşah Buşra Kartal (Kocaeli Üniversitesi) — Elektronik Haberleşme Abonelik Sözleşmesinin Tüketici Tarafından Feshi",
     "- Ar. Gör. İlkin Demirtaş (Bahçeşehir Üniversitesi) — Airbnb Kira Sözleşmelerinin Uygulama Alanı",
-    "## 11:15–12:15 | 2. Oturum | Başkan: Prof. Dr. Etem Sabâ Özmen",
+    "## 11:15–12:15 | 2. Oturum | Başkan: Prof. Dr. Etem Saba Özmen",
     "- Prof. Dr. Şebnem Akipek Öcal (TED Üniversitesi) — Doğrudan Satışlar",
     "- Fuat Engin (TÖK) — Tüketici Uyuşmazlıklarında Hak Arama Yolları",
     "- Dr. Öğr. Üyesi Seda Baş (Samsun Üniversitesi) — Bankanın Mevduat Üzerinde Hapis Hakkını Kullanıp Kullanamayacağı Üzerine Bir Değerlendirme",
@@ -600,25 +600,25 @@ add({
     de: "Justizgebäude Istanbul-Anadolu, Konferenzsaal Şehit Murat Uzun (Block E, Erdgeschoss)",
   },
   summary: {
-    tr: "İstanbul Gedik Üniversitesi sempozyumunda Prof. Dr. Etem Sabâ Özmen bilim kurulunda yer aldı, oturum yönetti ve taleplerin yarışmasını anlattı.",
-    en: "At Istanbul Gedik University's symposium Prof. Dr. Etem Sabâ Özmen sat on the scientific committee, chaired a session and spoke on competing claims.",
-    de: "Symposium der Gedik-Universität: Prof. Dr. Etem Sabâ Özmen im wissenschaftlichen Beirat, als Sitzungsleiter und mit einem Vortrag zur Anspruchskonkurrenz.",
+    tr: "İstanbul Gedik Üniversitesi sempozyumunda Prof. Dr. Etem Saba Özmen bilim kurulunda yer aldı, oturum yönetti ve taleplerin yarışmasını anlattı.",
+    en: "At Istanbul Gedik University's symposium Prof. Dr. Etem Saba Özmen sat on the scientific committee, chaired a session and spoke on competing claims.",
+    de: "Symposium der Gedik-Universität: Prof. Dr. Etem Saba Özmen im wissenschaftlichen Beirat, als Sitzungsleiter und mit einem Vortrag zur Anspruchskonkurrenz.",
   },
   body: {
-    tr: "İstanbul Gedik Üniversitesi Hukuk Fakültesi'nin düzenlediği sempozyumda Prof. Dr. Etem Sabâ Özmen bilim kurulu üyesiydi; birinci oturuma başkanlık etti ve ikinci oturumda borcun kaynaklarına dayalı taleplerin yarışmasına ilişkin tebliğini sundu.",
-    en: "At the symposium organised by Istanbul Gedik University Faculty of Law, Prof. Dr. Etem Sabâ Özmen served on the scientific committee, chaired the first session and presented his paper on competing claims in the second.",
-    de: "Beim Symposium der Juristischen Fakultät der Istanbul-Gedik-Universität gehörte Prof. Dr. Etem Sabâ Özmen dem wissenschaftlichen Beirat an, leitete die erste Sitzung und trug in der zweiten Sitzung zur Anspruchskonkurrenz vor.",
+    tr: "İstanbul Gedik Üniversitesi Hukuk Fakültesi'nin düzenlediği sempozyumda Prof. Dr. Etem Saba Özmen bilim kurulu üyesiydi; birinci oturuma başkanlık etti ve ikinci oturumda borcun kaynaklarına dayalı taleplerin yarışmasına ilişkin tebliğini sundu.",
+    en: "At the symposium organised by Istanbul Gedik University Faculty of Law, Prof. Dr. Etem Saba Özmen served on the scientific committee, chaired the first session and presented his paper on competing claims in the second.",
+    de: "Beim Symposium der Juristischen Fakultät der Istanbul-Gedik-Universität gehörte Prof. Dr. Etem Saba Özmen dem wissenschaftlichen Beirat an, leitete die erste Sitzung und trug in der zweiten Sitzung zur Anspruchskonkurrenz vor.",
   },
   program: [
     "## 10:15–10:30 | Açılış Konuşması",
     "- Prof. Dr. Korkut Kanadoğlu (İstanbul Gedik Üniversitesi Hukuk Fakültesi)",
-    "## 10:30–12:00 | Birinci Oturum | Oturum Başkanı: Prof. Dr. Etem Sabâ Özmen",
+    "## 10:30–12:00 | Birinci Oturum | Oturum Başkanı: Prof. Dr. Etem Saba Özmen",
     "- Prof. Dr. Ahmet Başözen (İstanbul Gedik Üniversitesi) — Sorumluluk Hukukunda İspat Güçlüklerinin Aşılması Bağlamında İlk Görünüş İspatının Uygulanması",
     "- Doç. Dr. Hülya Atlan Gürer (İstanbul Gedik Üniversitesi) — Beden Bütünlüğünün İhlali Nedeniyle Ekonomik Geleceğin Sarsılmasından Doğan Zararların Tazmini",
     "- Dr. Öğr. Üyesi Elif Yavuz (İstanbul Aydın Üniversitesi) — Ev Başkanının Sorumluluğu",
     "- Dr. Öğr. Üyesi Mazlum Doğan (İstanbul Gedik Üniversitesi) — Haksız Fiil Hukukuna Hukuk ve Ekonomi Akımı Tarafından Yüklenen Anlamın Eleştirisi",
     "## 13:00–14:10 | İkinci Oturum | Oturum Başkanı: Prof. Dr. Halûk Nami Nomer",
-    "- Prof. Dr. Etem Sabâ Özmen (Maltepe Üniversitesi) — Sorumluluk Hukuku Açısından Borcun Kaynaklarına Dayalı Taleplerin Yarışma Esasları",
+    "- Prof. Dr. Etem Saba Özmen (Maltepe Üniversitesi) — Sorumluluk Hukuku Açısından Borcun Kaynaklarına Dayalı Taleplerin Yarışma Esasları",
     "- Dr. Öğr. Üyesi Güray Türker (Okan Üniversitesi) — Tam Otonom Araçlar ve Karayolu Kazalarından Doğan Hukuki Sorumluluk",
     "- Hâkim Murat Nokay (İstanbul Anadolu 1. Asliye Ticaret Mahkemesi) — Dava Sebebi ve Hukuki Sebep Kavramlarının Borcun Kaynaklarına Dayalı Taleplerin Yarışması Kapsamında Görünümleri",
     "## 14:30–16:00 | Üçüncü Oturum | Oturum Başkanı: Em. Hâkim Ahmet Özgan (Yargıtay 11. Hukuk Dairesi Onursal Başkanı)",
@@ -673,14 +673,14 @@ add({
   },
   venue: { tr: "İstanbul Barosu Konferans Salonu", en: "Istanbul Bar Association Conference Hall", de: "Konferenzsaal der Anwaltskammer Istanbul" },
   summary: {
-    tr: "İstanbul Barosu'nun iki günlük kentsel dönüşüm eğitiminde Prof. Dr. Etem Sabâ Özmen kat mülkiyeti, sınırlı aynî haklar ve şerhleri anlattı.",
-    en: "In the Istanbul Bar's two-day urban regeneration course, Prof. Dr. Etem Sabâ Özmen covered condominium practice, limited real rights and annotations.",
-    de: "Zweitägiger Stadterneuerungskurs der Anwaltskammer Istanbul: Prof. Dr. Etem Sabâ Özmen zu Wohnungseigentum, dinglichen Rechten und Vormerkungen.",
+    tr: "İstanbul Barosu'nun iki günlük kentsel dönüşüm eğitiminde Prof. Dr. Etem Saba Özmen kat mülkiyeti, sınırlı aynî haklar ve şerhleri anlattı.",
+    en: "In the Istanbul Bar's two-day urban regeneration course, Prof. Dr. Etem Saba Özmen covered condominium practice, limited real rights and annotations.",
+    de: "Zweitägiger Stadterneuerungskurs der Anwaltskammer Istanbul: Prof. Dr. Etem Saba Özmen zu Wohnungseigentum, dinglichen Rechten und Vormerkungen.",
   },
   body: {
-    tr: "İstanbul Barosu Meslek İçi Eğitim Merkezi ile Çevre Kent ve İmar Hukuku Komisyonu'nun iki günlük programında riskli yapılar, arsa payı, 6306 sayılı Kanun uygulaması ve belediyelerin rolü ele alındı. Prof. Dr. Etem Sabâ Özmen ikinci günün ilk oturumunda konuştu. Katılım sınırlıydı ve dijital sertifika verildi.",
-    en: "The Istanbul Bar's two-day programme covered risky buildings, land shares, the application of Law No. 6306 and the role of municipalities. Prof. Dr. Etem Sabâ Özmen spoke in the first session of day two. Places were limited; participants received a digital certificate.",
-    de: "Das zweitägige Programm der Anwaltskammer Istanbul behandelte gefährdete Gebäude, Grundstücksanteile, die Anwendung des Gesetzes Nr. 6306 und die Rolle der Kommunen. Prof. Dr. Etem Sabâ Özmen sprach in der ersten Sitzung des zweiten Tages.",
+    tr: "İstanbul Barosu Meslek İçi Eğitim Merkezi ile Çevre Kent ve İmar Hukuku Komisyonu'nun iki günlük programında riskli yapılar, arsa payı, 6306 sayılı Kanun uygulaması ve belediyelerin rolü ele alındı. Prof. Dr. Etem Saba Özmen ikinci günün ilk oturumunda konuştu. Katılım sınırlıydı ve dijital sertifika verildi.",
+    en: "The Istanbul Bar's two-day programme covered risky buildings, land shares, the application of Law No. 6306 and the role of municipalities. Prof. Dr. Etem Saba Özmen spoke in the first session of day two. Places were limited; participants received a digital certificate.",
+    de: "Das zweitägige Programm der Anwaltskammer Istanbul behandelte gefährdete Gebäude, Grundstücksanteile, die Anwendung des Gesetzes Nr. 6306 und die Rolle der Kommunen. Prof. Dr. Etem Saba Özmen sprach in der ersten Sitzung des zweiten Tages.",
   },
   program: [
     "## 28 Haziran 2025 Cumartesi, 10:00–12:00 | 1. Oturum | Açılış: Av. Gülay Çolak Çalışkan (Çevre Kent ve İmar Hukuku Komisyonu Başkanı)",
@@ -692,7 +692,7 @@ add({
     "## 15:45–17:00 | 4. Oturum",
     "- Prof. Dr. Erol Köktürk — 6306 Sayılı Yasanın ve Uygulamaların Yarattığı Güvensizlikler (kolaylaştırıcı: Av. Sezen Tekin)",
     "## 29 Haziran 2025 Pazar, 10:30–12:30 | 1. Oturum",
-    "- Prof. Dr. Etem Sabâ Özmen — Kentsel Dönüşümde Kat Mülkiyeti Uygulamaları, Sınırlı Aynî Haklar ve Şerhler (kolaylaştırıcı: Av. Ayça Yakupoğlu)",
+    "- Prof. Dr. Etem Saba Özmen — Kentsel Dönüşümde Kat Mülkiyeti Uygulamaları, Sınırlı Aynî Haklar ve Şerhler (kolaylaştırıcı: Av. Ayça Yakupoğlu)",
     "## 13:30–16:00 | 2. Oturum | Kentsel Dönüşümde Belediyelerin Rolü",
     "- Av. Ali Rıza İlgezdi (Eyüpsultan Belediyesi Kentsel Dönüşüm Müdürü)",
     "- Mimar Bihterin Güven (Kadıköy Belediyesi Eski İmar Müdürü)",
@@ -715,7 +715,7 @@ add({
   },
   venue: { tr: "Doğuş Üniversitesi Çengelköy Kampüsü", en: "Doğuş University Çengelköy Campus", de: "Doğuş-Universität, Campus Çengelköy" },
   summary: {
-    tr: "Doğuş Üniversitesi DOUSEM'de 24 saatlik eğitim: kat mülkiyeti mevzuatından doğan nitelikli hesaplamalar; eğitmen Prof. Dr. Etem Sabâ Özmen.",
+    tr: "Doğuş Üniversitesi DOUSEM'de 24 saatlik eğitim: kat mülkiyeti mevzuatından doğan nitelikli hesaplamalar; eğitmen Prof. Dr. Etem Saba Özmen.",
     en: "A 24-hour course at Doğuş University's continuing-education centre on qualified calculations under condominium law.",
     de: "24-stündiger Kurs am Weiterbildungszentrum der Doğuş-Universität zu Berechnungen im Wohnungseigentumsrecht.",
   },
@@ -741,9 +741,9 @@ add({
   },
   venue: { tr: "Zoom (çevrimiçi)", en: "Zoom (online)", de: "Zoom (online)" },
   summary: {
-    tr: "Gayrimenkul Hukuku Derneği webinarında Prof. Dr. Etem Sabâ Özmen imar hakkı transferini anlattı; moderatör Av. Mikail Enes Çuban.",
-    en: "Real Estate Law Association webinar in which Prof. Dr. Etem Sabâ Özmen explained the transfer of development rights.",
-    de: "Webinar des Vereins für Immobilienrecht: Prof. Dr. Etem Sabâ Özmen erläuterte die Übertragung von Baurechten.",
+    tr: "Gayrimenkul Hukuku Derneği webinarında Prof. Dr. Etem Saba Özmen imar hakkı transferini anlattı; moderatör Av. Mikail Enes Çuban.",
+    en: "Real Estate Law Association webinar in which Prof. Dr. Etem Saba Özmen explained the transfer of development rights.",
+    de: "Webinar des Vereins für Immobilienrecht: Prof. Dr. Etem Saba Özmen erläuterte die Übertragung von Baurechten.",
   },
   body: {
     tr: "Webinarda, imar planıyla kısıtlanan taşınmazlar için öngörülen imar hakkı transferi (aktarımı) kurumunun hukuki esasları ve uygulamadaki sorunları ele alındı.",
@@ -794,9 +794,9 @@ add({
   },
   venue: { tr: "İstanbul Barosu Konferans Salonu", en: "Istanbul Bar Association Conference Hall", de: "Konferenzsaal der Anwaltskammer Istanbul" },
   summary: {
-    tr: "İstanbul Barosu Çevre Kent ve İmar Hukuku Komisyonu'nun programında Prof. Dr. Etem Sabâ Özmen imar hakkı aktarımının esaslarını anlattı.",
-    en: "At an Istanbul Bar Environment, City and Zoning Law Commission event, Prof. Dr. Etem Sabâ Özmen set out the principles of transferring development rights.",
-    de: "Anwaltskammer Istanbul, Kommission für Stadt- und Baurecht: Prof. Dr. Etem Sabâ Özmen erläuterte die Grundsätze der Übertragung von Baurechten.",
+    tr: "İstanbul Barosu Çevre Kent ve İmar Hukuku Komisyonu'nun programında Prof. Dr. Etem Saba Özmen imar hakkı aktarımının esaslarını anlattı.",
+    en: "At an Istanbul Bar Environment, City and Zoning Law Commission event, Prof. Dr. Etem Saba Özmen set out the principles of transferring development rights.",
+    de: "Anwaltskammer Istanbul, Kommission für Stadt- und Baurecht: Prof. Dr. Etem Saba Özmen erläuterte die Grundsätze der Übertragung von Baurechten.",
   },
   body: {
     tr: "Av. Ayça Yakupoğlu'nun kolaylaştırıcılığında yapılan programda, imar hakkı aktarımına ilişkin mevzuat, hak sahipliğinin belirlenmesi ve aktarım sürecinde ortaya çıkan hukuki sorunlar ele alındı.",
@@ -824,9 +824,9 @@ add({
     de: "Architektenkammer (TMMOB), Regionalvertretung Anadolu II",
   },
   summary: {
-    tr: "Mimarlar Odası İstanbul Büyükkent Şubesi'nde imar hakkı aktarımı üzerine söyleşi: Prof. Dr. Etem Sabâ Özmen ve Av. Ayça Yakupoğlu.",
-    en: "A talk on transferring development rights at the Istanbul branch of the Chamber of Architects, with Prof. Dr. Etem Sabâ Özmen and Av. Ayça Yakupoğlu.",
-    de: "Gespräch zur Übertragung von Baurechten bei der Istanbuler Architektenkammer mit Prof. Dr. Etem Sabâ Özmen und Av. Ayça Yakupoğlu.",
+    tr: "Mimarlar Odası İstanbul Büyükkent Şubesi'nde imar hakkı aktarımı üzerine söyleşi: Prof. Dr. Etem Saba Özmen ve Av. Ayça Yakupoğlu.",
+    en: "A talk on transferring development rights at the Istanbul branch of the Chamber of Architects, with Prof. Dr. Etem Saba Özmen and Av. Ayça Yakupoğlu.",
+    de: "Gespräch zur Übertragung von Baurechten bei der Istanbuler Architektenkammer mit Prof. Dr. Etem Saba Özmen und Av. Ayça Yakupoğlu.",
   },
   body: {
     tr: "Mimarlar ve hukukçuları bir araya getiren söyleşide imar hakkı aktarımının esasları, planlama ve mülkiyet hakkı açısından değerlendirildi.",
@@ -854,14 +854,14 @@ add({
   },
   venue: { tr: "Hukukeğitim (çevrimiçi)", en: "Hukukeğitim (online)", de: "Hukukeğitim (online)" },
   summary: {
-    tr: "VI. Borçlar Hukuku Kongresi'nde Prof. Dr. Etem Sabâ Özmen, \"avans tapu\" içtihadından dönen İBK kararının yeniden değerlendirilmesini önerdi.",
-    en: "At the 6th Congress of the Law of Obligations, Prof. Dr. Etem Sabâ Özmen argued for revisiting the unifying decision on 'advance title deeds'.",
-    de: "Beim 6. Schuldrechtskongress plädierte Prof. Dr. Etem Sabâ Özmen dafür, die Vereinheitlichungsentscheidung zum 'Vorschuss-Grundbuch' zu überdenken.",
+    tr: "VI. Borçlar Hukuku Kongresi'nde Prof. Dr. Etem Saba Özmen, \"avans tapu\" içtihadından dönen İBK kararının yeniden değerlendirilmesini önerdi.",
+    en: "At the 6th Congress of the Law of Obligations, Prof. Dr. Etem Saba Özmen argued for revisiting the unifying decision on 'advance title deeds'.",
+    de: "Beim 6. Schuldrechtskongress plädierte Prof. Dr. Etem Saba Özmen dafür, die Vereinheitlichungsentscheidung zum 'Vorschuss-Grundbuch' zu überdenken.",
   },
   body: {
-    tr: "Hukukeğitim ve Tüketici Hukuku Enstitüsü'nün düzenlediği kongrenin taşınmaz hukuku oturumunda Prof. Dr. Etem Sabâ Özmen, arsa payı karşılığı inşaat sözleşmelerinde yükleniciye henüz edimini ifa etmeden yapılan \"avans tapu\" devirlerine ilişkin 2025 tarihli içtihadı birleştirme kararını eleştirel olarak değerlendirdi. Oturum 24 Ekim 2025'te çevrimiçi gerçekleşti.",
-    en: "In the real property session of the congress organised by Hukukeğitim and the Consumer Law Institute, Prof. Dr. Etem Sabâ Özmen critically assessed the 2025 unifying decision on 'advance' transfers of title to contractors who have not yet performed under land-share-for-construction contracts. The session took place online on 24 October 2025.",
-    de: "In der Immobilienrechtssitzung des von Hukukeğitim und dem Institut für Verbraucherrecht veranstalteten Kongresses bewertete Prof. Dr. Etem Sabâ Özmen kritisch die Vereinheitlichungsentscheidung von 2025 zu vorzeitigen Eigentumsübertragungen an Bauunternehmer. Die Sitzung fand am 24. Oktober 2025 online statt.",
+    tr: "Hukukeğitim ve Tüketici Hukuku Enstitüsü'nün düzenlediği kongrenin taşınmaz hukuku oturumunda Prof. Dr. Etem Saba Özmen, arsa payı karşılığı inşaat sözleşmelerinde yükleniciye henüz edimini ifa etmeden yapılan \"avans tapu\" devirlerine ilişkin 2025 tarihli içtihadı birleştirme kararını eleştirel olarak değerlendirdi. Oturum 24 Ekim 2025'te çevrimiçi gerçekleşti.",
+    en: "In the real property session of the congress organised by Hukukeğitim and the Consumer Law Institute, Prof. Dr. Etem Saba Özmen critically assessed the 2025 unifying decision on 'advance' transfers of title to contractors who have not yet performed under land-share-for-construction contracts. The session took place online on 24 October 2025.",
+    de: "In der Immobilienrechtssitzung des von Hukukeğitim und dem Institut für Verbraucherrecht veranstalteten Kongresses bewertete Prof. Dr. Etem Saba Özmen kritisch die Vereinheitlichungsentscheidung von 2025 zu vorzeitigen Eigentumsübertragungen an Bauunternehmer. Die Sitzung fand am 24. Oktober 2025 online statt.",
   },
 });
 
@@ -896,9 +896,9 @@ add({
     de: "Anwaltskammer Batman, Konferenzsaal Av. Tahir Elçi",
   },
   summary: {
-    tr: "Batman Barosu Taşınmaz Hukuku Sempozyumu'nda Prof. Dr. Etem Sabâ Özmen \"tapu iptal\" davaları ve kamulaştırma hukuku üzerine iki oturum yaptı.",
-    en: "At the Batman Bar real property symposium, Prof. Dr. Etem Sabâ Özmen gave two sessions: on 'title cancellation' actions and on expropriation law.",
-    de: "Beim Immobilienrechtssymposium der Anwaltskammer Batman gestaltete Prof. Dr. Etem Sabâ Özmen zwei Sitzungen zu Grundbuchklagen und Enteignungsrecht.",
+    tr: "Batman Barosu Taşınmaz Hukuku Sempozyumu'nda Prof. Dr. Etem Saba Özmen \"tapu iptal\" davaları ve kamulaştırma hukuku üzerine iki oturum yaptı.",
+    en: "At the Batman Bar real property symposium, Prof. Dr. Etem Saba Özmen gave two sessions: on 'title cancellation' actions and on expropriation law.",
+    de: "Beim Immobilienrechtssymposium der Anwaltskammer Batman gestaltete Prof. Dr. Etem Saba Özmen zwei Sitzungen zu Grundbuchklagen und Enteignungsrecht.",
   },
   body: {
     tr: "Av. Baran Ortaboy'un moderatörlüğündeki sempozyumda Doç. Dr. Müge Ürem Nokay \"avans tapu\" içtihadından dönülmesinin sonuçlarını, Hâkim Dr. Murat Nokay ise taleplerin yarışması bağlamında aynî neticeli davaları anlattı.",
@@ -907,13 +907,13 @@ add({
   },
   program: [
     "## 10:30–11:10 | 1. Oturum",
-    "- Prof. Dr. Etem Sabâ Özmen (Maltepe Üniversitesi Özel Hukuk Anabilim Dalı Başkanı) — Hatalı İsimlendirmeyle \"Tapu İptal\" Tabiri Altında Farklılaşan Dava Türleri ve Usul Hukuku Açısından Sonuçları",
+    "- Prof. Dr. Etem Saba Özmen (Maltepe Üniversitesi Özel Hukuk Anabilim Dalı Başkanı) — Hatalı İsimlendirmeyle \"Tapu İptal\" Tabiri Altında Farklılaşan Dava Türleri ve Usul Hukuku Açısından Sonuçları",
     "## 11:20–11:45 | 2. Oturum",
     "- Doç. Dr. Müge Ürem Nokay (İstanbul Sabahattin Zaim Üniversitesi) — 2025 Yılındaki YİBBGK Kararıyla \"Avans Tapu\" İçtihadından Dönülmesine Bağlı Sonuçlar",
     "## 11:45–12:10 | 3. Oturum",
     "- Hâkim Dr. Murat Nokay (İstanbul Anadolu 2. Asliye Ticaret Mahkemesi) — Borç İlişkilerinin Kaynaklarına Dayalı \"Taleplerin Yarışması\" Bağlamında Aynî Neticeli Davalar",
     "## 13:30–17:00 | 4. Oturum",
-    "- Prof. Dr. Etem Sabâ Özmen — Kamulaştırma Hukuku Esasları",
+    "- Prof. Dr. Etem Saba Özmen — Kamulaştırma Hukuku Esasları",
   ].join("\n"),
 });
 
@@ -957,14 +957,14 @@ add({
   },
   venue: { tr: "İstanbul Barosu Konferans Salonu", en: "Istanbul Bar Association Conference Hall", de: "Konferenzsaal der Anwaltskammer Istanbul" },
   summary: {
-    tr: "İstanbul Barosu KMH Komisyonu genel üye toplantısında Prof. Dr. Etem Sabâ Özmen ve Av. Tuğba Kaya Filizoğlu kat mülkiyetindeki güncel sorunları anlattı.",
-    en: "At the Istanbul Bar Condominium Law Commission meeting, Prof. Dr. Etem Sabâ Özmen and Av. Tuğba Kaya Filizoğlu discussed current condominium issues.",
-    de: "Kommission für Wohnungseigentumsrecht, Anwaltskammer Istanbul: Prof. Dr. Etem Sabâ Özmen und Av. Tuğba Kaya Filizoğlu zu aktuellen Fragen.",
+    tr: "İstanbul Barosu KMH Komisyonu genel üye toplantısında Prof. Dr. Etem Saba Özmen ve Av. Tuğba Kaya Filizoğlu kat mülkiyetindeki güncel sorunları anlattı.",
+    en: "At the Istanbul Bar Condominium Law Commission meeting, Prof. Dr. Etem Saba Özmen and Av. Tuğba Kaya Filizoğlu discussed current condominium issues.",
+    de: "Kommission für Wohnungseigentumsrecht, Anwaltskammer Istanbul: Prof. Dr. Etem Saba Özmen und Av. Tuğba Kaya Filizoğlu zu aktuellen Fragen.",
   },
   body: {
-    tr: "İstanbul Barosu Kat Mülkiyeti Hukuku Komisyonu'nun genel üye toplantısı oturumunda Prof. Dr. Etem Sabâ Özmen ve ortağımız Av. Tuğba Kaya Filizoğlu, kat mülkiyeti hukukundaki güncel uyuşmazlıklara ilişkin değerlendirmelerini paylaştı ve soruları yanıtladı. Açılış konuşmasını Av. Mehmedali Barış Beşli yaptı, oturumu Av. Nuran Dinç Akgün yönetti.",
-    en: "At a session of the Istanbul Bar Condominium Law Commission's general meeting, Prof. Dr. Etem Sabâ Özmen and our partner Av. Tuğba Kaya Filizoğlu shared their assessment of current condominium disputes and answered questions. The session was opened by Av. Mehmedali Barış Beşli and moderated by Av. Nuran Dinç Akgün.",
-    de: "In einer Sitzung der Mitgliederversammlung der Kommission für Wohnungseigentumsrecht der Anwaltskammer Istanbul stellten Prof. Dr. Etem Sabâ Özmen und unsere Partnerin Av. Tuğba Kaya Filizoğlu ihre Einschätzung aktueller Streitfragen vor und beantworteten Fragen.",
+    tr: "İstanbul Barosu Kat Mülkiyeti Hukuku Komisyonu'nun genel üye toplantısı oturumunda Prof. Dr. Etem Saba Özmen ve ortağımız Av. Tuğba Kaya Filizoğlu, kat mülkiyeti hukukundaki güncel uyuşmazlıklara ilişkin değerlendirmelerini paylaştı ve soruları yanıtladı. Açılış konuşmasını Av. Mehmedali Barış Beşli yaptı, oturumu Av. Nuran Dinç Akgün yönetti.",
+    en: "At a session of the Istanbul Bar Condominium Law Commission's general meeting, Prof. Dr. Etem Saba Özmen and our partner Av. Tuğba Kaya Filizoğlu shared their assessment of current condominium disputes and answered questions. The session was opened by Av. Mehmedali Barış Beşli and moderated by Av. Nuran Dinç Akgün.",
+    de: "In einer Sitzung der Mitgliederversammlung der Kommission für Wohnungseigentumsrecht der Anwaltskammer Istanbul stellten Prof. Dr. Etem Saba Özmen und unsere Partnerin Av. Tuğba Kaya Filizoğlu ihre Einschätzung aktueller Streitfragen vor und beantworteten Fragen.",
   },
 });
 
@@ -988,9 +988,9 @@ add({
     de: "Online-Sitzung der SİYÖMDER-Akademie für Wohnanlagenverwalter zur kritischen Bewertung der Änderungen des Wohnungseigentumsgesetzes.",
   },
   body: {
-    tr: "Site yöneticileri ve müdürlerine yönelik toplantıda Prof. Dr. Etem Sabâ Özmen, 634 sayılı Kat Mülkiyeti Kanunu'nda yapılan son düzenlemelerin uygulamada yarattığı sorunları ve çözüm önerilerini anlattı.",
-    en: "Speaking to site and building managers, Prof. Dr. Etem Sabâ Özmen set out the practical problems created by recent amendments to Condominium Law No. 634 and proposed solutions.",
-    de: "Vor Verwaltern von Wohnanlagen erläuterte Prof. Dr. Etem Sabâ Özmen die praktischen Probleme der jüngsten Änderungen des Wohnungseigentumsgesetzes Nr. 634 und Lösungsvorschläge.",
+    tr: "Site yöneticileri ve müdürlerine yönelik toplantıda Prof. Dr. Etem Saba Özmen, 634 sayılı Kat Mülkiyeti Kanunu'nda yapılan son düzenlemelerin uygulamada yarattığı sorunları ve çözüm önerilerini anlattı.",
+    en: "Speaking to site and building managers, Prof. Dr. Etem Saba Özmen set out the practical problems created by recent amendments to Condominium Law No. 634 and proposed solutions.",
+    de: "Vor Verwaltern von Wohnanlagen erläuterte Prof. Dr. Etem Saba Özmen die praktischen Probleme der jüngsten Änderungen des Wohnungseigentumsgesetzes Nr. 634 und Lösungsvorschläge.",
   },
 });
 
@@ -1061,14 +1061,14 @@ add({
   },
   venue: { tr: "Kanal 12 — canlı yayın (Digiturk 606. kanal)", en: "Kanal 12 — live broadcast (Digiturk channel 606)", de: "Kanal 12 — Live-Sendung (Digiturk Kanal 606)" },
   summary: {
-    tr: "Kanal 12'de canlı yayın: Prof. Dr. Etem Sabâ Özmen, devre tatil alanların bilmesi gerekenleri Sefa Kabaalioğlu'nun programında anlattı.",
-    en: "Live on Kanal 12: Prof. Dr. Etem Sabâ Özmen explained what timeshare buyers need to know, on Sefa Kabaalioğlu's programme.",
-    de: "Live auf Kanal 12: Prof. Dr. Etem Sabâ Özmen erklärte in der Sendung von Sefa Kabaalioğlu, was Timesharing-Käufer wissen müssen.",
+    tr: "Kanal 12'de canlı yayın: Prof. Dr. Etem Saba Özmen, devre tatil alanların bilmesi gerekenleri Sefa Kabaalioğlu'nun programında anlattı.",
+    en: "Live on Kanal 12: Prof. Dr. Etem Saba Özmen explained what timeshare buyers need to know, on Sefa Kabaalioğlu's programme.",
+    de: "Live auf Kanal 12: Prof. Dr. Etem Saba Özmen erklärte in der Sendung von Sefa Kabaalioğlu, was Timesharing-Käufer wissen müssen.",
   },
   body: {
-    tr: "Tüketici Bilinci programının canlı yayınında Prof. Dr. Etem Sabâ Özmen ve Av. Şimal Melike Tol, devre tatil sözleşmelerinde tüketicinin hakları, cayma hakkı ve uygulamada sık karşılaşılan sorunlar hakkında bilgi verdi.",
-    en: "On the live broadcast of the Consumer Awareness programme, Prof. Dr. Etem Sabâ Özmen and Av. Şimal Melike Tol explained consumers' rights under timeshare-holiday contracts, the right of withdrawal and the problems most often met in practice.",
-    de: "In der Live-Sendung erläuterten Prof. Dr. Etem Sabâ Özmen und Av. Şimal Melike Tol die Rechte von Verbrauchern bei Timesharing-Verträgen, das Widerrufsrecht und häufige Probleme in der Praxis.",
+    tr: "Tüketici Bilinci programının canlı yayınında Prof. Dr. Etem Saba Özmen ve Av. Şimal Melike Tol, devre tatil sözleşmelerinde tüketicinin hakları, cayma hakkı ve uygulamada sık karşılaşılan sorunlar hakkında bilgi verdi.",
+    en: "On the live broadcast of the Consumer Awareness programme, Prof. Dr. Etem Saba Özmen and Av. Şimal Melike Tol explained consumers' rights under timeshare-holiday contracts, the right of withdrawal and the problems most often met in practice.",
+    de: "In der Live-Sendung erläuterten Prof. Dr. Etem Saba Özmen und Av. Şimal Melike Tol die Rechte von Verbrauchern bei Timesharing-Verträgen, das Widerrufsrecht und häufige Probleme in der Praxis.",
   },
 });
 
@@ -1091,14 +1091,14 @@ add({
   },
   venue: { tr: "Zoom (çevrimiçi)", en: "Zoom (online)", de: "Zoom (online)" },
   summary: {
-    tr: "Türk Medeni Kanunu'nun 100. yılı sempozyumunda Prof. Dr. Etem Sabâ Özmen taşınmaz mülkiyetinin devrine ilişkin bir asırlık yanılgıyı anlattı.",
-    en: "At the Turkish Civil Code centenary symposium, Prof. Dr. Etem Sabâ Özmen spoke on a century-old misconception about transferring real property.",
-    de: "Beim Symposium zum 100. Jahrestag des ZGB sprach Prof. Dr. Etem Sabâ Özmen über einen hundertjährigen Irrtum bei der Grundstücksübertragung.",
+    tr: "Türk Medeni Kanunu'nun 100. yılı sempozyumunda Prof. Dr. Etem Saba Özmen taşınmaz mülkiyetinin devrine ilişkin bir asırlık yanılgıyı anlattı.",
+    en: "At the Turkish Civil Code centenary symposium, Prof. Dr. Etem Saba Özmen spoke on a century-old misconception about transferring real property.",
+    de: "Beim Symposium zum 100. Jahrestag des ZGB sprach Prof. Dr. Etem Saba Özmen über einen hundertjährigen Irrtum bei der Grundstücksübertragung.",
   },
   body: {
-    tr: "Hasan Kalyoncu Üniversitesi Hukuk Fakültesi'nin Türk Medeni Kanunu'nun yürürlüğe girişinin 100. yılı için çevrimiçi düzenlediği sempozyumun birinci oturumunda Prof. Dr. Etem Sabâ Özmen, taşınmaz mülkiyetinin devrine ilişkin köklü bir yanılgının hüküm ve sonuçlarını değerlendirdi.",
-    en: "In the first session of the online symposium held by Hasan Kalyoncu University Faculty of Law for the centenary of the Turkish Civil Code, Prof. Dr. Etem Sabâ Özmen examined a deep-rooted misconception about the transfer of ownership of real property.",
-    de: "In der ersten Sitzung des Online-Symposiums der Juristischen Fakultät der Hasan-Kalyoncu-Universität zum 100. Jahrestag des Türkischen Zivilgesetzbuchs untersuchte Prof. Dr. Etem Sabâ Özmen einen tief verwurzelten Irrtum bei der Übertragung von Grundeigentum.",
+    tr: "Hasan Kalyoncu Üniversitesi Hukuk Fakültesi'nin Türk Medeni Kanunu'nun yürürlüğe girişinin 100. yılı için çevrimiçi düzenlediği sempozyumun birinci oturumunda Prof. Dr. Etem Saba Özmen, taşınmaz mülkiyetinin devrine ilişkin köklü bir yanılgının hüküm ve sonuçlarını değerlendirdi.",
+    en: "In the first session of the online symposium held by Hasan Kalyoncu University Faculty of Law for the centenary of the Turkish Civil Code, Prof. Dr. Etem Saba Özmen examined a deep-rooted misconception about the transfer of ownership of real property.",
+    de: "In der ersten Sitzung des Online-Symposiums der Juristischen Fakultät der Hasan-Kalyoncu-Universität zum 100. Jahrestag des Türkischen Zivilgesetzbuchs untersuchte Prof. Dr. Etem Saba Özmen einen tief verwurzelten Irrtum bei der Übertragung von Grundeigentum.",
   },
   program: [
     "## 09:30 | Açılış Konuşması",
@@ -1106,7 +1106,7 @@ add({
     "## 10:00–12:00 | I. Oturum | Oturum Başkanı: Prof. Dr. Oğuz Sadık Aydos (Ankara Hacı Bayram Veli Üniversitesi)",
     "- Prof. Dr. Ali Akyıldız (Başkent Üniversitesi) — Vakıf Hukukumuzun Modern Hukukla Uyumlaştırılması Süreci: Türk Medeni Kanunu",
     "- Prof. Dr. Şebnem Akipek Öcal (TED Üniversitesi) — TMK'nın 100. Yılında Soybağının Reddi Davası",
-    "- Prof. Dr. Etem Sabâ Özmen — Bir Asra Dayanan Yanılgıyla Taşınmaz Mülkiyetinin Devrine İlişkin Hüküm ve Sonuçlar",
+    "- Prof. Dr. Etem Saba Özmen — Bir Asra Dayanan Yanılgıyla Taşınmaz Mülkiyetinin Devrine İlişkin Hüküm ve Sonuçlar",
     "- Prof. Dr. İbrahim Gül (Bolu Abant İzzet Baysal Üniversitesi) — Bitmeyen Tartışma: Değişen Faiz Oranları ve Hukuki Belirlilik",
     "## 13:00–15:00 | II. Oturum | Oturum Başkanı: Prof. Dr. Şebnem Akipek Öcal",
     "- Prof. Dr. Mehmet Köksal (Avrupa Liderlik Üniversitesi) — Adil Yargılanma İlkesi Çerçevesinde Medeni Kanun'da Yapılması Gereken Değişiklikler",
@@ -1129,9 +1129,9 @@ add({
   },
   venue: { tr: "Zoom (çevrimiçi)", en: "Zoom (online)", de: "Zoom (online)" },
   summary: {
-    tr: "SİYÖMDER'in çevrimiçi toplantısında Prof. Dr. Etem Sabâ Özmen, 634 sayılı Kat Mülkiyeti Kanunu'ndaki değişikliği ve uygulamayı anlattı.",
-    en: "Online SİYÖMDER session in which Prof. Dr. Etem Sabâ Özmen explained the amendment of Condominium Law No. 634 and its application.",
-    de: "Online-Sitzung von SİYÖMDER: Prof. Dr. Etem Sabâ Özmen erläuterte die Änderung des Wohnungseigentumsgesetzes Nr. 634 und ihre Anwendung.",
+    tr: "SİYÖMDER'in çevrimiçi toplantısında Prof. Dr. Etem Saba Özmen, 634 sayılı Kat Mülkiyeti Kanunu'ndaki değişikliği ve uygulamayı anlattı.",
+    en: "Online SİYÖMDER session in which Prof. Dr. Etem Saba Özmen explained the amendment of Condominium Law No. 634 and its application.",
+    de: "Online-Sitzung von SİYÖMDER: Prof. Dr. Etem Saba Özmen erläuterte die Änderung des Wohnungseigentumsgesetzes Nr. 634 und ihre Anwendung.",
   },
   body: {
     tr: "Site Yöneticileri ve Müdürleri Yardımlaşma ve Dayanışma Derneği Eğitim Akademisi'nin toplantısında 634 sayılı Kat Mülkiyeti Kanunu'ndaki değişikliklerin site ve apartman yönetimindeki uygulaması ele alındı.",
@@ -1159,14 +1159,14 @@ add({
     de: "Hauptgebäude der Anwaltskammer Istanbul, Konferenzsaal Av. Orhan Adli Apaydın",
   },
   summary: {
-    tr: "İstanbul Barosu KMH Komisyonu panelinde Prof. Dr. Etem Sabâ Özmen kentsel dönüşümdeki güncel sorunları ve çözüm yollarını anlattı.",
-    en: "At an Istanbul Bar Condominium Law Commission panel, Prof. Dr. Etem Sabâ Özmen discussed current problems and solutions in urban regeneration.",
-    de: "Beim Podium der Kommission für Wohnungseigentumsrecht der Anwaltskammer Istanbul sprach Prof. Dr. Etem Sabâ Özmen über Probleme der Stadterneuerung.",
+    tr: "İstanbul Barosu KMH Komisyonu panelinde Prof. Dr. Etem Saba Özmen kentsel dönüşümdeki güncel sorunları ve çözüm yollarını anlattı.",
+    en: "At an Istanbul Bar Condominium Law Commission panel, Prof. Dr. Etem Saba Özmen discussed current problems and solutions in urban regeneration.",
+    de: "Beim Podium der Kommission für Wohnungseigentumsrecht der Anwaltskammer Istanbul sprach Prof. Dr. Etem Saba Özmen über Probleme der Stadterneuerung.",
   },
   body: {
-    tr: "İstanbul Barosu Kat Mülkiyeti Hukuku Komisyonu'nun panelinde açılış konuşmalarını Av. Mehmedali Barış Beşli ve Av. Nuran Dinç Akgün yaptı; Av. Melis Metin Biçkin'in moderatörlüğünde Prof. Dr. Etem Sabâ Özmen kentsel dönüşüm uygulamasındaki güncel sorunları ve çözüm önerilerini anlattı.",
-    en: "Opened by Av. Mehmedali Barış Beşli and Av. Nuran Dinç Akgün and moderated by Av. Melis Metin Biçkin, the panel heard Prof. Dr. Etem Sabâ Özmen on current problems in urban regeneration practice and possible solutions.",
-    de: "Nach Eröffnung durch Av. Mehmedali Barış Beşli und Av. Nuran Dinç Akgün und unter Moderation von Av. Melis Metin Biçkin sprach Prof. Dr. Etem Sabâ Özmen über aktuelle Probleme der Stadterneuerung und Lösungsansätze.",
+    tr: "İstanbul Barosu Kat Mülkiyeti Hukuku Komisyonu'nun panelinde açılış konuşmalarını Av. Mehmedali Barış Beşli ve Av. Nuran Dinç Akgün yaptı; Av. Melis Metin Biçkin'in moderatörlüğünde Prof. Dr. Etem Saba Özmen kentsel dönüşüm uygulamasındaki güncel sorunları ve çözüm önerilerini anlattı.",
+    en: "Opened by Av. Mehmedali Barış Beşli and Av. Nuran Dinç Akgün and moderated by Av. Melis Metin Biçkin, the panel heard Prof. Dr. Etem Saba Özmen on current problems in urban regeneration practice and possible solutions.",
+    de: "Nach Eröffnung durch Av. Mehmedali Barış Beşli und Av. Nuran Dinç Akgün und unter Moderation von Av. Melis Metin Biçkin sprach Prof. Dr. Etem Saba Özmen über aktuelle Probleme der Stadterneuerung und Lösungsansätze.",
   },
 });
 
@@ -1192,9 +1192,9 @@ add({
   },
   venue: { tr: "Çevrimiçi", en: "Online", de: "Online" },
   summary: {
-    tr: "Online Zirve Hukuk Semineri'nde Prof. Dr. Etem Sabâ Özmen kentsel dönüşümde kat mülkiyeti uygulamalarını, sınırlı aynî hakları ve şerhleri anlattı.",
-    en: "At the Online Summit Law Seminar, Prof. Dr. Etem Sabâ Özmen spoke on condominium practice, limited real rights and annotations in urban regeneration.",
-    de: "Beim Online-Gipfelseminar sprach Prof. Dr. Etem Sabâ Özmen über Wohnungseigentum, beschränkte dingliche Rechte und Vormerkungen in der Stadterneuerung.",
+    tr: "Online Zirve Hukuk Semineri'nde Prof. Dr. Etem Saba Özmen kentsel dönüşümde kat mülkiyeti uygulamalarını, sınırlı aynî hakları ve şerhleri anlattı.",
+    en: "At the Online Summit Law Seminar, Prof. Dr. Etem Saba Özmen spoke on condominium practice, limited real rights and annotations in urban regeneration.",
+    de: "Beim Online-Gipfelseminar sprach Prof. Dr. Etem Saba Özmen über Wohnungseigentum, beschränkte dingliche Rechte und Vormerkungen in der Stadterneuerung.",
   },
   body: {
     tr: "Akansel Eğitim Danışmanlık'ın düzenlediği çevrimiçi seminerde Yargıtay Onursal Birinci Başkan Vekili Erdal Sanlı, Prof. Dr. Gülsün Aygörmez, Prof. Dr. Hasan İşgüzar, Prof. Dr. Hasan Sınar ve Prof. Dr. Haluk Burcuoğlu da konuşmacı olarak yer aldı.",

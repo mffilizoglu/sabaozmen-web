@@ -187,7 +187,7 @@ export function teamForm({ member, articles, csrf, flash }) {
     <section class="ad-card">
       <h2>Kimlik</h2>
       <div class="ad-grid2">
-        ${field("Ad Soyad (unvanla birlikte)", "name", v.name, { required: true, ph: "Prof. Dr. Etem Sabâ Özmen" })}
+        ${field("Ad Soyad (unvanla birlikte)", "name", v.name, { required: true, ph: "Prof. Dr. Etem Saba Özmen" })}
         ${field("E-posta", "email", v.email, { type: "email" })}
       </div>
       ${langTabs("role", v.role, "Görev / sıfat")}

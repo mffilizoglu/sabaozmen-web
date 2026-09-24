@@ -17,6 +17,36 @@ const ART = require("../content/articles.json");
 const ARTICLES = ART.articles.filter((a) => a.published !== false);
 const BY_SLUG = Object.fromEntries(ARTICLES.map((a) => [a.slug, a]));
 
+/* Authorship. An attorney's publications are every article whose author line
+   names them (every article is by Prof. Özmen; some have a co-author from the
+   team) plus any linked by hand in the admin panel. Deriving it means a new
+   article appears on the right profiles without anyone remembering to tick a box. */
+const fold = (s) => String(s || "").toLocaleLowerCase("tr")
+  .replace(/[âä]/g, "a").replace(/ı/g, "i").replace(/ş/g, "s").replace(/ğ/g, "g")
+  .replace(/ü/g, "u").replace(/ö/g, "o").replace(/ç/g, "c").replace(/î/g, "i")
+  .replace(/[^a-z ]/g, " ").replace(/\s+/g, " ").trim();
+const TITLES = /\b(prof|dr|doc|av|stj|ars|aras|gor|ogr|gorevlisi|uyesi|arb|yrd|y)\b/g;
+const bareName = (n) => fold(n).replace(TITLES, " ").replace(/\s+/g, " ").trim();
+const LEAD_AUTHOR = "Prof. Dr. Etem Saba Özmen";
+const authorsOf = (a) => [LEAD_AUTHOR].concat(a.coAuthor ? [a.coAuthor] : []);
+
+function wrote(member, a) {
+  const k = bareName(member.name);
+  return !!k && authorsOf(a).some((n) => bareName(n) === k || bareName(n).endsWith(" " + k));
+}
+function articlesOf(member) {
+  const manual = new Set(member.articleSlugs || []);
+  return ARTICLES.filter((a) => manual.has(a.slug) || wrote(member, a));
+}
+/* The team member behind an author name on an article, if any. */
+function memberFor(authorName) {
+  const k = bareName(authorName);
+  return store.team.published().find((m) => {
+    const b = bareName(m.name);
+    return b && (b === k || k.endsWith(" " + b));
+  }) || null;
+}
+
 /* Shared helpers are passed in from pages.js to avoid a require cycle. */
 let H = null;
 function bind(helpers) { H = helpers; }
@@ -320,7 +350,7 @@ function eventRow(e, lang) {
 
 /* ------------------------------------------------------- attorney profile */
 function teamDetail(lang, m, origin) {
-  const arts = (m.articleSlugs || []).map((s) => BY_SLUG[s]).filter(Boolean);
+  const arts = articlesOf(m);
   const evs = eventsOf(m);
   const initials = m.name.replace(/(Prof\.|Dr\.|Av\.)\s*/g, "").split(/\s+/).map((w) => w[0]).slice(0, 2).join("");
   const rows = [
@@ -406,4 +436,5 @@ function teamDetail(lang, m, origin) {
   };
 }
 
-module.exports = { bind, eventList, eventDetail, teamDetail, typeLabel, loc, eventsOf, eventsForArea, eventRow };
+module.exports = { bind, eventList, eventDetail, teamDetail, typeLabel, loc, eventsOf, eventsForArea, eventRow,
+  articlesOf, memberFor, authorsOf };

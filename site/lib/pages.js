@@ -480,7 +480,7 @@ function areaDetail(lang, area, origin) {
    ========================================================================= */
 function teamPage(lang) {
   const members = store.team.published();
-  const pubCount = (m) => (m.articleSlugs || []).length;
+  const pubCount = (m) => extra.articlesOf(m).length;
 
   const body = phero(lang, {
     title: T("nav.team", lang), lede: T("team.lede", lang),
@@ -571,7 +571,7 @@ function articleList(lang) {
    ========================================================================= */
 function articleDetail(lang, a, origin) {
   const d = fmtDate(a.date, lang);
-  const authors = ["Prof. Dr. Etem Sabâ Özmen"].concat(a.coAuthor ? [a.coAuthor] : []);
+  const authors = ["Prof. Dr. Etem Saba Özmen"].concat(a.coAuthor ? [a.coAuthor] : []);
   const related = ARTICLES.filter((x) => x.slug !== a.slug && x.topics.some((t) => a.topics.includes(t))).slice(0, 4);
 
   // Abstracts, in the order that serves the reader of THIS language: the
@@ -632,7 +632,10 @@ function articleDetail(lang, a, origin) {
         <div class="aside-card rv">
           <h3>${esc(T("art.details", lang))}</h3>
           <table class="meta-table">
-            <tr><th>${esc(T("art.authors", lang))}</th><td>${esc(authors.join(", "))}</td></tr>
+            <tr><th>${esc(T("art.authors", lang))}</th><td>${authors.map((n) => {
+              const m = extra.memberFor(n);
+              return m ? `<a class="ul-link" href="${url(lang, "team", m.slug)}">${esc(n)}</a>` : esc(n);
+            }).join("<br>")}</td></tr>
             ${a.journal ? `<tr><th>${esc(T("art.journal", lang))}</th><td>${esc(a.journal)}${a.volume ? `, ${lang === "tr" ? "C." : "Vol."} ${esc(a.volume)}` : ""}${a.issue ? `, ${lang === "tr" ? "S." : "No."} ${esc(a.issue)}` : ""}</td></tr>` : ""}
             <tr><th>${esc(T("art.date", lang))}</th><td>${d ? esc(d) : `<span class="muted">${esc(T("art.noDate", lang))}</span>`}</td></tr>
             ${a.pages ? `<tr><th>${esc(T("art.pages", lang))}</th><td>${a.pages}</td></tr>` : ""}
@@ -654,7 +657,7 @@ function articleDetail(lang, a, origin) {
   // artefact of PDF extraction) are skipped for the same reason.
   const own = a.summary && a.summary[lang];
   const usable = own && !/^[^a-zçğıöşü]{40}/.test(own);
-  const byline = ["Prof. Dr. Etem Sabâ Özmen"].concat(a.coAuthor ? [a.coAuthor] : []).join(lang === "tr" ? " ve " : lang === "de" ? " und " : " and ");
+  const byline = ["Prof. Dr. Etem Saba Özmen"].concat(a.coAuthor ? [a.coAuthor] : []).join(lang === "tr" ? " ve " : lang === "de" ? " und " : " and ");
   const langNote = lang === "tr" ? "" : " " + T("art.langNoteTr", lang);
   const desc = usable
     ? trunc(own, 155)
@@ -742,7 +745,7 @@ function contact(lang) {
           <div class="contact-line"><span style="width:17px"></span><div><div class="contact-line__l">${esc(T("ct.hours", lang))}</div>
             <div class="contact-line__v">${esc(T("ct.hoursVal", lang))}</div></div></div>
           <div class="btn-row mt-3">
-            <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=${encodeURIComponent(firm.mapsQuery)}"
+            <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=${firm.geo.lat},${firm.geo.lng}"
                target="_blank" rel="noopener noreferrer">${icon.pin} ${esc(T("ct.directions", lang))}</a>
           </div>
         </div>
@@ -754,7 +757,7 @@ function contact(lang) {
          there is no click to make and no dependence on JavaScript. -->
     <div class="map mt-4 rv">
       <iframe
-        src="https://www.google.com/maps?q=${encodeURIComponent(firm.mapsQuery)}&amp;hl=${lang}&amp;z=17&amp;output=embed"
+        src="https://www.google.com/maps?q=${encodeURIComponent(firm.mapsPlace.name)}&amp;ftid=${firm.mapsPlace.ftid}&amp;hl=${lang}&amp;z=17&amp;output=embed"
         title="${attr(firm.name[lang])} — ${attr(T("label.address", lang))}"
         loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         allowfullscreen></iframe>
@@ -864,12 +867,13 @@ function legalServiceLd(lang, origin) {
     logo: origin + "/img/icon-512.png",
     description: H.lede[lang],
     knowsAbout: areas.map((x) => x.name[lang]),
-    founder: { "@type": "Person", name: "Prof. Dr. Etem Sabâ Özmen", url: origin + url(lang, "team", "etem-saba-ozmen") },
+    founder: { "@type": "Person", name: "Prof. Dr. Etem Saba Özmen", url: origin + url(lang, "team", "etem-saba-ozmen") },
     contactPoint: [{
       "@type": "ContactPoint", contactType: "customer service",
       telephone: firm.phones[0], email: firm.emails.general, availableLanguage: ["Turkish", "English", "German"],
     }],
-    hasMap: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(firm.mapsQuery || firm.address.street),
+    hasMap: "https://www.google.com/maps?q=" + encodeURIComponent(firm.mapsPlace.name) + "&ftid=" + firm.mapsPlace.ftid,
+    geo: { "@type": "GeoCoordinates", latitude: firm.geo.lat, longitude: firm.geo.lng },
   };
 }
 
@@ -894,13 +898,11 @@ function scholarlyLd(a, lang, origin, authors) {
     "@type": "ScholarlyArticle",
     headline: artTitle(a, lang),
     inLanguage: "tr",
-    author: authors.map((n, i) => {
+    author: authors.map((n) => {
       const p = { "@type": "Person", name: n };
-      if (i === 0) {
-        const m = store.team.bySlug("etem-saba-ozmen");
-        if (m) p.url = origin + url(lang, "team", m.slug);
-        if (m && m.orcid) p.sameAs = "https://orcid.org/" + m.orcid;
-      }
+      const m = extra.memberFor(n);
+      if (m) p.url = origin + url(lang, "team", m.slug);
+      if (m && m.orcid) p.sameAs = "https://orcid.org/" + m.orcid;
       return p;
     }),
     url: origin + artUrl(a, lang),

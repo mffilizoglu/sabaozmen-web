@@ -117,9 +117,9 @@ const t = {
   /* --- events --- */
   "nav.events":    { tr: "Eğitim ve Kongreler", en: "Training & Congresses", de: "Fortbildung & Kongresse" },
   "ev.lede": {
-    tr: "Prof. Dr. Etem Sabâ Özmen ve ekibimizin konuşmacı ya da eğitmen olarak yer aldığı kongre, sempozyum, seminer ve eğitimler; taşınmaz ve kat mülkiyeti hukuku.",
-    en: "Congresses, symposia, seminars and courses where Prof. Dr. Etem Sabâ Özmen and our team speak or teach — real property, condominium and regeneration law.",
-    de: "Kongresse, Symposien, Seminare und Kurse, in denen Prof. Dr. Etem Sabâ Özmen und unser Team zu Immobilien-, Wohnungseigentums- und Baurecht vortragen.",
+    tr: "Prof. Dr. Etem Saba Özmen ve ekibimizin konuşmacı ya da eğitmen olarak yer aldığı kongre, sempozyum, seminer ve eğitimler; taşınmaz ve kat mülkiyeti hukuku.",
+    en: "Congresses, symposia, seminars and courses where Prof. Dr. Etem Saba Özmen and our team speak or teach — real property, condominium and regeneration law.",
+    de: "Kongresse, Symposien, Seminare und Kurse, in denen Prof. Dr. Etem Saba Özmen und unser Team zu Immobilien-, Wohnungseigentums- und Baurecht vortragen.",
   },
   "ev.type.tv":        { tr: "TV Programı",     en: "TV Appearance",   de: "TV-Auftritt" },
   "ev.type.konferans": { tr: "Konferans",       en: "Conference",      de: "Konferenz" },

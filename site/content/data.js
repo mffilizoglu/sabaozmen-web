@@ -39,6 +39,10 @@ const firm = {
   linkedin: "https://www.linkedin.com/company/sabaozmenavukatlikortakligi/",
   // Query string used for the map embed and for turn-by-turn directions.
   mapsQuery: "Erenköy Mah. Ethemefendi Cad. Anzaf Rezidans No:101 D:1 Kadıköy İstanbul",
+  // The firm's own Google Maps listing. The street address alone does not
+  // geocode (the embed opened on an empty world view); the listing does.
+  mapsPlace: { name: "Saba Özmen Avukatlık Ortaklığı", ftid: "0x14cab804cdc320c9:0x109978ddbe959e1e" },
+  geo: { lat: 40.9756211, lng: 29.0755903 },
   maps: "https://maps.google.com/?q=Erenk%C3%B6y%20Mah.%20Ethemefendi%20Cad.%20Anzaf%20Rezidans%20No%3A101%20D%3A1%20Kad%C4%B1k%C3%B6y%20%C4%B0stanbul",
 };
 

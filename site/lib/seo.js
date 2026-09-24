@@ -54,7 +54,7 @@ function llms(origin) {
   const lines = [
     `# ${f.name.tr}`,
     "",
-    `> ${f.name.tr} (${f.name.en}), ${f.founded} yılından bu yana İstanbul Kadıköy'de faaliyet gösteren, İstanbul Barosu'na kayıtlı bir avukatlık ortaklığıdır. Kurucu ortak Prof. Dr. Etem Sabâ Özmen, Maltepe Üniversitesi Hukuk Fakültesi öğretim üyesidir. Ortaklık; taşınmaz hukuku, kat mülkiyeti, kentsel dönüşüm, inşaat sözleşmeleri, kamulaştırma ve imar hukuku başta olmak üzere hukuki danışmanlık ve dava takibi yürütür.`,
+    `> ${f.name.tr} (${f.name.en}), ${f.founded} yılından bu yana İstanbul Kadıköy'de faaliyet gösteren, İstanbul Barosu'na kayıtlı bir avukatlık ortaklığıdır. Kurucu ortak Prof. Dr. Etem Saba Özmen, Maltepe Üniversitesi Hukuk Fakültesi öğretim üyesidir. Ortaklık; taşınmaz hukuku, kat mülkiyeti, kentsel dönüşüm, inşaat sözleşmeleri, kamulaştırma ve imar hukuku başta olmak üzere hukuki danışmanlık ve dava takibi yürütür.`,
     "",
     `Site Türkçe, İngilizce ve Almanca yayımlanır: ${origin}/tr, ${origin}/en, ${origin}/de. Makalelerin tam metinleri Türkçedir (PDF).`,
     "",
@@ -70,7 +70,7 @@ function llms(origin) {
     ...D.areas.map((a) => `- [${a.name.tr}](${origin}${url(L, "areas", a.slug)}): ${a.desc.tr}`),
     "",
     "## Makaleler",
-    `Prof. Dr. Etem Sabâ Özmen'in hukuk dergilerinde yayımlanan çalışmaları (${ARTICLES().length} yayın): ${origin}${url(L, "articles")}`,
+    `Prof. Dr. Etem Saba Özmen'in hukuk dergilerinde yayımlanan çalışmaları (${ARTICLES().length} yayın): ${origin}${url(L, "articles")}`,
     "",
     ...ARTICLES().map((a) => `- [${a.title.tr}](${origin}${url(L, "articles", a.slug)})${[a.journal, a.year, a.coAuthor ? a.coAuthor + " ile" : ""].filter(Boolean).length ? ": " + [a.journal, a.year, a.coAuthor ? a.coAuthor + " ile" : ""].filter(Boolean).join(", ") : ""}`),
     "",
@@ -111,7 +111,7 @@ function llmsFull(origin) {
   ARTICLES().forEach((a) => {
     out.push(`### ${a.title.tr}`, `URL: ${origin}${url(L, "articles", a.slug)}`);
     const meta = [
-      "Yazar: Prof. Dr. Etem Sabâ Özmen" + (a.coAuthor ? ", " + a.coAuthor : ""),
+      "Yazar: Prof. Dr. Etem Saba Özmen" + (a.coAuthor ? ", " + a.coAuthor : ""),
       a.journal ? "Yayımlandığı yer: " + a.journal : "",
       a.date ? "Tarih: " + a.date : "",
       a.pdf ? "PDF: " + origin + a.pdf : "",
