@@ -255,7 +255,13 @@
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
-      }).then(function (r) { return r.json(); })
+      }).then(function (r) {
+          // 200 = sent, 400 = the server rejected the input (its message says
+          // why). Anything else — sending not configured, service down, host
+          // without a backend — goes to the mail-client fallback below.
+          if (r.status !== 200 && r.status !== 400) throw new Error("unavailable " + r.status);
+          return r.json();
+        })
         .then(function (d) {
           if (out) {
             out.className = "form-msg " + (d.ok ? "form-msg--ok" : "form-msg--bad");

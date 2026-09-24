@@ -302,13 +302,18 @@ Sitemap: ${ORIGIN}/sitemap.xml
 console.log("  sitemap: %d urls", urls.length);
 
 /* ------------------------------------------- policy that survives any host */
+// A static host has no /api/contact, so the form can post to the Cloudflare
+// function instead: CONTACT_ENDPOINT=https://sabaozmen.pages.dev/api/contact
+const CONTACT_ENDPOINT = String(argOf("contact-endpoint", process.env.CONTACT_ENDPOINT || "")).trim();
+const CONTACT_ORIGIN = CONTACT_ENDPOINT ? new URL(CONTACT_ENDPOINT).origin : "";
 // GitHub Pages ignores _headers, so the Content-Security-Policy is also put in
 // every page. frame-ancestors is not allowed in a meta tag; everything else is.
 {
-  const CSP_META = "default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; " +
+  const extra = CONTACT_ORIGIN ? " " + CONTACT_ORIGIN : "";
+  const CSP_META = "default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'" + extra + "; " +
     "script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; " +
     "img-src 'self' data: https://maps.gstatic.com https://*.googleapis.com https://*.ggpht.com; " +
-    "font-src 'self'; connect-src 'self'; frame-src https://www.google.com https://maps.google.com; " +
+    "font-src 'self'; connect-src 'self'" + extra + "; frame-src https://www.google.com https://maps.google.com; " +
     "upgrade-insecure-requests";
   const tag = '<meta charset="utf-8">\n<meta http-equiv="Content-Security-Policy" content="' + CSP_META + '">\n' +
     '<meta name="referrer" content="strict-origin-when-cross-origin">';
@@ -320,12 +325,22 @@ console.log("  sitemap: %d urls", urls.length);
       else if (e.name.endsWith(".html")) {
         const html = fs.readFileSync(p, "utf8");
         if (html.includes("Content-Security-Policy")) continue;
-        const out = html.replace(/<meta charset="utf-8">(\s*<meta name="referrer"[^>]*>)?/i, tag);
+        let out = html.replace(/<meta charset="utf-8">(\s*<meta name="referrer"[^>]*>)?/i, tag);
+        if (CONTACT_ENDPOINT) out = out.replace(/action="\/api\/contact"/g, `action="${CONTACT_ENDPOINT}"`);
         if (out !== html) { fs.writeFileSync(p, out, "utf8"); n++; }
       }
     }
   })(OUT);
   console.log("  CSP meta added to %d pages", n);
+  if (CONTACT_ENDPOINT) {
+    const contact = fs.readFileSync(path.join(OUT, "tr", "iletisim", "index.html"), "utf8");
+    if (!contact.includes(`action="${CONTACT_ENDPOINT}"`)) {
+      console.error("  x contact form was not pointed at %s", CONTACT_ENDPOINT);
+      process.exitCode = 1;
+    } else {
+      console.log("  contact form → %s", CONTACT_ENDPOINT);
+    }
+  }
 }
 
 /* ------------------------------------------------------- base-path rewrite */

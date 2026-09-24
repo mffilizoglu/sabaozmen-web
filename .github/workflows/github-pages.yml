@@ -33,6 +33,8 @@ jobs:
       - name: Build static site
         env:
           DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
+          # the static host has no backend; the form posts to the Cloudflare function
+          CONTACT_ENDPOINT: ${{ vars.CONTACT_ENDPOINT }}
         run: |
           if [ -n "$DOMAIN" ]; then
             node site/build.js --origin "https://$DOMAIN" --cname "$DOMAIN" --out dist-gh
