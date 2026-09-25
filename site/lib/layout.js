@@ -190,6 +190,7 @@ function footer(lang) {
         <a href="${url(lang, "privacy")}">${esc(T("legal.privacy", lang))}</a>
         <a href="${url(lang, "cookies")}">${esc(T("legal.cookies", lang))}</a>
       </span>
+      <span class="ftr__credit">${esc(T("ftr.credit", lang))} <a href="https://madfang.com" target="_blank" rel="noopener">MadFang</a></span>
     </div>
   </div>
 </footer>

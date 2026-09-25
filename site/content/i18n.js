@@ -256,6 +256,7 @@ const t = {
     en: "An attorney partnership registered under Article 44 of Attorneyship Law No. 1136, enrolled with the Istanbul Bar Association.",
     de: "Eine nach Artikel 44 des Anwaltsgesetzes Nr. 1136 eingetragene Anwaltspartnerschaft, Mitglied der Anwaltskammer Istanbul.",
   },
+  "ftr.credit":    { tr: "Tasarım ve kodlama:", en: "Designed and coded by", de: "Design und Programmierung:" },
   "ftr.rights":    { tr: "Tüm hakları saklıdır.", en: "All rights reserved.", de: "Alle Rechte vorbehalten." },
   "ftr.linkedin":  { tr: "LinkedIn sayfamız",  en: "Our LinkedIn page", de: "Unsere LinkedIn-Seite" },
 

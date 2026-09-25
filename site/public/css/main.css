@@ -885,6 +885,10 @@ body.menu-open { overflow: hidden; }
 }
 .ftr__legal { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-left: auto; }
 @media (max-width: 640px) { .ftr__legal { margin-left: 0; } }
+/* Studio credit: its own quiet line under the legal row. */
+.ftr__credit { flex-basis: 100%; font-size: .72rem; letter-spacing: .02em; color: rgba(255,255,255,.4); }
+.ftr .ftr__credit a { color: rgba(255,255,255,.58); border-bottom: 1px solid rgba(255,255,255,.18); padding-bottom: 1px; transition: color var(--dur-s) var(--ease-soft), border-color var(--dur-s) var(--ease-soft); }
+.ftr .ftr__credit a:hover { color: #fff; border-color: rgba(255,255,255,.5); }
 .social { display: flex; gap: .6rem; margin-top: 1.5rem; }
 .social a {
   width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%;
