@@ -378,8 +378,8 @@ function teamDetail(lang, m, origin) {
     <div class="split">
       <div class="doc">
         ${loc(m.bio, lang) ? loc(m.bio, lang).split(/\n{2,}/).map((x) => `<p class="rv">${esc(x)}</p>`).join("")
-                           : `<p class="note rv">${esc(T("team.noArticles", lang))}</p>`}
-        <hr class="divider">
+                           : ""}
+        ${loc(m.bio, lang) ? `<hr class="divider">` : ""}
         <h2 class="rv">${esc(T("team.articlesOf", lang))}</h2>
         ${arts.length
           ? `<ul class="art-list rv">${arts.map((a) => H.artItem(a, lang)).join("")}</ul>`
