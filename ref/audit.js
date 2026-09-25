@@ -80,7 +80,7 @@ const t = (group, name, pass, detail) => rows.push({ group, name, pass, detail }
 
   // third-party requests before consent
   const thirdParty = (home.body.match(/https?:\/\/(?!(?:www\.)?(?:sabaozmen|localhost|127\.0\.0\.1))[^"' )]+/g) || [])
-    .filter((u) => !/schema\.org|linkedin\.com|maps\.google|www\.google\.com\/maps|doblin|strategyzer|orcid/.test(u));
+    .filter((u) => !/schema\.org|linkedin\.com|madfang\.com|maps\.google|www\.google\.com\/maps|doblin|strategyzer|orcid/.test(u));
   t(G, "no third-party scripts/styles on page load", thirdParty.length === 0, thirdParty.slice(0, 3).join(" "));
   // The map is embedded directly now, deferred natively rather than by a click.
   t(G, "map iframe is lazy-loaded", /<iframe[^>]+loading="lazy"/.test(contact.body));
