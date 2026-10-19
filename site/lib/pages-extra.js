@@ -35,6 +35,7 @@ function wrote(member, a) {
   return !!k && authorsOf(a).some((n) => bareName(n) === k || bareName(n).endsWith(" " + k));
 }
 function articlesOf(member) {
+  if (member.showArticles === false) return [];
   const manual = new Set(member.articleSlugs || []);
   return ARTICLES.filter((a) => manual.has(a.slug) || wrote(member, a));
 }
@@ -335,6 +336,7 @@ function eventLd(e, lang, origin, members) {
 
 /* Events a member took part in — for the profile page and its Person JSON-LD. */
 function eventsOf(member) {
+  if (member.showEvents === false) return [];
   return store.events.published().filter((e) => (e.teamSlugs || []).includes(member.slug));
 }
 /* Events tied to a practice area — for the area pages. */
@@ -380,10 +382,10 @@ function teamDetail(lang, m, origin) {
         ${loc(m.bio, lang) ? loc(m.bio, lang).split(/\n{2,}/).map((x) => `<p class="rv">${esc(x)}</p>`).join("")
                            : ""}
         ${loc(m.bio, lang) ? `<hr class="divider">` : ""}
-        <h2 class="rv">${esc(T("team.articlesOf", lang))}</h2>
+        ${m.showArticles === false ? "" : `<h2 class="rv">${esc(T("team.articlesOf", lang))}</h2>
         ${arts.length
           ? `<ul class="art-list rv">${arts.map((a) => H.artItem(a, lang)).join("")}</ul>`
-          : `<p class="note rv">${esc(T("team.noArticles", lang))}</p>`}
+          : `<p class="note rv">${esc(T("team.noArticles", lang))}</p>`}`}
         ${evs.length ? `<hr class="divider">
         <h2 class="rv">${esc(T("team.eventsOf", lang))} <span class="muted small">(${evs.length})</span></h2>
         <ul class="ev-rows rv">${evs.map((e) => eventRow(e, lang)).join("")}</ul>` : ""}

@@ -33,6 +33,9 @@
     "startYear",
     "faculty",
     "languages"
+   ],
+   "hidden": [
+    "orcid"
    ]
   },
   {
@@ -69,6 +72,9 @@
     "faculty",
     "languages",
     "bio"
+   ],
+   "hidden": [
+    "orcid"
    ]
   },
   {
@@ -106,6 +112,9 @@
     "faculty",
     "languages",
     "bio"
+   ],
+   "hidden": [
+    "orcid"
    ]
   },
   {
@@ -144,6 +153,9 @@
     "faculty",
     "languages",
     "bio"
+   ],
+   "hidden": [
+    "orcid"
    ]
   },
   {
@@ -182,6 +194,9 @@
     "faculty",
     "languages",
     "bio"
+   ],
+   "hidden": [
+    "orcid"
    ]
   },
   {
@@ -211,7 +226,10 @@
    "articleSlugs": [],
    "published": true,
    "photo": "",
-   "order": 2
+   "order": 2,
+   "hidden": [
+    "orcid"
+   ]
   }
  ]
 }

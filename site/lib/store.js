@@ -53,11 +53,15 @@ const team = {
     const d = read("team", { team: [] });
     return (d.team || []).slice().sort((a, b) => (a.order || 0) - (b.order || 0));
   },
+  // Public views go through publicMember(), which leaves out what the panel
+  // marks as hidden. The panel itself reads all() and sees everything.
   published() {
-    return team.all().filter((m) => m.published !== false);
+    const { publicMember } = require("../../shared/admin-ui.mjs");
+    return team.all().filter((m) => m.published !== false).map(publicMember);
   },
   bySlug(slug) {
-    return team.all().find((m) => m.slug === slug) || null;
+    const { publicMember } = require("../../shared/admin-ui.mjs");
+    return publicMember(team.all().find((m) => m.slug === slug) || null);
   },
   save(list) {
     return write("team", { team: list });

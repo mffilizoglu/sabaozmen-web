@@ -120,6 +120,7 @@ async function saveRecord(env, kind, slug, fields, files, commitFiles) {
       faculty: String(fields.faculty || "").trim(),
       languages: String(fields.languages || "").trim(),
       orcid: String(fields.orcid || "").trim(),
+      hidden: UI.hiddenFromForm(fields, prev),
       articleSlugs: UI.asArray(fields.articleSlugs),
       published: fields.published === "1",
       photo: prev.photo || "",

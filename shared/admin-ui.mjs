@@ -172,6 +172,7 @@ export function teamForm({ member, articles, csrf, flash }) {
   const isNew = !member;
   const v = member || { role: {}, academic: {}, bio: {}, articleSlugs: [], published: true };
   const chosen = new Set(v.articleSlugs || []);
+  const hidden = new Set(v.hidden || DEFAULT_HIDDEN);
   const body = `
   <div class="ad-head">
     <div>
@@ -233,6 +234,15 @@ export function teamForm({ member, articles, csrf, flash }) {
       <h2>Makale eşleştirme</h2>
       <p class="ad-small ad-muted">Bu avukata ait yayınları işaretleyin; profil sayfasında listelenir.</p>
       ${articlePicker("artpick", articles, chosen)}
+    </section>
+
+    <section class="ad-card">
+      <h2>Sitede görünen bilgiler</h2>
+      <p class="ad-small ad-muted">İşaretli bilgiler profil sayfasında ve ekip listesinde görünür. İşareti kaldırılan bilgi silinmez, yalnızca sitede gösterilmez; boş bırakılan alanlar zaten görünmez.</p>
+      <input type="hidden" name="show_present" value="1">
+      <div class="ad-checks">
+        ${MEMBER_INFO.map(([k, label]) => `<label class="ad-check"><input type="checkbox" name="show" value="${k}"${hidden.has(k) ? "" : " checked"}> ${esc(label)}</label>`).join("")}
+      </div>
     </section>
 
     <section class="ad-card">
@@ -791,6 +801,40 @@ export function uniqueSlug(slug, taken, selfSlug) {
 export function pickLangs(f, base) {
   const g = (k) => String(f[base + "_" + k] || "").trim();
   return { tr: g("tr"), en: g("en"), de: g("de") };
+}
+
+/* ------------------------------------------------- profile visibility
+   Which pieces of a lawyer's record the public site shows. Hiding never
+   deletes: the value stays in the record and the panel, the site just leaves
+   it out (profile, team list and the data given to search engines). Stored as
+   the list of hidden keys, so anything added later is visible by default. */
+export const MEMBER_INFO = [
+  ["photo", "Fotoğraf"], ["email", "E-posta"], ["academic", "Akademik görev"],
+  ["bio", "Özgeçmiş"], ["barNo", "Baro sicil no"], ["startYear", "Mesleğe başlama yılı"],
+  ["faculty", "Mezun olduğu fakülte"], ["languages", "Yabancı diller"], ["orcid", "ORCID"],
+  ["articles", "Yayınlar listesi"], ["events", "Etkinlikler listesi"],
+];
+export const DEFAULT_HIDDEN = ["orcid"];
+
+/** Hidden keys from a submitted lawyer form; keeps the old ones if the form had no checklist. */
+export function hiddenFromForm(f, prev) {
+  if (f.show_present !== "1") return (prev && prev.hidden) || DEFAULT_HIDDEN.slice();
+  const shown = new Set(asArray(f.show));
+  return MEMBER_INFO.map(([k]) => k).filter((k) => !shown.has(k));
+}
+
+/** The record as the public site may show it. */
+export function publicMember(m) {
+  if (!m) return m;
+  const h = new Set(m.hidden || []);
+  const c = Object.assign({}, m);
+  if (h.has("photo")) c.photo = "";
+  if (h.has("academic")) c.academic = {};
+  if (h.has("bio")) c.bio = {};
+  ["email", "barNo", "startYear", "faculty", "languages", "orcid"].forEach((k) => { if (h.has(k)) c[k] = ""; });
+  c.showArticles = !h.has("articles");
+  c.showEvents = !h.has("events");
+  return c;
 }
 
 export function asArray(v) {
