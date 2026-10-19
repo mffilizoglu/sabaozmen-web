@@ -56,10 +56,11 @@
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 /* The whole layout is sized in rem, so the root size scales it. Phones and
-   tablets keep the browser default; desktops follow the window width, so a
-   1440px window is the reference (16px), a 1920px monitor gets ~21px and the
-   layout grows with it instead of floating in wide empty margins. */
-@media (min-width: 1080px) { html { font-size: clamp(15px, 1.1111vw, 24px); } }
+   tablets keep the browser default. On desktops it grows gently with the
+   window — about half as fast as the window itself — so a big monitor gets
+   a wider, slightly larger page rather than a zoomed-in one:
+   1280px → 15px · 1440px → 16px · 1920px → 18.4px · 2560px and up → 19px. */
+@media (min-width: 1080px) { html { font-size: clamp(15px, calc(8.8px + 0.5vw), 19px); } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 body {
