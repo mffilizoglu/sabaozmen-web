@@ -183,6 +183,35 @@
     "languages",
     "bio"
    ]
+  },
+  {
+   "name": "Beyza Özmen Erkin",
+   "slug": "beyza-ozmen-erkin",
+   "role": {
+    "tr": "Avukat / Ortak",
+    "en": "Attorney / Partner",
+    "de": "Rechtsanwältin / Partnerin"
+   },
+   "academic": {
+    "tr": "",
+    "en": "",
+    "de": ""
+   },
+   "bio": {
+    "tr": "",
+    "en": "",
+    "de": ""
+   },
+   "email": "beyzaozmen@sabaozmen.av.tr",
+   "barNo": "",
+   "startYear": "",
+   "faculty": "",
+   "languages": "",
+   "orcid": "",
+   "articleSlugs": [],
+   "published": true,
+   "photo": "",
+   "order": 6
   }
  ]
 }
