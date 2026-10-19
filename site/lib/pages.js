@@ -488,7 +488,7 @@ function teamPage(lang) {
   }) + `
 <section class="section">
   <div class="wrap">
-    <div class="grid grid--team">
+    <div class="grid grid--team" style="--cols:${Math.min(Math.max(members.length, 1), 6)}">
       ${members.map((m) => {
         const initials = m.name.replace(/(Prof\.|Dr\.|Av\.)\s*/g, "").split(/\s+/).map((w) => w[0]).slice(0, 2).join("");
         const n = pubCount(m);
@@ -505,8 +505,8 @@ function teamPage(lang) {
           </a>
           <p class="person__r">${esc(role)}</p>
           <div class="person__meta">
+            ${m.email ? `<a class="person__mail" href="mailto:${attr(m.email)}"><span>${esc(m.email.split("@")[0])}</span><span>@${esc(m.email.split("@").slice(1).join("@"))}</span></a>` : ""}
             ${acad ? `<span>${esc(acad)}</span>` : ""}
-            ${m.email ? `<a href="mailto:${attr(m.email)}">${esc(m.email)}</a>` : ""}
             ${n ? `<a class="ul-link small mt-1" href="${url(lang, "team", m.slug)}">${n} ${esc(T("team.pubsCount", lang))}</a>` : ""}
           </div>
         </article>`;

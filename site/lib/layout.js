@@ -98,7 +98,10 @@ function header(lang, active, altPaths) {
   const navHtml = nav.map((n) => {
     const cur = n.key === active || (n.children || []).some((c) => c.key === active);
     if (!n.children) {
-      return `<div class="nav__item"><a class="nav__link" href="${n.href}"${cur ? ' aria-current="page"' : ""}>${esc(n.label)}</a></div>`;
+      // The contact button sits right next to the menu, so the menu's own
+      // contact link is hidden on desktop (it stays in the phone drawer).
+      const dup = n.key === "contact" ? " nav__item--dup" : "";
+      return `<div class="nav__item${dup}"><a class="nav__link" href="${n.href}"${cur ? ' aria-current="page"' : ""}>${esc(n.label)}</a></div>`;
     }
     return `<div class="nav__item">
       <a class="nav__link" href="${n.href}"${cur ? ' aria-current="page"' : ""}>${esc(n.label)}${icon.chev}</a>
