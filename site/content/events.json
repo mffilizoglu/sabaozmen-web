@@ -7395,6 +7395,64 @@
    "poster": "/img/events/kat-mulkiyeti-hukuku-meslek-ici-egitim-semineri-mugla-barosu-2017.jpg",
    "posterW": 860,
    "posterH": 1200
+  },
+  {
+   "slug": "vii-borclar-hukuku-kongresi",
+   "type": "seminer",
+   "format": "cevrimici",
+   "title": {
+    "tr": "VII. BORÇLAR HUKUKU KONGRESİ",
+    "en": "VII. CONGRESS ON THE LAW OF OBLIGATIONS",
+    "de": "VII. KONGRESS FÜR SCHULDRECHT"
+   },
+   "venue": {
+    "tr": "Hukuk Eğitim - Online",
+    "en": "Legal Education - Online",
+    "de": "Juristische Ausbildung – Online"
+   },
+   "summary": {
+    "tr": "Prof. Dr. E. Saba Özmen, VII. Borçlar Hukuku Kongresi’nde olumlu ve olumsuz zararın birlikte istenebilmesini ve götürü tazminatı inceliyor.",
+    "en": "Prof. Dr. E. Saba Özmen at the 7th Law of Obligations Congress: claiming positive and negative damages together, and liquidated damages. 5 Nov 2026.",
+    "de": "Prof. Dr. E. Saba Özmen, 7. Schuldrechtskongress: positives und negatives Interesse zusammen einklagbar? Pauschalierter Schadenersatz. 5.11.2026"
+   },
+   "body": {
+    "tr": "Prof. Dr. E. Saba Özmen, 5-6-7 Kasım 2026 tarihlerinde yapılacak VII. Borçlar Hukuku Kongresi’nin ilk gününde, “Sözleşmeler Hukuku - 2” oturumunda (5 Kasım, 15:00-16:30; oturum başkanı Prof. Dr. Cevdet Yavuz) “Sözleşmelerde Olumlu ve Olumsuz Zararın Birlikte İstenebileceği ve Götürü Tazminata İlişkin Hüküm ve Sonuçlar” başlıklı bildirisini sunacak.\r\n\r\nBildiri, sözleşmeye aykırılık hâlinde olumlu zarar (müspet zarar) ile olumsuz zararın (menfi zarar) aynı anda talep edilip edilemeyeceği sorusunu ve sözleşmede kararlaştırılan götürü tazminat hükümlerinin hukuki sonuçlarını ele alacak.",
+    "en": "Prof. Dr. E. Saba Özmen will speak at the 7th Law of Obligations Congress (5-7 November 2026) on the first day, in Session 2, “Law of Contracts - 2” (5 November, 15:00-16:30, chaired by Prof. Dr. Cevdet Yavuz). The title of the paper is “Provisions and Consequences Regarding the Joint Claim of Positive and Negative Damages and Liquidated Damages in Contracts.”\r\n\r\nThe paper examines whether positive interest (expectation damages) and negative interest (reliance damages) can be claimed together in case of breach of contract, and what legal consequences follow from liquidated damages clauses agreed in a contract.",
+    "de": "Prof. Dr. E. Saba Özmen spricht auf dem 7. Schuldrechtskongress (5.-7. November 2026) am ersten Kongresstag in der 2. Sitzung “Vertragsrecht - 2” (5. November, 15:00-16:30 Uhr, Vorsitz: Prof. Dr. Cevdet Yavuz). Der Vortrag trägt den Titel “Bestimmungen und Folgen der gleichzeitigen Geltendmachung von positivem und negativem Interesse sowie der pauschalierten Entschädigung in Verträgen”.\r\n\r\nDer Beitrag untersucht, ob bei einer Vertragsverletzung das positive Interesse (Erfüllungsinteresse) und das negative Interesse (Vertrauensinteresse) nebeneinander verlangt werden können, und welche rechtlichen Folgen vertraglich vereinbarte Pauschalentschädigungsklauseln haben.\r\n\r\nDie Kurzfassungen sind jeweils unter 155 Zeichen. Die Titel der Vorträge habe ich frei übersetzt, bei Bedarf passe ich sie an die offizielle englische oder deutsche Bezeichnung des Kongresses an."
+   },
+   "city": "",
+   "address": "",
+   "date": "2026-11-05",
+   "endDate": "2026-11-05",
+   "startTime": "12:00",
+   "endTime": "16:30",
+   "link": "",
+   "organizers": [
+    "TÜKETİCİ HUKUKU ENSTİTÜSÜ & HUKUK EĞİTİM"
+   ],
+   "roles": [
+    "konusmaci"
+   ],
+   "talks": [
+    {
+     "tr": "Sözleşmelerde Olumlu ve Olumsuz Zararın Birlikte İstenebileceği ve Götürü Tazminata İlişkin Hüküm ve Sonuçlar",
+     "en": "Provisions and Consequences Regarding the Cumulative Claim for Positive and Negative Damages in Contracts, and Lump-Sum Compensation",
+     "de": "Bestimmungen und Rechtsfolgen zur kumulativen Geltendmachung von positivem und negativem Interesse sowie zur Pauschalentschädigung in Verträgen"
+    }
+   ],
+   "program": "",
+   "speakers": [],
+   "teamSlugs": [
+    "etem-saba-ozmen"
+   ],
+   "areaSlugs": [
+    "sozlesmeler-hukuku"
+   ],
+   "articleSlugs": [],
+   "published": true,
+   "poster": "/uploads/events/f8a49ed0359c8fb5.jpg",
+   "posterW": 658,
+   "posterH": 726
   }
  ]
 }
