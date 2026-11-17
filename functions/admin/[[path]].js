@@ -113,7 +113,7 @@ async function saveRecord(env, kind, slug, fields, files, commitFiles) {
       slug: isNew ? UI.uniqueSlug(UI.slugify(name), list.map((x) => x.slug)) : prev.slug,
       role: UI.pickLangs(fields, "role"),
       academic: UI.pickLangs(fields, "academic"),
-      bio: UI.pickLangs(fields, "bio"),
+      ...UI.bioFromForm(fields, prev),
       email: String(fields.email || "").trim(),
       barNo: String(fields.barNo || "").trim(),
       startYear: String(fields.startYear || "").trim(),

@@ -9,6 +9,7 @@ const { T } = require("../content/i18n");
 const D = require("../content/data");
 const { firm } = D;
 const L = require("./layout");
+const RICH = require("../../shared/admin-ui.mjs");
 const { esc, attr, url, icon } = L;
 const store = require("./store");
 const UI = require("../../shared/admin-ui.mjs");
@@ -355,6 +356,11 @@ function eventRow(e, lang) {
 
 /* ------------------------------------------------------- attorney profile */
 function teamDetail(lang, m, origin) {
+  // Formatted profile from the panel; older plain-text profiles become paragraphs.
+  // Cleaned again here as well as on save, so the page never trusts stored HTML.
+  // German pages without a German profile show the English one rather than the Turkish.
+  const pick = (v) => (lang === "de" && v && !v.de ? (v.en || v.tr || "") : loc(v, lang));
+  const bioHtml = RICH.sanitizeRich(pick(m.bioHtml) || RICH.textToRich(pick(m.bio)));
   const arts = articlesOf(m);
   const evs = eventsOf(m);
   const initials = m.name.replace(/(Prof\.|Dr\.|Av\.)\s*/g, "").split(/\s+/).map((w) => w[0]).slice(0, 2).join("");
@@ -379,9 +385,8 @@ function teamDetail(lang, m, origin) {
   <div class="wrap">
     <div class="split">
       <div class="doc">
-        ${loc(m.bio, lang) ? loc(m.bio, lang).split(/\n{2,}/).map((x) => `<p class="rv">${esc(x)}</p>`).join("")
-                           : ""}
-        ${loc(m.bio, lang) ? `<hr class="divider">` : ""}
+        ${bioHtml ? `<div class="bio rv">${bioHtml}</div>
+        <hr class="divider">` : ""}
         ${m.showArticles === false ? "" : `<h2 class="rv">${esc(T("team.articlesOf", lang))}</h2>
         ${arts.length
           ? `<ul class="art-list rv">${arts.map((a) => H.artItem(a, lang)).join("")}</ul>`
@@ -408,8 +413,13 @@ function teamDetail(lang, m, origin) {
   </div>
 </section>`;
 
-  const desc = loc(m.bio, lang)
-    || `${m.name} — ${loc(m.role, lang)}, ${firm.name[lang]}${loc(m.academic, lang) ? ". " + loc(m.academic, lang) : ""}.`;
+  // The "Profil / Profile" section reads best as a page description.
+  const bioText = pick(m.bio);
+  const profSec = /(?:^|\n)(?:Profil|Profile)\n+([\s\S]+)$/.exec(bioText || "");
+  // A German page showing the English profile gets a short German description of its own.
+  const borrowed = lang === "de" && !(m.bio && m.bio.de);
+  const desc = (borrowed ? "" : (profSec && profSec[1].trim()) || bioText)
+    ||`${m.name} — ${loc(m.role, lang)}, ${firm.name[lang]}${loc(m.academic, lang) ? ". " + loc(m.academic, lang) : ""}.`;
 
   return {
     body,

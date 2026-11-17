@@ -227,7 +227,13 @@ export function teamForm({ member, articles, csrf, flash }) {
 
     <section class="ad-card">
       <h2>Özgeçmiş metni</h2>
-      ${langTabs("bio", v.bio, "Kısa özgeçmiş", { rows: 5 })}
+      <p class="ad-small ad-muted">Başlık, kalın, italik, liste, hizalama (sola, ortaya, sağa, iki yana), yazı boyutu ve satır aralığı üstteki araç çubuğundan ayarlanır. Word'den kopyalayıp yapıştırdığınızda başlık, kalın, italik ve hizalama korunur.</p>
+      <div class="ad-i18n">
+        ${["tr", "en", "de"].map((l) => `<div class="ad-field ad-field--wide">
+          <span>${l.toUpperCase()}</span>
+          <textarea class="ad-rte-src" name="bioHtml_${l}" rows="8">${esc((v.bioHtml && v.bioHtml[l]) || textToRich((v.bio || {})[l]))}</textarea>
+        </div>`).join("")}
+      </div>
     </section>
 
     <section class="ad-card">
@@ -830,11 +836,150 @@ export function publicMember(m) {
   const c = Object.assign({}, m);
   if (h.has("photo")) c.photo = "";
   if (h.has("academic")) c.academic = {};
-  if (h.has("bio")) c.bio = {};
+  if (h.has("bio")) { c.bio = {}; c.bioHtml = {}; }
   ["email", "barNo", "startYear", "faculty", "languages", "orcid"].forEach((k) => { if (h.has(k)) c[k] = ""; });
   c.showArticles = !h.has("articles");
   c.showEvents = !h.has("events");
   return c;
+}
+
+/* ---------------------------------------------------------- rich text
+   Lawyer profiles are edited in a small formatting editor (headings, bold,
+   italic, underline, lists, alignment, size, line spacing). Whatever comes
+   in — typed, or pasted from Word — is reduced to this whitelist before it is
+   stored, so the public page only ever receives these tags and classes:
+     p h2 h3 strong em u br ul ol li a[href]
+     class: al-left al-center al-right al-justify · fs-sm fs-lg · lh-tight lh-loose
+   Pure string code: it runs the same in Node and in the Cloudflare Worker. */
+export const RICH_CLASSES = ["al-left", "al-center", "al-right", "al-justify", "fs-sm", "fs-lg", "lh-tight", "lh-loose"];
+const RICH_BLOCK = new Set(["p", "h2", "h3", "li"]);
+const RICH_MAP = { b: "strong", strong: "strong", i: "em", em: "em", u: "u", p: "p", div: "p",
+  h1: "h2", h2: "h2", h3: "h3", h4: "h3", h5: "h3", h6: "h3", ul: "ul", ol: "ol", li: "li", a: "a" };
+const RICH_DROP = /^(script|style|head|title|xml|template|iframe|object|svg|math|noscript)$/;
+
+function richAttr(attrs, name) {
+  const m = new RegExp("(?:^|\\s)" + name + "\\s*=\\s*(\"([^\"]*)\"|'([^']*)'|([^\\s>]+))", "i").exec(attrs || "");
+  return m ? (m[2] ?? m[3] ?? m[4] ?? "") : "";
+}
+function richClasses(attrs) {
+  const out = [];
+  String(richAttr(attrs, "class")).split(/\s+/).forEach((c) => { if (RICH_CLASSES.includes(c) && !out.includes(c)) out.push(c); });
+  const st = richAttr(attrs, "style").toLowerCase();
+  const al = /text-align\s*:\s*(left|center|right|justify)/.exec(st);
+  if (al && !out.some((c) => c.startsWith("al-"))) out.push("al-" + al[1]);
+  const al2 = /^(left|center|right|justify)$/i.exec(richAttr(attrs, "align"));
+  if (al2 && !out.some((c) => c.startsWith("al-"))) out.push("al-" + al2[1].toLowerCase());
+  return out;
+}
+
+/** Reduce any HTML to the profile whitelist. */
+export function sanitizeRich(html) {
+  const s = String(html || "").replace(/<!--[\s\S]*?-->/g, "").replace(/<!\[CDATA\[[\s\S]*?\]\]>/g, "");
+  let out = "", drop = 0;
+  // open elements: { raw, kind: block|list|li|inline, close }
+  const stack = [];
+  const last = (kinds) => { for (let k = stack.length - 1; k >= 0; k--) if (kinds.includes(stack[k].kind)) return k; return -1; };
+  const popTo = (k) => { while (stack.length > k) out += stack.pop().close; };
+  const ensureBlock = () => {                 // loose text and inline tags go into a paragraph
+    if (last(["block", "li"]) === -1) { out += "<p>"; stack.push({ raw: "#p", kind: "block", close: "</p>" }); }
+  };
+  const closeOpenBlock = () => {              // a new block ends an unclosed paragraph or heading
+    const b = last(["block"]);
+    if (b > last(["li", "list"])) popTo(b);
+  };
+  const re = /<(\/?)([a-zA-Z][\w:-]*)([^>]*)>|([^<]+)|(<)/g;
+  let m;
+  while ((m = re.exec(s))) {
+    if (m[4] != null || m[5] != null) {
+      if (drop) continue;
+      const t = m[4] != null ? m[4] : "<";
+      if (/\S/.test(t.replace(/&nbsp;/g, ""))) ensureBlock();
+      out += t.replace(/&(?!#?\w+;)/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      continue;
+    }
+    const close = m[1] === "/", raw = m[2].toLowerCase(), attrs = m[3] || "";
+    if (RICH_DROP.test(raw)) { if (!/\/\s*$/.test(attrs)) drop = Math.max(0, drop + (close ? -1 : 1)); continue; }
+    if (drop) continue;
+    if (raw === "br") { ensureBlock(); out += "<br>"; continue; }
+    if (close) {
+      for (let k = stack.length - 1; k >= 0; k--) if (stack[k].raw === raw) { popTo(k); break; }
+      continue;
+    }
+    if (/\/\s*$/.test(attrs)) continue;
+    const tag = RICH_MAP[raw] || "";
+    if (tag === "p" || tag === "h2" || tag === "h3") {
+      closeOpenBlock();
+      const cls = richClasses(attrs);
+      out += "<" + tag + (cls.length ? ' class="' + cls.join(" ") + '"' : "") + ">";
+      stack.push({ raw, kind: "block", close: "</" + tag + ">" });
+    } else if (tag === "ul" || tag === "ol") {
+      closeOpenBlock();
+      out += "<" + tag + ">";
+      stack.push({ raw, kind: "list", close: "</" + tag + ">" });
+    } else if (tag === "li") {
+      const li = last(["li"]), list = last(["list"]);
+      if (li > list) popTo(li);                         // <li>a<li>b
+      else closeOpenBlock();
+      if (last(["list"]) === -1) { out += "<ul>"; stack.push({ raw: "#ul", kind: "list", close: "</ul>" }); }
+      const cls = richClasses(attrs);
+      out += "<li" + (cls.length ? ' class="' + cls.join(" ") + '"' : "") + ">";
+      stack.push({ raw, kind: "li", close: "</li>" });
+    } else {
+      let open = "", closeStr = "";
+      if (tag === "a") {
+        const href = richAttr(attrs, "href").trim();
+        if (/^(https?:|mailto:)/i.test(href)) { open = '<a href="' + href.replace(/"/g, "&quot;") + '" rel="noopener">'; closeStr = "</a>"; }
+      } else if (tag) {
+        open = "<" + tag + ">"; closeStr = "</" + tag + ">";
+      } else if (raw === "span" || raw === "font") {
+        // Word and browsers mark bold/italic/underline on spans
+        const st = richAttr(attrs, "style").toLowerCase();
+        if (/font-weight\s*:\s*(bold|[6-9]00)/.test(st)) { open += "<strong>"; closeStr = "</strong>" + closeStr; }
+        if (/font-style\s*:\s*italic/.test(st)) { open += "<em>"; closeStr = "</em>" + closeStr; }
+        if (/text-decoration[^;]*underline/.test(st)) { open += "<u>"; closeStr = "</u>" + closeStr; }
+      }
+      if (open) ensureBlock();
+      out += open;
+      stack.push({ raw, kind: "inline", close: closeStr });
+    }
+  }
+  popTo(0);
+  let prev;
+  do {
+    prev = out;
+    out = out
+      .replace(/<(strong|em|u|a)[^>]*>(\s|&nbsp;)*<\/\1>/g, "$2")
+      .replace(/<(p|h2|h3|li)[^>]*>(\s|&nbsp;|<br>)*<\/\1>/g, "")
+      .replace(/<(ul|ol)>\s*<\/\1>/g, "");
+  } while (out !== prev);
+  return out.replace(/<br>(\s*)<\/(p|h2|h3|li)>/g, "$1</$2>").trim();
+}
+
+/** Plain text of a profile, for page descriptions and search data. */
+export function richToText(html) {
+  return String(html || "")
+    .replace(/<br>/g, "\n").replace(/<\/(p|h2|h3|li)>/g, "\n\n").replace(/<[^>]+>/g, "")
+    .replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"').replace(/&#39;/g, "'")
+    .replace(/[ \t]+/g, " ").replace(/ *\n */g, "\n").replace(/\n{3,}/g, "\n\n").trim();
+}
+
+/** Old plain-text profiles shown as paragraphs until they are re-saved. */
+export function textToRich(text) {
+  return String(text || "").split(/\r?\n\s*\r?\n|\r?\n/).map((x) => x.trim()).filter(Boolean)
+    .map((x) => `<p>${esc(x)}</p>`).join("");
+}
+
+/** Rich profile from a submitted form: bioHtml_xx (editor) or the old bio_xx textarea. */
+export function bioFromForm(f, prev) {
+  const html = {}, text = {};
+  ["tr", "en", "de"].forEach((l) => {
+    const h = f["bioHtml_" + l] != null ? sanitizeRich(f["bioHtml_" + l])
+      : f["bio_" + l] != null ? textToRich(f["bio_" + l])
+      : ((prev && prev.bioHtml && prev.bioHtml[l]) || "");
+    html[l] = h; text[l] = richToText(h);
+  });
+  return { bioHtml: html, bio: text };
 }
 
 export function asArray(v) {

@@ -173,3 +173,41 @@ h2 { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter-spaci
 .ad-checks { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: .5rem 1.25rem; }
 .ad-pick-row.is-out { display: none; }
 .ad-busy { opacity: .6; pointer-events: none; }
+
+/* ---------- lawyer profile text (rich text, shared with the public site) ---------- */
+.bio { color: var(--ink-2); }
+.bio > :first-child { margin-top: 0; }
+.bio h2 { font-family: var(--serif); font-weight: 600; font-size: 1.3rem; line-height: 1.3; color: var(--ink); letter-spacing: -.01em; margin: 2rem 0 .55rem; }
+.bio h3 { font-family: var(--sans); font-weight: 600; font-size: 1.04rem; line-height: 1.4; color: var(--ink); margin: 1.5rem 0 .4rem; }
+.bio p { margin: 0 0 .85rem; }
+.bio strong { font-weight: 600; color: var(--ink); }
+.bio ol, .bio ul { margin: 0 0 1rem; padding-left: 1.5rem; }
+.bio li { margin-bottom: .4rem; padding-left: .2rem; }
+.bio li::marker { color: var(--bordo); }
+.bio a { color: var(--bordo); text-decoration: underline; text-underline-offset: 2px; }
+.bio .al-left { text-align: left; }
+.bio .al-center { text-align: center; }
+.bio .al-right { text-align: right; }
+.bio .al-justify { text-align: justify; -webkit-hyphens: auto; hyphens: auto; }
+.bio .fs-sm { font-size: .9em; }
+.bio .fs-lg { font-size: 1.15em; }
+.bio .lh-tight { line-height: 1.45; }
+.bio .lh-loose { line-height: 2; }
+
+/* editor */
+.ad-rte { border: 1px solid var(--line); border-radius: 10px; background: var(--paper); overflow: hidden; }
+.ad-rte:focus-within { border-color: var(--bordo); box-shadow: 0 0 0 3px rgba(160,25,68,.12); }
+.ad-rte__bar { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem; padding: .4rem; background: var(--paper-2); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 2; }
+.ad-rte__b { min-width: 32px; height: 32px; padding: 0 .5rem; border: 1px solid transparent; border-radius: 6px; background: transparent; color: var(--ink-2); font: 500 .9rem/1 var(--sans); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+.ad-rte__b:hover { background: var(--paper-3); }
+.ad-rte__b[aria-pressed="true"] { background: #fff; border-color: var(--line); color: var(--bordo); box-shadow: 0 1px 2px rgba(20,16,15,.08); }
+.ad-rte__b[data-wide] { font-size: .78rem; color: var(--ink-3); }
+.ad-rte__sel select { height: 32px; border: 1px solid var(--line); border-radius: 6px; background: #fff; font: .8rem var(--sans); color: var(--ink-2); padding: 0 .4rem; cursor: pointer; }
+.ad-rte__sep { width: 1px; height: 20px; background: var(--line); margin: 0 .2rem; }
+.ad-rte__ed { min-height: 240px; max-height: 70vh; overflow: auto; padding: 1rem 1.15rem; font: 1rem/1.75 var(--sans); outline: none; }
+.ad-rte__ed:empty::before { content: "Metni buraya yazın veya Word'den yapıştırın…"; color: var(--ink-4); }
+.ad-rte-src { font-family: ui-monospace, Consolas, monospace; font-size: .8rem; }
+/* the card's section-title style must not reach headings inside the editor */
+.ad-card .ad-rte__ed h2 { text-transform: none; letter-spacing: -.01em; font-family: var(--serif); font-weight: 600; font-size: 1.3rem; color: var(--ink); margin: 1.6rem 0 .5rem; }
+.ad-card .ad-rte__ed h3 { text-transform: none; letter-spacing: 0; font-family: var(--sans); font-weight: 600; font-size: 1.04rem; color: var(--ink); margin: 1.3rem 0 .4rem; }
+.ad-card .ad-rte__ed > :first-child { margin-top: 0; }
