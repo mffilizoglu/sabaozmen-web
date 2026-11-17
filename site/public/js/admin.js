@@ -282,4 +282,59 @@
   }
 
   document.querySelectorAll("textarea.ad-rte-src").forEach(makeEditor);
+  /* ---------------------------------------------------------------
+     Photos and posters are resized in the browser before upload.
+     Phone and camera originals are 3000–4000px; shown at ~200px the
+     browser's own downscaling turns fine detail (striped backgrounds)
+     into moiré. Halving step by step with high-quality smoothing gives
+     a clean image, and the upload is a few hundred KB instead of MBs.
+     Works the same for both back-ends, as nothing changes server-side.
+     --------------------------------------------------------------- */
+  var RESIZE = { photo: { w: 720, h: 960 }, poster: { w: 1400, h: 1400 } };
+  function shrink(file, box) {
+    return new Promise(function (resolve) {
+      if (!/^image\/(jpeg|png|webp)$/.test(file.type)) return resolve(file);
+      var img = new Image();
+      img.onload = function () {
+        var s = Math.min(1, box.w / img.naturalWidth, box.h / img.naturalHeight);
+        var tw = Math.round(img.naturalWidth * s), th = Math.round(img.naturalHeight * s);
+        if (s === 1 && file.size < 900 * 1024) { URL.revokeObjectURL(img.src); return resolve(file); }
+        var src = img, w = img.naturalWidth, h = img.naturalHeight;
+        while (w / 2 >= tw) {                       // step down by halves
+          w = Math.round(w / 2); h = Math.round(h / 2);
+          var c = document.createElement("canvas"); c.width = w; c.height = h;
+          var x = c.getContext("2d"); x.imageSmoothingEnabled = true; x.imageSmoothingQuality = "high";
+          x.drawImage(src, 0, 0, w, h); src = c;
+        }
+        var out = document.createElement("canvas"); out.width = tw; out.height = th;
+        var o = out.getContext("2d"); o.imageSmoothingEnabled = true; o.imageSmoothingQuality = "high";
+        o.fillStyle = "#fff"; o.fillRect(0, 0, tw, th);   // transparent PNGs onto white
+        o.drawImage(src, 0, 0, tw, th);
+        URL.revokeObjectURL(img.src);
+        out.toBlob(function (b) {
+          if (!b) return resolve(file);
+          resolve(new File([b], file.name.replace(/\.\w+$/, "") + ".jpg", { type: "image/jpeg" }));
+        }, "image/jpeg", 0.88);
+      };
+      img.onerror = function () { resolve(file); };
+      img.src = URL.createObjectURL(file);
+    });
+  }
+  document.querySelectorAll('input[type=file][name="photo"], input[type=file][name="poster"]').forEach(function (input) {
+    input.addEventListener("change", function () {
+      var f = input.files && input.files[0];
+      if (input._skip) { input._skip = false; return; }
+      if (!f || typeof DataTransfer === "undefined") return;
+      var form = input.form;
+      if (form) form.classList.add("ad-busy");
+      shrink(f, RESIZE[input.name]).then(function (small) {
+        if (form) form.classList.remove("ad-busy");
+        if (small === f) return;
+        var dt = new DataTransfer(); dt.items.add(small);
+        input.files = dt.files;
+        input._skip = true;
+        input.dispatchEvent(new Event("change", { bubbles: true }));   // refresh the preview
+      });
+    });
+  });
 })();
